@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*
+*  清楚浮动
+*/
+.clear {
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+/*盒子模型*/
+.display-box{
+	width: 100%;
+	display: box;
+	display: -webkit-box;
+}
+.box-flex1{
+	width: 50%;
+	height: 100%;
+	box-flex: 1;
+	-webkit-box-flex: 1;
+}
+.box-flex2{
+	width: 33.33%;
+	height: 100%;
+	box-flex: 2;
+	-webkit-box-flex: 2;
+}
+.box-flex3{
+	width: 25%;
+	height: 100%;
+	box-flex: 3;
+	-webkit-box-flex: 3;
+}
+.relative{
+	position: relative;
+}
+.img{
+	width: 100%;
+	display: inline-block;
+}
+/*按钮*/
+.btn{
+	width: 92%;
+	height: .9rem;
+	line-height: .9rem;
+	display: block;
+	margin: .3rem auto 0;
+	text-align: center;
+	font-size: .32rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.btn-white{
+	background: #fff;
+	border: solid 1px #DADADA;
+	color: #222;
+}
+.btn-blue{
+	background: #06a6f8;
+	color: #fff;
+}
+.btn.no-click{
+	background: #B5B5B5;
+	color: #fff;
+	pointer-events: none;
+}
+.btn:visited,
+.btn:hover{
+	color: #fff;
+}
+.btn-white:visited,
+.btn-white:hover{
+	color: #222;
+}
+a.white:visited,
+a.white:hover{
+	color: #fff;
+}
+a.black:visited,
+a.black:hover{
+	color: #222;
+}
+.gray {
+  color: #aaaaaa;
+}
+.black {
+  color: #252525;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

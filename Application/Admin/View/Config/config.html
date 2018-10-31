@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>商城-源多享</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__PUBLIC__/style/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__PUBLIC__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/style/demo.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/typicons.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/animate.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- 头部 -->
+	<include file="Common/header" />
+
+	<!-- /头部 -->
+
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <include file="Common/left" />
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="__MODULE__/Index/index">系统</a>
+                    </li>
+                                        <li>
+                        <a href="__CONTROLLER__/lst">配置列表</a>
+                    </li>
+                                        <li class="active">站点配置</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">站点配置</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" >
+                        <?php foreach ($configres as $k => $v):?>
+                            <?php if($v['type']==1):?>
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $v['cnname'];?></label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" placeholder="" value="<?php echo $v['value'];?>" name="<?php echo $v['enname'];?>" required="" type="text">
+                                    </div>
+                                </div>
+                            <?php endif;?>
+                            <?php if($v['type']==2):?>
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $v['cnname'];?></label>
+                                    <div class="col-sm-6">
+                                        <textarea class="form-control" name="<?php echo $v['enname'];?>"><?php echo $v['value'];?></textarea>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                            <?php endif;?>
+                            <?php if($v['type']==3):?>
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $v['cnname'];?></label>
+                                    <div class="col-sm-6">
+                                        <?php $v_arr=explode(',', $v['values']);
+                                              foreach ($v_arr as $k1=> $v1):
+                                        ?>
+                                            <div class="radio" style="float:left; margin-right:10px;">
+                                                    <label>
+                                                        <input <?php if($v1==$v['value']){echo 'checked="checked"';}?> name="<?php echo $v['enname'];?>" value="<?php echo $v1;?>" class="inverted" type="radio">
+                                                        <span class="text"><?php echo $v1;?></span>
+                                                    </label>
+                                            </div>
+                                        <?php endforeach;?>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                            <?php endif;?>
+                            <?php if($v['type']==4):?>
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $v['cnname'];?></label>
+                                    <div class="col-sm-6">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input <?php if($v['values']==$v['value']){echo 'checked="checked"';}?> value="<?php echo $v['values'];?>" name="<?php echo $v['enname'];?>" class="colored-success"  type="checkbox">
+                                                <span class="text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                            <?php endif;?>
+                            <?php if($v['type']==5):?>
+                                <div class="form-group">
+                                    <label for="username" class="col-sm-2 control-label no-padding-right"><?php echo $v['cnname'];?></label>
+                                    <div class="col-sm-6">
+                                        <select name="<?php echo $v['enname'];?>">
+                                            <option value="">请选择</option>
+                                            <?php $v_arr=explode(',', $v['values']);
+                                                  foreach ($v_arr as $k1=> $v1):
+                                            ?>
+                                            <option <?php if($v1 == $v['value']){echo 'selected="selected"';}?> value="<?php echo $v1;?>"><?php echo $v1;?></option>
+                                            <?php endforeach;?>
+                                        </select>
+                                    </div>
+                                    <p class="help-block col-sm-4 red">* 必填</p>
+                                </div>
+                            <?php endif;?>
+                        <?php endforeach;?>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__PUBLIC__/style/jquery_002.js"></script>
+    <script src="__PUBLIC__/style/bootstrap.js"></script>
+    <script src="__PUBLIC__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__PUBLIC__/style/beyond.js"></script>
+
+
+
+</body></html>

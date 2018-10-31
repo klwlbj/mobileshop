@@ -1,0 +1,365 @@
+﻿@charset "utf-8";
+body{
+	background: #f0f0f0;
+}
+/*content*/
+.m-registration-wrap{
+	width: 100%;
+	overflow: hidden;
+	padding-top: .5rem;
+	border-top: solid 1px #dadada;
+}
+.reg-input-wrap,
+.reg-input-wrap2{
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+	border-bottom: solid 1px #dadada;
+	background-color: #fff;
+}
+.reg-input-wrap2{
+	padding: 0;
+}
+.reg-left,
+.reg2-left{
+	width: 24.6%;
+	height: 100%;
+	text-align: right;
+	box-sizing: border-box;
+	font-size: .3rem;
+	color: #555555;
+}
+.reg2-left{
+	width: 26.7%;
+}
+.reg-bindKad .reg2-left{
+	width: 30.7%;
+}
+.reg-right,
+.reg2-center{
+	width: 75.4%;
+	height: 100%;
+	font-size: .28rem;
+}
+.pass-word input{
+	padding-right: 1.4rem;
+	box-sizing: border-box;
+}
+.reg-right input,
+.reg2-center input{
+	width: 100%;
+	height: 90%;
+}
+.reg2-center{
+	width: 46.6%;
+}
+.reg-bindKad .reg2-center{
+	width: 42.6%;
+}
+.reg2-right{
+	width: 26.7%;
+	height: 100%;
+	font-size: .3rem;
+}
+.reg2-right{
+	background: #06a6f8;
+	text-align: center;
+	color: #fff;
+	font-size: .28rem;
+}
+.reg2-right.stop{
+	background: #F0F0F0;
+	color: #b5b5b5;
+	pointer-events: none;
+}
+.textIndent1{
+	display: inline-block;
+	width: .5rem;
+}
+.textIndent2{
+	display: inline-block;
+	width: .15rem;
+}
+.reg-eye{
+	width: 1.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(/public/reg_files/closeEye.png) no-repeat center;
+	background-size: .54rem .32rem;
+}
+.reg-eye.open{
+	background: url(/public/reg_files/openEye.png) no-repeat center;
+	background-size: .54rem .32rem;
+}
+.reg-yzm{
+	width: 26.7%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.reg-yzm a{
+	width: 100%;
+	height: .64rem;
+	padding: 0 .1rem;
+	border-left: solid 1px #eee;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+}
+.reg-sm-wrap{
+	width: 100%;
+	height: .38rem;
+	line-height: .38rem;
+	padding: .3rem;
+	font-size: .26rem;
+	color: #555555;
+}
+.reg-sm-wrap i{
+	width: .38rem;
+	height: .38rem;
+	display: inline-block;
+	background: url(/public/reg_files/radio_not.png) no-repeat;
+	background-size: .38rem;
+	float: left;
+	margin-right: .1rem;
+}
+.reg-sm-wrap i.end{
+	background: url(/public/reg_files/radio_yes.png) no-repeat;
+	background-size: .38rem;
+}
+/*注册绑定康爱多账号*/
+.m-bindKad-wrap{
+	width: 100%;
+	overflow: hidden;
+}
+.bindKad-title{
+	width: 100%;
+	/*height: .9rem;*/
+	padding: .3rem;
+	box-sizing: border-box;
+	font-size: .26rem;
+	color: #888;
+	border-bottom: solid 1px #dadada;
+}
+.bindKad-title i{
+	width: 4.3%;
+	height: .3rem;
+	display: inline-block;
+	float: left;
+	margin-right: 2.3%;
+}
+.bindKad-title span{
+	width: 92.5%;
+	display: inline-block;
+	float: left;
+}
+/*popup*/
+.mask-wrap{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	opacity: .3;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	display: none;
+}
+.popup-wrap{
+	width: 80%;
+	padding-top: .2rem;
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	z-index: 10;
+	border-radius: 4px;
+	display: none;
+}
+.popup-close{
+	width: 100%;
+	height: .26rem;
+}
+.close-container{
+	width: 100%;
+	height: .26rem;
+	padding:0 .2rem;
+	box-sizing: border-box;
+}
+.popup-close i{
+	width: .26rem;
+	height: .26rem;
+	display: inline-block;
+	background: url(/public/reg_files/close_icon.jpg) no-repeat;
+	background-size: 100%;
+	float: right;
+}
+.popup-title{
+	width: 100%;
+	height: .38rem;
+	line-height: .38rem;
+	padding: 0 .2rem;
+	font-size: .32rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+.popup-container{
+	width: 100%;
+	padding: .3rem .4rem;
+	box-sizing: border-box;
+	line-height: .4rem;
+	font-size: .28rem;
+	margin-bottom: .2rem;
+}
+.popup-wrap2 .popup-container{
+	padding-bottom: .5rem;
+	text-align: center;
+	color: #888;
+}
+.container-select{
+	width: 100%;
+	height: .38rem;
+	line-height: .38rem;
+	margin: .2rem 0;
+	font-size: .28rem;
+	position: relative;
+	padding-left: .45rem;
+	box-sizing: border-box;
+	color: #888;
+}
+.container-select.cur{
+	color: #222;
+}
+.container-select i{
+	width: .38rem;
+	height: .38rem;
+	background: url(/public/reg_files/radio_not.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.container-select.cur i{
+	background: url(/public/reg_files/radio_yes.png) no-repeat;
+	background-size: 100%;
+}
+.popup-footer{
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	font-size: .32rem;
+	border-top: solid 1px #e8e8e8;
+}
+.popup-btn-left{
+	text-align: center;
+	color: #666666;
+	display: block;
+	border-right: solid 1px #e8e8e8;
+}
+.popup-btn-left:visited,
+.popup-btn-left:hover{
+	color: #666666;
+}
+.popup-btn-right{
+	text-align: center;
+	color: #06a6f8;
+	display: block;
+}
+.popup-btn-right:visited,
+.popup-btn-right:hover{
+	color: #06a6f8;
+}
+/*popup2*/
+.popup2-wrap{
+	width: 3rem;
+	height: 2rem;
+	position: fixed;
+	top: 40%;
+	left: 2.25rem;
+	z-index: 10;
+	overflow: hidden;
+	display: none;
+}
+.popup2-bg{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+}
+.popup2-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(/public/reg_files/gIcon.png) no-repeat center .44rem;
+	background-size: .66rem;
+	padding: 1.1rem .2rem .2rem;
+	box-sizing: border-box;
+}
+.popup2-container.yes{
+	background: url(/public/reg_files/yIcon.png) no-repeat center .44rem;
+	background-size: .66rem;
+}
+.popup2-size{
+	max-height: .8rem;
+	font-size: .3rem;
+	color: #fff;
+	line-height: .4rem;
+	text-align: center;
+	margin-top: .1rem;
+	overflow: hidden;
+}
+
+   /*页头CSS*/
+        #header {
+            height: 1rem;
+            padding: 0 .3rem;
+            text-align: center;
+            background: #fff;
+            box-sizing: border-box;
+        }
+        .header_logo {
+            float: left;
+            height: 1rem;
+            background: url(/public/reg_files/backIcon.png) no-repeat left center;
+            background-size: .2rem .34rem;
+        }
+        .header_t {
+            line-height: 1rem;
+            font-size: .3rem;
+            color: #000000;
+        }
+        .header_r {
+            float: right;
+            height: 1rem;
+            line-height: 1rem;
+        }
+        .header_logo a {
+            display: inline-block;
+            width: 1rem;
+            line-height: 1rem;
+            color: #808080;
+            text-align: left;
+            text-indent: .3rem;
+            overflow: hidden;
+            font-size: .26rem;
+        }
+        .header_r a {
+            display: inline-block;
+            width: .34rem;
+            height: .31rem;
+            background: url(/public/reg_files/shouye.png) no-repeat left;
+            background-size: 100%;
+        }
+        /*页头CSS end*/

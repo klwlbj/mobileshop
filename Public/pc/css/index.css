@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+{margin:0px;padding:0px;font-size:12px;}
+body,div,li,ul,dl,dd,dt,span,b,strong,p,h1,h2,h3,h4,h5{margin:0px;padding:0px;list-style:none;list-style-type:none; }
+a img{border:none;}
+a{text-decoration:none; margin:0px; padding:0px;}
+body{ background:#fff; margin:0px; padding:0px;-webkit-text-size-adjust:none; min-width:1000px;}
+input{ margin:0px; padding:0px;}
+input,button,select,textarea{ outline:none;}
+
+
+.bannerdiv{ width:100%; min-width:1200px;overflow:hidden; margin:0px auto;height:468px; clear:both;}
+.bannerdiv #main_promo{height:468px; width:1920px;min-width:1200px;position:relative; top:0; left:50%; margin-left:-960px;overflow:hidden; z-index:0; }
+.bannerdiv .promoWD{width:auto; min-width:1080px;margin:0 auto; position:relative; overflow:hidden;}
+.bannerdiv .slide{display:block; float:left;  width:1920px;}
+.bannerdiv #dots{height:16px; position:absolute;bottom:10px;z-index:99;left:50%;text-align:center;}
+.bannerdiv #dots a{ width:16px; margin-right:10px; height:16px; display:inline-block; background:url(../images/dot-white.png) no-repeat 0px 0px;}
+.bannerdiv #dots a.act{ background:url(../images/dot.png) no-repeat 0px 0px;}
+
+
+.hot-sale{ width:1200px; height:355px; margin:22px auto 0px auto; clear:both;overflow:hidden;}
+.hot-sale .top{ width:1200px; height:24px;}
+.hot-sale .top .word{ float:left; margin-left:5px; color:#333; font-size:18px; background:url(../images/hot.png) no-repeat left center; padding-left:25px;}
+.hot-sale .top .hot-arrow{ float:right;width:70px; height:24px;}
+.hot-sale .hot-arrow .arr-left{ display:block; width:24px; height:24px; background:url(../images/left.png) no-repeat center; float:left;}
+.hot-sale .hot-arrow .arr-left:hover{background:url(../images/lefth.png) no-repeat center;}
+.hot-sale .hot-arrow .arr-right{ float:right; display:block; width:24px; height:24px; background:url(../images/right.png) no-repeat center;}
+.hot-sale .hot-arrow .arr-right:hover{background:url(../images/righth.png) no-repeat center;}
+.hot-sale .total{width:1200px; height:282px; overflow:hidden; margin-top:16px; border:1px solid #efdec4; box-sizing:border-box;}
+.hot-sale .link{ position:relative;width:1200px;height:282px;overflow:hidden;}
+.hot-sale .auto{ float:left; width:239px;height:280px;overflow:hidden;text-align:center;display:block;}
+.hot-sale .auto .indexpropic{width:180px; height:180px; overflow:hidden; margin:15px auto 0 auto;}
+.hot-sale .auto:nth-child(1n){border-right:1px solid #efdec7;}
+.hot-sale .auto:nth-child(2n){border-right:1px solid #c8eabb;}
+.hot-sale .auto:nth-child(1n) ul{background:#fef1e0;border-top:1px solid #efdec7;box-sizing:border-box;}
+.hot-sale .auto:nth-child(2n) ul{background:#e3ffd9;border-top:1px solid #c8eabb;box-sizing:border-box;}
+.hot-sale .auto ul{ width:239px; height:75px;  margin-top:15px; text-align:left;}
+.hot-sale .auto li{ width:190px; margin:0px auto; font-size:14px; line-height:18px;overflow:hidden;}
+.hot-sale .auto .title{ margin-top:15px; color:#333; width:190px; line-height:20px; height:20px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.hot-sale .auto .price{ margin-top:5px; color:#f86305; font-weight:bold;}
+.hot-sale .auto:hover .title{ color:#009f43;}
+.hot-sale .auto:hover .indexpropic img{ width:190px; height:190px; position:relative; top:-5px; left:-5px;}
+.typelist{ width:1200px; height:520px; margin:10px auto; clear:both; overflow:hidden; min-width:1200px;}
+.typelist .topstag{ width:1200px; height:51px; overflow:hidden;}
+.typelist .type-name{ float:left; width:263px; height:50px; line-height:25px; color:#333; font-size:24px;border-bottom:1px solid #009f43;}
+.typelist .type-name span{ display:block; width:25px; height:25px; background:#009f43; color:#fff; font-size:14px; float:left; line-height:25px; text-align:center; border-radius:5px; margin:auto 10px;}
+.typelist .listnav{ width:937px; height:50px; background:#f4f4f4; float:left;border-bottom:1px solid #009f43;}
+.typelist .listnav li{ cursor:pointer; float:left;height:50px; text-align:center; width:135px;}
+.typelist .listnav a{ display:block; border-right:1px solid #e1e1e1; margin-top:15px; color:#333; font-size:14px;width:135px; height:20px;}
+.typelist .listnav li.listhover{ border-left:1px solid #009f43; border-right:1px solid #009f43; border-top:3px solid #009f43; border-bottom:1px solid #fff; background:#fff;}
+.typelist .listnav li.listhover a{ border-right:none; margin-top:13px; color:#009f43;}
+.typelist .tagdetail{ width:1198px; height:450px; border:1px solid #e1e1e1; border-top:none;}
+.typelist .tagdetail .detail-lf{ height:450px; width:262px; float:left;border-right:1px solid #e1e1e1;}
+.typelist .tagdetail .lf-top{ height:323px; width:262px;border-bottom:1px solid #e1e1e1; overflow:hidden;}
+.typelist .lf-top .de_notice{ width:232px; padding-top:25px; margin:0px auto; color:#009f43; font-size:24px; line-height:18px;}
+.typelist .lf-top .de_remark{ width:232px;margin:8px auto 0px auto; color:#009f43; font-size:12px; line-height:18px;}
+.typelist .lf-top .de_buy{ width:90px; height:26px;margin:8px auto 0px 15px; text-align:center;font-size:12px; line-height:26px; background:#009f43; border-radius:13px;}
+.typelist .lf-top .de_buy a{ color:#fff;}
+.typelist .lf-top .de_buy:hover{ opacity:0.7;}
+.typelist .lf-top .de_pic{ margin:10px auto 0 12px;}
+.typelist .tagdetail .lf-bottom{ margin:25px auto 0px auto;}
+.typelist .lf-bottom a{ float:left; display:block; width:74px; height:28px; border:1px solid #009f43; text-align:center; border-radius:15px; line-height:28px; margin-left:8px; margin-bottom:15px; color:#009f43; font-size:12px;}
+.typelist .lf-bottom a:hover{ border:1px solid #ff8a00; background:#ff8a00; color:#fff;}
+.typelist .tagdetail .detail-rg{ height:450px; width:935px; float:left;}
+.typelist .detail-rg .rg-top{ width:935px; height:225px; border-bottom: 1px solid #e1e1e1;}
+.typelist .rg-top .detail-list{ display:block; float:left; width:186px; height:225px; border-right:1px solid #e1e1e1;}
+.typelist .rg-top .right{ border-right:none;}
+.typelist .detail-list .pic{ width:142px; height:142px; margin-left:21px; margin-top:8px;}
+.typelist .detail-list .name{ height:20px; margin:8px auto 0px auto; line-height:20px; overflow:hidden; color:#333; font-size:14px; width:142px;}
+.typelist .detail-list .price{height:20px; line-height:20px; margin:8px auto 0px auto; overflow:hidden; color:#f86305; font-size:14px; width:142px; font-weight:bold;}
+.typelist .top-specail{ float:left; width:373px; height:225px; border-right:1px solid #e1e1e1; overflow:hidden; background:#fff url(../images/default.png) no-repeat center center;}
+.typelist .top-specail .detail-spe{ display:block; width:165px; margin-left:25px;}
+.typelist .detail-spe .spe_notice{ margin-top:30px; color:#333; font-size:18px; line-height:18px; font-weight:bold; height:18px; overflow:hidden;}
+.typelist .spe_notice span{ color:#f92404;}
+.typelist .detail-spe .spe_remark{ margin-top:8px; color:#666; font-size:12px; line-height:18px; height:18px; overflow:hidden;}
+.typelist .detail-spe .spe_price{ margin-top:8px; color:#333; font-size:14px; line-height:18px; height:18px;}
+.typelist .spe_price span{ color:#f92404;margin-left:6px;}
+.typelist .detail-spe .spe_buy{ margin-top:20px; display:block;font-size:12px; width:75px; height:25px; line-height:25px; text-align:center; background:#f92404; color:#fff;}
+.typelist .detail-spe .spe_buy:hover{ opacity:0.7;}
+
+.indexnodata{ height:55px; padding-top:170px; color:#999; width:100%; background:#fff url(../images/default.png) no-repeat center center; text-align:center; font-size:14px;}

@@ -1,0 +1,98 @@
+<div class="promisediv">
+    <div class="promise">
+    	<dl>
+        	<dd class="pro-1">新鲜实惠  直采直供</dd>
+        	<dd class="pro-2">品质保证  购物无忧</dd>
+        	<dd class="pro-3">闪电发货  极速配送</dd>
+        	<dd class="pro-4">用心服务  星级售后</dd>
+        </dl>
+    </div>
+</div>
+<div class="footerdiv">
+	<div class="footer">
+    	<dl class="foot_list list-1">
+        	<dt>帮助中心</dt>
+            <dd><a href="__MODULE__/news/help/id/3.html">如何注册</a></dd><dd><a href="__MODULE__/news/help/id/5.html">积分兑换说明</a></dd><dd><a href="__MODULE__/news/help/id/6.html">配送方式</a></dd><dd><a href="__MODULE__/news/help/id/4.html">积分细则</a></dd>        </dl><dl class="foot_list ">
+        	<dt>支付方式</dt>
+                    </dl><dl class="foot_list ">
+        	<dt>售后服务</dt>
+                    </dl><dl class="foot_list ">
+        	<dt>客服中心</dt>
+                    </dl><!--    	<dl class="foot_list">
+        	<dt>支付方式</dt>
+            <dd><a href="#">微信支付</a></dd>
+            <dd><a href="#">支付宝支付</a></dd>
+            <dd><a href="#">网银银联支付</a></dd>
+            <dd><a href="#">钱包支付</a></dd>
+        </dl>
+    	<dl class="foot_list">
+        	<dt>售后服务</dt>
+            <dd><a href="#">退换货政策</a></dd>
+            <dd><a href="#">退换货流程</a></dd>
+            <dd><a href="#">返修/退换货</a></dd>
+            <dd><a href="#">退款申请</a></dd>
+        </dl>
+    	<dl class="foot_list">
+        	<dt>客服中心</dt>
+            <dd><a href="#">忘记密码</a></dd>
+            <dd><a href="#">会员修改资料</a></dd>
+            <dd><a href="#">修改收货地址</a></dd>
+            <dd><a href="#">联系客服</a></dd>
+        </dl>-->
+        
+    	<dl class="foot_list" style="border-right:none;">
+        	<dt>扫一扫关注微信</dt>
+            <dd class="wechat"><img src="__PUBLIC__/pc/images/57a2a4504124c.png" width="100" height="102" /></dd>
+        </dl>
+    	<dl class="foot_list" style="border-right:none;">
+            <dd class="foot-last"><span class="hot-line">全国服务热线</span><span class="Eh">NATIONAL SERVICE HOTLINE</span></dd>
+            <dd class="foot-ftel" style="font-size:24px">0791-87197773</dd>
+            <dd class="icon">
+            	<a href="###" target="_blank" class="weibo"></a>
+            	<a href="http://wpa.qq.com/msgrd?v=3&uin=837606622&site=qq&menu=yes" class="qq" target="_blank"></a>
+                <a href="javascript:void(0)" class="share"></a>
+            </dd>
+        </dl>
+    </div>
+</div>
+<div class="copyright">
+    <div class="copy">
+    	<a href="__ROOT__">首页</a>　　|　　
+    	<a href="__MODULE__/news/index/id/2.html">招聘英才</a>　　|　　
+    	<a href="__MODULE__/news/index/id/3.html">友情链接</a>　　|　　
+    	<a href="__MODULE__/news/index/id/4.html">联系我们</a>　　|　　
+    	<a href="__MODULE__/news/index/id/1.html">关于我们</a>　
+        <div class="cont">客服热线：0791-87197773 (8:30 - 20:00)　　All Rights Reserved 版权所有：里鲜生　赣ICP备********号</div>
+        <h2 style="color:red;text-align: center;font-size:28px;">仅供测试使用</h2>
+    </div>
+</div>
+
+<div class="rightonline">
+	<ul>
+    	<li class="qq_item"><a href="http://wpa.qq.com/msgrd?v=3&uin=837606622&site=qq&menu=yes" target="_blank"></a></li>
+        <li class="tel_item"><div class="showtel">0791-87197773</div></li>
+        <li class="weixin_item"><div class="showweixn"><img src="__PUBLIC__/pc/images/57a2a4504124c.png" width="150" height="150" /></div></li>
+        <li class="mail_item"><div class="showtel" style="font-size:18px">837606622@qq.com</div></li>
+        <li class="totop_item"></li>
+    </ul>
+</div>
+<script>
+$(document).ready(function(e) {
+    $('.tel_item,.mail_item').hover(function(){
+		$(this).find('.showtel').animate({'width':190,'left':-190});
+	},function(){
+		$(this).find('.showtel').animate({'width':0,'left':0});
+	})
+	$('.weixin_item').hover(function(){
+		$('.showweixn').fadeIn(200);
+	},function(){
+		$('.showweixn').fadeOut(200);
+	})
+	$('.totop_item').click(function(){
+		$('html,php,body').animate({
+			 scrollTop: 0
+			}, 500
+	    );
+	})
+});
+</script>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+{margin:0px;padding:0px;font-size:12px;}
+body,div,li,ul,dl,dd,dt,span,b,strong,p,h1,h2,h3,h4,h5{margin:0px;padding:0px;list-style:none;list-style-type:none; }
+a img{border:none;}
+a{text-decoration:none; margin:0px; padding:0px;}
+body{ background:#fff; margin:0px; padding:0px;-webkit-text-size-adjust:none; min-width:1000px;}
+input{ margin:0px; padding:0px;}
+input,button,select,textarea{ outline:none;}
+
+/*内页*/
+
+.inner_mainbox{ width:1200px; height:auto; min-height:500px; background:#fff; margin:0 auto; overflow:hidden;}
+
+/*帮助中心*/
+.help_left{ width:220px; height:auto; overflow:hidden; border:1px solid #e6e6e6; float:left; margin:0px 0px 20px 0; padding:0px 0px 18px 0px;}
+.help_left dl{ width:200px; margin:10px auto 0 auto; height:auto; overflow:hidden;}
+.help_left dl dt{ width:200px; height:30px; line-height:30px; font-size:16px; color:#333;}
+.help_left dl dd{ width:200px; text-indent:10px; height:28px; line-height:28px; border-bottom:1px dotted #ddd; overflow:hidden; margin:5px 0;}
+.help_left dl dd a{ color:#666;}
+.help_left dl dd a:hover{ color:#c00202; font-size:13px;}
+.help_left dl dd a.hover{ color:#c00202; font-size:13px;}
+
+.help_right{ width:955px; float:right; min-height:700px; padding-bottom:18px; overflow:hidden; border:1px solid #e6e6e6; margin-bottom:20px;}
+.help_type{ width:955px; border-bottom:1px solid #e6e6e6; height:40px; background:#f4f4f4;}
+.help_type span{ height:40px; padding:0px 20px; line-height:40px; background:#fff; display:inline-block; border-right:1px solid #e6e6e6; color:#c00202; font-size:14px;}
+.help_content{ width:935px; margin:10px auto; height:auto; overflow:hidden; line-height:28px;}
+.help_content img,.help_content table{ max-width:935px;}
+
+
+/*关于我们*/
+.locationdiv{ width:1200px; height:36px; margin:4px auto; overflow:hidden; line-height:36px;}
+.locationdiv span{ background:url(../images/iconfont-home.png) no-repeat left 9px; height:36px; display:inline-block; padding-left:18px;}
+.locationdiv a{ color:#666; padding-left:8px; display:inline-block; line-height:36px;background:url(../images/right_arrow.png) no-repeat left center; margin-left:6px;}
+.locationdiv a:hover{ color:#c00202;}
+.ustype{ width:1198px; height:40px; border:1px solid #dedede; background:#f2f2f2;}
+.ustype a{ float:left; height:40px; padding:0px 30px; border-right:1px solid #dedede; line-height:40px; font-size:13px; color:#333;}
+.ustype a.hover{ background:#fff; color:#008836;}
+.abus_content{ width:1168px; height:auto; min-height:400px; border:1px solid #dedede; border-top:none; padding:15px 15px; line-height:26px; margin-bottom:20px;}
+.abus_content img{ max-width:1680px;}
+
+/*新闻中心*/
+.news_type{ width:1200px; height:auto; overflow:hidden; margin:0 auto;}
+.news_type a{ height:32px; line-height:32px; margin:5px 15px 10px 0; color:#333; font-size:14px; border:1px solid #e6e6e6; display:inline-block; padding:0px 18px; border-radius:15px;}
+.news_type a:hover{ background:#009f43; color:#fff; border:1px solid #009f43;}
+.news_type a.hover{ background:#009f43; color:#fff; border:1px solid #009f43;}
+
+.innewslist{ width:1200px; height:auto; overflow:hidden; margin:10px auto 30px auto; border:1px solid #dedede; box-sizing:border-box; padding:10px 0;}
+
+.innewslist dl{ width:1160px; height:170px; overflow:hidden; border-bottom:1px dotted #dede6e6e6ede; margin:10px auto;}
+.innewslist dl dt{ width:230px; height:150px; float:left; overflow:hidden; border:1px solid #e6e6e6;}
+.innewslist dl dd.ddtopic{ width:910px; float:right; height:30px; line-height:30px;}
+.innewslist dl dd.ddtopic a{ font-size:15px; color:#d81e06;}
+.innewslist dl dd.ddtopic a:hover{ color:#d81e06; text-decoration:underline;}
+.innewslist dl dd.ddintro{ width:910px; height:100px; line-height:25px; overflow:hidden; float:right; text-indent:25px; font-size:13px; color:#666;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+.innewslist dl dd.dddate{ width:910px; height:20px; float:right; color:#999; background:url(../images/date_icon.jpg) no-repeat left center; text-indent:20px;}
+
+.de_topic{ width:1200px; height:auto; overflow:hidden; line-height:30px; margin:0 auto; text-align:center; font-size:16px;}
+.de_dbdate{ width:1200px; height:auto; overflow:hidden; text-align:center; color:#888; font-size:12px;}
+.de_fbdate{ width:1200px; text-align:center; color:#999; line-height:20px;}
+.de_content{ width:1200px; height:auto; overflow:hidden; margin:5px auto; line-height:28px;}
+.de_content img,.help_content table{ max-width:1200px;}
+
+.brandlogopic{ width:auto; height:auto; overflow:hidden; margin:15px 15px;}

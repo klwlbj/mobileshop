@@ -1,0 +1,291 @@
+[ 2018-10-20T00:48:50+08:00 ] 118.197.35.117 /m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0016s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_ip` WHERE `ip` = '118.197.35.117' AND `area` = '广东省广州市 长城宽带' AND `url` = 'm_index' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `sp_ip` SET `ip`='118.197.35.117',`area`='广东省广州市 长城宽带',`url`='m_index',`btime`='1539967730',`count`='4' WHERE `ip` = '118.197.35.117' [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 15  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 17  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 18  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 19  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 20  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 21  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-10-20T00:48:51+08:00 ] 118.197.35.117 /m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0014s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_ip` WHERE `ip` = '118.197.35.117' AND `area` = '广东省广州市 长城宽带' AND `url` = 'm_index' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `sp_ip` SET `ip`='118.197.35.117',`area`='广东省广州市 长城宽带',`url`='m_index',`btime`='1539967731',`count`='5' WHERE `ip` = '118.197.35.117' [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 15  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 16  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 17  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 18  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 19  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 20  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 21  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-10-20T00:49:51+08:00 ] 101.91.60.107 /m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0014s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_ip` WHERE `ip` = '101.91.60.107' AND `area` = '上海市上海市 电信' AND `url` = 'm_index' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `sp_ip` (`ip`,`area`,`url`,`time`) VALUES ('101.91.60.107','上海市上海市 电信','m_index','1539967791') [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 15  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 16  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 17  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 18  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 19  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 20  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 21  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+

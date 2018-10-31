@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>草果-里鲜生</title>
+<meta name="description" content="专注于农副生鲜产品的配送，OTO电商运营，打通最后一公里，实现从基地到餐桌的良性循环，助力“农户增收，平台就业，客户得益”的三方共赢，互利互惠的平台机制。秉承“诚信、责任、绿色、便捷”的经营理念服务于广大新老客户。" />
+<meta name="keywords" content="里鲜生,南昌蔬菜,南昌生鲜,南昌买菜网上商城" />
+<link rel="stylesheet" href="__PUBLIC__/pc/css/common.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/simplepop.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/common.js"></script>
+<link rel="shortcut icon" href="/public/Home/images/favicon.ico">
+
+<link rel="stylesheet" href="__PUBLIC__/pc/css/item.css">
+
+<script type="text/javascript">
+ var think   = '/Lxs/home';
+ var upload  = '/public/Home/uploadify';
+ var img     = '/public/Home/images';
+ var pic     = '/uploads/';
+ var uid     = 0;
+</script>
+</head>
+<body>
+    
+
+<include file="Common/head" />   
+    
+    
+<div class="navdiv">
+	<div class="nav_all">
+            
+<include file="Common/head2" />   	
+         
+    </div>
+</div>
+
+<div class="inner_mainbox">
+    <input type="hidden" value="861" id="proid" />
+    
+    <div class="location_now">当前位置
+        <a href="__ROOT__">首页</a>
+        <a href="__MODULE__/product/index/cid/{$catename.cate_id}.html">{$catename.catename}
+        <a>{$catename.goods_name}</a>
+    </div>
+    
+    <div class="item_baseinfo">
+        <div class="show_pic">
+            <div class="show_big_pic zoompic bigImgArea">
+              
+
+
+<a id="bigImg" class="jqzoom" href="__ROOT__{$big1.max_thumb}">
+    <img id="midImg" src340="__ROOT__{$big1.max_thumb}" src="__ROOT__{$big1.max_thumb}" title="螺丝肉" alt="螺丝肉  螺丝"/>
+</a>
+
+
+    
+                
+            </div>
+            <div class="show_small_pic thumbnails">
+                <ul>
+                    
+                    <volist name="pic3" id="pic3" key='k'>
+                    <li class="moveable">
+                        <a href="javascript:void(0)" class="currImg">
+                        <img src="__ROOT__{$pic3.sm_thumb}" ref340="__ROOT__{$pic3.original}" ref2="__ROOT__{$pic3.max_thumb}" width="68" height="68"/></a>
+                    </li>
+                    </volist>   
+                    
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="goods_banseinfo">
+            <h2>{$info.goods_name}</h2>
+            <div class="goods_intro"></div>
+            <div class="goodsbasept">
+                <dl><dt>销售价：</dt><dd class="goods_mkprice">¥ <span>{$info.shop_price}</span> /元</dd></dl>
+                <dl><dt>市场价：</dt><dd class="goods_webprice">¥ <span>{$info.market_price}</span></dd></dl>
+                <dl><dt>货号：</dt><dd class="pronumber"><span>{$info.goods_sn}</dd></span></dl>
+                <dl><dt>销量：</dt><dd>66</dd></dl>
+            </div>
+            <div class="pro_score">
+                <dl><dt>评分：</dt><dd><div class="pro_score_ye" style="width:100%;"><img src="__PUBLIC__/pc/images/star_yellow.png" width="105" height="17" /></dd></dl>
+            </div>
+            <!--销量-->
+            <div class="sal_com_num" style="display:none">
+                <ul>
+                    <li>销量：<span>66</span></li>
+                    <li>累计评价：<span>6</span></li>
+                    <li style="border-right:none">送积分：<span>0.00</span></li>
+                </ul>
+            </div>
+                             
+            <!--购买量-->
+            <div class="pro_buynum">
+                <div class="probuy_title">数量：</div>
+                <div class="probuy_div">
+                    <div class="bcount_minus">-</div>
+                    <input type="text" value="1" onKeyUp="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')" id="buy_num" class="probuynuminput">
+                    <div class="bcount_add">+</div>
+                </div>
+                <div class="dpro_stock">&nbsp;件 库存<span>99</span>件</div>
+            </div>
+            <!--购买量 end-->
+            <div class="buy_or_joincart">
+                <a href="javascript:void(0)" class="buy_now">立即购买</a>
+                <a href="__MODULE__/cart/addToCar/id/{$info.id}/number/1.html" class="join_mycart" data-id="">加入购物车</a>
+            </div>
+            <!--编号-->
+            <div class="product_numdiv">
+                <div class="bdsharebuttonbox prodshare" data-tag="share_1"><a href="javascripht:viod(0)" style="background:none;" data-cmd="more"><img src="__PUBLIC__/pc/images/share_icon.jpg" width="11" height="10" />&nbsp;分享</a></div>
+                <div class="prodcollect" data-id=""><img src="__PUBLIC__/pc/images/star_red.jpg" width="11" height="11" />&nbsp;收藏&nbsp;<span>1</span></div>
+                <div style="float:left; color:#f00; margin:6px;">(全场满58.00元包邮)</div>
+         <script>
+         window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdPopupOffsetLeft":"-160","bdPopupOffsetTop":"0","bdStyle":"0","bdSize":"16"},"share":{"tag" : "share_1"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+            </div>
+            <!--编号 end-->
+        </div>
+            
+            
+        <div class="goods_other">
+            <div class="same_other">看了还看 <span class="changegoods" data-id="1">换一批</span></div>
+            <div class="goodsmask"></div>
+            <div class="same_otherlist">
+                <ul>
+                    <volist name="Look2" id="vo">
+                        <li>
+                            <a href="__MODULE__/product/item/id/{$vo.id}.html" class="oth_a_pic"><img src="__ROOT__{$vo.original}" width="156" height="156" /></a>
+                            <a href="__MODULE__/product/item/id/{$vo.id}.html" title="{$vo.goods_name}" class="oth_a_txt">{$vo.goods_name}</a>
+                            <p><span>¥{$vo.shop_price}</span><b>¥{$vo.market_price}</b></p>
+                        </li>
+                    </volist>
+                 </ul>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+    <div class="good_detailmain">
+        
+        
+        
+        
+
+
+<div class="proshowboxs">
+            <div class="proshowtype"><a href="javascript:void(0)" data-id="0" class="hover">商品详情</a><a href="javascript:void(0)" data-id="2" class="">商品参数</a><!--<a href="javascript:void(0)" data-id="1">累计评论 <span>0</span></a>--></div>
+            <!--详细介绍-->
+            <div class="proshow_detail" style="display: block;">
+                
+                
+                <!--详细内容-->
+                <div class="proshow_conent"><p class="MsoNormal" style="font:12px/normal 微软雅黑;list-style:none;margin:0px;padding:0px;color:#000000;text-transform:none;text-indent:0px;letter-spacing:normal;word-spacing:0px;white-space:normal;widows:1;font-size-adjust:none;font-stretch:normal;background-color:#FFFFFF;-webkit-text-stroke-width:0px;">
+	<span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">产品名称</span></strong><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">：{$info.goods_name} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">类 &nbsp; &nbsp; 别：</span></span></strong><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">{$catename.catename}</span></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">&nbsp;</span></strong><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">&nbsp;</span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">单 &nbsp; &nbsp;位</span></span></strong></span></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">：</span></strong></span></span></strong></span></span></strong><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"></span></span></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"></span><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">斤</span></span></span></span></span></span></span></span> 
+</p>
+<p class="MsoNormal" style="font:12px/normal 微软雅黑;list-style:none;margin:0px;padding:0px;color:#000000;text-transform:none;text-indent:0px;letter-spacing:normal;word-spacing:0px;white-space:normal;widows:1;font-size-adjust:none;font-stretch:normal;background-color:#FFFFFF;-webkit-text-stroke-width:0px;">
+	<span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><br style="margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;">
+</span></span> 
+</p>
+<p class="MsoNormal" style="font:12px/normal 微软雅黑;list-style:none;margin:0px;padding:0px;color:#000000;text-transform:none;text-indent:0px;letter-spacing:normal;word-spacing:0px;white-space:normal;widows:1;font-size-adjust:none;font-stretch:normal;background-color:#FFFFFF;-webkit-text-stroke-width:0px;">
+	<span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><br style="margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;">
+</span></span> 
+</p>
+<p class="MsoNormal" style="font:12px/normal 微软雅黑;list-style:none;margin:0px;padding:0px;color:#000000;text-transform:none;text-indent:0px;letter-spacing:normal;word-spacing:0px;white-space:normal;widows:1;font-size-adjust:none;font-stretch:normal;background-color:#FFFFFF;-webkit-text-stroke-width:0px;">
+	<span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:16px;"><br style="margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;">
+</span></span> 
+</p>
+<p class="MsoNormal" style="font:12px/normal 微软雅黑;list-style:none;margin:0px;padding:0px;color:#000000;text-transform:none;text-indent:0px;letter-spacing:normal;word-spacing:0px;white-space:normal;widows:1;font-size-adjust:none;font-stretch:normal;background-color:#FFFFFF;-webkit-text-stroke-width:0px;">
+	<span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;"><strong style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:12px;"><span style="list-style:none;margin:0px;padding:0px;font-family:微软雅黑;font-size:18px;">产品简介</span></strong></span> 
+</p>
+<br/>
+<br/>
+
+{$info.goods_desc|htmlspecialchars_decode}
+
+
+ </div>
+                
+                
+                
+                
+                <!--详细内容-->
+            </div>
+            <!--详细介绍-->
+            <!--产品参数-->
+            <div class="proparameters" style="width: 100%; padding: 15px; box-sizing: border-box; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-style: none solid solid; border-right-color: rgb(222, 222, 222); border-bottom-color: rgb(222, 222, 222); border-left-color: rgb(222, 222, 222); min-height: 400px; overflow: hidden; line-height: 24px; display: none;"><h3 style="margin:5pt 0em;mso-pagination:widow-orphan;">
+	<b><span style="font-family: 新宋体; font-size: 13.5pt; font-weight: bold; mso-font-kerning: 0.0000pt;" yes";"=""><span style="font-family:新宋体;font-size:18px;">产</span><span style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;地：中国</span></span></b><b><span style="font-family: 宋体; font-size: 18px; font-weight: bold; mso-font-kerning: 0.0000pt;" yes";"="">&nbsp;</span></b><span style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span style="font-family: 新宋体; font-size: 18px; font-weight: bold; mso-font-kerning: 0.0000pt;" yes";"=""><span style="font-family:新宋体;font-size:18px;">规格说明：无</span></span></b> 
+</h3>
+<h3 style="margin:5pt 0em;mso-pagination:widow-orphan;">
+	<p style="margin:5pt 0em;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+</h3>
+<h3 style="margin:5pt 0em;mso-pagination:widow-orphan;">
+	<b><span style="font-family: 新宋体; font-size: 18px; font-weight: bold; mso-font-kerning: 0.0000pt;" yes";"=""><span style="font-family:新宋体;font-size:18px;">储存条件：常温</span></span></b> 
+</h3>
+<h3 style="margin:5pt 0em;mso-pagination:widow-orphan;">
+	<p class="p" style="margin:3.75pt 0pt;mso-pagination:widow-orphan;">
+		<span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p><span style="font-size:18px;">&nbsp;</span></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="background:#FFFFFF;margin:0pt;padding:0pt;text-align:left;line-height:15pt;text-indent:0pt;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 10.5pt; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-ascii-font-family: Tahoma; mso-hansi-font-family: Tahoma; mso-bidi-font-family: Tahoma; mso-shading: #FFFFFF;" yes";"=""><span style="font-size:14px;">1</span><span style="font-family:宋体;font-size:14px;">、</span></span></b><b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">里</span></span></b><b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">生鲜绿色通道</span></span></b><span style="background: rgb(255, 255, 255); font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-shading:#ffffff;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="background:#FFFFFF;margin:0pt;padding:0pt;text-align:left;line-height:15pt;mso-pagination:widow-orphan;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span></b><span style="background: rgb(255, 255, 255); font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-shading:#ffffff;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p align="justify" class="p" style="margin:0pt;padding:0pt;text-align:justify;line-height:15pt;-ms-text-justify:inter-ideograph;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">里</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">生鲜自营商品的破损或腐坏等问</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">题，请在商品签收</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">前进行核对</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">，</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">如</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">有问题，将进行免费更换</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">。</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="font-size:14px;">&nbsp;</span> 
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">2、里鲜生质量保证</span></b><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;">
+		<span style="font-size:14px;">&nbsp;</span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">如您发现商品有质量问题，请在</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">收到商品之时起</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-ascii-font-family: Tahoma; mso-hansi-font-family: Tahoma; mso-bidi-font-family: Tahoma; mso-shading: #FFFFFF;" yes";"="">1</span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">小时内及时提</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">交申请或联系客服处理。</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="font-size:14px;">&nbsp;</span> 
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">3、里生鲜商品售后政策</span></b><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;mso-para-margin-right:0.0000gd;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span></b><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">注：因厂家会在没有任何提前</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">通知的情况下更改产品包装、</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">产地或者一些附件，</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">里</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">生鲜不</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">能确保客户收到的货物与商城</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">图片、产地、附件说明完全一</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">致。</span></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">只能确保为原厂正货！并</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">且保证与当时市场上同样主流</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">新品一致。若</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">里</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">生鲜没有及时</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">更新，请大家谅解！</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+	<p class="MsoNormal" style="background:#FFFFFF;margin:0pt;padding:0pt;text-align:left;line-height:16.2pt;text-indent:0pt;mso-pagination:widow-orphan;mso-para-margin-left:0.0000gd;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">4、价格说明</span></b><span style="background: rgb(255, 255, 255); font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-shading:#ffffff;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="background:#FFFFFF;margin:0pt;padding:0pt;text-align:left;line-height:16.2pt;mso-pagination:widow-orphan;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span></b><span style="background: rgb(255, 255, 255); font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-shading:#ffffff;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">商城价格</span></span></b><b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">：</span></span></b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">商品展示的划横线</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">价格为参考价，该价格可能是</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">品牌专柜标价、商品吊牌价或</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">由品牌供应商提供的正品零售</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">价（如厂商指导价、建议零售</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">价等）或该商品在</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">市场上</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">曾经</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">展示过的销售价；由于地区、</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">时间的差异性和市场行情波动，</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">品牌专柜标价、商品吊牌价等</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">可能会与您购物时展示的不一</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">致，该价格仅供您参考。</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">折扣：</span></span></b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">如无特殊说明，折扣指</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">销售商在原价、或</span></span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">划线价（如品牌专柜标价、商</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">品吊牌价、厂商指导价、厂商</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">建议零售价）等某一价格基础</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">上计算出的优</span></span> <span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">惠比例或优惠金</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">额；如有疑问，您可在购买前</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">和商城客服</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">进行咨询。</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">异常问题：</span></span></b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">商品促销信息以商</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">品详情页</span><span style="font-size:14px;">“促销”栏中的信息为</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">准；商品的具体售价以订单结</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">算页价格为准；如您发现活动</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">商品售价或促销信息有异</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">常，建议</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">购</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">买前</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">和客服</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">咨询。</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">&nbsp;</span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:16.2pt;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;">
+		<b><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: bold; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">5、里生鲜客服售后电话</span></b><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="MsoNormal" style="margin:0pt;text-align:left;mso-pagination:widow-orphan;">
+		<br>
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">里</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">生鲜客服电话：</span><span style="font-size:14px;">0791-87197776</span></span><span style="font-family: Calibri; font-size: 14px;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"="">&nbsp;</span><span style="font-family: Calibri; font-size: 12pt;" new="" times="" roman";mso-font-kerning:0.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p></o:p></span> 
+	</p>
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: Tahoma; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:Tahoma;font-size:14px;">服务时间：08:30——17:00</span></span> 
+	</p>
+<span style="font-family: Calibri; font-size: 10.5pt;" new="" times="" roman";mso-font-kerning:1.0000pt;mso-spacerun:"yes";mso-fareast-font-family:宋体;"=""><o:p><span style="font-size:18px;"> 
+	<p class="p" style="margin:0pt;padding:0pt;line-height:15pt;mso-pagination:widow-orphan;">
+		<span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><span style="font-family:宋体;font-size:14px;">联系地址：南昌市新建区长富大道</span></span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 14px; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"="">269号5楼</span><span style="background: rgb(255, 255, 255); color: rgb(102, 102, 102); text-transform: none; letter-spacing: 0pt; font-family: 宋体; font-size: 10.5pt; font-style: normal; font-weight: normal; mso-font-kerning: 0.0000pt; mso-shading: #FFFFFF;" yes";"=""><o:p></o:p></span> 
+	</p>
+<!--EndFragment--></span></o:p></span><span style="font-family:Tahoma;font-size:x-small;"> </span><span style="font-family:新宋体;font-size:large;"> </span><span style="font-family:Tahoma;"><span style="font-size:small;"> </span><span style="font-size:small;"> </span></span><span style="font-family:新宋体;font-size:large;"> </span><span style="font-family:Tahoma;font-size:small;"> </span><span style="font-family:新宋体;font-size:large;"> </span> 
+	<p>
+		<!--EndFragment-->
+		<iframe src="http://lxssx.net/public/kindedit/plugins/baidumap/index.html?center=115.806368%2C28.698709&amp;zoom=17&amp;width=558&amp;height=360&amp;markers=115.806368%2C28.698709&amp;markerStyles=l%2CA" frameborder="0" style="width:560px;height:362px;">
+		</iframe>
+	</p>
+</h3></div>
+            <!--产品参数-->
+            <!--评论-->
+            <div class="procommentboxs" style="display:none">
+                <div class="comment_overview">
+                    <div class="comment_ov_left">
+                        <div><span>100%</span>好评</div>
+                        <p>共有0人参与评分</p>
+                    </div>
+                    <div class="comment_ov_right">
+                        <div class="score_bar"><b>好评(100%)</b><h2><span style="width:100%"></span></h2></div>
+                        <div class="score_bar"><b>中评(0%)</b><h2><span style="width:0%"></span></h2></div>
+                        <div class="score_bar"><b>差评(0%)</b><h2><span style="width:0%"></span></h2></div>
+                    </div>
+                </div>
+                <div class="commentlist">
+                    <div class="comment_mask" title="加载中.."></div>
+                    <div class="commentlist_box"></div>
+                </div>
+            </div>
+            <!--评论 end-->
+            
+        </div>        
+        
+        
+        
+        
+        
+        
+        
+        <!--热销商品-->
+        <div class="good_recommends">
+            <div class="good_rec_title">热销商品</div>
+            <div class="good_reclist">
+                <ul>
+                    <volist name="hotR" id="vo">
+                        <li>
+                            <a href="__MODULE__/product/item/id/{$vo.id}.html" class="oth_a_pic"><img src="__ROOT__{$vo.original}" width="156" height="156" /></a>
+                            <a href="__MODULE__/product/item/id/{$vo.id}.html" class="oth_a_txt" title="{$vo.goods_name}">{$vo.goods_name}</a>
+                            <p><span>¥{$vo.shop_price}</span><b>¥{$vo.market_price}</b></p>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+        <!--热销商品-->
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/pc/js/jqzoom.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/item.js"></script>
+<script type="text/javascript">
+ 
+
+var url="__MODULE__/cart/addToCar/id/"+id+"/num/"+num;
+//alert(url);
+
+$.ajax({
+        type:"get",
+        url:url,
+        success:function(data){
+          var num=$('#buy_num').val();
+          var id={$info['id']};   
+        }
+      });
+    
+    
+
+
+ /*
+    
+ if(typeof(resolution) == "undefined"){resolution = 0;}
+ chgPic();
+ imgcenter();
+ var options = {
+	 zoomWidth: 400,
+	 zoomHeight: 400,
+	 xOffset: 15,
+	 yOffset: 0,
+	 title : true,
+	 showEffect:"fadein",
+	 hideEffect:"fadeout",
+	 position: "left"
+ }
+ $(".jqzoom").jqzoom(options);
+ $(document).ready(function(e) {
+	/*产品数+1*/
+	$('.bcount_add').on("click",function(){
+		var stacks=parseInt($('.dpro_stock span').text());
+		if((parseInt($('#buy_num').val())+1)>stacks){
+			systip('产品数量已经超过库存量');
+		}else{
+			$('#buy_num').val(parseInt($('#buy_num').val())+1)
+		}
+	});
+	/*产品数-1*/
+	$('.bcount_minus').on("click",function(){
+		if(parseInt($('#buy_num').val())>2){
+			$('#buy_num').val(parseInt($('#buy_num').val())-1)
+		}else{
+			$('#buy_num').val(1)
+		}
+	});
+	/*评论与详情*/
+	$('.proshowtype a').click(function(){
+		$('.proshowtype a').removeClass('hover');
+		$(this).addClass('hover');
+		if($(this).data('id')==0){
+			$('.proshow_detail').show();
+			$('.proparameters').hide();
+		}else if($(this).data('id')==2){
+			$('.proparameters').show();
+			$('.proshow_detail').hide();
+		}
+	});
+	/*分享*/
+	$('.prodshare').click(function(){
+	})
+	$('.console-btn-confirm').click(function(){
+		location.href = think+'/index/index';
+	})
+});
+
+*/
+
+ </script>
+
+<include file="Common/footer" />  
+
+</body>
+</html>

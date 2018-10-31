@@ -1,0 +1,53 @@
+﻿/*广告模板*/
+	/*倒计时*/
+	#div_templatesAd{background-image: url("../images/timedjs.jpg");background-size: 100% 0.6rem;background-repeat: no-repeat;width: 100%;height: 0.6rem;}
+	.time-djs{width:990px;position:relative;}
+	.time-djs span{position:absolute;display:block;width:.4rem;height:.4rem;line-height:.4rem;top:.11rem;font-size: .3rem;color: #ff3333}
+	.time-djs .time-djs-c1{left:2.83rem;}
+	.time-djs .time-djs-c2{left:3.68rem;}
+	.time-djs .time-djs-c3{left:4.53rem;}
+	.time-djs .time-djs-c4{left:5.38rem;}
+	/*/倒计时*/
+
+	.templatesAd_img img{width: 100%}
+	.templatesAd_img a{position:absolute;}
+	.templatesAd_img{position: relative;}
+	/*模板1*/
+	.templatesAd_img1 a:nth-child(1){top: 0;left: 0;width: 100%;height: 36%}
+	.templatesAd_img1 a:nth-child(2){top: 36%;left: 0;width: 33.3%;height: 32%}
+	.templatesAd_img1 a:nth-child(3){top: 36%;left: 33.3%;width: 33.3%;height: 32%}
+	.templatesAd_img1 a:nth-child(4){top: 36%;left: 66.6%;width: 33.3%;height: 32%}
+	.templatesAd_img1 a:nth-child(5){top: 68%;left: 0;width: 33.3%;height: 32%}
+	.templatesAd_img1 a:nth-child(6){top: 68%;left: 33.3%;width: 33.3%;height: 32%}
+	.templatesAd_img1 a:nth-child(7){top: 68%;left: 66.6%;width: 33.3%;height: 32%}
+	/*/模板1*/
+	/*模板2*/
+	.templatesAd_img2 a:nth-child(1){top: 0;left: 0;width: 100%;height: 42%}
+	.templatesAd_img2 a:nth-child(2){top: 42%;left: 0;width: 46%;height: 58%}
+	.templatesAd_img2 a:nth-child(3){top: 42%;left: 46%;width: 54%;height: 29%}
+	.templatesAd_img2 a:nth-child(4){top: 71%;left: 46%;width: 54%;height: 29%}
+	/*/模板2*/
+	/*模板3*/
+	.templatesAd_img3 a:nth-child(1){top: 0;left: 0;width: 100%;height: 27%}
+	.templatesAd_img3 a:nth-child(2){top: 27%;left: 0;width: 50%;height: 28%}
+	.templatesAd_img3 a:nth-child(3){top: 27%;left: 50%;width: 50%;height: 28%}
+	.templatesAd_img3 a:nth-child(4){top: 55%;left: 0%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(5){top: 55%;left: 25%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(6){top: 55%;left: 50%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(7){top: 55%;left: 75%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(8){top: 77%;left: 0%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(9){top: 77%;left: 25%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(10){top: 77%;left: 50%;width: 25%;height: 22%}
+	.templatesAd_img3 a:nth-child(11){top: 77%;left: 75%;width: 25%;height: 22%}
+	/*/模板3*/
+	/*模板4*/
+	.templatesAd_img4 a:nth-child(1){top: 0;left: 0;width: 100%;height: 48%}
+	.templatesAd_img4 a:nth-child(2){top: 48%;left: 0;width: 50%;height: 52%}
+	.templatesAd_img4 a:nth-child(3){top: 48%;left: 50%;width: 50%;height: 52%}
+	/*/模板4*/
+	/*模板5*/
+	.templatesAd_img5 a:nth-child(1){top: 15%;left: 0;width: 50%;height: 50%}
+	.templatesAd_img5 a:nth-child(2){top: 15%;left: 50%;width: 50%;height: 50%}
+	.templatesAd_img5 a:nth-child(3){top: 65%;left: 0%;width: 100%;height: 35%}
+	/*/模板5*/
+/*/广告模板*/

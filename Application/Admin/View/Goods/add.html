@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>寻医问药</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__PUBLIC__/style/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__PUBLIC__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC__/style/demo.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/typicons.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/animate.css" rel="stylesheet">
+    <!-- 引入ueditor -->
+    <script src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+    <script src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+    <script src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<include file="Common/header" />
+
+	<!-- /头部 -->
+
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <include file="Common/left" />
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="__MODULE__/Index/index">系统</a>
+                    </li>
+                                        <li>
+                        <a href="__CONTROLLER__/lst">商品列表</a>
+                    </li>
+                                        <li class="active">添加商品</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">新增商品</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" >
+                        <!-- 111111111111111111111111111111111 -->
+                        <div class="tabbable">
+                            <ul id="myTab11" class="nav nav-tabs tabs-flat">
+                                <li class="active">
+                                    <a href="#home11" data-toggle="tab">
+                                        基本信息
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile11" data-toggle="tab">
+                                        商品详情
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile12" data-toggle="tab">
+                                        会员价格
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile13" data-toggle="tab">
+                                        商品属性
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#profile14" data-toggle="tab">
+                                        商品图片
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tabs-flat">
+                                <div class="tab-pane active" id="home11">
+
+                                   <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品名称</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="goods_name" placeholder="" class="form-control">
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品缩略图</label>
+                                        <div class="col-sm-6">
+                                            <input type="file"  name="original">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">说明书图片</label>
+                                        <div class="col-sm-6">
+                                            <input type="file"  name="s_pic">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">所属分类</label>
+                                        <div class="col-sm-6">
+                                            <select name="cate_id">
+                                                <option value="">请选择</option>
+                                                <volist name="cateres" id="vo">
+                                                    <option value="{$vo.id}"><if condition="$vo['pid'] neq 0">|</if><?php echo str_repeat('-', $vo['level']*8);?>{$vo.catename}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">所属品牌</label>
+                                        <div class="col-sm-6">
+                                            <select name="brand_id">
+                                            <option>请选择</option>
+                                            <volist name="brandres" id="vo">
+                                                <option value="{$vo.id}">{$vo.brand_name}</option>
+                                            </volist>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">市场价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="market_price" placeholder=""  class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">本店价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="shop_price" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                            <!--         <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="username">商品重量</label>
+                                <div class="col-sm-6">
+                                    <input type="text" required="" name="goods_weight" placeholder="" style="width:80%; float:left; margin-right:10px;" class="form-control" >
+                                    <select name="weight_unit">
+                                        <option value="g">克</option>
+                                        <option value="kg">千克</option>
+                                    </select>
+                                </div>
+                                <p class="help-block col-sm-4 red">* 必填</p>
+                            </div> -->
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">是否上架</label>
+                                       <div class="col-sm-6">
+                                           <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="onsale" checked="checked" class="colored-success">
+                                                    <span class="text">上架</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品推荐</label>
+                                       <div class="col-sm-6">
+                                           <div class="checkbox">
+                                                <volist name="recposres" id="recpos">
+                                                    <label style="margin-right:15px;">
+                                                        <input type="checkbox" name="recid[]" value="{$recpos.id}"  class="colored-success">
+                                                        <span class="text">{$recpos.recname}</span>
+                                                    </label>
+                                                </volist>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane" id="profile11">
+                                    <textarea id="goods_desc" name="goods_desc"></textarea>
+                                </div>
+
+                                <div class="tab-pane" id="profile12">
+                                    <volist name="levres" id="vo">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="username">{$vo.level_name}</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="mp[{$vo.id}]" class="form-control">
+                                            </div>
+                                        </div>
+                                    </volist>
+                                </div>
+
+                                <div class="tab-pane" id="profile13">
+                                    <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="username">选择商品类型</label>
+                                            <div class="col-sm-6">
+                                               <select name="type_id">
+                                                   <option>选择商品类型</option>
+                                                   <volist name="typeres" id="vo">
+                                                        <option value="{$vo.id}">{$vo.type_name}</option>
+                                                   </volist>
+                                               </select>
+                                            </div>
+                                    </div>
+                                    <div id="attr"></div>
+                                </div>
+
+                                <div class="tab-pane" id="profile14">
+                                    <div class="form-group">
+                                            <label class="col-sm-2 control-label no-padding-right" for="username">
+                                                <a id="addImg" href="javascript:;">[+]</a>
+                                            </label>
+                                            <div class="col-sm-6">
+                                                <input type="file" name="goods_pics[]">
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="添加商品" style="width:150px;" class="btn btn-darkorange btn-block">
+                        <!-- 111111111111111111111111111111111 -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__PUBLIC__/style/jquery_002.js"></script>
+    <script src="__PUBLIC__/style/bootstrap.js"></script>
+    <script src="__PUBLIC__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__PUBLIC__/style/beyond.js"></script>
+    <script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('goods_desc',{initialFrameWidth:1500,initialFrameHeight:500,});
+    var str='<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="username"><a onclick="delImg(this);" href="javascript:;">[-]</a></label><div class="col-sm-6"><input type="file" name="goods_pics[]"></div></div>';
+    $("#addImg").click(function(){
+        $("#profile14").append(str);
+    });
+
+    function delImg(o){
+        $(o).parent().parent().remove();
+    }
+
+    function attrad(o){
+        var div=$(o).parent().parent();
+        if($(o).html() == '[+]'){
+            var newdiv=div.clone();
+            newdiv.find('a').html('[-]');
+            div.after(newdiv);
+        }else{
+            div.remove();
+        }
+    }
+
+    $("select[name=type_id]").change(function(){
+
+        var typeid=$(this).val();
+        $.ajax({
+            type:"GET",
+            url:"__CONTROLLER__/ajaxgetattr/typeid/"+typeid,
+            dataType:"json",
+            // success : function(data){
+
+            //     var html="";
+            //     $(data).each(function(k,v){
+            //         html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input type='text' class='form-control' /></div></div>";
+            //     });
+
+            //     $("#attr").html(html);
+            // }
+            success : function(data){
+
+                var html="";
+                $(data).each(function(k,v){
+                    // html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input type='text' class='form-control' /></div></div>";
+                    if(v.attr_type == '1'){
+                        var attrs=v.attr_values.split(",");
+                        html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'><a href='javascript:;' onclick='attrad(this);'>[+]</a>"+v.attr_name+"</label><div class='col-sm-6'>";
+                        html+="<select name='goods_attr["+v.id+"][]'><option>请选择</option>";
+                        for(var i=0; i<attrs.length; i++){
+                            html+="<option>"+attrs[i]+"</option>";
+                        }
+                        html+="</select> <span>￥<input type='text' name='goods_price[]' style='padding:6px 12px; width:70px;' value='0' /> 元</span>";
+                        html+="</div></div>";
+                    }else{
+                        if(v.attr_values != ''){
+                            var attrs=v.attr_values.split(",");
+                            html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'>";
+                            html+="<select name='goods_attr["+v.id+"]'><option>请选择</option>";
+                            for(var i=0; i<attrs.length; i++){
+                                html+="<option>"+attrs[i]+"</option>";
+                            }
+                            html+="</select><input type='hidden' name='goods_price[]' style='padding:6px 12px; width:70px;' value='0' /> ";
+                            html+="</div></div>";
+                        }else{
+                            html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input name='goods_attr["+v.id+"]' type='text' class='form-control' /><input type='hidden' name='goods_price[]' style='padding:6px 12px; width:70px;' value='0' /></div></div>";
+                        }
+                    }
+                });
+
+                $("#attr").html(html);
+            }
+        });
+    });
+
+</script>
+
+
+</body></html>

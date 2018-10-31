@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="ECSHOP v2.7.3" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+
+<title>购物流程_ECSHOP演示站 - Powered by ECShop</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="__PUBLIC__/style/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="__PUBLIC__/style/common.js"></script><script type="text/javascript" src="__PUBLIC__/style/shopping_flow.js"></script></head>
+<body>
+<link href="__PUBLIC__/style/qq.css" rel="stylesheet" type="text/css" />
+ 
+
+ <include file="Common/head" />
+<div class="block box">
+<div class="blank"></div>
+ <div id="ur_here">
+当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 
+</div>
+</div>
+<div class="blank"></div>
+ 
+<div class="block table">
+  
+  <div class="flowBox">
+    <h6><span>商品列表</span></h6>
+        <form id="formCart" name="formCart" method="post" action="flow.php">
+          <?php if($goodsInfo){ ?>
+           <table id="cart" width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+            <tr>
+              <th bgcolor="#ffffff">商品名称</th>
+                    <th bgcolor="#ffffff">属性</th>
+                                          <th bgcolor="#ffffff">市场价</th>
+                            <th bgcolor="#ffffff">本店价</th>
+              <th bgcolor="#ffffff">购买数量</th>
+              <th bgcolor="#ffffff">小计</th>
+              <th bgcolor="#ffffff">操作</th>
+            </tr>
+            <?php 
+            $tprice=0;
+            $tmaprice=0;
+            foreach( $goodsInfo as $k=>$v):?>
+                        <tr goods_id="<?php echo $v['goods_id'];?>" goods_attr_ids="<?php echo $v['goods_attr_ids'];?>">
+              <td bgcolor="#ffffff" align="center" style="width:300px;">
+                                                      <a href="goods.php?id=1" target="_blank"><img style="width:80px; height:80px;" src="__ROOT__<?php echo $v['midThumb'];?>" border="0" title="苹果手机" /></a><br />
+                    <a href="goods.php?id=1" target="_blank" class="f6"><?php echo $v['goodsName'];?></a>
+                                                                                    </td>
+                            <td  bgcolor="#ffffff">
+                             <?php echo $v['attrStr'];?>
+                            </td>
+                                          <td align="center" mktprice="<?php echo $v['marketPrice'];?>" bgcolor="#ffffff">￥<?php $maprice=$v['marketPrice']*$v['number'];  $tmaprice+=$maprice; echo $v['marketPrice'];?>元</td>
+                            <td align="center" mprice="<?php echo $v['mprice'];?>" bgcolor="#ffffff">￥<?php echo $v['mprice'];?>元</td>
+              <td align="center" bgcolor="#ffffff">
+                              <span onclick="delnum(this);" style="border:1px solid #ccc; padding:1px 5px; cursor:pointer;">-</span>
+                               <input type="text" readonly="readonly" name="goods_number[4]" id="goods_number_4" value="<?php echo $v['number'];?>" size="4" class="inputBg" style="text-align:center " onkeydown="showdiv(this)"/>
+                               <span onclick="addnum(this);" style="border:1px solid #ccc; padding:1px 5px; cursor:pointer;">+</span>
+                              </td>
+              <td align="center" bgcolor="#ffffff">￥<?php  $xj=$v['number']*$v['mprice']; $tprice+=$xj; echo $xj;?>元</td>
+              <td align="center" bgcolor="#ffffff">
+                <a href="javascript:;" onclick="deltr(this);" class="f6">删除</a>
+              </td>
+            </tr>
+            <?php endforeach;?>         
+                      </table>
+            <?php }else{?>
+            暂无商品数据
+            <?php }?>
+          <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+            <tr>
+              <td bgcolor="#ffffff">
+                            购物金额小计 ￥<span id="xjje"><?php echo $tprice;?></span>元，比市场价 ￥<span id="scje"><?php echo $tmaprice;?></span>元 节省了 ￥<span id="jsje"><?php echo $tmaprice-$tprice;?></span>元  </td>
+              <td align="right" bgcolor="#ffffff">
+                <input type="button" value="清空购物车" class="bnt_blue_1" onclick="clearCart();" />
+              </td>
+            </tr>
+          </table>
+          <input type="hidden" name="step" value="update_cart" />
+        </form>
+        <script type="text/javascript">
+
+        function clearCart(){
+          if(confirm('确定要清空购物车吗？')){
+             $("#cart").html('暂无商品数据');
+             $("#xjje").text(0);
+             $("#scje").text(0);
+             $("#jsje").text(0);
+             $.get("__CONTROLLER__/clearCart");
+          }
+         
+
+        }
+        function delnum(o){
+          var input=$(o).next();
+          var num=input.val();
+          var xjje=$("#xjje").html();
+          var scje=$("#scje").html();
+          var tjsje=$("#jsje").html();
+          var tr=$(o).parent().parent();
+          var gi=tr.attr("goods_id");
+          var gattr=tr.attr("goods_attr_ids");
+          if(num>1){
+            num=parseInt(num)-1;
+             //ajax获取当前货品库存量
+            getgoodsnum(gi,gattr,num);
+            input.val(num);
+            var mprice=$(o).parent().prev().attr('mprice');
+            var mktprice=$(o).parent().prev().prev().attr('mktprice');
+            var xj=parseInt(num)*mprice;
+            xj='￥'+xj+'元';
+            $(o).parent().next().html(xj);
+            xjje=parseInt(xjje)-parseInt(mprice);
+            scje=parseInt(scje)-parseInt(mktprice);
+            var jsje=parseInt(mktprice)-parseInt(mprice);
+            tjsje=parseInt(tjsje)-parseInt(jsje);
+            $("#xjje").html(xjje);
+            $("#scje").html(scje);
+            $("#jsje").html(tjsje);
+          }else{
+            alert('购买数量必须大于1！');
+            return false;
+          }
+          ajaxupdategn(gi,gattr,num);
+        }
+
+        function addnum(o){
+          var input=$(o).prev();
+          var num=input.val();
+          var xjje=$("#xjje").html();
+          var scje=$("#scje").html();
+          var tjsje=$("#jsje").html();
+          var tr=$(o).parent().parent();
+          var gi=tr.attr("goods_id");
+          var gattr=tr.attr("goods_attr_ids");
+          num=parseInt(num)+1;
+          //ajax获取当前货品库存量
+          getgoodsnum(gi,gattr,num);
+          input.val(num);
+          var mprice=$(o).parent().prev().attr('mprice');
+          var mktprice=$(o).parent().prev().prev().attr('mktprice');
+          xjje=parseInt(xjje)+parseInt(mprice);
+          scje=parseInt(scje)+parseInt(mktprice);
+          var jsje=parseInt(mktprice)-parseInt(mprice);
+          tjsje=parseInt(tjsje)+parseInt(jsje);
+          $("#jsje").html(tjsje);
+          $("#xjje").html(xjje);
+          $("#scje").html(scje);
+            var xj=parseInt(num)*mprice;
+            xj='￥'+xj+'元';
+            $(o).parent().next().html(xj);
+            ajaxupdategn(gi,gattr,num);
+        }
+
+        function deltr(o){
+          if(!confirm('确定要删除该商品吗？')){
+            return false;
+          }
+          var xjje=$("#xjje").html();
+          var scje=$("#scje").html();
+          var tjsje=$("#jsje").html();
+          var input=$(o).parent().prev().prev().find('input');
+          var num=input.val();
+          var mprice=$(o).parent().prev().prev().prev().attr('mprice');
+          var mktprice=$(o).parent().prev().prev().prev().prev().attr('mktprice');
+          var _tmprice=parseInt(mprice)*parseInt(num);
+          var _tmktprice=parseInt(mktprice)*parseInt(num);
+          var _tjs=(parseInt(mktprice)-parseInt(mprice))*parseInt(num);
+          var tr=$(o).parent().parent();
+          var gi=tr.attr("goods_id");
+          var gattr=tr.attr("goods_attr_ids");
+          xjje=parseInt(xjje)-parseInt(_tmprice);
+          $("#xjje").html(xjje);
+          scje=parseInt(scje)-parseInt(_tmktprice);
+          $("#scje").html(scje);
+          tjsje=parseInt(tjsje)-parseInt(_tjs);
+          $("#jsje").html(tjsje);
+          $(o).parent().parent().remove();
+          ajaxupdategn(gi,gattr,0);
+        }
+
+        function ajaxupdategn(gi,gattr,num){
+          if(gattr==""){
+            $.get("__CONTROLLER__/ajaxupdateGN/gi/"+gi+"/gn/"+num);
+          }else{
+            $.get("__CONTROLLER__/ajaxupdateGN/gi/"+gi+"/gattr/"+gattr+"/gn/"+num);
+          }
+          
+        }
+        
+        //ajax获取商品库存量
+        function getgoodsnum(gid,gaid,num){
+          if(gaid != ""){
+            var url="__MODULE__/goods/getgoodsnum/gid/"+gid+"/gaid/"+gaid;
+          }else{
+            var url="__MODULE__/goods/getgoodsnum/gid/"+gid;
+          }
+          $.ajax({
+            type:"get",
+            url:url,
+            success:function(data){
+              
+              if(data<num){
+                alert('当前商品库存不足！');
+                $("#jszx").attr("href","javascript:;");
+              }else{
+                $("#jszx").attr("href","/shop/index.php/Home/Flow/flow2");
+              }
+              
+            }
+          });
+        }
+        
+        </script>
+        <table width="99%" align="center" border="0" cellpadding="5" cellspacing="0" bgcolor="#dddddd">
+          <tr>
+            <td bgcolor="#ffffff"><a target="_blank" href="__APP__"><img src="__PUBLIC__/images/continue.gif" alt="continue" /></a></td>
+            <td bgcolor="#ffffff" align="right"><a id="jszx" href="__CONTROLLER__/flow2"><img src="__PUBLIC__/images/checkout.gif" alt="checkout" /></a></td>
+          </tr>
+        </table>
+        
+
+  
+  </div>
+    <div class="blank"></div>
+   
+    <div class="blank5"></div>
+  
+  
+  
+
+        
+        
+                
+
+
+
+</div>
+
+ <include file="Common/footer" />
+
+<div class="blank"></div>
+
+
+
+
+
+
+  
+
+
+
+<link href="__PUBLIC__/style/qq.css" rel="stylesheet" type="text/css" />
+<div class="QQbox" id="divQQbox" style="width: 170px; ">
+<div class="Qlist" id="divOnline" onmouseout="hideMsgBox(event);" style="display: none; " onmouseover="OnlineOver();">
+    <div class="t"></div>
+    <div class="infobox">我们营业的时间<br>9:00-18:00</div>
+    <div class="con">
+        <ul>
+ 
+  
+  
+  
+  
+  
+                                                                                  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+	         </ul>
+    </div>
+    <div class="b"></div>
+</div>
+<div id="divMenu" onmouseover="OnlineOver();" style="display: block; "><img src="ecmoban_q__PUBLIC__/images/qq_1.gif" class="press" alt="在线咨询"></div>
+</div>
+</html>

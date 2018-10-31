@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>所有产品-里鲜生</title>
+<meta name="description" content="专注于农副生鲜产品的配送，OTO电商运营，打通最后一公里，实现从基地到餐桌的良性循环，助力“农户增收，平台就业，客户得益”的三方共赢，互利互惠的平台机制。秉承“诚信、责任、绿色、便捷”的经营理念服务于广大新老客户。" />
+<meta name="keywords" content="里鲜生,南昌蔬菜,南昌生鲜,南昌买菜网上商城" />
+<link rel="stylesheet" href="__PUBLIC__/pc/css/common.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/simplepop.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/common.js"></script>
+<link rel="shortcut icon" href="/public/Home/images/favicon.ico">
+
+<link rel="stylesheet" href="__PUBLIC__/pc/css/products.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/custom.js"></script>
+
+<script type="text/javascript">
+ var think   = '/Lxs/home';
+ var upload  = '/public/Home/uploadify';
+ var img     = '/public/Home/images';
+ var pic     = '/uploads/';
+ var uid     = 0;
+</script>
+</head>
+<body>
+
+    
+<include file="Common/head" />    
+    
+    
+<div class="navdiv">
+	<div class="nav_all">
+<include file="Common/head2" />    	
+         
+    </div>
+</div>
+
+<div class="inner_mainbox">
+    	<!--产品筛选属性-->
+        <div class="attr_selectionbox">
+        	<div class="current_location">
+                    <span>当前位置</span>
+                    <a href="__ROOT__">首页</a>
+                    <a href="__MODULE__/product/index.html">产品列表</a>
+                    <a href="__MODULE__/product/index/cid/{$catename.id}.html">{$catename.catename}</a>                                    
+                </div>
+            
+            <div class="protypelist">
+            	<dl>
+                	<dt>分类：</dt>
+<dd class="protype_item">
+    <a href="__MODULE__/product/index.html" <if condition="I('get.cid') eq ''">class="hover"</if>>不限</a>
+    <volist name="cate13" id="vo">
+        <a href="__MODULE__/product/index/cid/{$vo.id}.html" <if condition="$vo.id eq I('get.cid')">class="hover"</if> >{$vo.catename}</a>
+    </volist>
+</dd>
+                    <dd class="down_or_up"><span class="icon_down" data-action="1">收起</span></dd>
+                </dl>
+                <!--子类-->
+                                <!--子类 end-->
+                <!--小类--> 
+                                <!--小类 end-->
+            </div>
+        </div>
+        
+        
+
+        <!--产品筛选属性 end-->
+        <div class="pro_orderbox">
+        	<div class="order_left">
+              <a href="" class="selected">默认</a>
+              <!--销量-->
+                               <a href="" title="点击按销量从低到高排序">销量 <img src="__PUBLIC__/pc/images/down-icon.png" /></a>              <!--销量-->
+              <!--人气-->
+                               <a href="" title="点击按人气从低到高排序">人气 <img src="__PUBLIC__/pc/images/down-icon.png" /></a>              <!--人气 end-->
+              <!--价格-->
+                               <a href="" title="点击按价格从低到高排序">价格 <img src="__PUBLIC__/pc/images/down-icon.png" /></a>              
+              <!--价格 end-->
+            </div>
+            <div class="order_mid">
+                <div class="store_prrice">价格筛选</div>
+                <div class="priceslide">
+                   <div id="slider-range"></div>
+               </div>
+               <div class="pricerange" id="amount">RMB:￥0- ￥<span id="mov_no" style="font-size:14px;">200</span></div>
+               <input type="hidden" value="0" id="minprice" />
+    		   <input type="hidden" value="200" id="maxprice" />
+           </div>
+           <div class="search_product"><input type="button" value="确定" name="tosearch" data-url="" /></div>
+           <!--页码-->
+           <div class="store_page">
+              <a href="javascript:void(0)"><span class="pre"></span></a>
+              <span class="pagenum">{$p}/{$totalPages}</span>
+              <a href="javascript:void(0)"><span class="next"></span></a>
+           </div>
+           <!--页码-->
+        </div>
+        
+        
+        
+        
+        
+        <!--产品列表-->
+        <div class="productlists">
+        	<div class="prodcutoverdiv">
+                    
+<!--循环产品-->
+<volist name="goodsA" id="vo">
+    <div class="product_item">
+            <div class="proitem_pic">
+                <a href="__MODULE__/product/item/id/{$vo.id}.html" title="{$vo.goods_name}" target="_blank">
+                    <img src="__ROOT__{$vo.max_thumb}" width="212" height="212" alt="{$vo.goods_name}" />
+                </a>
+            </div>
+            <div class="proitem_name">
+                <a href="__MODULE__/product/item/id/{$vo.id}.html" title="{$vo.goods_name}" target="_blank">{$vo.goods_name}</a>
+            </div>
+            <div class="proitem_price"><span class="web_price">¥{$vo.shop_price}</span><span class="market_price">¥{$vo.market_price}</span></div>
+            <div class="proitem_sellnum"><span>售出<b>66</b>件</span><span>共<b>6</b>条评价</span></div>
+            <div class="proitem_buybtn">
+                <a href="__MODULE__/product/item/id/{$vo.id}.html" target="_blank" class="cart_icon"><img src="__PUBLIC__/pc/images/cart_icon.png" width="30">立即购买</a>
+                <a href="javascript:void(0)" data-proid="861" data-uid="" class="collect_icon"><img src="__PUBLIC__/pc/images/collect_icon.png" width="30">收藏</a>
+            </div>
+    </div>
+</volist>    
+ <!--循环产品-->
+                        </div>
+        </div>
+        <!--产品列表 end-->
+        
+        
+        
+        
+        
+        <div class="jogger">  
+            {$page}
+        </div>
+    
+    <div>
+    </div>
+</div>
+<script>
+/*$(".product_item").eq(-1).css("border-bottom","none");
+$(".product_item").eq(-2).css("border-bottom","none");
+$(".product_item").eq(-3).css("border-bottom","none");
+$(".product_item").eq(-4).css("border-bottom","none");
+$(".product_item").eq(-5).css("border-bottom","none");*/
+$(document).ready(function(e) {
+	/*收起与展开*/
+	$(".down_or_up span").on("click",function(){
+		if($(this).text()=="收起"){
+			$(this).removeClass('icon_down').addClass('icon_up');
+			$(this).text('展开');
+			$(this).parent().parent().find('dd').eq(0).css('height','auto');
+			
+		}else{
+			$(this).removeClass('icon_up').addClass('icon_down');
+			$(this).text('收起');
+			if($(this).data('action')==2){
+				$(this).parent().parent().find('dd').eq(0).css('height','54px');
+			}else{
+				$(this).parent().parent().find('dd').eq(0).css('height','38px');
+			}
+		
+		}
+	})
+  var minprice =  parseInt($("#minprice").val()); ;
+  var maxprice =  parseInt($("#maxprice").val()); ;
+  if(minprice==0 && maxprice==0) maxprice = 100 ;
+  //拉选价格方案
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 200,
+		values: [ minprice, maxprice ],
+		slide: function( event, ui ) {
+			$("#amount" ).text( "RMB："+(ui.values[ 0 ]) + " 至 " + (ui.values[ 1 ]) + "");
+			$("#minprice").val(ui.values[ 0 ]);
+			$("#maxprice").val(ui.values[ 1 ]);
+		}
+	});
+  var sliderValueS = $( "#slider-range" ).slider( "values", 0 );
+  var sliderValueE = $( "#slider-range" ).slider( "values", 1 );
+  $( "#amount" ).val( sliderValueS + " 至 " + sliderValueE );
+  //结束
+  //根据价格查找
+  $(".search_product input[name='tosearch']").click(function(e) {
+    var url = $(this).data("url");
+	var minprice = parseInt($("#minprice").val());
+	var maxprice = parseInt($("#maxprice").val());
+     location.href = '';   
+    //location.href = '/product/index/cid/1/m/0/s/0' + '/mip/'+minprice+'/map/'+maxprice;
+  });
+  //加入收藏
+  $('.collect_icon').click(function(){
+	  var uid=$(this).data('uid');
+	  var proid = $(this).data('proid');
+	  if(uid==0){
+		 sysconfirm('请先登录您的账号吧？',function(){location.href = think+'/login/index/';});
+		 return false;
+	 }
+	  if(proid==0){systip("选择你要收藏的产品！");return false;}
+	  ajax({
+			method : 'post',
+			url : think+'/Cart/prodcollect',
+			data : {
+				'selectattr' : '',
+				'buyattr' : '',
+				'proid' : proid,
+			},
+			success : function (text) {
+				if(text==1){
+				  systip('产品收藏成功');
+				  $(".prodcollect").find("span").text(count+1);
+				}else if(text==403){
+				  systip('产品已经存在您的收藏夹中,请不要重复收藏！');
+				}else if(text==404){
+				  systip('收藏失败,产品不存在，或者刷新一下试试吧');
+				}else if(text==0){
+				  systip('收藏失败，或者刷新一下试试吧');
+				}else{
+				  systip.tip(text);
+				}
+			},
+			async : true
+	  });
+   });
+  
+});
+</script>
+
+
+
+<include file="Common/footer" />  
+
+
+</body>
+</html>

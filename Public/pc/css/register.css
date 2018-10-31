@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+{margin:0px;padding:0px;font-size:12px;}
+body,div,li,ul,dl,dd,dt,span,b,strong,p,h1,h2,h3,h4,h5{margin:0px;padding:0px;list-style:none;list-style-type:none; }
+a img{border:none;}
+a{text-decoration:none; margin:0px; padding:0px;}
+body{ background:#fff; margin:0px; padding:0px;-webkit-text-size-adjust:none; min-width:1000px;}
+input{ margin:0px; padding:0px;}
+input,button,select,textarea{ outline:none;}
+
+
+/*内页*/
+.inner_mainbg{ width:auto; height:auto; min-height:500px; background:url(../images/index_bg_03.jpg) repeat 0px 0px; min-width:1236px; overflow:hidden;}
+.inner_mainbox{ width:1236px; height:auto; min-height:500px; background:#fff; margin:0 auto; overflow:hidden;}
+
+/*注册 登录*/
+.reg_top{ width:1200px; height:30px; margin:15px auto 15px auto; overflow:hidden;}
+.reg_top span{ float:right; margin-top:10px; color:#666; }
+.reg_top span a{ color:#666; display:inline-block; margin-left:15px;font-size:15px; font-family:"微软雅黑";}
+.reg_top span a:hover{ color:#fe5842;}
+.reg_top span a.hover{ color:#fe5842;}
+
+
+.reg_main{ width:1200px; min-height:350px; overflow:hidden; margin:20px auto 30px auto; padding-bottom:30px; border:1px solid #ededed; border-radius:4px; position:relative;font-family:"微软雅黑";}
+.reg_main h1{ width:900px; height:50px; border-bottom:1px solid #ededed; line-height:40px; text-align:center; margin:auto; padding-top:20px; font-family:"微软雅黑"; font-size:22px; font-weight:normal; color:#666;}
+
+.input_text{ width:288px; height:34px; border:1px solid #dedede; border-radius:4px; line-height:34px; padding-left:10px;}
+.input_text:focus{ border:solid 1px #61ade7; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);}
+.check_bx{ width:15px; height:15px;float:left; margin-right:10px; background:url(../images/agree.jpg) no-repeat 0px 0px; cursor:pointer;}
+.checkcode{ width:112px; padding-left:8px; height:34px; border:1px solid #dedede; border-radius:4px; line-height:34px; color:#999;}
+.checkcode:focus{ border:solid 1px #61ade7; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);}
+.reg_btn{ width:360px; height:35px; background:#009f43; color:#fff; border:none; border-radius:3px;font-size:14px; font-family:"微软雅黑"; cursor:pointer;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;}
+.reg_btn:hover{ filter:alpha(opacity=100);-moz-opacity:1;opacity:1;}
+.fwtl{ color:#999;}
+.rgerr{ color:#f00;font-family:"微软雅黑"; font-size:14px; display:none;}
+.etinfo{ float:left;}
+.fpas{ text-align:right;color:#50a7bb; font-family:"微软雅黑";font-size:14px;}
+.fpas a{ color:#50a7bb; font-family:"微软雅黑"; font-size:14px;}
+.fpas a:hover{ color:#50a7bb; text-decoration:underline;}
+.reg_table{ margin:0px auto;}
+
+.btn-gcode,.ck_parent{ cursor:pointer; color:#999;}
+
+/*条例*/
+.zczxreg{width:840px;height:550px;background:#fff;border:solid 5px #999;overflow:hidden; font-family:"微软雅黑";}
+.zczxreg h1{width:auto;height:35px;line-height:35px;font-size:14px;font-weight:normal;border-bottom:solid 1px #dcdcdc;text-align:center;}
+.zczxmain{width:820px;height:440px;overflow:scroll;overflow-x:hidden;margin:0px auto;margin:10px auto 10px auto;line-height:24px;}
+.zczxclose{width:200px;height:32px;background:#e01010;color:#fff;text-align:center;border:none;cursor:pointer;margin:10px auto 0px auto;font-size:14px;line-height:32px;border-radius:3px;font-size:14px; font-family:"微软雅黑"; cursor:pointer;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

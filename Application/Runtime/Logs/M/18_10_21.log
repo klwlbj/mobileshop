@@ -1,0 +1,1030 @@
+[ 2018-10-21T20:30:52+08:00 ] 14.215.161.78 /m
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0017s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_ip` WHERE `ip` = '14.215.161.78' AND `area` = '广东省广州市 电信' AND `url` = 'm_index' ORDER BY id desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `sp_ip` (`ip`,`area`,`url`,`time`) VALUES ('14.215.161.78','广东省广州市 电信','m_index','1540125052') [ RunTime:0.0477s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 15  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 17  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 18  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 19  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 20  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 21  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2018-10-21T20:31:00+08:00 ] 113.71.197.78 /index.php/M/Index/grzx.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: user C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\f89eace6278e6d0ce196e23c257c572d.php 第 48 行.
+NOTIC: [8] Undefined index: user C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\f89eace6278e6d0ce196e23c257c572d.php 第 64 行.
+NOTIC: [8] Undefined index: user C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\f89eace6278e6d0ce196e23c257c572d.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-10-21T20:31:02+08:00 ] 113.71.197.78 /index.php/M/Index/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0012s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2018-10-21T20:31:05+08:00 ] 113.71.197.78 /index.php/M/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0014s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-10-21T20:31:08+08:00 ] 113.71.197.78 /index.php/M/Index/olst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0016s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+
+[ 2018-10-21T20:31:10+08:00 ] 113.71.197.78 /index.php/M/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0017s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2018-10-21T20:31:20+08:00 ] 113.71.197.78 /index.php/M/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0015s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' LIMIT 1   [ RunTime:0.0164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-10-21T20:31:22+08:00 ] 113.71.197.78 /index.php/M/Index/grzx.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-10-21T20:31:24+08:00 ] 113.71.197.78 /index.php/M/Index/olst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0015s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' AND `nick` = 'makeapile' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `userid` = 12 AND `nick` = 'makeapile' ORDER BY id desc  [ RunTime:0.0226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-10-21T20:31:24+08:00 ] 113.71.197.78 /index.php/M/Index/olst_files/vkad.reset.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0020s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+ERR: 非法操作:olst_files
+
+[ 2018-10-21T20:31:24+08:00 ] 113.71.197.78 /index.php/M/Index/olst_files/backtop91.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2018-10-21T20:31:24+08:00 ] 113.71.197.78 /index.php/M/Index/olst_files/backtop91.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-10-21T20:31:25+08:00 ] 113.71.197.78 /index.php/M/Index/odetail/id/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0017s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' AND `nick` = 'makeapile' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-10-21T20:31:28+08:00 ] 113.71.197.78 /index.php/M/Index/odetail/id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0029s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' AND `nick` = 'makeapile' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2018-10-21T20:31:31+08:00 ] 113.71.197.78 /index.php/M/Index/detail/id/79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0019s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 79 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: car1 C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\8ee8d171bd2149b415c5dbca569fed73.php 第 428 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-10-21T20:31:33+08:00 ] 113.71.197.78 /index.php/M/Index/detail/id/79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0014s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 79 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: car1 C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\8ee8d171bd2149b415c5dbca569fed73.php 第 428 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-10-21T20:31:38+08:00 ] 113.71.197.78 /index.php/M/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0015s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_ip` WHERE `ip` = '113.71.197.78' AND `area` = '广东省佛山市 电信' AND `url` = 'm_index' ORDER BY id desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `sp_ip` (`ip`,`area`,`url`,`time`) VALUES ('113.71.197.78','广东省佛山市 电信','m_index','1540125098') [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 15  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 17  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 18  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 19  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 20  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 21  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [8] Undefined index: id C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 588 行.
+NOTIC: [2] Illegal string offset 'id' C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\25a51a7f1f7f04d51bb1f9e1db10c1c5.php 第 589 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-10-21T20:31:41+08:00 ] 113.71.197.78 /index.php/M/Index/index1/aid/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 22  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 64  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 65  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 66  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 67  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 68  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 69  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 70  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 23  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 71  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 72  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 73  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 74  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 75  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 76  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 77  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 78  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 79  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 80  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 81  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 25  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 82  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 83  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 84  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 85  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 86  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 87  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 88  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 89  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 90  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 26  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 91  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 92  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 93  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 94  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 27  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 95  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 96  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 97  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 98  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-10-21T20:31:44+08:00 ] 113.71.197.78 /index.php/M/Index/index2/id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_cate` WHERE `pid` = 23  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0014s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c71.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 71  [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c72.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 72  [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c73.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 73  [ RunTime:0.0006s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c74.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 74  [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c75.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 75  [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://xywy99.com/public/c2/c76.jpg): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 118 行.
+SQL: SELECT * FROM `sp_goods` WHERE `cate_id` = 76  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_goods`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-10-21T20:31:46+08:00 ] 113.71.197.78 /index.php/M/Index/detail/id/78
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0015s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: car1 C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\8ee8d171bd2149b415c5dbca569fed73.php 第 428 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-10-21T20:31:50+08:00 ] 113.71.197.78 /index.php/M/Index/car/id/78
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 78 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\3782b0e4fe640b684821f92da6b8c9bc.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-10-21T20:31:51+08:00 ] 113.71.197.78 /index.php/M/Index/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0022s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: id2 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id3 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id4 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id5 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id6 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+SQL: SELECT * FROM `sp_goods` WHERE `id` IN ('78',null,null,null,null,null)  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: hj C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 290 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' AND `nick` = 'makeapile' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `userid` = 12 ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\dffe724747cf96ab7e99d9f77553fa68.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-10-21T20:31:56+08:00 ] 113.71.197.78 /index.php/M/Index/detail/id/79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0013s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 79 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-10-21T20:31:58+08:00 ] 113.71.197.78 /index.php/M/Index/car/id/79
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0016s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 79 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: sid C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\3782b0e4fe640b684821f92da6b8c9bc.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-10-21T20:31:59+08:00 ] 113.71.197.78 /index.php/M/Index/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_category` WHERE `type` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `sp_article` WHERE `cateid` = 2  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sp_nav`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 35 行.
+NOTIC: [8] Undefined offset: 3 C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `sp_config` [ RunTime:0.0016s ]
+SQL: SELECT `enname`,`value` FROM `sp_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: configres C:\xampp\htdocs\www\x\Application\M\Controller\CommonController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: id3 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id4 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id5 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+NOTIC: [8] Undefined index: id6 C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 281 行.
+SQL: SELECT * FROM `sp_goods` WHERE `id` IN ('78','79',null,null,null,null)  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: hj C:\xampp\htdocs\www\x\Application\M\Controller\IndexController.class.php 第 290 行.
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sp_user` WHERE `phone` = '18718115564' AND `nick` = 'makeapile' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `userid` = 12 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Array to string conversion C:\xampp\htdocs\www\x\Application\Runtime\Cache\M\dffe724747cf96ab7e99d9f77553fa68.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+

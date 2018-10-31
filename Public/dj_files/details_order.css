@@ -1,0 +1,371 @@
+﻿@charset "utf-8";
+/*common*/
+body{
+	background-color: #f0f0f0;
+}
+.display-box{
+	display: -webkit-box;
+	display: box;
+}
+.box-flex{
+	-webkit-box-flex: 1;
+	box-flex:1;
+}
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+.btn{
+	width: 93.6%;
+	height: .9rem;
+	display: block;
+	margin: 0 auto;
+	font-size: .36rem;
+	line-height: .9rem;
+	text-align: center;
+	border-radius: 4px;
+	margin-bottom: .5rem;
+}
+.btn-white,
+.btn-white:visited,
+.btn-white:hover{
+	background: #fff;
+	color: #222;
+}
+.btn-blue,
+.btn-blue:visited,
+.btn-blue:hover{
+	background: #06a6f8;
+	color: #fff;
+}
+.btn-red,
+.btn-red:visited,
+.btn-red:hover{
+	background: #ff4040;
+	color: #fff;
+}
+.btn-mt50{
+	margin-top: .5rem;
+}
+/*change layer css*/
+.layer-title{
+	text-indent: 16%;
+	background: url(../../mobile/img/advanceOrder/yes_green.png) no-repeat 26% center;
+	background-size: .32rem;
+}
+.layer-content{
+	text-align: left;
+}
+.layer-size-orderRx{
+	padding: .2rem 0;
+	line-height: .4rem;
+	font-size: .25rem;
+	color: #888888;
+}
+.button-left{
+	color: #06A6F8;
+}
+/*arrival-notice*/
+.arrival-notice-wrap{
+	padding: .5rem 0 0;
+}
+.arrival-notice-phone{
+	height: .9rem;
+	line-height: .9rem;
+	background: #fff;
+	border-top: solid 1px #eeeeee;
+	border-bottom: solid 1px #eeeeee;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: .3rem;
+}
+.phone-left{
+	width: 25%;
+	color: #555;
+	text-align: center;
+}
+.phone-right{
+	width: 75%;
+}
+.phone-right input{
+	width: 100%;
+	height: .9rem;
+	border: none;
+	box-sizing: border-box;
+}
+.arrival-notice-size{
+	width: 93.6%;
+	height: .7rem;
+	margin:0 auto;
+	color: #888888;
+	font-size: .26rem;
+	line-height: .7rem;
+	padding-left: .4rem;
+	box-sizing: border-box;
+	background: url(../../mobile/img/advanceOrder/warning_icon.png) no-repeat left center;
+	background-size: .27rem;
+}
+/*预定登记*/
+.orderRx-wrap{
+	background: #f0f0f0;
+}
+/*产品部分*/
+.orderRx-pro-wrap{
+	width: 100%;
+	padding: .3rem;
+	border-bottom: solid 1px #eeeeee;
+	box-sizing: border-box;
+	background: #fff;
+}
+.orderRx-pro-left{
+	width: 23%;
+	padding-right: 4.3%;
+}
+.orderRx-pro-right{
+	width: 72.7%;
+}
+.orderRx-pro-left a{
+	width: 1.6rem;
+	height: 1.6rem;
+	display: inline-block;
+	overflow: hidden;
+}
+.orderRx-pro-left img{
+	width: 100%;
+}
+.orderRx-pro-name{
+	width: 100%;
+	height: .8rem;
+	font-size: .32rem;
+	color: #222222;
+	padding-top: .1rem;
+	overflow: hidden;
+}
+.orderRx-pro-name a{
+	 color: #222;
+}
+.orderRx-pro-price{
+	padding: .2rem 0;
+	line-height: .4rem;
+	font-size: .26rem;
+	color: #222;
+}
+.orderRx-pro-price .size2{
+	color: #ff4040;
+	font-size: .34rem;
+	margin: 0 .1rem;
+}
+.orderRx-pro-price .size3{
+	color:#b5b5b5;
+	font-size: .28rem;
+	text-decoration: line-through;
+}
+.orderRx-pro-number{
+	overflow: hidden;
+	font-size: .32rem;
+}
+.orderRx-pro-number input,.orderRx-pro-number a{
+	width: .7rem;
+	height: .7rem;
+	border: solid 1px #b5b5b5;
+	float: left;
+	text-align: center;
+	display: inline-block;
+	
+}
+.num-reduce{
+	background: url(../../mobile/img/advanceOrder/reduce.png) no-repeat center;
+	background-size: 100%;
+}
+.num-add{
+	background: url(../../mobile/img/advanceOrder/add.png) no-repeat center;
+	background-size: 100%;
+}
+.orderRx-pro-number input[type=number]{
+	width: 1rem;
+	border-left: none;
+	border-right:none;
+	text-align: center;
+}
+/*套餐部分*/
+.orderRx-pack-wrap{
+	width: 100%;
+	padding: 0 .3rem;
+	border-bottom: solid 1px #eeeeee;
+	box-sizing: border-box;
+	background: #fff;
+	
+}
+.orderRx-pack{
+	/*display: none;*/
+	height: 2.83rem;
+	overflow: hidden;
+}
+.orderRx-pack-cont{
+	height: 1rem;
+	padding: .2rem 0;
+	border-bottom: solid 1px #eeeeee;
+}
+
+.orderRx-pack-left{
+	width: 14.5%;
+	padding-right: 4.3%;
+	overflow: hidden;
+}
+.orderRx-pack-pic{
+	width: 1rem;
+	height: 1rem;
+	overflow: hidden;
+}
+.orderRx-pack-pic img{
+	width: 100%;
+}
+.orderRx-pack-right{
+	width: 81.2%;
+	overflow: hidden;
+}
+.orderRx-pack-name{
+	width: 100%;
+	height: .6rem;
+	overflow: hidden;
+	font-size: .26rem;
+	line-height: .3rem;
+}
+.orderRx-pack-name span.product-link{
+	width: 90%;
+	display: inline-block;
+	float: left;
+}
+.orderRx-pack-name span.product-num{
+	width: 10%;
+	display: inline-block;
+	color: #888;
+	text-align: right;
+	float: left;
+}
+.orderRx-pack-price{
+	font-size: .26rem;
+	color: #ff4040;
+}
+.orderRx-pack-select{
+	width: 100%;
+	height: .7rem;
+	line-height: .7rem;
+	color: #06a6f8;
+	text-indent: 44%;
+	background: url(../../mobile/img/advanceOrder/more_select_b1.png) no-repeat 40% center;
+	background-size: .24rem .16rem;40% center;
+	background-size: .24rem .16rem;
+	font-size: .28rem;
+}
+.orderRx-pack-select.cur{
+	background: url(../../mobile/img/advanceOrder/more_select_b2.png) no-repeat 40% center;
+	background-size: .24rem .16rem;
+}
+/*顶顶*/
+.orderRx-pack-info{
+	padding: 0 .3rem;
+	border-top:solid 1px #eeeeee;
+	border-bottom: solid 1px #eeeeee;
+	background: #fff;
+	
+}
+.info-input-wrap{
+	height: .9rem;
+	line-height: .9rem;
+	border-bottom: solid 1px #eeeeee;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: .3rem;
+}
+.info-size{
+	text-align: left;
+}
+.info-select-wrap{
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: .3rem;
+}
+.info-select-wrap .phone-left{
+	line-height: .9rem;
+}
+.select-right{
+	width: 75%;
+	color: #222;
+}
+.grid_r input{
+	width: 100%;
+	height: 1rem;
+	text-align: right;
+	outline: medium;
+}
+.grid_r .addr_p{
+	width: 100%;
+	height: .4rem;
+	padding: .25rem 0;
+	line-height: .4rem;
+	font-size: .3rem;
+	border-bottom: solid 1px #eee;
+	background: url(../../mobile/img/advanceOrder/more_select.png) no-repeat 98% center;
+	background-size: .24rem .16rem;
+}
+.addr_p select,.addr_p option{
+	outline: medium;
+	width: 90%;
+	height: 100%;
+}
+.info-input-last{
+	border-bottom: none;
+}
+.orderRx-pack-ts{
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .26rem;
+	color: #888;
+	text-align: center;
+}
+.orderRx-pack-ts span{
+	color: #06a6f8;
+	margin-left: .1rem;
+}
+.orderRx-pack-ts span:hover,
+.orderRx-pack-ts span:visited{
+	color: #06a6f8;
+}
+.loginSize{
+color: red;
+font-size: .26rem;
+text-decoration: underline;
+}
+
+.num-reduce.cur{
+   background: url(../../mobile/img/advanceOrder/reduce_not.png) no-repeat center;
+   background-size: 100%;
+}
+.orderRx-title{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	background: #fff url(../../mobile/img/advanceOrder/m-nav-select.png) no-repeat .3rem center;
+	background-size: .26rem .44rem;
+	border-bottom: solid 1px #eee;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: .36rem;
+	position: relative;
+			}
+.go-back{
+	width: .9rem;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}

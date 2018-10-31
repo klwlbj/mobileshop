@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<title>百姓阳光大药房</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<!--[if lt IE 9]>
+<link href="/css/ie6.css" rel="stylesheet">
+<script src="/js/html5shiv.js"></script>
+ 
+<script type="text/javascript" src="/js/cssQuery-p.js"></script>
+<script type="text/javascript" src="/js/jcoglan.com/sylvester.js"></script>
+<script type="text/javascript" src="/js/css3Helpers.js"></script>
+ <![endif]-->
+	<meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="8i_jkSkV7GzoT9njOVtCINt8W-GIsdX4_YU6I26JW07GHZvHG32mCos1rI1YGixHjxI5lf6G47mt3XsUI9AiJQ==">
+	<title>
+		百姓阳光大药房	</title>
+	<link href="/css/common.css" rel="stylesheet">
+<link href="/css/reset.css" rel="stylesheet">
+<link href="/css/first.css" rel="stylesheet">
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/jquery.lazyload.min.js"></script></head>
+<body class="body-bg">
+		<header class="header">
+	<div class="toper">
+		<div class="toper-meun">
+			<div class="toper-left">
+<span>欢迎光临百姓阳光大药房！</span> <span><a href="/uc/login">登录</a></span>
+				<span class="color-red"><a href="/uc/login/reg">注册</a></span>
+							</div>
+			<div class="toper-right">
+                <a href="http://sun.bxyg.com">客户服务</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://www.chinabizpay.com/CKR/Account_Login.aspx
+			    
+">储值卡余额查询</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/uc">会员中心</a>|				 <!-- <span><a href="#">需求清单 0 </a> -->
+				<a href="/cart">需求清单</a>			| <a href="http://chat.53kf.com/webCompany.php?arg=baxsun&amp;style=1&amp;keyword=http%3A//www.baxsun.cn/index.php&amp;kf=">在线客服</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrap">
+	<div class="gonggao" style="margin-bottom:20px;">
+
+	</div>
+		<div class="logo">
+			<a href="/"><img src="/img/logo.png" alt=""></a>		 
+		</div>
+		<div class="search">
+		<form id="form" action="/search" method='get'>
+			<div class="search-s">
+				<div>
+					
+						
+						<input name="_csrf" type="hidden" id="_csrf"
+							value="8i_jkSkV7GzoT9njOVtCINt8W-GIsdX4_YU6I26JW07GHZvHG32mCos1rI1YGixHjxI5lf6G47mt3XsUI9AiJQ=="> <input name="key"
+							type="text" class="search-s1" />
+				
+				</div>
+				<div class="search-s2">搜索</div>
+			</div>
+			</form>
+			<script type="text/javascript">
+						$('.search-s2').click(function () {
+							$('#form').submit();
+						})
+					</script>
+			<div class="search-text">
+				热门搜索：
+				<a href="/search?key=%E9%BB%84%E8%8A%AA%E7%B2%BE">黄芪精</a> <a href="/search?key=%E6%84%9F%E5%86%92">感冒</a> <a href="/search?key=%E4%B8%87%E8%89%BE%E5%8F%AF">万艾可</a> <a href="/search?key=%E5%B8%8C%E7%BD%97%E8%BE%BE">希罗达</a> <a href="/search?key=%E5%AE%89%E5%AE%AB%E7%89%9B%E9%BB%84%E4%B8%B8">安宫牛黄丸</a> 			 
+			</div>
+		</div>
+		<div class="kefu">
+			<div class="kefu-text">周一至周日（9:00 - 18:00）</div>
+			<div class="kefu-tel"><img src="/img/tel-iocn.png" alt="">客服热线：400-060-0002</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</header>	
+<div class="nav-box main-nav">
+<div class="nav">
+<div class="nav-left">
+<div class="nav-left-text">全部商品分类</div>
+<div class="index-menu">
+	<div class="cate-menu">
+		<div class="index-menu-content">
+		<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1604">家庭常备</a>								
+								
+								
+								
+								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1605">感冒发烧</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1610"><span>流行感冒</span></a>																			<a class="a" href="/product/1611"><span>风寒感冒</span></a>																			<a class="a" href="/product/1614"><span>风热感冒</span></a>																			<a class="a" href="/product/1615"><span>退热退烧</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1620">清热消炎</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1621"><span>清热解毒</span></a>																			<a class="a" href="/product/1622"><span>咽喉炎</span></a>																			<a class="a" href="/product/1623"><span>口腔溃疡</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1624">创伤处理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1625"><span>杀菌</span></a>																			<a class="a" href="/product/1626"><span>消炎</span></a>																			<a class="a" href="/product/1627"><span>创可贴</span></a>																			<a class="a" href="/product/1628"><span>棉签棉棒</span></a>																			<a class="a" href="/product/1629"><span>烧伤烫伤</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1630">外用常备</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1631"><span>口罩</span></a>																			<a class="a" href="/product/1632"><span>跌打损伤</span></a>																			<a class="a" href="/product/1633"><span>蚊虫叮咬</span></a>																			<a class="a" href="/product/1634"><span>晕车晕船</span></a>																			<a class="a" href="/product/1635"><span>体温计</span></a>																			<a class="a" href="/product/1636"><span>体重秤</span></a>																			<a class="a" href="/product/1637"><span>中暑</span></a>																			<a class="a" href="/product/2110"><span>清洁消毒</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1638">维生素</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1639"><span>维生素A</span></a>																			<a class="a" href="/product/1640"><span>维生素B</span></a>																			<a class="a" href="/product/1641"><span>维生素C</span></a>																			<a class="a" href="/product/1642"><span>维生素E</span></a>																			<a class="a" href="/product/1643"><span>其它</span></a>																			<a class="a" href="/product/1644"><span>锌</span></a>																			<a class="a" href="/product/1645"><span>铁</span></a>																			<a class="a" href="/product/1646"><span>复合维生素</span></a>																			<a class="a" href="/product/1647"><span>AD、甘油</span></a>																			<a class="a" href="/product/1648"><span>钙剂</span></a>																			<a class="a" href="/product/1649"><span>叶酸</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1650">中西药品</a>								
+								
+								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1651">心脑血管</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1652"><span>心功能不全</span></a>																			<a class="a" href="/product/1653"><span>高血压</span></a>																			<a class="a" href="/product/1654"><span>高血脂</span></a>																			<a class="a" href="/product/1655"><span>中风</span></a>																			<a class="a" href="/product/1656"><span>心律失常</span></a>																			<a class="a" href="/product/1657"><span>冠心病</span></a>																			<a class="a" href="/product/1658"><span>脑血管疾病</span></a>																			<a class="a" href="/product/1659"><span>心力衰弱</span></a>																			<a class="a" href="/product/1660"><span>血液病</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1661">内分泌科</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1662"><span>糖尿病</span></a>																			<a class="a" href="/product/1663"><span>糖尿病并发症</span></a>																			<a class="a" href="/product/1664"><span>甲状腺疾病</span></a>																			<a class="a" href="/product/1665"><span>肾上腺糖皮质激素</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1666">肿瘤用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1667"><span>肺癌</span></a>																			<a class="a" href="/product/1668"><span>肝癌</span></a>																			<a class="a" href="/product/1669"><span>白血病</span></a>																			<a class="a" href="/product/1670"><span>乳腺癌</span></a>																			<a class="a" href="/product/1671"><span>器官移植</span></a>																			<a class="a" href="/product/1672"><span>广谱抗癌</span></a>																			<a class="a" href="/product/1673"><span>抗白细胞减少</span></a>																			<a class="a" href="/product/1674"><span>胃癌</span></a>																			<a class="a" href="/product/1675"><span>前列腺癌</span></a>																			<a class="a" href="/product/1676"><span>辅助用药</span></a>																			<a class="a" href="/product/1677"><span>淋巴癌</span></a>																			<a class="a" href="/product/2111"><span>消化道癌</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1678">肝胆用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1679"><span>乙肝</span></a>																			<a class="a" href="/product/1680"><span>肝硬化</span></a>																			<a class="a" href="/product/1681"><span>保肝护肝</span></a>																			<a class="a" href="/product/1682"><span>利胆排石</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1684">胃肠用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1685"><span>胃痛反酸</span></a>																			<a class="a" href="/product/1686"><span>止吐止泻</span></a>																			<a class="a" href="/product/1687"><span>胃炎胃溃疡</span></a>																			<a class="a" href="/product/1688"><span>消化不良</span></a>																			<a class="a" href="/product/1689"><span>泻火通便</span></a>																			<a class="a" href="/product/1690"><span>肠道功能紊乱</span></a>																			<a class="a" href="/product/1691"><span>痔疮</span></a>																			<a class="a" href="/product/1692"><span>肠炎</span></a>																			<a class="a" href="/product/1693"><span>促进胃肠动力</span></a>																			<a class="a" href="/product/1694"><span>调节菌群</span></a>																			<a class="a" href="/product/1695"><span>调理脾胃</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1696">神经精神</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1697"><span>安神助眠</span></a>																			<a class="a" href="/product/1698"><span>躁狂/焦虑</span></a>																			<a class="a" href="/product/1699"><span>神经病变</span></a>																			<a class="a" href="/product/1700"><span>精神分裂</span></a>																			<a class="a" href="/product/1701"><span>帕金森</span></a>																			<a class="a" href="/product/1702"><span>抑郁</span></a>																			<a class="a" href="/product/1704"><span>老年痴呆</span></a>																			<a class="a" href="/product/1705"><span>头痛</span></a>																			<a class="a" href="/product/1706"><span>癫痫</span></a>																			<a class="a" href="/product/1707"><span>多动症</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1708">男科用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1709"><span>补肾壮阳</span></a>																			<a class="a" href="/product/1710"><span>滋阴补肾</span></a>																			<a class="a" href="/product/1711"><span>性功能障碍</span></a>																			<a class="a" href="/product/1712"><span>前列腺疾病</span></a>																			<a class="a" href="/product/1713"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1714">妇科用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1715"><span>妇科炎症</span></a>																			<a class="a" href="/product/1716"><span>妇科外用</span></a>																			<a class="a" href="/product/1717"><span>月经不调</span></a>																			<a class="a" href="/product/1718"><span>保胎促孕</span></a>																			<a class="a" href="/product/1719"><span>产后用药</span></a>																			<a class="a" href="/product/1720"><span>妇科内分泌</span></a>																			<a class="a" href="/product/1721"><span>更年期</span></a>																			<a class="a" href="/product/1722"><span>减肥</span></a>																			<a class="a" href="/product/1723"><span>祛斑美容</span></a>																			<a class="a" href="/product/1724"><span>乳腺疾病</span></a>																			<a class="a" href="/product/1725"><span>盆腔炎</span></a>																			<a class="a" href="/product/1726"><span>子宫疾病</span></a>																			<a class="a" href="/product/1727"><span>妇科止血</span></a>																			<a class="a" href="/product/1728"><span>痛经</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1729">儿童用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1730"><span>感冒退热</span></a>																			<a class="a" href="/product/1731"><span>止咳祛痰</span></a>																			<a class="a" href="/product/1732"><span>小儿腹泻</span></a>																			<a class="a" href="/product/1733"><span>维矿物质</span></a>																			<a class="a" href="/product/1734"><span>驱虫药</span></a>																			<a class="a" href="/product/1735"><span>提高免疫</span></a>																			<a class="a" href="/product/1736"><span>咽扁炎</span></a>																			<a class="a" href="/product/1737"><span>消化不良</span></a>																			<a class="a" href="/product/1738"><span>健脾消食</span></a>																			<a class="a" href="/product/1740"><span>小儿多动症</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1741">皮肤外用</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1742"><span>银屑病</span></a>																			<a class="a" href="/product/1743"><span>皮炎湿疹</span></a>																			<a class="a" href="/product/1745"><span>腋臭</span></a>																			<a class="a" href="/product/1746"><span>灰指甲</span></a>																			<a class="a" href="/product/1747"><span>白癜风</span></a>																			<a class="a" href="/product/1748"><span>手足皲裂</span></a>																			<a class="a" href="/product/1749"><span>尖锐湿疣</span></a>																			<a class="a" href="/product/1750"><span>红斑狼疮</span></a>																			<a class="a" href="/product/1751"><span>疱疹</span></a>																			<a class="a" href="/product/1752"><span>手足癣</span></a>																			<a class="a" href="/product/1753"><span>头皮屑</span></a>																			<a class="a" href="/product/1754"><span>去疤痕</span></a>																			<a class="a" href="/product/1755"><span>痤疮</span></a>																			<a class="a" href="/product/1756"><span>过敏</span></a>																			<a class="a" href="/product/1757"><span>烫伤创伤</span></a>																			<a class="a" href="/product/1758"><span>斑秃</span></a>																			<a class="a" href="/product/1759"><span>肛肠用药</span></a>																			<a class="a" href="/product/1760"><span>疖肿</span></a>																			<a class="a" href="/product/2112"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1761">风湿骨科</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1762"><span>风湿</span></a>																			<a class="a" href="/product/1763"><span>骨关节炎</span></a>																			<a class="a" href="/product/1764"><span>骨质疏松</span></a>																			<a class="a" href="/product/1765"><span>活血止痛</span></a>																			<a class="a" href="/product/1766"><span>痛风</span></a>																			<a class="a" href="/product/1768"><span>外用贴膏</span></a>																			<a class="a" href="/product/1769"><span>外用涂抹剂</span></a>																			<a class="a" href="/product/1770"><span>消炎止痛</span></a>																			<a class="a" href="/product/1771"><span>腰颈肩椎疼痛</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1772">泌尿用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1773"><span>肾炎</span></a>																			<a class="a" href="/product/1774"><span>泌尿前列腺疾病</span></a>																			<a class="a" href="/product/1775"><span>结石</span></a>																			<a class="a" href="/product/1776"><span>尿路感染</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1777">补益用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1778"><span>安神助眠</span></a>																			<a class="a" href="/product/1779"><span>补气养血</span></a>																			<a class="a" href="/product/1780"><span>维矿物质</span></a>																			<a class="a" href="/product/1781"><span>免疫调节</span></a>																			<a class="a" href="/product/1782"><span>脱发白发</span></a>																			<a class="a" href="/product/1783"><span>维矿物质</span></a>																			<a class="a" href="/product/1784"><span>养血乌发</span></a>																			<a class="a" href="/product/1785"><span>营养补充</span></a>																			<a class="a" href="/product/1786"><span>滋补肝肾</span></a>																			<a class="a" href="/product/1787"><span>滋阴补肾</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1788">呼吸用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1789"><span>止咳化痰</span></a>																			<a class="a" href="/product/1790"><span>哮喘</span></a>																			<a class="a" href="/product/1791"><span>肺病</span></a>																			<a class="a" href="/product/1792"><span>气管/支气管炎</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1793">五官用药</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1795"><span>眼部炎症</span></a>																			<a class="a" href="/product/1797"><span>青光眼</span></a>																			<a class="a" href="/product/1799"><span>鼻炎</span></a>																			<a class="a" href="/product/1800"><span>咽喉炎</span></a>																			<a class="a" href="/product/1801"><span>耳部用药</span></a>																			<a class="a" href="/product/1802"><span>牙周疾病</span></a>																			<a class="a" href="/product/1803"><span>抗眼疲劳</span></a>																			<a class="a" href="/product/1804"><span>眼部保养</span></a>																			<a class="a" href="/product/1806"><span>白内障</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1807">抗菌消炎</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1808"><span>抗细菌</span></a>																			<a class="a" href="/product/1809"><span>抗病毒</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1811">医疗器械</a>								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1812">家庭常备</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1815"><span>清洁消毒</span></a>																			<a class="a" href="/product/1816"><span>药盒药箱</span></a>																			<a class="a" href="/product/1817"><span>口鼻护理</span></a>																			<a class="a" href="/product/1818"><span>退热贴</span></a>																			<a class="a" href="/product/1822"><span>空气净化</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1824">血压计</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1825"><span>臂式</span></a>																			<a class="a" href="/product/1826"><span>腕式</span></a>																			<a class="a" href="/product/1827"><span>台式</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1828">血糖检测</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1829"><span>血糖仪</span></a>																			<a class="a" href="/product/1830"><span>血糖试纸</span></a>																			<a class="a" href="/product/1831"><span>注射笔/针</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1832">测量诊断</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1833"><span>听诊器</span></a>																			<a class="a" href="/product/1834"><span>其它监测</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1835">理疗康复</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1836"><span>护垫床垫</span></a>																			<a class="a" href="/product/1837"><span>膏药/贴膏</span></a>																			<a class="a" href="/product/1838"><span>理疗仪</span></a>																			<a class="a" href="/product/1839"><span>成人纸尿裤</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1840">制氧设备</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1842"><span>制氧机</span></a>																			<a class="a" href="/product/1843"><span>制氧耗材</span></a>																			<a class="a" href="/product/2113"><span>雾化器、呼吸、吸痰器</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1844">护理护具</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1845"><span>护腕/护肘</span></a>																			<a class="a" href="/product/1846"><span>护膝/护踝</span></a>																			<a class="a" href="/product/1847"><span>护腰/护腿</span></a>																			<a class="a" href="/product/1848"><span>护颈/护肩</span></a>																			<a class="a" href="/product/1849"><span>弹力袜</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1850">中医保健</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1851"><span>刮痧</span></a>																			<a class="a" href="/product/1852"><span>拔罐</span></a>																			<a class="a" href="/product/1853"><span>针灸</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1854">辅助器具</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1855"><span>轮椅</span></a>																			<a class="a" href="/product/1856"><span>拐杖/手杖</span></a>																			<a class="a" href="/product/1857"><span>便盆/导尿</span></a>																			<a class="a" href="/product/1858"><span>助行器</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1859">医用器材</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1860"><span>医用耗材</span></a>																			<a class="a" href="/product/1861"><span>手术器具</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1862">隐形眼镜</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1863"><span>护理液</span></a>																			<a class="a" href="/product/1864"><span>隐形眼镜</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1865">营养保健</a>								
+								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1866">营养食品</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1867"><span>蛋白质粉</span></a>																			<a class="a" href="/product/1869"><span>鱼油/卵磷脂</span></a>																			<a class="a" href="/product/1870"><span>螺旋藻</span></a>																			<a class="a" href="/product/1872"><span>葡萄籽</span></a>																			<a class="a" href="/product/1874"><span>辅酶Q10</span></a>																			<a class="a" href="/product/1875"><span>膳食纤维</span></a>																			<a class="a" href="/product/1876"><span>牛初乳</span></a>																			<a class="a" href="/product/1877"><span>胶原蛋白</span></a>																			<a class="a" href="/product/1878"><span>大豆异黄酮</span></a>																			<a class="a" href="/product/1879"><span>酵素</span></a>																			<a class="a" href="/product/1880"><span>芦荟提取</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1881">维生素/矿物质</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1882"><span>维生素E</span></a>																			<a class="a" href="/product/1883"><span>复合维生素</span></a>																			<a class="a" href="/product/1884"><span>维生素D</span></a>																			<a class="a" href="/product/1885"><span>B族维生素</span></a>																			<a class="a" href="/product/1886"><span>维生素C</span></a>																			<a class="a" href="/product/1887"><span>钙</span></a>																			<a class="a" href="/product/1888"><span>复合矿物质</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1907">机能改善</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1908"><span>调节三高</span></a>																			<a class="a" href="/product/1909"><span>调节免疫</span></a>																			<a class="a" href="/product/1910"><span>缓解疲劳</span></a>																			<a class="a" href="/product/1911"><span>美颜塑身</span></a>																			<a class="a" href="/product/1912"><span>肠胃保护</span></a>																			<a class="a" href="/product/1913"><span>肝肾保护</span></a>																			<a class="a" href="/product/1914"><span>改善睡眠</span></a>																			<a class="a" href="/product/1915"><span>明目益智</span></a>																			<a class="a" href="/product/1916"><span>抗氧化</span></a>																			<a class="a" href="/product/2114"><span>清咽润喉</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1917">中药滋补</a>								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1918">参茸贵细</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1919"><span>灵芝</span></a>																			<a class="a" href="/product/1920"><span>鹿茸</span></a>																			<a class="a" href="/product/1921"><span>三七</span></a>																			<a class="a" href="/product/1923"><span>燕窝</span></a>																			<a class="a" href="/product/1924"><span>西红花</span></a>																			<a class="a" href="/product/1925"><span>人参</span></a>																			<a class="a" href="/product/1926"><span>红参</span></a>																			<a class="a" href="/product/1927"><span>冬虫夏草</span></a>																			<a class="a" href="/product/1928"><span>高丽参</span></a>																			<a class="a" href="/product/2115"><span>海参</span></a>																			<a class="a" href="/product/2116"><span>西洋参</span></a>																			<a class="a" href="/product/2117"><span>石斛</span></a>																			<a class="a" href="/product/2119"><span>天麻</span></a>																			<a class="a" href="/product/2120"><span>鹿鞭/鹿角</span></a>																			<a class="a" href="/product/2121"><span>海马</span></a>																			<a class="a" href="/product/2122"><span>海龙</span></a>																			<a class="a" href="/product/2124"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1929">滋补阿胶</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1930"><span>阿胶块</span></a>																			<a class="a" href="/product/1931"><span>阿胶糕</span></a>																			<a class="a" href="/product/1932"><span>阿胶浆</span></a>																			<a class="a" href="/product/1933"><span>阿胶粉</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1934">养生茶饮</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1935"><span>菊花</span></a>																			<a class="a" href="/product/1936"><span>玫瑰花</span></a>																			<a class="a" href="/product/1937"><span>金银花</span></a>																			<a class="a" href="/product/1938"><span>茉莉花</span></a>																			<a class="a" href="/product/1939"><span>柠檬</span></a>																			<a class="a" href="/product/1940"><span>胖大海</span></a>																			<a class="a" href="/product/1941"><span>蜂蜜</span></a>																			<a class="a" href="/product/1942"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1944">精致饮片</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1945"><span>黄芪</span></a>																			<a class="a" href="/product/1946"><span>枸杞</span></a>																			<a class="a" href="/product/1947"><span>山药</span></a>																			<a class="a" href="/product/1948"><span>党参</span></a>																			<a class="a" href="/product/1950"><span>麦冬</span></a>																			<a class="a" href="/product/1951"><span>薏苡仁</span></a>																			<a class="a" href="/product/1952"><span>龙眼肉</span></a>																			<a class="a" href="/product/1954"><span>决明子</span></a>																			<a class="a" href="/product/1955"><span>茯苓</span></a>																			<a class="a" href="/product/1957"><span>莲子/莲子心</span></a>																			<a class="a" href="/product/1959"><span>乌梅</span></a>																			<a class="a" href="/product/1960"><span>百合</span></a>																			<a class="a" href="/product/1961"><span>番泻叶</span></a>																			<a class="a" href="/product/1962"><span>艾条/艾绒</span></a>																			<a class="a" href="/product/1963"><span>其它</span></a>																			<a class="a" href="/product/2125"><span>当归</span></a>																			<a class="a" href="/product/2126"><span>杜仲</span></a>																			<a class="a" href="/product/2127"><span>甘草</span></a>																			<a class="a" href="/product/2128"><span>绞股蓝</span></a>																			<a class="a" href="/product/2129"><span>山楂</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1964">中药粉末</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1966"><span>三七粉</span></a>																			<a class="a" href="/product/1970"><span>山楂粉</span></a>																			<a class="a" href="/product/1973"><span>鹿角/鹿茸粉</span></a>																			<a class="a" href="/product/1974"><span>天麻粉</span></a>																			<a class="a" href="/product/1975"><span>西洋参粉</span></a>																			<a class="a" href="/product/1976"><span>其它</span></a>																			<a class="a" href="/product/1977"><span>珍珠粉</span></a>																			<a class="a" href="/product/1978"><span>羚羊粉</span></a>																			<a class="a" href="/product/1979"><span>熊胆粉</span></a>																			<a class="a" href="/product/2130"><span>川贝粉</span></a>																			<a class="a" href="/product/2131"><span>琥珀粉</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1980">同仁堂健康</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1981"><span>燕窝</span></a>																			<a class="a" href="/product/1982"><span>参茸虫草</span></a>																			<a class="a" href="/product/1983"><span>铁皮石斛</span></a>																			<a class="a" href="/product/1984"><span>三七</span></a>																			<a class="a" href="/product/1985"><span>灵芝</span></a>																			<a class="a" href="/product/1986"><span>枸杞</span></a>																			<a class="a" href="/product/1987"><span>蜂产品</span></a>																			<a class="a" href="/product/1988"><span>海参</span></a>																			<a class="a" href="/product/1989"><span>滋补茶饮</span></a>																			<a class="a" href="/product/1990"><span>阿胶</span></a>																			<a class="a" href="/product/1991"><span>药食同源</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/1992">煎药器物</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1993"><span>煎药锅/壶</span></a>																			<a class="a" href="/product/2132"><span>养生壶</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/1994">母婴用品</a>								
+								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/1995">奶粉专区</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/1996"><span>1段</span></a>																			<a class="a" href="/product/2003"><span>2段</span></a>																			<a class="a" href="/product/2004"><span>3段</span></a>																			<a class="a" href="/product/2005"><span>4段</span></a>																			<a class="a" href="/product/2006"><span>妈妈奶粉</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2009">营养辅食</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2010"><span>米粉</span></a>																			<a class="a" href="/product/2011"><span>面条</span></a>																			<a class="a" href="/product/2012"><span>果泥</span></a>																			<a class="a" href="/product/2013"><span>益生菌</span></a>																			<a class="a" href="/product/2014"><span>维生素</span></a>																			<a class="a" href="/product/2015"><span>钙铁锌</span></a>																			<a class="a" href="/product/2016"><span>DHA</span></a>																			<a class="a" href="/product/2017"><span>饼干</span></a>																			<a class="a" href="/product/2018"><span>糖果</span></a>																			<a class="a" href="/product/2133"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2023">纸尿裤/湿纸巾</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2024"><span>NB</span></a>																			<a class="a" href="/product/2025"><span>S</span></a>																			<a class="a" href="/product/2026"><span>M</span></a>																			<a class="a" href="/product/2027"><span>L</span></a>																			<a class="a" href="/product/2028"><span>XL</span></a>																			<a class="a" href="/product/2029"><span>XXL</span></a>																			<a class="a" href="/product/2134"><span>湿巾</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2030">喂养用品</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2031"><span>奶瓶</span></a>																			<a class="a" href="/product/2032"><span>奶嘴</span></a>																			<a class="a" href="/product/2033"><span>水杯</span></a>																			<a class="a" href="/product/2036"><span>餐具</span></a>																			<a class="a" href="/product/2037"><span>其它</span></a>																			<a class="a" href="/product/2135"><span>吸奶/温奶/储奶</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2038">宝宝洗护</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2040"><span>沐浴露</span></a>																			<a class="a" href="/product/2041"><span>衣物洗涤</span></a>																			<a class="a" href="/product/2042"><span>日常护理</span></a>																			<a class="a" href="/product/2044"><span>奶瓶清洁</span></a>																			<a class="a" href="/product/2045"><span>润肤霜/乳</span></a>																			<a class="a" href="/product/2136"><span>清洁/消毒</span></a>																			<a class="a" href="/product/2137"><span>驱蚊/止痒</span></a>																			<a class="a" href="/product/2138"><span>牙刷/牙膏</span></a>																			<a class="a" href="/product/2139"><span>牙胶</span></a>																			<a class="a" href="/product/2140"><span>其它用品</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2054">孕妈专区</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2055"><span>防辐射服</span></a>																			<a class="a" href="/product/2058"><span>产后护理</span></a>																			<a class="a" href="/product/2059"><span>孕妇护肤</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+					<div class="pro-cate ">
+ 			<a class="main-cate " href="/product/2060">美妆个护</a>								
+					<div class="index-menu-detail">
+									<dl>
+						<dt class="second"><a class="" href="/product/2061">面部护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2065"><span>暗沉美白</span></a>																			<a class="a" href="/product/2066"><span>补水保湿</span></a>																			<a class="a" href="/product/2067"><span>祛疤除痘</span></a>																			<a class="a" href="/product/2068"><span>化妆/卸妆水</span></a>																			<a class="a" href="/product/2141"><span>精华液/面霜</span></a>																			<a class="a" href="/product/2142"><span>洁面乳</span></a>																			<a class="a" href="/product/2143"><span>面膜</span></a>																			<a class="a" href="/product/2144"><span>眼霜</span></a>																			<a class="a" href="/product/2145"><span>唇膏</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2069">面部护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2070"><span>面膜</span></a>																			<a class="a" href="/product/2071"><span>眼霜</span></a>																			<a class="a" href="/product/2072"><span>洁面</span></a>																			<a class="a" href="/product/2073"><span>防嗮</span></a>																			<a class="a" href="/product/2074"><span>面霜</span></a>																			<a class="a" href="/product/2075"><span>精华</span></a>																			<a class="a" href="/product/2076"><span>润唇膏</span></a>																			<a class="a" href="/product/2077"><span>其它</span></a>																			<a class="a" href="/product/2078"><span>暗沉美白</span></a>																			<a class="a" href="/product/2079"><span>补水保湿</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2080">口腔护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2081"><span>牙膏</span></a>																			<a class="a" href="/product/2082"><span>漱口水</span></a>																			<a class="a" href="/product/2083"><span>牙线</span></a>																			<a class="a" href="/product/2084"><span>假牙清洁</span></a>																			<a class="a" href="/product/2146"><span>牙刷</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2086">个人洗护</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2087"><span>洗发护发</span></a>																			<a class="a" href="/product/2088"><span>清洁消毒</span></a>																			<a class="a" href="/product/2089"><span>沐浴露/液</span></a>																			<a class="a" href="/product/2090"><span>衣物清洁</span></a>																			<a class="a" href="/product/2091"><span>驱蚊/驱虫</span></a>																			<a class="a" href="/product/2147"><span>染发</span></a>																			<a class="a" href="/product/2148"><span>湿巾</span></a>																			<a class="a" href="/product/2149"><span>卫生纸/巾</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2092">身体护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2093"><span>润肤乳/膏/霜</span></a>																			<a class="a" href="/product/2094"><span>杀菌/止痒/去痱</span></a>																			<a class="a" href="/product/2097"><span>去狐臭</span></a>																			<a class="a" href="/product/2099"><span>暖贴</span></a>																			<a class="a" href="/product/2100"><span>其它</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2101">女性护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2103"><span>卫生巾</span></a>																			<a class="a" href="/product/2104"><span>卫生护垫</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2105">成人用品</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2106"><span>安全避孕</span></a>																			<a class="a" href="/product/2107"><span>验孕测孕</span></a>																			<a class="a" href="/product/2108"><span>润滑/延时</span></a>																			<a class="a" href="/product/2109"><span>安全套</span></a>														</dd>
+					</dl>
+															<dl>
+						<dt class="second"><a class="" href="/product/2150">手足护理</a></dt>
+						<dd class="third">
+																			<a class="a" href="/product/2151"><span>护手霜</span></a>																			<a class="a" href="/product/2152"><span>脚气/脚臭</span></a>																			<a class="a" href="/product/2153"><span>足疗护理</span></a>														</dd>
+					</dl>
+												</div>
+			</div>
+						</div>
+	</div>
+	<script type="text/javascript">
+		/*
+		$('.third a').mousemove(function () {
+			$(this).css('color','red');
+		})
+		$('.third a').mouseout(function () {
+			$(this).css('color','#000');
+		})
+		$(function(){
+			$('.second a').css('color','#666');
+			$('.second a').mousemove(function () {
+				$(this).css('color','red');
+			})
+			$('.second a').mouseout(function () {
+				$(this).css('color','#666');
+			})
+		})*/
+	</script>
+	<!--全部商品的右边的二级菜单-->
+
+</div>				</div>
+				<div class="nav-right a333">
+			<ul><li><a href="/">首页</a></li>
+<li><a href="/section/index">新特药品</a></li>
+<li><a href="javascript:;">专科频道</a>
+<ul>
+<li><a href="/andrology">男科</a></li>
+<li><a href="/gynaecology ">妇科</a></li>
+<li><a href="/liver-complaint">肝病专科</a></li>
+<li><a href="/skin-problem">皮肤病</a></li>
+</ul>
+</li>
+<li><a href="/article/index">健康百科</a></li>
+<li><a href="/love">爱心公益</a></li>
+<li><a href="/advise">买不到药专柜</a></li></ul>		</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+			<div style="clear: both;"></div>
+	 
+
+ 
+ 
+
+
+
+
+<div class="banner-wrap">
+		 
+ <div class="banner-pic">
+	<ul>
+						            
+	     			<li style=" background-color:#0694dc;">
+	     			 
+	     			<a href="http://bxyg.com/huodong/20180611yptg.html" target="_blank"><img src="/uploads/1527763326_4537.jpg" alt=""></a>	     			
+	     			</li>
+	     				
+	     			<li style=" background-color:#f2cc8e;">
+	     			 
+	     			<a href="http://bxyg.com/huodong/20180501znq.html" target="_blank"><img src="/uploads/1525330544_9309.jpg" alt=""></a>	     			
+	     			</li>
+	     				
+	     			<li style=" background-color:#ff0101">
+	     			 
+	     			<a href="http://www.baxsun.cn" target="_blank"><img src="/uploads/1518501916_2689.jpg" alt=""></a>	     			
+	     			</li>
+	     										        </ul>
+</div>
+  <div class="hd">
+		        <ul><li></li><li></li><li></li></ul>
+		    </div>
+		 
+	<div class="a-shutiao2">
+		<div class="b-shutiao2">
+			<div class="shutiao2">
+				<ol>
+		<img src="/img/dan/yao1.png" alt="">		<p>药店动态</p>
+				</ol>
+				<ol>
+		<img src="/img/dan/yao2.png" alt="">		<p>用药指导</p>
+				</ol>
+				<ol>
+		<img src="/img/dan/yao3.png" alt="">		<p>健康咨询</p>
+				</ol>
+				 
+		
+		<div class="weChat-focus">
+		<img src="/img/dan/yao4.png" alt="">	 
+		<span>微信关注</span>
+					</div>
+				 
+			</div>
+		</div>
+	</div>
+			     
+</div>
+ 
+			
+       <div class="container">
+        <div style="margin-top:10px;margin-bottom:-20px;"><a href="http://bxyg.com/huodong/20180611yptg.html" target="_blank"><img src="/uploads/1498706343_1885.png" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F1">
+			<div class="div">F1&nbsp;&nbsp;<a href="/product/1604">家庭常备</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1604">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang1 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52317"><img src="/uploads/1522379023_7057.jpg" width="165" height="165" alt="藿香正气丸（浓缩丸）"></a></div>
+					<dt><a href="/product/detail?id=52317">藿香正气丸（浓缩丸）</a></dt>
+					        			<dd>￥9.90</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w1">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://bxyg.com/product/detail?id=47417" target="_blank"><img src="/uploads/1497434107_4564.jpg" alt=""></a></li>
+	     				
+	    <li><a href="http://bxyg.com/product/detail?id=47334" target="_blank"><img src="/uploads/1497519777_6604.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52185"><img src="/uploads/1522379146_2974.jpg" width="165" height="165" alt="牛黄解毒片"></a></div>
+					<dt><a href="/product/detail?id=52185">牛黄解毒片</a></dt>
+					        			<dd>￥3.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52160"><img src="/uploads/thumbnail_1/i/a/1497095935_39565.jpg" width="165" height="165" alt="藿香正气胶囊"></a></div>
+					<dt><a href="/product/detail?id=52160">藿香正气胶囊</a></dt>
+					        			<dd>￥9.30</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52010"><img src="/uploads/thumbnail_1/i/a/1497096966_73621.jpg" width="165" height="165" alt="藿香祛暑软胶囊"></a></div>
+					<dt><a href="/product/detail?id=52010">藿香祛暑软胶囊</a></dt>
+					        			<dd>￥4.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51837"><img src="/uploads/thumbnail_1/i/a/1497096063_71253.jpg" width="165" height="165" alt="金银花露含糖"></a></div>
+					<dt><a href="/product/detail?id=51837">金银花露含糖</a></dt>
+					        			<dd>￥4.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52202"><img src="/uploads/thumbnail_1/i/a/1497096943_48966.jpg" width="165" height="165" alt="抗病毒口服液"></a></div>
+					<dt><a href="/product/detail?id=52202">抗病毒口服液</a></dt>
+					        			<dd>￥13.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=49316"><img src="/uploads/thumbnail_1/i/a/1497096565_81880.jpg" width="165" height="165" alt="风油精"></a></div>
+					<dt><a href="/product/detail?id=49316">风油精</a></dt>
+					        			<dd>￥3.20</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52088"><img src="/uploads/thumbnail_1/i/a/1497096601_951.jpg" width="165" height="165" alt="云南白药创可贴"></a></div>
+					<dt><a href="/product/detail?id=52088">云南白药创可贴</a></dt>
+					        			<dd>￥1.80</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="http://www.bxyg.com/product/detail?id=52245" target="_blank"><img src="/uploads/1498633586_7716.jpg" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F2">
+			<div class="div">F2&nbsp;&nbsp;<a href="/product/1650">中西药品</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1650">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang2 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52294"><img src="/uploads/thumbnail_1/i/a/1497097428_69114.jpg" width="165" height="165" alt="京万红软膏"></a></div>
+					<dt><a href="/product/detail?id=52294">京万红软膏</a></dt>
+					        			<dd>￥18.60</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w2">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="/" target="_blank"><img src="/uploads/1497432723_1382.jpg" alt=""></a></li>
+	     				
+	    <li><a href="http://www.bxyg.com/product/detail?id=45731" target="_blank"><img src="/uploads/1497435745_9718.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52286"><img src="/uploads/thumbnail_1/i/a/1497097081_45803.jpg" width="165" height="165" alt="左归丸"></a></div>
+					<dt><a href="/product/detail?id=52286">左归丸</a></dt>
+					        			<dd>￥18.50</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52277"><img src="/uploads/thumbnail_1/i/a/1497096648_8756.jpg" width="165" height="165" alt="缓释异搏定"></a></div>
+					<dt><a href="/product/detail?id=52277">缓释异搏定</a></dt>
+					        			<dd>￥27.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52271"><img src="/uploads/thumbnail_1/i/a/1497096291_29777.jpg" width="165" height="165" alt="彼洛平"></a></div>
+					<dt><a href="/product/detail?id=52271">彼洛平</a></dt>
+					        			<dd>￥29.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52232"><img src="/uploads/thumbnail_1/i/a/1497098232_17831.jpg" width="165" height="165" alt="安宫牛黄丸(铁盒)"></a></div>
+					<dt><a href="/product/detail?id=52232">安宫牛黄丸(铁盒)</a></dt>
+					        			<dd>￥560.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52170"><img src="/uploads/thumbnail_1/i/a/1497096189_74666.jpg" width="165" height="165" alt="金纳多"></a></div>
+					<dt><a href="/product/detail?id=52170">金纳多</a></dt>
+					        			<dd>￥43.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=47117"><img src="/uploads/thumbnail_1/i/a/1497097170_396.jpg" width="165" height="165" alt="肠炎宁片"></a></div>
+					<dt><a href="/product/detail?id=47117">肠炎宁片</a></dt>
+					        			<dd>￥37.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=47956"><img src="/uploads/thumbnail_1/i/a/1497095917_29938.jpg" width="165" height="165" alt="博路定"></a></div>
+					<dt><a href="/product/detail?id=47956">博路定</a></dt>
+					        			<dd>￥216.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="/" target="_blank"><img src="/uploads/1498647354_4287.jpg" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F3">
+			<div class="div">F3&nbsp;&nbsp;<a href="/product/1811">医疗器械</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1811">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang3 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52130"><img src="/uploads/thumbnail_1/i/a/1497097520_1798.jpg" width="165" height="165" alt="稳豪倍易型血糖仪"></a></div>
+					<dt><a href="/product/detail?id=52130">稳豪倍易型血糖仪</a></dt>
+					        			<dd>￥468.00</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w3">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://www.bxyg.com" target="_blank"><img src="/uploads/1497433767_3930.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=41001"><img src="/uploads/thumbnail_1/i/a/1497097791_56019.jpg" width="165" height="165" alt="罗康全活力型血糖仪"></a></div>
+					<dt><a href="/product/detail?id=41001">罗康全活力型血糖仪</a></dt>
+					        			<dd>￥398.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=49378"><img src="/uploads/thumbnail_1/i/a/1497097574_88684.jpg" width="165" height="165" alt="鱼跃轮椅车"></a></div>
+					<dt><a href="/product/detail?id=49378">鱼跃轮椅车</a></dt>
+					        			<dd>￥485.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=43547"><img src="/uploads/thumbnail_1/i/2131281/1497058134_1.jpg" width="165" height="165" alt="鼻可乐鼻腔清洗器"></a></div>
+					<dt><a href="/product/detail?id=43547">鼻可乐鼻腔清洗器</a></dt>
+					        			<dd>￥145.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=48818"><img src="/uploads/thumbnail_1/i/2120347/1497058130_1.jpg" width="165" height="165" alt="欧姆龙上臂式电子血压计HEM-7121"></a></div>
+					<dt><a href="/product/detail?id=48818">欧姆龙上臂式电子血压计HEM-7121</a></dt>
+					        			<dd>￥268.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=43453"><img src="/uploads/thumbnail_1/i/a/1497097858_19414.jpg" width="165" height="165" alt="佛山坐厕椅"></a></div>
+					<dt><a href="/product/detail?id=43453">佛山坐厕椅</a></dt>
+					        			<dd>￥359.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51409"><img src="/uploads/thumbnail_1/i/2130278/1497058132_1.jpg" width="165" height="165" alt="康祝拔罐器"></a></div>
+					<dt><a href="/product/detail?id=51409">康祝拔罐器</a></dt>
+					        			<dd>￥48.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=38941"><img src="/uploads/thumbnail_1/i/a/1497096848_36388.jpg" width="165" height="165" alt="*超声雾化器"></a></div>
+					<dt><a href="/product/detail?id=38941">*超声雾化器</a></dt>
+					        			<dd>￥320.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="http://www.bxyg.com/product/detail?id=43788" target="_blank"><img src="/uploads/1498548524_9657.png" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F4">
+			<div class="div">F4&nbsp;&nbsp;<a href="/product/1865">营养保健</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1865">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang4 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52262"><img src="/uploads/thumbnail_1/i/a/1497097631_82645.jpg" width="165" height="165" alt="金奥力牌甲壳素胶囊"></a></div>
+					<dt><a href="/product/detail?id=52262">金奥力牌甲壳素胶囊</a></dt>
+					        			<dd>￥102.00</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w4">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://www.bxyg.com/product/detail?id=45935" target="_blank"><img src="/uploads/1497436513_1765.jpg" alt=""></a></li>
+	     				
+	    <li><a href="http://www.bxyg.com/product/detail?id=51703" target="_blank"><img src="/uploads/1497508614_3234.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52164"><img src="/uploads/thumbnail_1/i/a/1497097643_69733.jpg" width="165" height="165" alt="北京人参蜂王浆"></a></div>
+					<dt><a href="/product/detail?id=52164">北京人参蜂王浆</a></dt>
+					        			<dd>￥21.30</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52141"><img src="/uploads/thumbnail_1/i/a/1497097633_64617.jpg" width="165" height="165" alt="三奇堂养生健肝茶"></a></div>
+					<dt><a href="/product/detail?id=52141">三奇堂养生健肝茶</a></dt>
+					        			<dd>￥295.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=46227"><img src="/uploads/thumbnail_1/i/a/1497507654_12553.jpg" width="165" height="165" alt="【促】*碧生源减肥茶(常菁茶)"></a></div>
+					<dt><a href="/product/detail?id=46227">【促】*碧生源减肥茶(常菁茶)</a></dt>
+					        			<dd>￥55.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=47390"><img src="/uploads/thumbnail_1/i/a/1497097839_77878.jpg" width="165" height="165" alt="汤臣倍健鱼油软胶囊"></a></div>
+					<dt><a href="/product/detail?id=47390">汤臣倍健鱼油软胶囊</a></dt>
+					        			<dd>￥118.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=38849"><img src="/uploads/thumbnail_1/i/2415036/1497058141_1.jpg" width="165" height="165" alt="央科藏域红天胶囊（红景天胶囊）"></a></div>
+					<dt><a href="/product/detail?id=38849">央科藏域红天胶囊（红景天胶囊）</a></dt>
+					        			<dd>￥39.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51220"><img src="/uploads/thumbnail_1/i/a/1497097632_13466.jpg" width="165" height="165" alt="仙牌灵芝茶"></a></div>
+					<dt><a href="/product/detail?id=51220">仙牌灵芝茶</a></dt>
+					        			<dd>￥79.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=49421"><img src="/uploads/thumbnail_1/i/2423142/1497058141_1.jpg" width="165" height="165" alt="雅培全安素全营养配方粉礼盒装"></a></div>
+					<dt><a href="/product/detail?id=49421">雅培全安素全营养配方粉礼盒装</a></dt>
+					        			<dd>￥548.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="/" target="_blank"><img src="/uploads/1498784802_7432.jpg" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F5">
+			<div class="div">F5&nbsp;&nbsp;<a href="/product/1917">中药滋补</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1917">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang5 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52114"><img src="/uploads/thumbnail_1/i/a/1497097977_81638.jpg" width="165" height="165" alt="决明子"></a></div>
+					<dt><a href="/product/detail?id=52114">决明子</a></dt>
+					        			<dd>￥6.90</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w5">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://bxyg.com/product/detail?id=46327" target="_blank"><img src="/uploads/1497437669_2557.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52102"><img src="/uploads/thumbnail_1/i/a/1497097541_85228.jpg" width="165" height="165" alt="西红花"></a></div>
+					<dt><a href="/product/detail?id=52102">西红花</a></dt>
+					        			<dd>￥59.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52078"><img src="/uploads/thumbnail_1/i/a/1497098026_27592.jpg" width="165" height="165" alt="胖大海"></a></div>
+					<dt><a href="/product/detail?id=52078">胖大海</a></dt>
+					        			<dd>￥35.10</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51829"><img src="/uploads/thumbnail_1/i/2420211/1497058141_1.jpg" width="165" height="165" alt="金牌成熟荆条蜂蜜"></a></div>
+					<dt><a href="/product/detail?id=51829">金牌成熟荆条蜂蜜</a></dt>
+					        			<dd>￥55.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=50260"><img src="/uploads/1522379370_1650.jpg" width="165" height="165" alt="菊花（杭菊）"></a></div>
+					<dt><a href="/product/detail?id=50260">菊花（杭菊）</a></dt>
+					        			<dd>￥26.50</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=42869"><img src="/uploads/1522379695_7623.jpg" width="165" height="165" alt="灵芝片"></a></div>
+					<dt><a href="/product/detail?id=42869">灵芝片</a></dt>
+					        			<dd>￥8.10</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=46901"><img src="/uploads/thumbnail_1/i/2291175/1497058140_1.jpg" width="165" height="165" alt="茯苓"></a></div>
+					<dt><a href="/product/detail?id=46901">茯苓</a></dt>
+					        			<dd>￥24.10</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=49238"><img src="/uploads/thumbnail_1/i/a/1497097896_35168.jpg" width="165" height="165" alt="冬虫夏草礼盒"></a></div>
+					<dt><a href="/product/detail?id=49238">冬虫夏草礼盒</a></dt>
+					        			<dd>￥5380.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="/" target="_blank"><img src="/uploads/1498816411_3421.gif" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F6">
+			<div class="div">F6&nbsp;&nbsp;<a href="/product/1994">母婴用品</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/1994">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang6 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52221"><img src="/uploads/thumbnail_1/i/a/1497098449_56939.jpg" width="165" height="165" alt="贝亲自然实感宽口径玻璃奶瓶AA71"></a></div>
+					<dt><a href="/product/detail?id=52221">贝亲自然实感宽口径玻璃奶瓶AA71</a></dt>
+					        			<dd>￥115.80</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w6">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://bxyg.com/product/detail?id=39919" target="_blank"><img src="/uploads/1497438785_4122.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52166"><img src="/uploads/thumbnail_1/i/a/1497098352_67610.jpg" width="165" height="165" alt="*Aptami爱他美3段"></a></div>
+					<dt><a href="/product/detail?id=52166">*Aptami爱他美3段</a></dt>
+					        			<dd>￥215.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51825"><img src="/uploads/thumbnail_1/i/a/1497098463_29587.jpg" width="165" height="165" alt="合生元妈妈微囊乳钙咀嚼片"></a></div>
+					<dt><a href="/product/detail?id=51825">合生元妈妈微囊乳钙咀嚼片</a></dt>
+					        			<dd>￥47.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51557"><img src="/uploads/thumbnail_1/i/a/1497098479_80074.jpg" width="165" height="165" alt="嘉宝缤纷水果营养米粉"></a></div>
+					<dt><a href="/product/detail?id=51557">嘉宝缤纷水果营养米粉</a></dt>
+					        			<dd>￥48.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51039"><img src="/uploads/thumbnail_1/i/a/1497097594_19576.jpg" width="165" height="165" alt="贝亲奶瓶清洗剂MA26"></a></div>
+					<dt><a href="/product/detail?id=51039">贝亲奶瓶清洗剂MA26</a></dt>
+					        			<dd>￥25.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=50669"><img src="/uploads/thumbnail_1/i/a/1497098421_6564.jpg" width="165" height="165" alt="贝亲新安抚奶嘴（直升飞机）L号N931"></a></div>
+					<dt><a href="/product/detail?id=50669">贝亲新安抚奶嘴（直升飞机）L号N931</a></dt>
+					        			<dd>￥23.10</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=49497"><img src="/uploads/thumbnail_1/i/a/1497098478_20879.jpg" width="165" height="165" alt="方广营养磨牙棒饼干（果蔬味）适合6个月以上"></a></div>
+					<dt><a href="/product/detail?id=49497">方广营养磨牙棒饼干（果蔬味）适合6个月以上</a></dt>
+					        			<dd>￥20.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=48233"><img src="/uploads/thumbnail_1/i/a/1497098467_63998.jpg" width="165" height="165" alt="雅培金装喜康力较大婴儿配方奶粉2"></a></div>
+					<dt><a href="/product/detail?id=48233">雅培金装喜康力较大婴儿配方奶粉2</a></dt>
+					        			<dd>￥189.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+      <div class="container">
+        <div style="margin-top:15px;margin-bottom:0px;"><a href="/" target="_blank"><img src="/uploads/1498817306_6455.gif" alt=""></a></div>        </div>
+         <div class="container mt25">
+	<div class="i-section" >
+		<div class="F7">
+			<div class="div">F7&nbsp;&nbsp;<a href="/product/2060">美妆个护</a></div>
+			
+			<ul>
+			  
+ 			</ul>
+ 			<div class="more"><a href="/product/2060">MORE</a></div>
+ 			<div class="clear"></div>
+		</div>
+	</div>
+ </div>
+
+
+
+	<div class="yang yang7 ">
+		<div class="yang-top">
+			<ul class="ul">
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51575"><img src="/uploads/thumbnail_1/i/a/1497098008_97382.jpg" width="165" height="165" alt="白皙美白隔离乳"></a></div>
+					<dt><a href="/product/detail?id=51575">白皙美白隔离乳</a></dt>
+					        			<dd>￥63.80</dd>
+					</li>
+					
+					<li>
+<div class="dbox">
+ 
+
+
+<div id="w7">
+	<div class="banner-pic">
+		<ul class="bd">
+
+	    <li><a href="http://bxyg.com/product/detail?id=50960" target="_blank"><img src="/uploads/1497493833_9862.jpg" alt=""></a></li>
+	     					     				</ul>
+		<div class="hd">
+	
+			
+<ul><li></li></ul>
+		</div>
+	</div>
+</div>
+</div></li> 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=52073"><img src="/uploads/thumbnail_1/i/2110308/1497058128_1.jpg" width="165" height="165" alt="可丽蓝人绒毛膜促性腺激素hcg电子测试笔"></a></div>
+					<dt><a href="/product/detail?id=52073">可丽蓝人绒毛膜促性腺激素hcg电子测试笔</a></dt>
+					        			<dd>￥48.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=51217"><img src="/uploads/thumbnail_1/i/a/1497097502_66159.jpg" width="165" height="165" alt="大卫排卵（LH）检测试纸"></a></div>
+					<dt><a href="/product/detail?id=51217">大卫排卵（LH）检测试纸</a></dt>
+					        			<dd>￥49.80</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=48599"><img src="/uploads/thumbnail_1/i/a/1497097902_29566.jpg" width="165" height="165" alt="李施德林漱口水齿龈防护"></a></div>
+					<dt><a href="/product/detail?id=48599">李施德林漱口水齿龈防护</a></dt>
+					        			<dd>￥24.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=47522"><img src="/uploads/thumbnail_1/i/a/1497513190_1995.jpg" width="165" height="165" alt="妈富隆"></a></div>
+					<dt><a href="/product/detail?id=47522">妈富隆</a></dt>
+					        			<dd>￥32.50</dd>
+					</li>
+					
+					 
+					<li class="border-btm zhong"    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=46448"><img src="/uploads/thumbnail_1/i/a/1497098013_92238.jpg" width="165" height="165" alt="*玉兰油白里透红美白霜"></a></div>
+					<dt><a href="/product/detail?id=46448">*玉兰油白里透红美白霜</a></dt>
+					        			<dd>￥55.90</dd>
+					</li>
+					
+					 
+					<li class="border-btm "    >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=44770"><img src="/uploads/thumbnail_1/i/a/1497097894_1962.jpg" width="165" height="165" alt="保丽净假牙清洁片"></a></div>
+					<dt><a href="/product/detail?id=44770">保丽净假牙清洁片</a></dt>
+					        			<dd>￥75.00</dd>
+					</li>
+					
+					 
+					<li class="border-btm "  style="border-right: none;"  >
+						<dl class="product-blanking"></dl>
+					<div align="center">
+					<a href="/product/detail?id=46510"><img src="/uploads/thumbnail_1/i/2110006/1497058127_1.jpg" width="165" height="165" alt="杜蕾斯天然胶乳橡胶避孕套情趣组合装"></a></div>
+					<dt><a href="/product/detail?id=46510">杜蕾斯天然胶乳橡胶避孕套情趣组合装</a></dt>
+					        			<dd>￥49.00</dd>
+					</li>
+					
+					  
+					</ul>
+		</div>
+	</div>
+
+
+<div class="eee">
+	<div class="feimao">
+    
+        
+        
+    
+</div>
+</div>
+<div class="container mt25">
+ 
+ <div class="tab-second">
+            <div class="youpin">
+                <div class="pinpai">
+                    <p class="p1 buyi">品牌专区</p>
+                    <p class="p2">友情链接</p>
+ 				<div class="clear"></div>
+                </div>
+                
+                <div class="paidang">
+                    <ul class="chu ul1">        
+                             
+                        <li>
+							<a href="baidu" target="_blank"><img src="/uploads/1494752162_2356.jpg" width="120" height="71" alt="百多邦"></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752176_2858.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752183_2607.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752189_1020.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752196_9364.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752202_1151.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752209_8097.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                               
+                        <li>
+							<a target="_blank"><img src="/uploads/1494752224_2003.jpg" width="120" height="71" alt=""></a>                         
+                        </li>
+                                                   
+                    </ul>
+                    <ul class="ul2">            
+                        <li>
+                                                            
+                            <a href="http://sports.39.net/" target="">39健身</a> |
+                                                            
+                            <a href="http://www.51daifu.com/" target="">医生在线网</a> |
+                                                            
+                            <a href="http://www.tangfc.com/" target="">织发</a> |
+                                                            
+                            <a href="http://cm.39.net/" target="">中医养生</a> |
+                                                            
+                            <a href="http://www.yaozh.com/" target="">药智网</a> |
+                                                            
+                            <a href="http://www.baicaolu.com" target="">药品大全</a> |
+                                                            
+                            <a href="http://www.zyccst.com/" target="">中药材市场</a> |
+                                                            
+                            <a href="http://www.999ask.com/" target="">快速问答网</a> |
+                                                            
+                            <a href="http://www.xizangshop.com" target="">冬虫夏草</a> |
+                                                            
+                            <a href="http://www.baiyangwang.com" target="">百洋商城</a> |
+                                                            
+                            <a href="http://www.fitnes.cn" target="">健身</a> |
+                                                            
+                            <a href="http://www.bjp321.com/" target="">保健品招商</a> |
+                                                            
+                            <a href="http://www.7lk.com/" target="">网上大药房</a> |
+                                                            
+                            <a href="http://www.yaozui.com" target="">国药准字查询</a> |
+                                                            
+                            <a href="http://www.360bzl.com/" target="">药房网</a> |
+                                                            
+                            <a href="http://www.yaofangwang.com/" target="">药房网商城</a> |
+                                                        
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+<script>
+    $('.pinpai .p1').mouseover(function () {
+                $('.pinpai .p1').addClass('buyi')
+                $('.pinpai .p2').removeClass('buyi')
+                $('.paidang .ul1').addClass('chu')
+                $('.paidang .ul2').removeClass('chu')
+            })
+            $('.pinpai .p2').mouseover(function () {
+                $('.pinpai .p2').addClass('buyi')
+                $('.pinpai .p1').removeClass('buyi')
+                $('.paidang .ul2').addClass('chu')
+                $('.paidang .ul1').removeClass('chu')
+            })
+</script></div>	 <div class="clear" style="width: 100%; height: 20px;"></div>
+<div class="bottom-ny">
+	<div class="banner-ny-box">
+		<div class="baozhang">
+			<div class="bz">
+				<div class="bz-left">
+					<div class="bz-iocn bz-icon-1"></div>
+				</div>
+				<div class="bz-right">
+					100%正品
+				 
+				</div>
+			</div>
+			<div class="bz">
+				<div class="bz-left">
+					<div class="bz-iocn bz-icon-2"></div>
+				</div>
+				<div class="bz-right">
+					药师服务
+ 				</div>
+			</div>
+			<div class="bz">
+				<div class="bz-left">
+					<div class="bz-iocn bz-icon-3"></div>
+				</div>
+				<div class="bz-right">
+					准时送达
+					 
+				</div>
+			</div>
+			<div class="bz">
+				<div class="bz-left">
+					<div class="bz-iocn bz-icon-4"></div>
+				</div>
+				<div class="bz-right">
+					隐私包装
+					 
+				</div>
+			</div>
+		</div>
+		<div class="bz-line"></div>
+		<div class="bottom-nav">
+			<a href="/about">关于我们</a>			|
+			<a href="/about/service">服务指南</a>			|
+			<a href="/about/after-sales">售后服务</a>			|
+			<a href="/about/contact-us">联系我们</a>		 
+			<span>
+								<a href="/about/index?id=105"> 互联网药品信息服务资格证书：（京）-非经营性-2010-0030</a> | <a href="/about/index?id=105">药品经营许可证 </a>| <a href="/about/index?id=105">医疗器械经营许可证 </a>| <a href="/about/index?id=105">食品卫生许可证 </a>| <a href="/about/index?id=105">企业营业执照</a> | <a href="/about/index?id=105">GSP认证证书</a> <br />
+	京公网安备110102002709-1号 | 京ICP备10029123号-1 | Copyright © 2007-2012 www.Baxsun.cn  北京百姓阳光大药房网上药店 
+							</span>
+		</div>
+		<div class="b-icon">
+			<ul>
+				<li><img src="/img/b1.png">
+				</li>
+				<li><img src="/img/b2.png">
+				</li>
+				<li><img src="/img/b3.png">
+				</li>
+				<li><img src="/img/b4.png">
+				</li>
+				<li><img src="/img/b5.png">
+				</li>
+				<li><img src="/img/b6.png">
+				</li>
+				<li><img src="/img/b.png">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--<SCRIPT type="text/javascript" src="http://chat.53kf.com/kf.php?arg=baxsun&amp;style=1"></SCRIPT>-->
+<!--{#modAdvsPop#}{#modAdvsFloat#}{#modAdvsLeftConer#}{#modAdvsRightConer#}{#modAdvsDuilian#}-->
+<script>
+$(function(){
+	if(self.frameElement && self.frameElement.tagName=="IFRAME"){
+		$("#wb_con").html("");
+	}else{
+		$("#wb_con").html("<iframe width='100%' height='270' class='share_self'  frameborder='0' scrolling='yes' src='http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=0&skin=4&isTitle=0&noborder=0&isWeibo=1&isFans=1&uid=2037564187&verifier=7101054f&dpc=1'></iframe>");
+	}
+});
+</script>
+	<script src="/assets/4866625b/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">jQuery(function ($) {
+   
+         $(".banner-wrap").slide({mainCell:".banner-pic ul",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         $(window).resize(function(e) {
+            var windowWidth = $(window).width();
+            $(".banner-pic").find("li").width(windowWidth);
+         }).resize();
+
+ 
+         $("#w1").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w2").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w3").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w4").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w5").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w6").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+ 
+         $("#w7").slide({mainCell:".banner-pic ul.bd",effect:"fold", autoPlay: true, delayTime: 1000, interTime: 5000 });
+         
+$("img").lazyload({  effect : "fadeIn"});
+});</script></body>
+</html>

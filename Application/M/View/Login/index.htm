@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户登录-里鲜生</title>
+<meta name="description" content="专注于农副生鲜产品的配送，OTO电商运营，打通最后一公里，实现从基地到餐桌的良性循环，助力“农户增收，平台就业，客户得益”的三方共赢，互利互惠的平台机制。秉承“诚信、责任、绿色、便捷”的经营理念服务于广大新老客户。" />
+<meta name="keywords" content="里鲜生,南昌蔬菜,南昌生鲜,南昌买菜网上商城" />
+<link rel="stylesheet" href="__PUBLIC__/pc/css/common.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/simplepop.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/common.js"></script>
+<link rel="shortcut icon" href="__PUBLIC__/pc/images/favicon.ico">
+<link rel="stylesheet" href="__PUBLIC__/pc/css/login.css">
+
+<!--
+<script type="text/javascript" src="__PUBLIC__/pc/js/login.js"></script>
+-->
+
+
+<script type="text/javascript">
+ var think   = '/Lxs/home';
+ var upload  = '/public/Home/uploadify';
+ var img     = '/public/Home/images';
+ var pic     = '/uploads/';
+ var uid     = 0;
+</script>
+</head>
+<body>
+    
+    
+<include file="Common/head" />
+    
+    
+    
+<div class="navdiv">
+	<div class="nav_all">
+            
+<include file="Common/head2" />      	
+         
+    </div>
+</div>
+
+<div class="login_bg" style="background:url(__PUBLIC__/pc/images/banner.jpg) no-repeat top center;">
+	<div class="loginmain">
+    	<div class="login_div">
+        <div class="login_title">账户登录</div>
+        <div class="">
+        <form name="loginform" method="post" action="#">
+            <input type="hidden" value="" name="url" >
+            <div class="user_in"><input type="text" autocomplete="off" name="username" required  placeholder="用户名" class="log_in" /></div>
+            <div class="pass_in"><input type="password" autocomplete="off" name="password" class="log_in" required placeholder="密码" /></div>
+            <div class="code_in"><input type="text" autocomplete="off" name="imgcode" class="log_ins" maxlength="4" required placeholder="验证码" /></div>
+            <span id="checkid">点击获取验证码</span>
+            <div class="pass_no"><a href="" class="forgot_pass">忘记密码？</a><a href="__MODULE__/register/index.html" class="reg_link">免费注册</a></div>
+            <div class="login_btn">
+<!--              <input type="button" name="login" value="登  录" class="login_but" style="width:100%" />
+-->  
+                <button type="submit" class="login_but" style="width:100%">登 录</button>
+            </div>
+            <div class="err_tip">{$errorInfo}</div>
+            <div class="partner">可以使用以下方式登录</div>
+            <div class="qqlogin"><a href="/qq_login/qqlogin.html" target="_blank"><img src="__PUBLIC__/pc/images/qq_login.gif" height="24"></a>&nbsp;&nbsp;<a href="/weixin_login/wxlogin.html" target="_blank"><img src="__PUBLIC__/pc/images/wechat_login.png" height="24"></a></div>
+        </form>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+//更新验证码
+ function gcode() {
+	var files = think+"/login/logincode";
+	if(G("checkid")) G("checkid").innerHTML = '<img src="'+files+'/t/'+Math.random()+'" alt="点击刷新验证码" style="cursor:pointer;border:0;vertical-align:middle;margin:16px 0 0 0px;" onclick="this.src=\''+files+'?t=\'+Math.random()" />';
+ }
+ gcode();
+ document.onkeydown = function(e) {
+    var theEvent = e || window.event;
+    var code = theEvent.keyCode || theEvent.which|| theEvent.charCode;
+    if (code == 13) {
+	 document.getElementsByName("login")[0].click();
+	}
+}
+</script>
+
+<include file="Common/footer" />
+
+</body>
+</html>

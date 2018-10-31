@@ -1,0 +1,63 @@
+<div class="topdiv">
+	<div class="top">
+		<div class="top-lf">欢迎光临里鲜生生鲜，
+                    <if condition="$Think.session.username eq ''">
+                        请<a href="__MODULE__/login/index.html">[登录]</a><a href="__MODULE__/register/index.html">[注册]</a>
+                    <else />
+                        <a href="__MODULE__/user/index.html">【个人中心】</a><a href="__MODULE__/login/logout.html">[注销]</a>
+                    </if>
+                </div>
+        <ul class="top-rg">
+            <li class="phone"><a href="javascript:void(0)">手机版</a></li>
+            <li class="list"><a href="javascript:void(0)">我的订单</a>
+            	<dl class="top-ctag">
+                	<dd><a href="">全部订单</a></dd>
+                	<dd><a href="">已支付订单</a></dd>
+                	<dd><a href="">未支付订单</a></dd>
+                </dl>
+            </li>
+            <li class="list"><a href="">我的收藏</a></li>
+            <li class="list"><a href="">客户服务</a>
+            	<dl class="top-ctag">
+                	<dd><a href="">帮助中心</a></dd>
+                	<dd><a href="">支付方式</a></dd>
+                	<dd><a href="">售后服务</a></dd>
+                    <dd><a href="">客服中心</a></dd>
+                </dl>
+            </li>
+            <li class="codediv"><img src="__PUBLIC__/pc/images/wexin.jpg" width="88" height="20" />
+            	<div class="code"><img src="__PUBLIC__/pc/images/57a2a4504124c.png" width="120" height="120" /></div>
+            </li>
+        </ul>
+        <script>
+			$('.list').hover(function(){
+				$(this).find('.top-ctag dd').last().css('border-bottom','none');
+				$(this).find('.top-ctag').show();	
+			},function(){
+				$(this).find('.top-ctag').hide();	
+			});
+			$('.codediv').hover(function(){
+				$('.code').show();	
+			},function(){
+				$('.code').hide();	
+			});
+        </script>
+	</div>
+</div>
+<div class="headdiv">
+	<a href="__ROOT__" class="logo"><img src="__PUBLIC__/pc/images/logo.png" width="217" height="127" /></a>
+    <div class="head_search">
+        <form action="__MODULE__/product/index.html" method="get">
+            <input class="sear_in" type="text" placeholder="输入商品关键词进行搜索" name="kw">
+            <input class="search_pic" type="submit" value="搜 索"> 
+        </form>
+    </div>
+    <div class="head_right">
+    	<ul>
+        	<li class="person"><a href="__MODULE__/user/index.html">个人中心</a></li>
+        	<li class="car"><a href="__MODULE__/cart/index.html">购物车</a>
+            	<div class="num">0</div>
+            </li>
+        </ul>
+    </div>
+</div>

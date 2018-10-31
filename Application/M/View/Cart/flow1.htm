@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的购物车-里鲜生</title>
+<meta name="description" content="专注于农副生鲜产品的配送，OTO电商运营，打通最后一公里，实现从基地到餐桌的良性循环，助力“农户增收，平台就业，客户得益”的三方共赢，互利互惠的平台机制。秉承“诚信、责任、绿色、便捷”的经营理念服务于广大新老客户。" />
+<meta name="keywords" content="里鲜生,南昌蔬菜,南昌生鲜,南昌买菜网上商城" />
+<link rel="stylesheet" href="__PUBLIC__/pc/css/common.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/simplepop.js"></script>
+<script type="text/javascript" src="__PUBLIC__/pc/js/common.js"></script>
+<link rel="shortcut icon" href="__PUBLIC__/pc/images/favicon.ico">
+
+<link rel="stylesheet" href="__PUBLIC__/pc/css/cart.css">
+<script type="text/javascript" src="__PUBLIC__/pc/js/cart.js"></script>
+
+<script type="text/javascript">
+ var think   = '/home';
+ var upload  = '/public/Home/uploadify';
+ var img     = '/public/Home/images';
+ var pic     = '/uploads/';
+ var uid     = 0;
+</script>
+</head>
+<body>
+    
+  
+<include file="Common/head" />    
+    
+    
+<div class="navdiv">
+	<div class="nav_all">
+            
+<include file="Common/head2" /> 
+         
+    </div>
+</div>
+
+<div class="inner_mainbox">
+    <div class="mycart">
+        <form name="cartform" method="post" action="">
+            
+         
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr class="mycart_th">
+    <td height="35" width="40" align="center" valign="middle"> <input type="checkbox" value="1" class="cartselectall" />  </td>
+    <td height="35" width="100" align="center" valign="middle">商品图片</td>
+    <td height="35" width="440" align="left" valign="middle">　商品信息</td>
+    <td height="35" width="100" align="center" valign="middle">单价/元</td>
+    <td height="35" width="100" align="center" valign="middle"><span class="mycart_count">数量</span></td>
+    <td height="35" width="90" align="center" valign="middle">小计/元 </td>
+    <td height="35" width="120" align="center" valign="middle">操作</td>
+  </tr>
+  
+  <volist name='goodsInfo' id='vo'>   
+  <tr class="mycart_tr mycart_tr_mark" id="mycart_tr153894">
+    <td height="80" align="center" valign="middle">
+        <input type="checkbox" value="{$vo.goods_id}" name="goodsid[]" class="goodselect" >            
+    </td>
+    <td height="80" align="center" valign="middle">
+     <div class="pima">
+         <a href="javascript:void(0)">
+             <img src="__ROOT__{$vo.midThumb}" height="61" width="61" title="{$vo.goodsName}" />
+             <div class="ima">
+                 <img src="__ROOT__{$vo.midThumb}" border="0" width="200" >
+             </div>
+         </a>
+     </div> 
+    </td>
+    <td height="80" align="left" valign="middle" class="isspec_td">
+        <a href="/product/item/id/738.html" target="_blank">{$vo.goodsName}</a><br/>
+    </td>
+    <td height="80" align="center" valign="middle">
+        {$vo.mprice}                                                
+    </td>
+    <td height="80" align="center" valign="middle"> 
+    <a href="javascript:void(0)"> <div class="minus" data-id="{$vo.goods_id}">－</div> </a>
+        <input type="text" name="cartquantity" id="cartquantity" class="cartcounts" data-oneprice="{$vo.mprice}" data-id="{$vo.goods_id}" onKeyUp="if(isNaN(value))execCommand('undo')" value="1" maxlength="4" />
+        <a href="javascript:void(0)"> <div class="adds" data-stock="1410061763" data-id="{$vo.goods_id}">＋</div> </a>
+    </td>
+    <td height="80" align="center" valign="middle">
+        <b id="summary">{$vo.mprice}</b>
+    </td>
+    <td height="80" align="center" valign="middle">
+      <a href="javascript:void(0)" class="delcartone" data-id="{$vo.goods_id}">删除</a>
+      | <a href="javascript:void(0)" data-id="{$vo.goods_id}" class="tomovefav">移入收藏</a>            
+    </td>
+  </tr>
+  </volist> 
+  
+</table>
+            
+        </form>
+    </div>
+    <div class="gopay">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="700" height="50" rowspan="2" align="left" valign="middle">
+        &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="1" class="cartselectall" /> &nbsp;&nbsp;<span class="selectall">全选</span>　　<a href="javascript:void(0)" id="cartdel">批量删除</a>　<a href="javascript:void(0)" id="clearcart">清空购物车</a> 
+        </td>
+        <td width="300" height="25" align="right">(以结算页为准) 商品总金额：<b id="goodsprice">¥00.00</b></td>
+        <td width="100" rowspan="2" align="center" valign="middle"><input type="button" value="去结算" class="nogotocartpay" id="gotocartpay" /></td>
+      </tr>
+      <tr>
+        <td height="25" align="right">商品应付金额： <b id="allgoodsprice">¥00.00</b></td>
+      </tr>
+    </table>
+    </div>
+        <div class="recent_cart">
+      <ul>
+        <li data-id="0" class="recent_select">热卖产品</li>
+        <li data-id="1">最近浏览</li>
+        <li data-id="2">最近收藏</li>
+      </ul>
+      <!--热卖产品-->
+      <div class="recent_cart_pro" style="display:block;">
+        <dl>
+            <dt><a href="/product/item/id/884.html"><img src="/./uploads/images/20170513/5916a2a1ca640.jpg" width="200" height="200" alt="螺丝肉  螺丝" title="螺丝肉" /></a></dt>
+            <dd title="螺丝肉"><a href="/product/item/id/884.html">螺丝肉</a></dd>
+            <dd>价格：<b>¥ 25.00</b></dd>
+            <dd>已售出：5405</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/883.html"><img src="/./uploads/images/20170513/5916a01944e05.jpg" width="200" height="200" alt="螺蛳皖鱼  螺蛳皖  鱼    皖鱼" title="螺蛳皖鱼" /></a></dt>
+            <dd title="螺蛳皖鱼"><a href="/product/item/id/883.html">螺蛳皖鱼</a></dd>
+            <dd>价格：<b>¥ 15.00</b></dd>
+            <dd>已售出：3186</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/882.html"><img src="/./uploads/images/20170513/59169e6f50520.jpg" width="200" height="200" alt="水饺皮  水饺  皮" title="水饺皮" /></a></dt>
+            <dd title="水饺皮"><a href="/product/item/id/882.html">水饺皮</a></dd>
+            <dd>价格：<b>¥ 6.30</b></dd>
+            <dd>已售出：6215</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/881.html"><img src="/./uploads/images/20170512/591524082dfcf.jpg" width="200" height="200" alt="凉粉  黑凉粉   白凉粉" title="凉粉" /></a></dt>
+            <dd title="凉粉"><a href="/product/item/id/881.html">凉粉</a></dd>
+            <dd>价格：<b>¥ 6.30</b></dd>
+            <dd>已售出：21484</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/878.html"><img src="/./uploads/images/20170513/591659ee00363.jpg" width="200" height="200" alt="中国红火锅料  中国红  火锅料" title="中国红火锅料" /></a></dt>
+            <dd title="中国红火锅料"><a href="/product/item/id/878.html">中国红火锅料</a></dd>
+            <dd>价格：<b>¥ 13.50</b></dd>
+            <dd>已售出：3693</dd>
+        </dl>     </div>
+     <!--结束-->
+     
+     <!--最近浏览-->
+     <div class="recent_cart_pro">
+        <dl>
+            <dt><a href="/product/item/id/738.html"><img src="/./uploads/images/20170307/58be1eb96acfc.png" width="200" height="200" alt="" title="螺丝虾" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/738.html">螺丝虾</a></dd>
+            <dd>价格：<b>¥ 128.00</b></dd>
+            <dd>已售出：3682</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/884.html"><img src="/./uploads/images/20170513/5916a2a1ca640.jpg" width="200" height="200" alt="螺丝肉  螺丝" title="螺丝肉" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/884.html">螺丝肉</a></dd>
+            <dd>价格：<b>¥ 25.00</b></dd>
+            <dd>已售出：5405</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/837.html"><img src="/./uploads/images/20170318/58cc8828518a0.jpg" width="200" height="200" alt="肉燕饺  燕饺" title="肉燕饺（箱）" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/837.html">肉燕饺（箱）</a></dd>
+            <dd>价格：<b>¥ 225.00</b></dd>
+            <dd>已售出：1354</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/883.html"><img src="/./uploads/images/20170513/5916a01944e05.jpg" width="200" height="200" alt="螺蛳皖鱼  螺蛳皖  鱼    皖鱼" title="螺蛳皖鱼" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/883.html">螺蛳皖鱼</a></dd>
+            <dd>价格：<b>¥ 15.00</b></dd>
+            <dd>已售出：3186</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/577.html"><img src="/./uploads/images/20170213/58a14bed690aa.png" width="200" height="200" alt="" title="草鱼" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/577.html">草鱼</a></dd>
+            <dd>价格：<b>¥ 10.80</b></dd>
+            <dd>已售出：3991</dd>
+        </dl>     </div>
+    <!--结束-->
+    
+    <!--最近收藏-->
+     <div class="recent_cart_pro">
+        <dl>
+            <dt><a href="/product/item/id/837.html"><img src="/./uploads/images/20170318/58cc8828518a0.jpg" width="200" height="200" alt="肉燕饺  燕饺" title="肉燕饺（箱）" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/837.html">肉燕饺（箱）</a></dd>
+            <dd>价格：<b>¥ 225.00</b></dd>
+            <dd>已售出：1354</dd>
+        </dl><dl>
+            <dt><a href="/product/item/id/883.html"><img src="/./uploads/images/20170513/5916a01944e05.jpg" width="200" height="200" alt="螺蛳皖鱼  螺蛳皖  鱼    皖鱼" title="螺蛳皖鱼" /></a></dt>
+            <dd title="$rbdata['productname']}"><a href="/product/item/id/883.html">螺蛳皖鱼</a></dd>
+            <dd>价格：<b>¥ 15.00</b></dd>
+            <dd>已售出：3186</dd>
+        </dl>     </div>
+    <!--结束-->
+   </div>
+</div>
+
+
+<include file="Common/footer" />  
+
+</body>
+</html>
