@@ -627,6 +627,7 @@ input::-webkit-inner-spin-button {
 /*订单结算*/
 
 .order-balance {
+    top:82%;
     width: 100%;
     height: 1.2rem;
     background: #fff;

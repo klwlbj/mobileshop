@@ -22,6 +22,8 @@ class LoginController extends Controller {
     }
 
     public function verify(){
+
+        ob_clean();
     	$Verify = new \Think\Verify();
     	$Verify->length=4;
     	$Verify->entry();

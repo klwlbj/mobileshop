@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0035)http://m.360kad.com/?source+pcindex -->
-<html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="__PUBLIC__/index_files1/ga.js"></script><script language="javascript" type="text/javascript" src="__PUBLIC__/index_files1/envconfig.js"></script>
-<script language="javascript" type="text/javascript" async="async" src="__PUBLIC__/index_files1/ctr_v2.js"></script>
+<html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="/Public/index_files1/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files1/envconfig.js"></script>
+<script language="javascript" type="text/javascript" async="async" src="/Public/index_files1/ctr_v2.js"></script>
 <!--布局:M_Index_v2017-->
 <title>【源多享掌上药店】-手机网上药店,药品网购商城,购买药品就上排名前列的源多享掌上药店</title>
 <meta name="sogou_site_verification" content="6HLgSAIlJI">
@@ -13,21 +13,21 @@
 <meta content="yes" name="apple-mobile-web-app-capable">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
 <meta content="telephone=no" name="format-detection">
-<link href="__PUBLIC__/index_files1/swiper.min.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/index_files1/m_index2.css" rel="stylesheet" type="text/css">
-<script src="__PUBLIC__/index_files1/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
-<script src="__PUBLIC__/index_files1/swiper3.07.min.js" type="text/javascript"></script>
-<script src="__PUBLIC__/index_files1/m_index2.js" type="text/javascript"></script>
+<link href="/Public/index_files1/swiper.min.css" rel="stylesheet" type="text/css">
+<link href="/Public/index_files1/m_index2.css" rel="stylesheet" type="text/css">
+<script src="/Public/index_files1/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
+<script src="/Public/index_files1/swiper3.07.min.js" type="text/javascript"></script>
+<script src="/Public/index_files1/m_index2.js" type="text/javascript"></script>
 </head>
 <body class="m_t" style="margin-top: 0rem;">
 
 
 <!--部件开始:m_index_lunbo,分组:广告部件-->
 <nav class="lunbo swiper-container swiper-container-horizontal swiper-container-android" id="lunbo1">
-	<ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-7436px, 0px, 0px);"><li class="swiper-slide swiper-slide-duplicate" adid="m_index_lunbo41" data-swiper-slide-index="7" style="width: 1859px;"><a href="http://m.360kad.com/zhuanti/yqhfyy_m.shtml?kzone=mlb41" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="__PUBLIC__/index_files1/banner1.jpg" alt="M站首页轮播41"></a></li>
-                        <li class="swiper-slide" adid="m_index_lunbo29" data-swiper-slide-index="0" style="width: 1859px;"><a href="http://m.360kad.com/zhuanti/gqfjz_m.shtml?kzone=mlb29" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="__PUBLIC__/index_files1/banner2.jpg" alt="M站首页轮播29"></a></li>
-                        <li class="swiper-slide" adid="m_index_lunbo12" data-swiper-slide-index="1" style="width: 1859px;"><a href="http://m.360kad.com/jknews/jksc/sp/3924081.shtml?kzone=mlb12" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="__PUBLIC__/index_files1/banner3.jpg" alt="M站首页轮播"></a></li>
-                        <li class="swiper-slide swiper-slide-prev" adid="m_index_lunbo10" data-swiper-slide-index="2" style="width: 1859px;"><a href="http://m.360kad.com/spzt/gqdfj_m.shtml?kzone=mlb7" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="__PUBLIC__/index_files1/banner4.jpg" alt="M站首页轮播"></a></li>
+	<ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-7436px, 0px, 0px);"><li class="swiper-slide swiper-slide-duplicate" adid="m_index_lunbo41" data-swiper-slide-index="7" style="width: 1859px;"><a href="http://m.360kad.com/zhuanti/yqhfyy_m.shtml?kzone=mlb41" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="/Public/index_files1/banner1.jpg" alt="M站首页轮播41"></a></li>
+                        <li class="swiper-slide" adid="m_index_lunbo29" data-swiper-slide-index="0" style="width: 1859px;"><a href="http://m.360kad.com/zhuanti/gqfjz_m.shtml?kzone=mlb29" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="/Public/index_files1/banner2.jpg" alt="M站首页轮播29"></a></li>
+                        <li class="swiper-slide" adid="m_index_lunbo12" data-swiper-slide-index="1" style="width: 1859px;"><a href="http://m.360kad.com/jknews/jksc/sp/3924081.shtml?kzone=mlb12" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="/Public/index_files1/banner3.jpg" alt="M站首页轮播"></a></li>
+                        <li class="swiper-slide swiper-slide-prev" adid="m_index_lunbo10" data-swiper-slide-index="2" style="width: 1859px;"><a href="http://m.360kad.com/spzt/gqdfj_m.shtml?kzone=mlb7" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap首页&#39;, &#39;wap首页轮播&#39;, &#39;0&#39;, 0]);"><img src="/Public/index_files1/banner4.jpg" alt="M站首页轮播"></a></li>
                         </ul>
 	<div class="swiper-pagination" id="pagination1"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
 </nav>
@@ -37,14 +37,12 @@
 <nav class="navlist">
 	<ul class="clearfix">
 
-<volist name="cate1" id="vo">
-	<li adid="m_index_navlist_1_2">
-		<a href="__CONTROLLER__/index1/aid/{$vo.id}">
-			<p><img src="__PUBLIC__/index_files1/a{$vo.id}.png" alt="{$vo.catename}"></p>
-			<p style="color:#000000">{$vo.catename}</p>
+<?php if(is_array($cate1)): $i = 0; $__LIST__ = $cate1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li adid="m_index_navlist_1_2">
+		<a href="/index.php/M/Index/index1/aid/<?php echo ($vo["id"]); ?>">
+			<p><img src="/Public/index_files1/a<?php echo ($vo["id"]); ?>.png" alt="<?php echo ($vo["catename"]); ?>"></p>
+			<p style="color:#000000"><?php echo ($vo["catename"]); ?></p>
 		</a>
-	</li>
-</volist>
+	</li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 	</ul>
 </nav>
@@ -63,7 +61,7 @@
 
 <section class="seclist">
 	<!--部件开始:ad_home_countdown2_m,分组:广告部件-->
-<link href="__PUBLIC__/index_files1/templatesAd_other.css" rel="stylesheet" type="text/css">
+<link href="/Public/index_files1/templatesAd_other.css" rel="stylesheet" type="text/css">
 
 <!--/模板1--><!--部件结束:ad_home_countdown2_m-->
 
@@ -135,7 +133,7 @@ font-size: 0.22rem;
 <!--样式结束-->
 <!-- <section class="health_h clerfix">
 <a href="http://m.360kad.com/jknews/jksc/?kzone=zn_jktt_sy&amp;utm_source=zn_jktt_sy" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;健康商城接口调用产品&#39;, &#39;智能推荐-M站首页&#39;, &#39;0&#39;, 0]);">
-	<img class="health_logo" src="__PUBLIC__/index_files1/jktt.jpg" alt="">
+	<img class="health_logo" src="/Public/index_files1/jktt.jpg" alt="">
 	<ul class="health_c" id="health_c">
 动态加载部分
 
@@ -467,9 +465,7 @@ var swiper = new Swiper('#tehui-swiper', {
 
             $(this).addClass("ctrl_color").siblings().removeClass("ctrl_color");
 
-            if (sortnum > 2 && sortnum < (titleLength - 1)) {//
-                $(".tabs_ctrl_pos").css("transform", "translate3d(-" + (((sortnum - 3) * 25) + 12) + "%, 0px, 0px)");
-            }
+            if (sortnum > 2 && sortnum < (titleLength - 1)) 
             else if (sortnum >= (titleLength - 1)) {
                 $(".tabs_ctrl_pos").css("transform", "translate3d(-" + ((titleLength - 4) * 25) + "%, 0px, 0px)");
             }
@@ -576,46 +572,50 @@ var swiper = new Swiper('#tehui-swiper', {
 <div id="cateBox">
 
 
-<volist name="lm" id="vo">
-<section class="category">
+<?php if(is_array($lm)): $i = 0; $__LIST__ = $lm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><section class="category">
 <div class="category-head">
-<img src="__PUBLIC__/index_files1/{$vo.cid}.jpg" alt="" class="img-responsive">
+<img src="/Public/index_files1/<?php echo ($vo["cid"]); ?>.jpg" alt="" class="img-responsive">
 </div>
 <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
 
+<!-- <div class="swiper-wrapper clerfix">
+
+<?php if(is_array($vo)): $k = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><div class="swiper-slide swiper-slide-active">
+<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">
+<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">
+</a>
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+</div> -->
 
 
-
-<volist name="g_res" id="vv" key="k">
-    <li>
-        <a href="__CONTROLLER__/detail/id/{$vv.id}">
-            <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
-            <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+<?php if(is_array($gd)): $k = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+        <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+            <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+            <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
             <p class="likepro-price clearfix plr26">
-                <span class="fl">￥<span>{$vv.shop_price}</span></span>
-                <span class="fr">￥{$vv.market_price}</span>
+                <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
             </p>
         </a>
     </li>
 <!--<div style="width:32%;float:left;margin:1% 0 1% 1%;">-->
-<!--<a href="__CONTROLLER__/index2/id/{$vv.id}">-->
-<!--<img src="__PUBLIC__/index_files1/{$vv.id}.jpg" alt="" class="img-responsive">-->
+<!--<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">-->
+<!--<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">-->
 <!--</a>-->
-<!--</div>-->
-
-</volist>
-    <!--<volist name="gd" id="vo">-->
+<!--</div>--><?php endforeach; endif; else: echo "" ;endif; ?>
+    <!--<?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
         <!--<li>-->
-            <!--<a href="__CONTROLLER__/detail/id/{$vo.id}">-->
-                <!--<p class="likepro-img"><img src="{$vo.original}" alt="{$vo.goods_name}"></p>-->
-                <!--<p class="likepro-name plr26 text-elli">{$vo.goods_name}</p>-->
+            <!--<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">-->
+                <!--<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>-->
+                <!--<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>-->
                 <!--<p class="likepro-price clearfix plr26">-->
-                    <!--<span class="fl">￥<span>{$vo.shop_price}</span></span>-->
-                    <!--<span class="fr">￥{$vo.market_price}</span>-->
+                    <!--<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>-->
+                    <!--<span class="fr">￥<?php echo ($vo["market_price"]); ?></span>-->
                 <!--</p>-->
             <!--</a>-->
         <!--</li>-->
-    <!--</volist>-->
+    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
 
 
 
@@ -623,8 +623,7 @@ var swiper = new Swiper('#tehui-swiper', {
 
 </div>
 
-</section>
-</volist>
+</section><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
 </div>
@@ -739,24 +738,88 @@ swiper11 = new Swiper ('.category-navss', {
 		<div class="like-list" id="like_list">
 			<ul class="clearfix">
 
-<volist name="gd" id="vo">
-	<li>
-		<a href="__CONTROLLER__/detail/id/{$vo.id}">
-			<p class="likepro-img"><img src="{$vo.original}" alt="{$vo.goods_name}"></p>
-			<p class="likepro-name plr26 text-elli">{$vo.goods_name}</p>
+<?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+		<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">
+			<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>
+			<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>
 			<p class="likepro-price clearfix plr26">
-				<span class="fl">￥<span>{$vo.shop_price}</span></span>
-				<span class="fr">￥{$vo.market_price}</span>
+				<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>
+				<span class="fr">￥<?php echo ($vo["market_price"]); ?></span>
 			</p>
 		</a>
-	</li>
-</volist>
+	</li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
 			</ul>
 		</div>
 
-        <include file="./Application/M/View/Common/foot.htm" />
+        <div id="menu" class="menu">
+    <div id="one" class="subMenu text-center" data-src="">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <div class="menu_name">首页</div>
+    </div>
+    <div id="two" class="subMenu text-center">
+
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <div class="menu_name">类别</div>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <div class="menu_name">购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" data-src="personal.html">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <div class="menu_name">个人中心</div>
+    </div>
+
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
+        color: #474747;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    img.menu_img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .menu img {
+        margin-left: 38%;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    /*.active {*/
+    /*color: #FFA129;*/
+    /*}*/
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
 
 	</div>
 	<div class="load-more clearfix" style="display: none;">
@@ -845,9 +908,9 @@ if(pd_3==true){
     	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-健康资讯-文字链&#39;, &#39;0&#39;, 0]);">健康资讯</a>
     </div>
     <div id="IsLogin" class="footer-size1 clearfix">
-    	<a href="{:U('Index/login')}">登录</a>
-    	<a href="{:U('Index/reg')}">注册</a>
-    	<a href="{:U('Index/grzx')}">个人中心</a>
+    	<a href="<?php echo U('Index/login');?>">登录</a>
+    	<a href="<?php echo U('Index/reg');?>">注册</a>
+    	<a href="<?php echo U('Index/grzx');?>">个人中心</a>
     	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-关于源多享-文字链&#39;, &#39;0&#39;, 0]);">关于源多享</a>
     </div>
     <div class="footer-size2"><span>正品保证</span><span>隐私配送</span><span>专业药师</span><span>货到付款</span></div>
@@ -887,14 +950,14 @@ if(pd_3==true){
         <script type="text/javascript">
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " //");
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7a942c91de8533c33ddabdacba23065b' type='text/javascript'%3E%3C/script%3E"));
-        </script><script src="__PUBLIC__/index_files1/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=7a942c91de8533c33ddabdacba23065b" target="_blank"><img border="0" src="__PUBLIC__/index_files1/21.gif" width="20" height="20"></a>
+        </script><script src="/Public/index_files1/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=7a942c91de8533c33ddabdacba23065b" target="_blank"><img border="0" src="/Public/index_files1/21.gif" width="20" height="20"></a>
         <!--百度再营销0416 -->
         <script type="text/javascript">
 <!--
             var bd_cpro_rtid = "nHRvPjm";
 //-->
         </script>
-        <script type="text/javascript" src="__PUBLIC__/index_files1/rt.js"></script>
+        <script type="text/javascript" src="/Public/index_files1/rt.js"></script>
     </div>
     <noscript>
         &lt;div style="display: none;"&gt;

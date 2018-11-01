@@ -3,9 +3,18 @@ namespace M\Controller;
 class IndexController extends CommonController {
 
     public function index(){
-
-        // dump(session('user'));
-
+//        for($cateid=14;$cateid<21;$cateid++){
+//        // dump(session('user'));
+//        $cate=D('cate');
+//        $cate1=$cate->where(array('pid'=>$cateid))->select();
+//        $this->assign('cate1',$cate1);
+//
+//        //查询每个分类下面的商品
+//            $goods=D('goods');
+//            $gd1=$goods->where(array('pid'=>$cateid))->select();
+//            $this->assign('gd1',$gd1);
+//    }
+//        $this->assign('g_res',$g_res);
 
         $ip = get_client_ip();
         $url='https://sp0.baidu.com/8aQDcjqpAAV3otqbppnN2DJv/api.php?query='.$ip.'&co=&resource_id=6006&t=1488163851795&ie=utf8&oe=gbk&cb=op_aladdin_callback&format=json&tn=baidu&cb=jQuery1102007553074611919763_1488163568327&_=1488163568331';
@@ -32,25 +41,80 @@ class IndexController extends CommonController {
             $qx=$qx->where(array('ip'=>$data['ip']))->save($data);
             // $qx=$qx->where(array('ip'=>$data['ip']))->setInc('count',1);
         }
+        $cate=D('cate');
+        $cate1=$cate->where(array('pid'=>'14'))->select();
+        $this->assign('cate1',$cate1);
+
+        //查询每个分类下面的商品
+//        $goods=D('goods');
+//        foreach ($cate1 as $key => &$value) {
+//            $cate2=$cate->where(array('pid'=>$value['id']))->select();
+//
+//            foreach ($cate2 as $kk => $vv) {
+//
+//                $good=$goods->where(array('cate_id'=>$vv['id']))->select();
+//                // dump($good);
+//                if(!empty($good)){
+//
+//                    //数组合并
+//                    $arr = array();
+//                    foreach($good as $k=>$v){
+//                        $arr1= array_merge($arr,$v);
+//                        $g_res[]=$arr1;
+//                    }
+//                }
+//            }
+//        }
+//        $this->assign('g_res',$g_res);
 
 
 
-
-
+//        $cat= D("cate");
+//        $total=$cat->where(array('pid'=>0))->select();
+////        dump($total);die;
+//        foreach($total as $k => $v)
+//        {
+//            $total[$k]['new'] =D("goods") -> where(array('cat_title' => $v['cat_title'])) -> limit(4) -> select();
+//        }
+//        $this -> assign('total',$total);
 
         $cate=D('cate');
+
         $cate1=$cate->where(array('pid'=>0))->select();
-        foreach ($cate1 as $key => $value) {
-            $cate2=$cate->where(array('pid'=>$value['id']))->select();
+        //dump($cate1);die;
+        $goods=D('goods');
+        foreach($cate1 as $kx=>$vx){
+            $cate2=$cate->field('id')->where(array('pid'=>$vx['id']))->select();
 
-            $lm[$key]['cate']=$cate2;
-            $lm[$key]['name']=$value['catename'];
-            $lm[$key]['cid']=$value['id'];
+        foreach ($cate2 as $key => $value) {
+            $cate3=$cate->field('id')->where(array('pid'=>$value['id']))->select();
+            //dump($cate3);//die;
+            foreach ($cate3 as $kk => $vv) {
+                $good=$goods->where(array('cate_id'=>$vv['id']))->select();
+               //dump($good);die;
+                if(!empty($good)){
+
+                    //数组合并
+                    $arr = array();
+                    foreach($good as $k=>$v){
+                        $arr1= array_merge($arr,$v);
+                        $g_res[]=$arr1;
+                    }
+
+                }
+            }//dump($g_res);die;
         }
-
-        // dump($lm);
+        }
+            //dump($good);die;
+            $lm[$key]['cate']=$cate1;
+            $lm[$key]['name']=$vx['catename'];
+            $lm[$key]['cid']=$vx['id'];
         $this->assign('cate1',$cate1);
         $this->assign('lm',$lm);
+        $this->assign('g_res',$g_res);
+
+        // dump($lm);
+
 
         //猜你喜欢
         $goods=D('goods');
@@ -66,7 +130,7 @@ class IndexController extends CommonController {
     //一级分类下面的页面
     public function index1(){
 
-        $id=I("get.aid");
+        $id=I("get.aid"); //get过来的aid
 
         $cate=D('cate');
         $cate1=$cate->where(array('pid'=>$id))->select();

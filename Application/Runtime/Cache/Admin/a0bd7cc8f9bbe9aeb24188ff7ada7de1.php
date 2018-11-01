@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="http://www.shop.com/Application/Admin/Public/style/bootstrap.min.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/bootstrap.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/font-awesome.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/weather-icons.css" rel="stylesheet">
 
@@ -78,11 +78,12 @@
         </div>
     </div>
 </div>
+
 	<!-- /头部 -->
 
 	<div class="main-container container-fluid">
 		<div class="page-container">
-			<!-- Page Sidebar -->
+			            <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -308,7 +309,10 @@
                                         <li>
                         <a href="/x/index.php/Admin/Index/index">系统</a>
                     </li>
-                                        <li class="active">广告位管理</li>
+                                        <li>
+                        <a href="/x/index.php/Admin/Cate/lst">商品分类列表</a>
+                    </li>
+                                        <li class="active">修改商品分类</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -316,48 +320,94 @@
                 <!-- Page Body -->
                 <div class="page-body">
 
-<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/x/index.php/Admin/Adpos/add'"> <i class="fa fa-plus"></i> Add
-</button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">修改商品分类</span>
+            </div>
             <div class="widget-body">
-                <div class="flip-scroll">
-                    <table class="table table-bordered table-hover">
-                        <thead class="">
-                            <tr>
-                                <th class="text-center" width="10%">ID</th>
-                                <th align="left">广告位名称</th>
-                                <th align="left">广告位宽度</th>
-                                <th align="left">广告位高度</th>
-                                <th class="text-center" width="10%">操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                    <td align="center"><?php echo ($vo["id"]); ?></td>
-                                    <td align="left"><?php echo ($vo["pname"]); ?></td>
-                                    <td align="left"><?php echo ($vo["width"]); ?></td>
-                                    <td align="left"><?php echo ($vo["height"]); ?></td>
-                                    <td align="center">
-                                        <a href="/x/index.php/Admin/Adpos/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-edit"></i> 编辑
-                                        </a>
-                                        <a href="#" onClick="warning('确实要删除吗', '/x/index.php/Admin/Adpos/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
-                                            <i class="fa fa-trash-o"></i> 删除
-                                        </a>
-                                    </td>
-                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div style="height:40px;">
-                    <ul class="pagination" style="float:right; margin:10px 0 0 0; ">
-                    <?php echo ($page); ?>
-                    </ul>
-                    </div>
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post">
+                        <input type="hidden" name="id" value="<?php echo ($cates["id"]); ?>">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">分类名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="catename" placeholder="" name="catename" value="<?php echo ($cates["catename"]); ?>" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">上级分类</label>
+                            <div class="col-sm-6">
+                                <select name="pid">
+                                    <option value="0">顶级分类</option>
+                                    <?php if(is_array($cateres)): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if($cates['pid'] == $vo['id']): ?>selected = "selected"<?php endif; ?> value="<?php echo ($vo["id"]); ?>"><?php if($vo['pid'] != 0): ?>|<?php endif; echo str_repeat('-', $vo['level']*8); echo ($vo["catename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">设置推荐</label>
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <?php if(is_array($recposres)): $i = 0; $__LIST__ = $recposres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$recpos): $mod = ($i % 2 );++$i;?><label style="margin-right:15px;">
+                                            <input <?php if(in_array($recpos['id'],$recids)){echo'checked="checked"';}?> type="checkbox" name="recid[]" value="<?php echo ($recpos["id"]); ?>"  class="colored-success">
+                                            <span class="text"><?php echo ($recpos["recname"]); ?></span>
+                                        </label><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </div>
+                            </div>
+                        </div>
+
+                        <style type="text/css">
+                        div.col-sm-6 ul {padding: 0px; margin: 0px;}
+                        div.col-sm-6 ul li{list-style: none; margin: 10px 0;}
+                        div.col-sm-6 ul li select{margin-left:10px; width: 120px;}
+                        </style>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">筛选属性</label>
+                            <div class="col-sm-6">
+                                <?php if($attrRes):?>
+                                <ul>
+                                    <?php foreach($attrRes as $k=>$v): if($k==0){ $add='[+]'; }else{ $add='[-]'; } ?>
+                                    <li>
+                                        <a style="padding" href="javascript:void(0);" onclick="addli(this)"><?php echo ($add); ?></a>
+                                        <select name="type_id[]">
+                                            <option value="">选择类型</option>
+                                            <?php foreach($typeRes as $k1=>$v1): if($v1['id']==$v['type_id']){ $select='selected="selected"'; }else{ $select=''; } ?>
+                                            <option <?php echo ($select); ?> value="<?php echo ($v1["id"]); ?>"><?php echo ($v1["type_name"]); ?></option>
+                                            <?php endforeach;?>
+                                        </select>
+                                        <select attr_id="<?php echo ($v['id']); ?>" name="attr_id[]">
+                                            <option value="">选择属性</option>
+                                        </select>
+                                    </li>
+                                <?php endforeach;?>
+                                </ul>
+                            <?php else:?>
+                                <ul>
+                                    <li>
+                                        <a style="padding" href="javascript:void(0);" onclick="addli(this)">[+]</a>
+                                        <select name="type_id[]">
+                                            <option value="">选择类型</option>
+                                            <?php if(is_array($typeRes)): $i = 0; $__LIST__ = $typeRes;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><option value="<?php echo ($type["id"]); ?>"><?php echo ($type["type_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </select>
+                                        <select name="attr_id[]">
+                                            <option value="">选择属性</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            <?php endif;?>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                	                </div>
             </div>
         </div>
     </div>
@@ -376,7 +426,51 @@
     <script src="http://www.shop.com/Application/Admin/Public/style/jquery.js"></script>
     <!--Beyond Scripts-->
     <script src="http://www.shop.com/Application/Admin/Public/style/beyond.js"></script>
+    <script type="text/javascript">
+    $("select[name='type_id[]']").change(function(){
+        var type_id=$(this).val();
+        var selectobj=$(this);
+        var opt="<option value=''>选择属性</option>";
+        if(type_id!=""){
+            $.ajax({
+                type:"GET",
+                url:"/x/index.php/Admin/Goods/ajaxgetattr/typeid/"+type_id,
+                dataType:"json",
+                success:function(data){
+                    var attr_id=selectobj.next('select').attr('attr_id');
+                    $(data).each(function(k,v){
+                        if(v.id==attr_id){
+                            var select='selected="selected"';
+                        }else{
+                            var select='';
+                        }
+                        opt +="<option "+select+" value='"+v.id+"'>"+v.attr_name+"</option>";
+                    });
+                    // $("select[name='attr_id[]']").html(opt);s
+                    selectobj.next('select').html(opt);
+                }
+            });
+        }else{
+            selectobj.next('select').html(opt);
 
+        }
+
+    });
+
+    function addli(o){
+        var li=$(o).parent();
+        if($(o).html()=='[+]'){
+            var newli=li.clone(true);
+            newli.find("a").html('[-]');
+            li.after(newli);
+        }else{
+            li.remove();
+        }
+
+    }
+
+    $("select[name='type_id[]']").trigger("change");
+    </script>
 
 
 </body></html>

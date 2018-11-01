@@ -131,7 +131,7 @@ setInterval('autoScroll(".new_title_top")', 3500)
 <div class="nestOutsideSwiper">
     <div class="nestOutsideSwiper__content swiper-container-horizontal swiper-container-android">
 
-<img src="/<?php echo ($goods["original"]); ?>" />
+<img src="<?php echo ($goods["original"]); ?>" />
 
     </div>
 </div>

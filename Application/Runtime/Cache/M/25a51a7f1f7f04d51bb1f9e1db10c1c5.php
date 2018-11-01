@@ -577,22 +577,37 @@ var swiper = new Swiper('#tehui-swiper', {
 <img src="/Public/index_files1/<?php echo ($vo["cid"]); ?>.jpg" alt="" class="img-responsive">
 </div>
 <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
-<!-- <div class="swiper-wrapper clerfix">
-
-<?php if(is_array($vo)): $k = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><div class="swiper-slide swiper-slide-active">
-<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">
-<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">
-</a>
-</div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-</div> -->
 
 
-<?php if(is_array($vo['cate'])): $k = 0; $__LIST__ = $vo['cate'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><div style="width:32%;float:left;margin:1% 0 1% 1%;">
-<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">
-<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">
-</a>
-</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+<?php if(is_array($g_res)): $k = 0; $__LIST__ = $g_res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+        <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+            <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+            <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+            <p class="likepro-price clearfix plr26">
+                <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+            </p>
+        </a>
+    </li>
+<!--<div style="width:32%;float:left;margin:1% 0 1% 1%;">-->
+<!--<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">-->
+<!--<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">-->
+<!--</a>-->
+<!--</div>--><?php endforeach; endif; else: echo "" ;endif; ?>
+    <!--<?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+        <!--<li>-->
+            <!--<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">-->
+                <!--<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>-->
+                <!--<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>-->
+                <!--<p class="likepro-price clearfix plr26">-->
+                    <!--<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>-->
+                    <!--<span class="fr">￥<?php echo ($vo["market_price"]); ?></span>-->
+                <!--</p>-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
 
 
 
@@ -717,7 +732,7 @@ swiper11 = new Swiper ('.category-navss', {
 
 <?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
 		<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">
-			<p class="likepro-img"><img src=".<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>
+			<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>
 			<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>
 			<p class="likepro-price clearfix plr26">
 				<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>
@@ -730,6 +745,77 @@ swiper11 = new Swiper ('.category-navss', {
 			</ul>
 		</div>
 
+        <div id="menu" class="menu">
+    <div id="one" class="subMenu text-center" data-src="">
+        <a href="/index.php/M/Index/index">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <div class="menu_name">首页</div>
+        </a>
+    </div>
+    <div id="two" class="subMenu text-center">
+
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <div class="menu_name">类别</div>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <div class="menu_name">购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/grzx">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <div class="menu_name">个人中心</div>
+        </a>
+    </div>
+
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        color: #474747;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    img.menu_img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .menu img {
+        margin: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    /*.active {*/
+    /*color: #FFA129;*/
+    /*}*/
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
 
 	</div>
 	<div class="load-more clearfix" style="display: none;">

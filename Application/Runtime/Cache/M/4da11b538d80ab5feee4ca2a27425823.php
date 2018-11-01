@@ -587,7 +587,7 @@ color: #fff;
 </div>
 <div class="list-imgs">
      <a>
-       <img src="/<?php echo ($vv["original"]); ?>" class="block">
+       <img src="<?php echo ($vv["original"]); ?>" class="block">
     </a>
 </div>
 <p class="list-name"><?php echo ($vv["goods_name"]); ?></p>
@@ -623,7 +623,7 @@ color: #fff;
 </div>
 <div class="list-imgs">
      <a>
-       <img src="/<?php echo ($vv["original"]); ?>" class="block">
+       <img src="<?php echo ($vv["original"]); ?>" class="block">
     </a>
 </div>
 <p class="list-name"><?php echo ($vv["goods_name"]); ?></p>

@@ -367,7 +367,7 @@
         <!--选择框-->
         <p class="prod-select box-flex cur" id="6f73495f3efe4b7a8bf05d8ea9ab9a85"></p>
         <p class="prod-pic box-flex">
-            <a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><img src="<?php echo ($vo["original"]); ?>"></a>
+            <a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><img src="/<?php echo ($vo["original"]); ?>"></a>
         </p>
         <div class="prod-right box-flex">
             <p class="cont-name"><a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><span><?php echo ($vo["goods_name"]); ?></span></a></p>
@@ -432,10 +432,81 @@
 
 
 
+<div id="menu" class="menu">
+    <div id="one" class="subMenu text-center" data-src="">
+        <a href="/index.php/M/Index/index">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <div class="menu_name">首页</div>
+        </a>
+    </div>
+    <div id="two" class="subMenu text-center">
 
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <div class="menu_name">类别</div>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <div class="menu_name">购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/grzx">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <div class="menu_name">个人中心</div>
+        </a>
+    </div>
+
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        color: #474747;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    img.menu_img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .menu img {
+        margin: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    /*.active {*/
+    /*color: #FFA129;*/
+    /*}*/
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
 
 
     <div class="layer-wrap" id="zzlayer"></div>
+
     <!--弹出层背景-->
     <div class="PopupBackground" id="PopupBackground" style="display: none;"></div>
     <div style="display:none" class="Popup1" id="Popup3">

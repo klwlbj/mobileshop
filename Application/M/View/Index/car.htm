@@ -368,7 +368,7 @@
         <!--选择框-->
         <p class="prod-select box-flex cur" id="6f73495f3efe4b7a8bf05d8ea9ab9a85"></p>
         <p class="prod-pic box-flex">
-            <a href="__CONTROLLER__/detail/id/{$vo.id}"><img src="__ROOT__{$vo.original}"></a>
+            <a href="__CONTROLLER__/detail/id/{$vo.id}"><img src="/__ROOT__{$vo.original}"></a>
         </p>
         <div class="prod-right box-flex">
             <p class="cont-name"><a href="__CONTROLLER__/detail/id/{$vo.id}"><span>{$vo.goods_name}</span></a></p>
@@ -434,10 +434,11 @@
 
 
 
-
+<include file="./Application/M/View/Common/foot.htm" />
 
 
     <div class="layer-wrap" id="zzlayer"></div>
+
     <!--弹出层背景-->
     <div class="PopupBackground" id="PopupBackground" style="display: none;"></div>
     <div style="display:none" class="Popup1" id="Popup3">

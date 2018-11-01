@@ -33,6 +33,78 @@ body,html{
     <script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
     </head>
     <body style="">
+    <div id="menu" class="menu">
+    <div id="one" class="subMenu text-center" data-src="">
+        <a href="/index.php/M/Index/index">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <div class="menu_name">首页</div>
+        </a>
+    </div>
+    <div id="two" class="subMenu text-center">
+
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <div class="menu_name">类别</div>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <div class="menu_name">购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/grzx">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <div class="menu_name">个人中心</div>
+        </a>
+    </div>
+
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        color: #474747;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    img.menu_img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .menu img {
+        margin: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    /*.active {*/
+    /*color: #FFA129;*/
+    /*}*/
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
+
     <header>
 
     <div class="my-head cl">
@@ -129,6 +201,5 @@ body,html{
 
     </ul>
     </footer>
-
     </body>
     </html>
