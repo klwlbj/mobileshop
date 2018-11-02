@@ -20,7 +20,79 @@
 <script src="/Public/index_files1/m_index2.js" type="text/javascript"></script>
 </head>
 <body class="m_t" style="margin-top: 0rem;">
+<?php $cd=1;?>
+<div id="menu" class="menu">
+    <div id="one" class="subMenu text-center " data-src="">
+        <a href="/index.php/M/Index/index">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
+        </a>
+    </div>
+    <div id="two" class="subMenu text-center">
+        <a href="/index.php/M/Index/cates">
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
+        </a>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/grzx">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
+        </a>
+    </div>
 
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        color: #474747;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    img.menu_img {
+        height: 3%;
+        width: auto;
+    }
+
+    .menu img {
+        margin: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    .active {
+    color: #01abff;
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
 
 <!--部件开始:m_index_lunbo,分组:广告部件-->
 <nav class="lunbo swiper-container swiper-container-horizontal swiper-container-android" id="lunbo1">
@@ -571,17 +643,15 @@ var swiper = new Swiper('#tehui-swiper', {
 	<!--科室楼层开始-->
 <div id="cateBox">
 
-
-<?php if(is_array($lm)): $i = 0; $__LIST__ = $lm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><section class="category">
+<div class="like-list">
+<div>
+<section class="category">
 <div class="category-head">
-<img src="/Public/index_files1/<?php echo ($vo["cid"]); ?>.jpg" alt="" class="img-responsive">
+<img src="/Public/index_files1/14.jpg" alt="" class="img-responsive">
 </div>
 <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
-
-
-
-
-<?php if(is_array($g_res)): $k = 0; $__LIST__ = $g_res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+<ul>
+<?php if(is_array($g_res1)): $k = 0; $__LIST__ = $g_res1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
         <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
             <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
             <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
@@ -590,32 +660,152 @@ var swiper = new Swiper('#tehui-swiper', {
                 <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
             </p>
         </a>
-    </li>
-<!--<div style="width:32%;float:left;margin:1% 0 1% 1%;">-->
-<!--<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">-->
-<!--<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">-->
-<!--</a>-->
-<!--</div>--><?php endforeach; endif; else: echo "" ;endif; ?>
-    <!--<?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
-        <!--<li>-->
-            <!--<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">-->
-                <!--<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>-->
-                <!--<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>-->
-                <!--<p class="likepro-price clearfix plr26">-->
-                    <!--<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>-->
-                    <!--<span class="fr">￥<?php echo ($vo["market_price"]); ?></span>-->
-                <!--</p>-->
-            <!--</a>-->
-        <!--</li>-->
-    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-
-
-
-
-
+    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+    </ul>
+</section>
 </div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/15.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+        <ul>
+            <?php if(is_array($g_res2)): $k = 0; $__LIST__ = $g_res2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/16.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <?php if(is_array($g_res3)): $k = 0; $__LIST__ = $g_res3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/17.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <?php if(is_array($g_res4)): $k = 0; $__LIST__ = $g_res4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/18.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+                <ul>
+            <?php if(is_array($g_res5)): $k = 0; $__LIST__ = $g_res5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/19.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <?php if(is_array($g_res6)): $k = 0; $__LIST__ = $g_res6;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="/Public/index_files1/20.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <?php if(is_array($g_res7)): $k = 0; $__LIST__ = $g_res7;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                    <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                            <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                        </p>
+                    </a>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
+    </section>
+</div>
+    <div>
 
-</section><?php endforeach; endif; else: echo "" ;endif; ?>
+    </div>
+        <section class="category">
+            <div class="category-head">
+                <img src="/Public/index_files1/21.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+                <ul>
+                <?php if(is_array($g_res8)): $k = 0; $__LIST__ = $g_res8;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
+                        <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
+                            <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                            <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
+                            <p class="likepro-price clearfix plr26">
+                                <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
+                                <span class="fr">￥<?php echo ($vv["market_price"]); ?></span>
+                            </p>
+                        </a>
+                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                </ul>
+        </section>
+    </div>
 
 
 </div>
@@ -720,104 +910,6 @@ swiper11 = new Swiper ('.category-navss', {
 
 
 
-	<div class="user-like">
-		<div class="like-top">
-			<p class="liketop-name">猜你喜欢</p>
-			<p class="liketop-line"></p>
-		</div>
-
-
-		<div class="like-list" id="like_list">
-			<ul class="clearfix">
-
-<?php if(is_array($gd)): $i = 0; $__LIST__ = $gd;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-		<a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>">
-			<p class="likepro-img"><img src="<?php echo ($vo["original"]); ?>" alt="<?php echo ($vo["goods_name"]); ?>"></p>
-			<p class="likepro-name plr26 text-elli"><?php echo ($vo["goods_name"]); ?></p>
-			<p class="likepro-price clearfix plr26">
-				<span class="fl">￥<span><?php echo ($vo["shop_price"]); ?></span></span>
-				<span class="fr">￥<?php echo ($vo["market_price"]); ?></span>
-			</p>
-		</a>
-	</li><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-			</ul>
-		</div>
-
-        <div id="menu" class="menu">
-    <div id="one" class="subMenu text-center" data-src="">
-        <a href="/index.php/M/Index/index">
-        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
-        <div class="menu_name">首页</div>
-        </a>
-    </div>
-    <div id="two" class="subMenu text-center">
-
-        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
-        <div class="menu_name">类别</div>
-    </div>
-    <div id="three" class="subMenu text-center" data-src="personal.html">
-        <a href="/index.php/M/Index/car">
-        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
-        <div class="menu_name">购物车</div></a>
-    </div>
-    <div id="four" class="subMenu text-center" data-src="personal.html">
-        <a href="/index.php/M/Index/grzx">
-        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
-        <div class="menu_name">个人中心</div>
-        </a>
-    </div>
-
-</div> <!--底部菜单-->
-<style>
-    .menu {
-        z-index:9999;
-        display: block;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        color: #474747;
-        padding-top: 10px;
-        border-top: 1px solid #eee;
-        background-color: #fff;
-    }
-
-    .subMenu {
-        width: 25%;
-        float: left;
-        cursor: pointer;
-    }
-
-    .menu_name {
-        height: 30px;
-        width: 100%;
-        line-height: 30px;
-    }
-
-    img.menu_img {
-        height: 24px;
-        width: 24px;
-    }
-
-    .menu img {
-        margin: auto;
-        vertical-align: middle;
-        border: 0;
-    }
-
-    /*.active {*/
-    /*color: #FFA129;*/
-    /*}*/
-
-    .text-center {
-        text-align: center
-    }
-
-</style>
-
-	</div>
 	<div class="load-more clearfix" style="display: none;">
 		<div class="spinner fl">
             <div class="spinner-container container1">

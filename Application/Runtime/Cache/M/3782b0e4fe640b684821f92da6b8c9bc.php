@@ -352,12 +352,9 @@
                     <span id="editBtn" class="header-right">编辑</span>
                 </div>
 
-        <!--非处方药-->
-                            <div class="conter-title clearfix">
-                                <p class="title-select cur"></p>
-                                <p class="title-size">源多享</p>
-                            </div>
-                            <div class="shopCart-conter">
+        <!--非处方药--><?php if(is_null($cars))echo'<div style="margin: auto; text-align: center">购物车快餓瘪了T.T</div><div style="margin: auto; text-align: center"><a
+            href="/index.php/M/Index/index">快给我挑点东西吧</a><div><div style="margin: auto; text-align: center;border-color:#ff6400;border: 1px;"><a
+            href="/index.php/M/Index/index">去逛逛</a><div>'; else echo'<div class="conter-title clearfix"><p class="title-select cur"></p><p class="title-size">源多享</p></div><div class="shopCart-conter">'?>
 
                                     <!--主商品-->
 
@@ -416,7 +413,7 @@
                 </div>
     </section>
 
-<!-- <input type="hidden" name="sid" value="<?php echo ($_GET['sid']); ?>" /> -->
+
 <!-- <input class="sub btn btn-red" type="submit" value="提交登记"> -->
 </form>
 
@@ -431,28 +428,29 @@
 
 
 
-
+<?php $cd=3?>
 <div id="menu" class="menu">
-    <div id="one" class="subMenu text-center" data-src="">
+    <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
         <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
-        <div class="menu_name">首页</div>
+        <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
         </a>
     </div>
     <div id="two" class="subMenu text-center">
-
+        <a href="/index.php/M/Index/cates">
         <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
-        <div class="menu_name">类别</div>
+        <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
+        </a>
     </div>
     <div id="three" class="subMenu text-center" data-src="personal.html">
         <a href="/index.php/M/Index/car">
         <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
-        <div class="menu_name">购物车</div></a>
+        <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
     </div>
     <div id="four" class="subMenu text-center" data-src="personal.html">
         <a href="/index.php/M/Index/grzx">
         <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
-        <div class="menu_name">个人中心</div>
+        <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
         </a>
     </div>
 
@@ -484,8 +482,8 @@
     }
 
     img.menu_img {
-        height: 24px;
-        width: 24px;
+        height: 3%;
+        width: auto;
     }
 
     .menu img {
@@ -494,9 +492,9 @@
         border: 0;
     }
 
-    /*.active {*/
-    /*color: #FFA129;*/
-    /*}*/
+    .active {
+    color: #01abff;
+    }
 
     .text-center {
         text-align: center

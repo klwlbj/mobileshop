@@ -1,6 +1,11 @@
 <?php
 namespace M\Controller;
 class IndexController extends CommonController {
+    public function cates()
+    {
+        $this->display();
+
+    }
 
     public function index(){
 //        for($cateid=14;$cateid<21;$cateid++){
@@ -82,37 +87,22 @@ class IndexController extends CommonController {
 
         $cate1=$cate->where(array('pid'=>0))->select();
         //dump($cate1);die;
-        $goods=D('goods');
-        foreach($cate1 as $kx=>$vx){
-            $cate2=$cate->field('id')->where(array('pid'=>$vx['id']))->select();
+//        $goods=D('goods');
 
-        foreach ($cate2 as $key => $value) {
-            $cate3=$cate->field('id')->where(array('pid'=>$value['id']))->select();
-            //dump($cate3);//die;
-            foreach ($cate3 as $kk => $vv) {
-                $good=$goods->where(array('cate_id'=>$vv['id']))->select();
-               //dump($good);die;
-                if(!empty($good)){
-
-                    //数组合并
-                    $arr = array();
-                    foreach($good as $k=>$v){
-                        $arr1= array_merge($arr,$v);
-                        $g_res[]=$arr1;
-                    }
-
-                }
-            }//dump($g_res);die;
-        }
-        }
             //dump($good);die;
             $lm[$key]['cate']=$cate1;
             $lm[$key]['name']=$vx['catename'];
             $lm[$key]['cid']=$vx['id'];
         $this->assign('cate1',$cate1);
         $this->assign('lm',$lm);
-        $this->assign('g_res',$g_res);
-
+        $this->assign('g_res1',$this->gres(14));/*八个分类的商品*/
+        $this->assign('g_res2',$this->gres(15));
+        $this->assign('g_res3',$this->gres(16));
+        $this->assign('g_res4',$this->gres(17));
+        $this->assign('g_res5',$this->gres(18));
+        $this->assign('g_res6',$this->gres(19));
+        $this->assign('g_res7',$this->gres(20));
+        $this->assign('g_res8',$this->gres(21));
         // dump($lm);
 
 
@@ -125,7 +115,29 @@ class IndexController extends CommonController {
        // $this->assign(array('left1'=>$left1,'big1'=>$big1,'good1'=>$good1));
        $this->display();
     }
+    public function gres($id){  /*各分类商品*/
+        $cate2=D('cate')->field('id')->where(array('pid'=>$id))->select();
 
+        foreach ($cate2 as $key => $value) {
+            $cate3=D('cate')->field('id')->where(array('pid'=>$value['id']))->select();
+            //dump($cate3);//die;
+            foreach ($cate3 as $kk => $vv) {
+                $good=D('goods')->limit('4')->where(array('cate_id'=>$vv['id']))->select();
+                //dump($good);die;
+                if(!empty($good)){
+
+                    //数组合并
+                    $arr = array();
+                    foreach($good as $k=>$v){
+                        $arr1= array_merge($arr,$v);
+                        $g_res[]=$arr1;
+                    }
+
+                }
+            }//dump($g_res);die;
+        }
+        return $g_res;
+    }
 
     //一级分类下面的页面
     public function index1(){
@@ -453,7 +465,6 @@ class IndexController extends CommonController {
 
 
            session("car1",$new);
-
         }
 
 

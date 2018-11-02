@@ -20,7 +20,8 @@
 <script src="__PUBLIC__/index_files1/m_index2.js" type="text/javascript"></script>
 </head>
 <body class="m_t" style="margin-top: 0rem;">
-
+<?php $cd=1;?>
+<include file="./Application/M/View/Common/foot.htm" />
 
 <!--部件开始:m_index_lunbo,分组:广告部件-->
 <nav class="lunbo swiper-container swiper-container-horizontal swiper-container-android" id="lunbo1">
@@ -575,18 +576,15 @@ var swiper = new Swiper('#tehui-swiper', {
 	<!--科室楼层开始-->
 <div id="cateBox">
 
-
-<volist name="lm" id="vo">
+<div class="like-list">
+<div>
 <section class="category">
 <div class="category-head">
-<img src="__PUBLIC__/index_files1/{$vo.cid}.jpg" alt="" class="img-responsive">
+<img src="__PUBLIC__/index_files1/14.jpg" alt="" class="img-responsive">
 </div>
 <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
-
-
-
-
-<volist name="g_res" id="vv" key="k">
+<ul>
+<volist name="g_res1" id="vv" key="k">
     <li>
         <a href="__CONTROLLER__/detail/id/{$vv.id}">
             <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
@@ -597,34 +595,166 @@ var swiper = new Swiper('#tehui-swiper', {
             </p>
         </a>
     </li>
-<!--<div style="width:32%;float:left;margin:1% 0 1% 1%;">-->
-<!--<a href="__CONTROLLER__/index2/id/{$vv.id}">-->
-<!--<img src="__PUBLIC__/index_files1/{$vv.id}.jpg" alt="" class="img-responsive">-->
-<!--</a>-->
-<!--</div>-->
-
 </volist>
-    <!--<volist name="gd" id="vo">-->
-        <!--<li>-->
-            <!--<a href="__CONTROLLER__/detail/id/{$vo.id}">-->
-                <!--<p class="likepro-img"><img src="{$vo.original}" alt="{$vo.goods_name}"></p>-->
-                <!--<p class="likepro-name plr26 text-elli">{$vo.goods_name}</p>-->
-                <!--<p class="likepro-price clearfix plr26">-->
-                    <!--<span class="fl">￥<span>{$vo.shop_price}</span></span>-->
-                    <!--<span class="fr">￥{$vo.market_price}</span>-->
-                <!--</p>-->
-            <!--</a>-->
-        <!--</li>-->
-    <!--</volist>-->
-
-
-
-
-
-</div>
-
+    </ul>
 </section>
-</volist>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/15.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+        <ul>
+            <volist name="g_res2" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+        </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/16.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <volist name="g_res3" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/17.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <volist name="g_res4" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/18.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+                <ul>
+            <volist name="g_res5" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+                </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/19.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <volist name="g_res6" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+            </ul>
+    </section>
+</div>
+<div>
+    <section class="category">
+        <div class="category-head">
+            <img src="__PUBLIC__/index_files1/20.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+            <ul>
+            <volist name="g_res7" id="vv" key="k">
+                <li>
+                    <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                        <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                        <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                        <p class="likepro-price clearfix plr26">
+                            <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                            <span class="fr">￥{$vv.market_price}</span>
+                        </p>
+                    </a>
+                </li>
+            </volist>
+            </ul>
+    </section>
+</div>
+    <div>
+
+    </div>
+        <section class="category">
+            <div class="category-head">
+                <img src="__PUBLIC__/index_files1/21.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+                <ul>
+                <volist name="g_res8" id="vv" key="k">
+                    <li>
+                        <a href="__CONTROLLER__/detail/id/{$vv.id}">
+                            <p class="likepro-img"><img src="{$vv.original}" alt="{$vv.goods_name}"></p>
+                            <p class="likepro-name plr26 text-elli">{$vv.goods_name}</p>
+                            <p class="likepro-price clearfix plr26">
+                                <span class="fl">￥<span>{$vv.shop_price}</span></span>
+                                <span class="fr">￥{$vv.market_price}</span>
+                            </p>
+                        </a>
+                    </li>
+                </volist>
+                </ul>
+        </section>
+    </div>
 
 
 </div>
@@ -729,36 +859,6 @@ swiper11 = new Swiper ('.category-navss', {
 
 
 
-	<div class="user-like">
-		<div class="like-top">
-			<p class="liketop-name">猜你喜欢</p>
-			<p class="liketop-line"></p>
-		</div>
-
-
-		<div class="like-list" id="like_list">
-			<ul class="clearfix">
-
-<volist name="gd" id="vo">
-	<li>
-		<a href="__CONTROLLER__/detail/id/{$vo.id}">
-			<p class="likepro-img"><img src="{$vo.original}" alt="{$vo.goods_name}"></p>
-			<p class="likepro-name plr26 text-elli">{$vo.goods_name}</p>
-			<p class="likepro-price clearfix plr26">
-				<span class="fl">￥<span>{$vo.shop_price}</span></span>
-				<span class="fr">￥{$vo.market_price}</span>
-			</p>
-		</a>
-	</li>
-</volist>
-
-
-			</ul>
-		</div>
-
-        <include file="./Application/M/View/Common/foot.htm" />
-
-	</div>
 	<div class="load-more clearfix" style="display: none;">
 		<div class="spinner fl">
             <div class="spinner-container container1">
