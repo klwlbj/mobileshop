@@ -120,11 +120,11 @@ body,html{
 <div class="userInfoBox fl">
 
 <?php if($_SESSION['user']!= ''): ?><p class="usertel"><?php echo ($_SESSION['user']['phone']); ?></p>
-    <p class="userother">
-        <span id="userName">未绑定</span>
-        <span class="unbundling none" style="display: none;">解绑微信</span>
-        <span class="bundling none" style="display: inline-block;">绑定微信</span>
-    </p>
+    <!--<p class="userother">-->
+        <!--<span id="userName">未绑定</span>-->
+        <!--<span class="unbundling none" style="display: none;">解绑微信</span>-->
+        <!--<span class="bundling none" style="display: inline-block;">绑定微信</span>-->
+    <!--</p>-->
 <?php else: ?>
     <p class="nologin" style="">
     <span id="reg-btn"><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/reg');?>">注册</a></span> /

@@ -136,13 +136,26 @@ class IndexController extends CommonController {
             //dump($cate3);//die;
             foreach ($cate3 as $kk => $vv) {
                 $good=D('goods')->limit('4')->where(array('cate_id'=>$vv['id']))->select();
-                //dump($good);die;
+
                 if(!empty($good)){
 
                     //数组合并
                     $arr = array();
                     foreach($good as $k=>$v){
+                        foreach ($good as $k1=>$v1){
+                    if(session('user.vip')=='2'){
+                        $v['shop_price']=$v['vip2_price'];
+                    }
+                    if(session('user.vip')=='3'){
+                        $v['shop_price']=$v['vip3_price'];
+                    }
+                    if(session('user.vip')=='4'){
+                        $v['shop_price']=$v['vip4_price'];
+                    }
+                }
+                        //$v['shop_price']=$v['vip2_price'];
                         $arr1= array_merge($arr,$v);
+
                         $g_res[]=$arr1;
                     }
 
@@ -234,7 +247,15 @@ class IndexController extends CommonController {
 
         //查询商品详情
         $goods=D('goods')->find($id);
-
+        if(session('user.vip')=='2'){
+            $goods['shop_price']=$goods['vip2_price'];
+        }
+        if(session('user.vip')=='3'){
+            $goods['shop_price']=$goods['vip3_price'];
+        }
+        if(session('user.vip')=='4'){
+            $goods['shop_price']=$goods['vip4_price'];
+        }
         //优惠多少钱
         $goods['yh']=bcsub($goods['market_price'], $goods['shop_price'], 2);
 
@@ -324,6 +345,8 @@ class IndexController extends CommonController {
 
                    $da['phone'] = $find_one['phone'];
                    $da['nick'] = $find_one['nick'];
+                   $da['vip'] = $find_one['vip'];
+//                   dump($da);die;
                    session("user",$da);
 
                    $this->success('登录成功！', U('Index/grzx'));
@@ -373,6 +396,15 @@ class IndexController extends CommonController {
             $res=$goods->where($where)->select();
             foreach ($res as $key => &$value) {
                 $value['max_thumb']=substr($value['max_thumb'],1);
+                if(session('user.vip')=='2'){
+                    $value['shop_price']=$value['vip2_price'];
+                }
+                if(session('user.vip')=='3'){
+                    $value['shop_price']=$value['vip3_price'];
+                }
+                if(session('user.vip')=='4'){
+                    $value['shop_price']=$value['vip4_price'];
+                }
                 $value['count']=$post['number'.($key+1)];
                 $value['xj']=$value['shop_price']*$value['count'];
 
@@ -468,6 +500,16 @@ class IndexController extends CommonController {
            $da['id'] = $find_one['id'];
            $da['goods_name'] = $find_one['goods_name'];
            $da['shop_price'] = $find_one['shop_price'];
+           //dump(session('user.vip'));die;
+            if(session('user.vip')=='2'){
+                $da['shop_price']=$find_one['vip2_price'];
+            }
+            if(session('user.vip')=='3'){
+                $da['shop_price']=$find_one['vip3_price'];
+            }
+            if(session('user.vip')=='4'){
+                $da['shop_price']=$find_one['vip4_price'];
+            }
            $da['original'] = substr($find_one['original'],1);
            $da['num'] = 1;
 

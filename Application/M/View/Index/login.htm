@@ -31,7 +31,7 @@
 
         <div class="reg-input-wrap relative display-box">
             <p class="reg-left box-flex1">密<i class="textIndent1"></i> 码 ：</p>
-            <p class="reg-right pass-word box-flex1 input"><input  name="password" id="password" value="" maxlength="20" placeholder="请输入密码"></p>
+            <p class="reg-right pass-word box-flex1 input"><input  name="password" id="password" value="" type="password" maxlength="20" placeholder="请输入密码"></p>
             <!-- <p id="isShowpwd" class="reg-eye"></p> -->
         </div>
 

@@ -56,6 +56,7 @@
 		}
 
 	</style>
+	<link rel="stylesheet" href="../../../../../xb/public/static/css/web.css">
 </head>
 <body>
 <?php $cd=2;?>

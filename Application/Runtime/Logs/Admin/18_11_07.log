@@ -1493,3 +1493,127 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
 
+[ 2018-11-07T17:26:40+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_user` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sp_user` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-11-07T17:26:44+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/edit/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `sp_user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001683s ]
+
+[ 2018-11-07T17:26:50+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/edit/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `sp_user` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-11-07T17:26:57+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/edit/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `sp_user` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2018-11-07T17:27:09+08:00 ] 127.0.0.1 /index.php/Admin/index/ip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `sp_ip` [ RunTime:0.0328s ]
+SQL: SELECT * FROM `sp_ip` ORDER BY id desc  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\e510d7bd94972232462a201f9b9f9fe8.php 第 344 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002118s ]
+

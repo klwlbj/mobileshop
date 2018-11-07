@@ -50,11 +50,11 @@ body,html{
 
 <if condition="$Think.session.user neq ''">
     <p class="usertel">{$Think.session.user.phone}</p>
-    <p class="userother">
-        <span id="userName">未绑定</span>
-        <span class="unbundling none" style="display: none;">解绑微信</span>
-        <span class="bundling none" style="display: inline-block;">绑定微信</span>
-    </p>
+    <!--<p class="userother">-->
+        <!--<span id="userName">未绑定</span>-->
+        <!--<span class="unbundling none" style="display: none;">解绑微信</span>-->
+        <!--<span class="bundling none" style="display: inline-block;">绑定微信</span>-->
+    <!--</p>-->
 <else />
     <p class="nologin" style="">
     <span id="reg-btn"><a style="color: #FFF;" class="toquit" href="{:U('Index/reg')}">注册</a></span> /
