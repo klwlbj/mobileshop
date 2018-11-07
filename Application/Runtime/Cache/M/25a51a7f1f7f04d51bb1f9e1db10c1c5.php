@@ -29,7 +29,7 @@
         </a>
     </div>
     <div id="two" class="subMenu text-center">
-        <a href="/index.php/M/Index/cates">
+        <a href="/index.php/M/Index/cates/id/14">
         <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
         <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
         </a>
@@ -653,7 +653,7 @@ var swiper = new Swiper('#tehui-swiper', {
 <ul>
 <?php if(is_array($g_res1)): $k = 0; $__LIST__ = $g_res1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
         <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-            <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+            <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
             <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
             <p class="likepro-price clearfix plr26">
                 <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -673,7 +673,7 @@ var swiper = new Swiper('#tehui-swiper', {
         <ul>
             <?php if(is_array($g_res2)): $k = 0; $__LIST__ = $g_res2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -693,7 +693,7 @@ var swiper = new Swiper('#tehui-swiper', {
             <ul>
             <?php if(is_array($g_res3)): $k = 0; $__LIST__ = $g_res3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -713,7 +713,7 @@ var swiper = new Swiper('#tehui-swiper', {
             <ul>
             <?php if(is_array($g_res4)): $k = 0; $__LIST__ = $g_res4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -733,7 +733,7 @@ var swiper = new Swiper('#tehui-swiper', {
                 <ul>
             <?php if(is_array($g_res5)): $k = 0; $__LIST__ = $g_res5;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -753,7 +753,7 @@ var swiper = new Swiper('#tehui-swiper', {
             <ul>
             <?php if(is_array($g_res6)): $k = 0; $__LIST__ = $g_res6;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -773,7 +773,7 @@ var swiper = new Swiper('#tehui-swiper', {
             <ul>
             <?php if(is_array($g_res7)): $k = 0; $__LIST__ = $g_res7;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                     <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                        <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                        <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                         <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                         <p class="likepro-price clearfix plr26">
                             <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>
@@ -795,7 +795,7 @@ var swiper = new Swiper('#tehui-swiper', {
                 <ul>
                 <?php if(is_array($g_res8)): $k = 0; $__LIST__ = $g_res8;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><li>
                         <a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>">
-                            <p class="likepro-img"><img src="<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
+                            <p class="likepro-img"><img src="/<?php echo ($vv["original"]); ?>" alt="<?php echo ($vv["goods_name"]); ?>"></p>
                             <p class="likepro-name plr26 text-elli"><?php echo ($vv["goods_name"]); ?></p>
                             <p class="likepro-price clearfix plr26">
                                 <span class="fl">￥<span><?php echo ($vv["shop_price"]); ?></span></span>

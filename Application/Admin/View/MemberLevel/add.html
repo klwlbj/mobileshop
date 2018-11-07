@@ -39,9 +39,9 @@
                         <a href="__MODULE__/Index/index">系统</a>
                     </li>
                                         <li>
-                        <a href="__CONTROLLER__/lst">等级列表</a>
+                        <a href="__CONTROLLER__/lst">会员列表</a>
                     </li>
-                                        <li class="active">添加等级</li>
+                                        <li class="active">添加会员</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -53,39 +53,47 @@
     <div class="col-lg-12 col-sm-12 col-xs-12">
         <div class="widget">
             <div class="widget-header bordered-bottom bordered-blue">
-                <span class="widget-caption">新增等级</span>
+                <span class="widget-caption">新增会员</span>
             </div>
             <div class="widget-body">
                 <div id="horizontal-form">
                     <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" >
+
                         <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">等级名称</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">会员昵称</label>
                             <div class="col-sm-6">
-                                <input class="form-control" placeholder="" name="level_name" required="" type="text">
+                                <input class="form-control" placeholder="" name="nick" required="" type="text">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
                         <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">积分下限</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">会员手机</label>
                             <div class="col-sm-6">
-                                <input class="form-control" placeholder="" name="points_min" required="" type="text">
+                                <input class="form-control" placeholder="" name="phone" required="" type="tel">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
                         <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">积分上限</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">会员密码</label>
                             <div class="col-sm-6">
-                                <input class="form-control" placeholder="" name="points_max" required="" type="text">
+                                <input class="form-control" placeholder="" name="password" required="" type="tel">
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
                         <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">折扣率</label>
+                            <label for="username" class="col-sm-2 control-label no-padding-right">会员等级</label>
                             <div class="col-sm-6">
-                                <input class="form-control" placeholder="" name="rate" required="" type="text">
+
+                                <div class="control-group">
+                                    <div class="radio"><label><input checked="checked" class="colored-blue" name="form-field-radio" type="radio" value="1"><span class="text">1 </span></label></div>
+                                    <div class="radio"><label><input class="colored-danger" name="form-field-radio" type="radio" value="2"><span class="text"> 2</span></label></div>
+                                    <div class="radio"><label><input class="colored-success" name="form-field-radio" type="radio" value="3"><span class="text"> 3</span></label></div>
+                                    <div class="radio"><label><input class="colored-blueberry" name="form-field-radio" type="radio" value="4"><span class="text"> 4</span></label></div>
+                                </div>
                             </div>
                             <p class="help-block col-sm-4 red">* 必填</p>
                         </div>
+
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-default">保存信息</button>

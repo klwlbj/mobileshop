@@ -1,0 +1,1697 @@
+[ 2018-11-06T09:09:52+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-11-06T09:09:52+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2018-11-06T09:09:59+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+
+[ 2018-11-06T09:10:02+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2018-11-06T09:10:06+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_admin` WHERE ( username='ydx' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2018-11-06T09:10:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2018-11-06T09:10:27+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0245s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_member_level` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_member_level` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-11-06T09:10:58+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_member_level` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sp_member_level` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-11-06T09:50:32+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0227s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_member_level` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_member_level` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-11-06T09:55:26+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0239s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_member_level` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sp_member_level` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2018-11-06T10:06:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0288s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2018-11-06T10:10:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 8,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-11-06T10:10:11+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-11-06T10:11:51+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2018-11-06T10:12:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2018-11-06T10:14:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0251s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-11-06T10:14:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0451s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0283s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-11-06T10:14:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0076s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2018-11-06T10:15:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-11-06T10:17:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0294s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 329 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 330 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 330 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 332 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 336 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 337 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 339 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 342 行.
+NOTIC: [8] Undefined variable: vo D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2018-11-06T10:17:54+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-11-06T10:18:07+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0289s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2018-11-06T10:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0070s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-11-06T10:19:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0471s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip2_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip3_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+NOTIC: [8] Undefined index: vip4_price D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\12cf6a5c74297688873998de0720405d.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-11-06T10:24:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0326s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-11-06T10:29:56+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0105s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-11-06T10:31:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0082s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: vip2 D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 434 行.
+NOTIC: [8] Undefined variable: vip3 D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 441 行.
+NOTIC: [8] Undefined variable: vip4 D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php 第 448 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-11-06T10:43:51+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0106s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-11-06T10:44:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `sp_goods` WHERE `goods_name` = '粤粤 玫瑰柠檬茶(代用茶) 3g*6袋' AND `id` <> '88' LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0111s ]
+SQL: DELETE FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1 [ RunTime:0.0011s ]
+SQL: UPDATE `sp_goods` SET `goods_name`='粤粤 玫瑰柠檬茶(代用茶) 3g*6袋',`cate_id`='332',`brand_id`='0',`market_price`='38.00 ',`shop_price`='19.90',`vip2_price`='101.00',`vip3_price`='100.00',`vip4_price`='100.00',`goods_weight`='1',`weight_unit`='g',`onsale`='1',`goods_desc`='&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20181015/1539618375.jpg&quot; title=&quot;1539618375.jpg&quot; alt=&quot;20181015234507.jpg&quot;/&gt;&lt;/p&gt;',`type_id`='0',`updatetime`='1541472240' WHERE `id` = 88 [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-11-06T10:44:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0266s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-11-06T10:44:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0242s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-11-06T10:44:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0291s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-11-06T10:45:53+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0286s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2018-11-06T10:48:16+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `sp_goods` WHERE `goods_name` = '扣篮王苏伟' LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sp_goods` (`goods_name`,`cate_id`,`brand_id`,`market_price`,`shop_price`,`vip2_price`,`vip3_price`,`vip4_price`,`onsale`,`goods_desc`,`type_id`,`addtime`,`updatetime`,`original`,`max_thumb`,`mid_thumb`,`sm_thumb`,`s_pic`,`goods_sn`) VALUES ('扣篮王苏伟','331','0','1','1','1','1','1','1','','0','1541472496','1541472496','./Public/Uploads/Goods/2018-11-06/5be100f08b414.jpg','./Public/Uploads/Goods/2018-11-06/max_5be100f08b414.jpg','./Public/Uploads/Goods/2018-11-06/mid_5be100f08b414.jpg','./Public/Uploads/Goods/2018-11-06/sm_5be100f08b414.jpg','./Public/Uploads/Goods/2018-11-06/5be100f09d764.jpg','1541472496583333') [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-11-06T10:48:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-11-06T10:48:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 90  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 90  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 90  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0068s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 90 AND `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-11-06T11:00:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 90  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 90  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 90  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0067s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 90 AND `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-11-06T11:00:51+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0069s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2018-11-06T11:01:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/del/id/90
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0132s ]
+SQL: SELECT `original`,`max_thumb`,`mid_thumb`,`sm_thumb` FROM `sp_goods` WHERE `id` = 90 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0088s ]
+SQL: DELETE FROM `sp_member_price` WHERE `goods_id` = 90 [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0089s ]
+SQL: DELETE FROM `sp_goods_attr` WHERE `goods_id` = 90 [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 90  [ RunTime:0.0009s ]
+SQL: DELETE FROM `sp_goods_pic` WHERE `goods_id` = 90 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0082s ]
+SQL: DELETE FROM `sp_recvalue` WHERE `rectype` = 1 AND `valueid` = 90 [ RunTime:0.0009s ]
+SQL: DELETE FROM `sp_goods` WHERE `id` = 90 [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2018-11-06T11:01:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0269s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-11-06T11:01:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0173s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-11-06T11:02:13+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0063s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-11-06T11:03:26+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0087s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-11-06T11:04:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0083s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2018-11-06T11:04:45+08:00 ] 127.0.0.1 /index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-11-06T11:22:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-11-06T11:23:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-11-06T11:23:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/product/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `sp_product` [ RunTime:0.0273s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0135s ]
+SQL: 
+            SELECT a.id,a.attr_id,a.attr_value,b.attr_name
+            FROM  sp_goods_attr a LEFT JOIN sp_attr b ON a.attr_id=b.id
+            WHERE a.goods_id = 87 AND b.attr_type='1' [ RunTime:0.0022s ]
+SQL: SELECT * FROM `sp_product` WHERE `goods_id` = 87 ORDER BY id desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-11-06T11:23:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0068s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-11-06T11:23:55+08:00 ] 127.0.0.1 /index.php/Admin/Goods/product/id/87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `sp_product` [ RunTime:0.0298s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0169s ]
+SQL: 
+            SELECT a.id,a.attr_id,a.attr_value,b.attr_name
+            FROM  sp_goods_attr a LEFT JOIN sp_attr b ON a.attr_id=b.id
+            WHERE a.goods_id = 87 AND b.attr_type='1' [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sp_product` WHERE `goods_id` = 87 ORDER BY id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+

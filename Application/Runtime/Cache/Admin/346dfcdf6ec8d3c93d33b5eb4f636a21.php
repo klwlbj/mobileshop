@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="http://xywy99.com/Application/Admin/Public/style/bootstrap.css" rel="stylesheet">
-    <link href="http://xywy99.com/Application/Admin/Public/style/font-awesome.css" rel="stylesheet">
-    <link href="http://xywy99.com/Application/Admin/Public/style/weather-icons.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/bootstrap.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/font-awesome.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/weather-icons.css" rel="stylesheet">
 
     <!--Beyond styles-->
-    <link id="beyond-link" href="http://xywy99.com/Application/Admin/Public/style/beyond.css" rel="stylesheet" type="text/css">
-    <link href="http://xywy99.com/Application/Admin/Public/style/demo.css" rel="stylesheet">
-    <link href="http://xywy99.com/Application/Admin/Public/style/typicons.css" rel="stylesheet">
-    <link href="http://xywy99.com/Application/Admin/Public/style/animate.css" rel="stylesheet">
+    <link id="beyond-link" href="http://www.shop.com/Application/Admin/Public/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="http://www.shop.com/Application/Admin/Public/style/demo.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/typicons.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/animate.css" rel="stylesheet">
     <!-- 引入ueditor -->
-    <script src="http://xywy99.com/Application/Admin/Public/ueditor/ueditor.config.js"></script>
-    <script src="http://xywy99.com/Application/Admin/Public/ueditor/ueditor.all.min.js"></script>
-    <script src="http://xywy99.com/Application/Admin/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/ueditor.config.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/ueditor.all.min.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
 	<!-- 头部 -->
@@ -31,7 +31,7 @@
             <div class="navbar-header pull-left">
                 <a href="#" class="navbar-brand">
                     <small>
-                            <img src="http://xywy99.com/Application/Admin/Public/images/logo.png" alt="">
+                            <img src="http://www.shop.com/Application/Admin/Public/images/logo.png" alt="">
                         </small>
                 </a>
             </div>
@@ -48,7 +48,7 @@
                         <li>
                             <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                 <div class="avatar" title="View your public profile">
-                                    <img src="http://xywy99.com/Application/Admin/Public/images/adam-jansen.jpg">
+                                    <img src="http://www.shop.com/Application/Admin/Public/images/adam-jansen.jpg">
                                 </div>
                                 <section>
                                     <h2><span class="profile"><span><?php echo (session('uname')); ?></span></span></h2>
@@ -345,19 +345,19 @@
                                         商品详情
                                     </a>
                                 </li>
-                                <li class="">
-                                    <a href="#profile12" data-toggle="tab">
-                                        会员价格
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#profile13" data-toggle="tab">
-                                        商品属性
-                                    </a>
-                                </li>
+                                <!--<li class="">-->
+                                    <!--<a href="#profile12" data-toggle="tab">-->
+                                        <!--会员价格-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li class="">-->
+                                    <!--<a href="#profile13" data-toggle="tab">-->
+                                        <!--商品属性-->
+                                    <!--</a>-->
+                                <!--</li>-->
                                 <li class="">
                                     <a href="#profile14" data-toggle="tab">
-                                        商品图片
+                                        商品更多图片
                                     </a>
                                 </li>
                             </ul>
@@ -414,9 +414,30 @@
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">本店价格</label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip1价格</label>
                                         <div class="col-sm-6">
                                             <input type="text" required="" name="shop_price" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip2价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip2_price" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip3价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip3_price" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip4价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip4_price" placeholder="" class="form-control" >
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
@@ -443,17 +464,19 @@
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品推荐</label>
-                                       <div class="col-sm-6">
-                                           <div class="checkbox">
-                                                <?php if(is_array($recposres)): $i = 0; $__LIST__ = $recposres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$recpos): $mod = ($i % 2 );++$i;?><label style="margin-right:15px;">
-                                                        <input type="checkbox" name="recid[]" value="<?php echo ($recpos["id"]); ?>"  class="colored-success">
-                                                        <span class="text"><?php echo ($recpos["recname"]); ?></span>
-                                                    </label><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label no-padding-right" for="username">商品推荐</label>-->
+                                       <!--<div class="col-sm-6">-->
+                                           <!--<div class="checkbox">-->
+                                                <!--<?php if(is_array($recposres)): $i = 0; $__LIST__ = $recposres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$recpos): $mod = ($i % 2 );++$i;?>-->
+                                                    <!--<label style="margin-right:15px;">-->
+                                                        <!--<input type="checkbox" name="recid[]" value="<?php echo ($recpos["id"]); ?>"  class="colored-success">-->
+                                                        <!--<span class="text"><?php echo ($recpos["recname"]); ?></span>-->
+                                                    <!--</label>-->
+                                                <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
 
                                 </div>
 
@@ -512,11 +535,11 @@
 	</div>
 
 	    <!--Basic Scripts-->
-    <script src="http://xywy99.com/Application/Admin/Public/style/jquery_002.js"></script>
-    <script src="http://xywy99.com/Application/Admin/Public/style/bootstrap.js"></script>
-    <script src="http://xywy99.com/Application/Admin/Public/style/jquery.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/style/jquery_002.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/style/bootstrap.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/style/jquery.js"></script>
     <!--Beyond Scripts-->
-    <script src="http://xywy99.com/Application/Admin/Public/style/beyond.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/style/beyond.js"></script>
     <script type="text/javascript">
 
     //实例化编辑器

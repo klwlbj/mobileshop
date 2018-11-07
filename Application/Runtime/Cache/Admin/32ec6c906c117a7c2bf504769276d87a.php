@@ -30,7 +30,7 @@
                 </div>
                 <div class="loginbox-textbox">
                     <input  class="form-control" style="width:120px; height:50px; float:left;" placeholder="验证码" name="verify" type="text">
-                    <img src="/x/index.php/Admin/Login/verify" style="cursor:pointer;" onclick="this.src='/x/index.php/Admin/Login/verify/'+Math.random();" height="50" width="100" border="0" >
+                    <img src="/index.php/Admin/Login/verify" style="cursor:pointer;" onclick="this.src='/index.php/Admin/Login/verify/'+Math.random();" height="50" width="100" border="0" >
                 </div>
                 <div class="loginbox-submit">
                     <input class="btn btn-primary btn-block" value="Login" type="submit">

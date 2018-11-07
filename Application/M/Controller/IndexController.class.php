@@ -3,6 +3,19 @@ namespace M\Controller;
 class IndexController extends CommonController {
     public function cates()
     {
+        $cate=D('cate');
+        $cate1=$cate->where(array('pid'=>'0'))->select();
+//        dump($cate1);die;
+        $this->assign('cate1',$cate1);
+        $id=I("get.id");
+        $gres=$this->gres($id);
+        foreach ($gres as $key => $value) {
+            $value['goods_name']=mb_substr($value['goods_name'],0,12,'utf-8').'...';
+
+        }
+        $this->assign('g_res1',$gres);
+//        dump($this->gres($id));
+//        die;
         $this->display();
 
     }

@@ -157,9 +157,30 @@
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">本店价格</label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip1价格</label>
                                         <div class="col-sm-6">
                                             <input type="text" required="" name="shop_price" value="{$goods.shop_price}" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip2价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip2_price" value="{$goods.vip2_price}" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip3价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip3_price" value="{$goods.vip3_price}" placeholder="" class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">vip4价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="vip4_price" value="{$goods.vip4_price}" placeholder="" class="form-control" >
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
@@ -186,23 +207,23 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品推荐</label>
-                                       <div class="col-sm-6">
-                                           <div class="checkbox">
-                                                <volist name="recposres" id="recpos">
-                                                    <label style="margin-right:15px;">
-                                                        <input
-                                                        <?php if(in_array($recpos['id'],$recids)){echo'checked="checked"';}?>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label no-padding-right" for="username">商品推荐</label>-->
+                                       <!--<div class="col-sm-6">-->
+                                           <!--<div class="checkbox">-->
+                                                <!--<volist name="recposres" id="recpos">-->
+                                                    <!--<label style="margin-right:15px;">-->
+                                                        <!--<input-->
+                                                        <!--<?php if(in_array($recpos['id'],$recids)){echo'checked="checked"';}?>-->
 
-                                                        type="checkbox" name="recid[]" value="{$recpos.id}"  class="colored-success">
-                                                        <span class="text">{$recpos.recname}</span>
-                                                    </label>
-                                                </volist>
+                                                        <!--type="checkbox" name="recid[]" value="{$recpos.id}"  class="colored-success">-->
+                                                        <!--<span class="text">{$recpos.recname}</span>-->
+                                                    <!--</label>-->
+                                                <!--</volist>-->
 
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
 
                                 </div>
 

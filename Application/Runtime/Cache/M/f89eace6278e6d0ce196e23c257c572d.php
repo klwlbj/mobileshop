@@ -42,7 +42,7 @@ body,html{
         </a>
     </div>
     <div id="two" class="subMenu text-center">
-        <a href="/index.php/M/Index/cates">
+        <a href="/index.php/M/Index/cates/id/14">
         <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
         <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
         </a>

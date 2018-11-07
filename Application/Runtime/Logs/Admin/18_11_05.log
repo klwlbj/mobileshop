@@ -1,0 +1,306 @@
+[ 2018-11-05T09:42:51+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2018-11-05T09:42:51+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-11-05T11:49:52+08:00 ] 127.0.0.1 /index.php/aDMIN/Index/cates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-11-05T11:49:58+08:00 ] 127.0.0.1 /index.php/aDMIN/Index/cates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-11-05T11:50:06+08:00 ] 127.0.0.1 /index.php/Admin/Index/cates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+
+[ 2018-11-05T11:50:10+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-11-05T11:50:10+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001640s ]
+
+[ 2018-11-05T11:51:57+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0354s ]
+SQL: SELECT * FROM `sp_admin` WHERE ( username='ydx' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2018-11-05T11:51:58+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2018-11-05T11:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0273s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0158s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2018-11-05T11:52:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/88
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 88 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 88  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 88  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 88  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0091s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 88 AND `rectype` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-11-05T11:53:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0338s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 86  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 86  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 86  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0082s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 86 AND `rectype` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-11-05T11:54:30+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/Public/Uploads/Goods/2018-10-15/5bc4b5033b7ee.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+
+[ 2018-11-05T13:59:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/edit/id/86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `sp_goods` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sp_brand`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_member_level` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `sp_member_level`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sp_member_price` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `sp_member_price` WHERE `goods_id` = 86  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sp_goods_pic` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `sp_goods_pic` WHERE `goods_id` = 86  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sp_type` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `sp_type`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sp_attr` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sp_attr` WHERE `type_id` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sp_goods_attr` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sp_goods_attr` WHERE `goods_id` = 86  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sp_recpos` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `sp_recpos` WHERE `rectype` = 1  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sp_recvalue` [ RunTime:0.0076s ]
+SQL: SELECT `recid` FROM `sp_recvalue` WHERE `valueid` = 86 AND `rectype` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+

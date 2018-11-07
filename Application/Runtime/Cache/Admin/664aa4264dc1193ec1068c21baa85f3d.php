@@ -55,12 +55,12 @@
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="/x/index.php/Admin/Admin/logout">
+                                    <a href="/index.php/Admin/Admin/logout">
                                             退出登录
                                         </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="/x/index.php/Admin/Admin/edit/id/<?php echo (session('uid')); ?>">
+                                    <a href="/index.php/Admin/Admin/edit/id/<?php echo (session('uid')); ?>">
                                             修改密码
                                         </a>
                                 </li>
@@ -102,7 +102,7 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/admin/lst">
+                                <a href="/index.php/Admin/admin/lst">
                                     <span class="menu-text">管理员列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -118,25 +118,25 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Cate/lst">
+                                <a href="/index.php/Admin/Cate/lst">
                                     <span class="menu-text">分类管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Brand/lst">
+                                <a href="/index.php/Admin/Brand/lst">
                                     <span class="menu-text">品牌管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Goods/lst">
+                                <a href="/index.php/Admin/Goods/lst">
                                     <span class="menu-text">商品管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Type/lst">
+                                <a href="/index.php/Admin/Type/lst">
                                     <span class="menu-text">商品类型</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -152,7 +152,7 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Nav/lst">
+                                <a href="/index.php/Admin/Nav/lst">
                                     <span class="menu-text">导航管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -168,13 +168,13 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Category/lst">
+                                <a href="/index.php/Admin/Category/lst">
                                     <span class="menu-text">栏目管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Article/lst">
+                                <a href="/index.php/Admin/Article/lst">
                                     <span class="menu-text">文章管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -190,13 +190,13 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Adpos/lst">
+                                <a href="/index.php/Admin/Adpos/lst">
                                     <span class="menu-text">广告位管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Ad/lst">
+                                <a href="/index.php/Admin/Ad/lst">
                                     <span class="menu-text">广告管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -211,15 +211,10 @@
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
+
                             <li>
-                                <a href="/admin/user/index.html">
+                                <a href="/index.php/Admin/MemberLevel/lst">
                                     <span class="menu-text">会员管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/x/index.php/Admin/MemberLevel/lst">
-                                    <span class="menu-text">会员等级</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
@@ -234,7 +229,7 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Recpos/lst">
+                                <a href="/index.php/Admin/Recpos/lst">
                                     <span class="menu-text">推荐位列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -250,11 +245,11 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/index/dds">
+                                <a href="/index.php/Admin/index/dds">
                                     <span class="menu-text">订单列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/x/index.php/Admin/index/dd">
+                                <a href="/index.php/Admin/index/dd">
                                     <span class="menu-text">订单需求</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -270,11 +265,11 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Config/config">
+                                <a href="/index.php/Admin/Config/config">
                                     <span class="menu-text">站点配置</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/x/index.php/Admin/Config/lst">
+                                <a href="/index.php/Admin/Config/lst">
                                     <span class="menu-text">配置列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -285,7 +280,7 @@
 
 
                     <li>
-                        <a href="/x/index.php/Admin/index/ip" class="menu-dropdown">
+                        <a href="/index.php/Admin/index/ip" class="menu-dropdown">
                             <i class="menu-icon fa fa-gear"></i>
                             <span class="menu-text">访客统计</span>
                             <i class="menu-expand"></i>
@@ -306,9 +301,9 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                                         <li>
-                        <a href="/x/index.php/Admin/Index/index">系统</a>
+                        <a href="/index.php/Admin/Index/index">系统</a>
                     </li>
-                                        <li class="active">等级管理</li>
+                                        <li class="active">会员管理</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -316,7 +311,7 @@
                 <!-- Page Body -->
                 <div class="page-body">
 
-<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/x/index.php/Admin/MemberLevel/add'"> <i class="fa fa-plus"></i> Add
+<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/index.php/Admin/MemberLevel/add'"> <i class="fa fa-plus"></i> Add
 </button>
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12">
@@ -326,26 +321,30 @@
                     <table class="table table-bordered table-hover">
                         <thead class="">
                             <tr>
-                                <th class="text-center" width="10%">ID</th>
-                                <th align="left">等级名称</th>
-                                <th align="left">积分下限</th>
-                                <th align="left">积分上限</th>
-                                <th align="left">折扣率</th>
+                                <th class="text-center" width="20%">会员ID</th>
+                                <th class="text-center" width="20%">会员昵称</th>
+                                <th class="text-center" width="20%">会员手机</th>
+                                <th align="left">会员等级</th>
+                                <!--<th align="left">积分下限</th>-->
+                                <!--<th align="left">积分上限</th>-->
+                                <!--<th align="left">折扣率</th>-->
                                 <th class="text-center" width="10%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                                     <td align="center"><?php echo ($vo["id"]); ?></td>
-                                    <td align="left"><?php echo ($vo["level_name"]); ?></td>
-                                    <td align="left"><?php echo ($vo["points_min"]); ?></td>
-                                    <td align="left"><?php echo ($vo["points_max"]); ?></td>
-                                    <td align="left"><?php echo ($vo["rate"]); ?></td>
+                                    <td align="center"><?php echo ($vo["nick"]); ?></td>
+                                    <td align="center"><?php echo ($vo["phone"]); ?></td>
+                                    <td align="left"><?php echo ($vo["vip"]); ?></td>
+                                    <!--<td align="left"><?php echo ($vo["points_min"]); ?></td>-->
+                                    <!--<td align="left"><?php echo ($vo["points_max"]); ?></td>-->
+                                    <!--<td align="left"><?php echo ($vo["rate"]); ?></td>-->
                                     <td align="center">
-                                        <a href="/x/index.php/Admin/MemberLevel/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
+                                        <a href="/index.php/Admin/MemberLevel/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
                                             <i class="fa fa-edit"></i> 编辑
                                         </a>
-                                        <a href="#" onClick="warning('确实要删除吗', '/x/index.php/Admin/MemberLevel/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
+                                        <a href="#" onClick="warning('确实要删除吗', '/index.php/Admin/MemberLevel/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
                                             <i class="fa fa-trash-o"></i> 删除
                                         </a>
                                     </td>

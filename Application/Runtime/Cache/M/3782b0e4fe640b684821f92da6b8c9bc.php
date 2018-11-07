@@ -364,7 +364,7 @@
         <!--选择框-->
         <p class="prod-select box-flex cur" id="6f73495f3efe4b7a8bf05d8ea9ab9a85"></p>
         <p class="prod-pic box-flex">
-            <a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><img src="/<?php echo ($vo["original"]); ?>"></a>
+            <a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><img src="/.<?php echo ($vo["original"]); ?>"></a>
         </p>
         <div class="prod-right box-flex">
             <p class="cont-name"><a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><span><?php echo ($vo["goods_name"]); ?></span></a></p>
@@ -437,7 +437,7 @@
         </a>
     </div>
     <div id="two" class="subMenu text-center">
-        <a href="/index.php/M/Index/cates">
+        <a href="/index.php/M/Index/cates/id/14">
         <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
         <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
         </a>

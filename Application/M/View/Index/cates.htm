@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>类别</title>
 	<link href="/Public/index_files1/swiper.min.css" rel="stylesheet" type="text/css">
 	<link href="/Public/index_files1/m_index2.css" rel="stylesheet" type="text/css">
 	<script src="/Public/index_files1/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
@@ -16,28 +16,27 @@
 		#category2{
 			width: 20%;
 			position: fixed;
-			background-color: #f8f8f8;
 			height: 100%;
 		}
 		.cur{
 			list-style: none;
-			height:6%;
+			height:5%;
 			margin: auto;
-			padding-top: 5%;
-
-		}
-		.cur a .J_ping{
+			padding-top: 21%;
+			background-color: #f8f8f8;
 			text-align: center;
 			color: black;
-			padding-left: 20px;
 			font-size: .24rem;
 		}
+		.cur1{
+			 background-color: white;
+		 }
 		a{
 			text-decoration:none;
 			color: black;
 		}
 		.left{
-
+			padding-top: 7%;
 			background-color: white;
 			float:right;
 			width: 80%;
@@ -50,7 +49,8 @@
 
 		}
 		.picname{
-			margin-right: 28%;
+			font-size: 16px;
+			width: 60%;
 			margin-top: 10%;
 			float: right;
 		}
@@ -62,82 +62,30 @@
 <include file="./Application/M/View/Common/foot.htm" />
 <!--<div>-->
 	<!--<form action=""></form></div>-->
-<ul style="transform: translateY(0px);" id="category2">
-	<li class="cur"  id="category6" >
-	<a class="J_ping" href="">热门推荐</a>
+<ul  id="category2">
+	<volist name="cate1" id="vo">
+		<li class="cur <if condition="$vo.id eq $_GET['id']">cur1</if>"  id="category6 " >
+	<a class="J_ping" href="__CONTROLLER__/cates/id/{$vo.id}">{$vo.catename}</a>
 	</li>
-	<li class="cur"  id="category6" >
-	<a class="J_ping" href="">热门推荐</a>
-	</li>
-	<li class="cur"  id="category6" >
-	<a class="J_ping" href="">热门推荐</a>
-	</li>
-	<li class="cur"  id="category6" >
-	<a class="J_ping" href="">热门推荐</a>
-	</li>
-	<li class="cur"  id="category6" >
-	<a class="J_ping" href="">热门推荐</a>
-	</li>
+	</volist>
+
 
 
 	</ul>
 <div class="left">
 	<div>
+		<div></div>
+		<volist name="g_res1" id="vm">
 		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
+			<a href="__CONTROLLER__/detail/id/{$vm.id}">
+			<img src="/{$vm.original}" class="imgpic" alt="pic">
+			<p class="picname">{$vm.goods_name|mb_substr=0,20,'utf-8'}...<br>￥{$vm.shop_price}</p>
+			</a>
 		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
 
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
+		</volist>
 
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
-		<div class="picdiv">
-			<img src="/Public/Uploads/Goods/2018-09-28/5bae254ced5dc.jpg" class="imgpic" alt="pic">
-			<p class="picname">fdfdsfdsfdsfsdf<br>$15</p>
-
-		</div>
+		<div style="height:10%;"
 
 	</div>
 </div>

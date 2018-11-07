@@ -37,7 +37,7 @@
                                         <li>
                         <a href="__MODULE__/Index/index">系统</a>
                     </li>
-                                        <li class="active">等级管理</li>
+                                        <li class="active">会员管理</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -55,11 +55,13 @@
                     <table class="table table-bordered table-hover">
                         <thead class="">
                             <tr>
-                                <th class="text-center" width="10%">ID</th>
-                                <th align="left">等级名称</th>
-                                <th align="left">积分下限</th>
-                                <th align="left">积分上限</th>
-                                <th align="left">折扣率</th>
+                                <th class="text-center" width="20%">会员ID</th>
+                                <th class="text-center" width="20%">会员昵称</th>
+                                <th class="text-center" width="20%">会员手机</th>
+                                <th align="left">会员等级</th>
+                                <!--<th align="left">积分下限</th>-->
+                                <!--<th align="left">积分上限</th>-->
+                                <!--<th align="left">折扣率</th>-->
                                 <th class="text-center" width="10%">操作</th>
                             </tr>
                         </thead>
@@ -67,10 +69,12 @@
                             <volist name="list" id="vo">
                                 <tr>
                                     <td align="center">{$vo.id}</td>
-                                    <td align="left">{$vo.level_name}</td>
-                                    <td align="left">{$vo.points_min}</td>
-                                    <td align="left">{$vo.points_max}</td>
-                                    <td align="left">{$vo.rate}</td>
+                                    <td align="center">{$vo.nick}</td>
+                                    <td align="center">{$vo.phone}</td>
+                                    <td align="left">{$vo.vip}</td>
+                                    <!--<td align="left">{$vo.points_min}</td>-->
+                                    <!--<td align="left">{$vo.points_max}</td>-->
+                                    <!--<td align="left">{$vo.rate}</td>-->
                                     <td align="center">
                                         <a href="__CONTROLLER__/edit/id/{$vo.id}" class="btn btn-primary btn-sm shiny">
                                             <i class="fa fa-edit"></i> 编辑
