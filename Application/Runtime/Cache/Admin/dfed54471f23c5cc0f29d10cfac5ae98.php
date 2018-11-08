@@ -1,7 +1,8 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
-	    <meta charset="utf-8">
+        <meta charset="utf-8">
     <title>商城-源多享</title>
+
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +20,8 @@
 
 </head>
 <body>
-	<!-- 头部 -->
-	<div class="navbar">
+    <!-- 头部 -->
+    <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
             <!-- Navbar Barnd -->
@@ -78,11 +79,11 @@
     </div>
 </div>
 
-	<!-- /头部 -->
+    <!-- /头部 -->
 
-	<div class="main-container container-fluid">
-		<div class="page-container">
-			<!-- Page Sidebar -->
+    <div class="main-container container-fluid">
+        <div class="page-container">
+                        <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
@@ -300,7 +301,13 @@
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                                        <li class="active">控制面板</li>
+                                        <li>
+                        <a href="/index.php/Admin/Index/index">系统</a>
+                    </li>
+                                        <li>
+                        <a href="/index.php/Admin/Category/lst">栏目列表</a>
+                    </li>
+                                        <li class="active">修改栏目</li>
                                         </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -308,33 +315,52 @@
                 <!-- Page Body -->
                 <div class="page-body">
 
-				<div style="text-align:center; line-height:500%; font-size:24px;">
-                    广州源多享 后台
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">修改栏目</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" >
+                        <input type="hidden" name="id" value="<?php echo ($categorys["id"]); ?>">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">栏目名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="catename" placeholder="" value="<?php echo ($categorys["catename"]); ?>" name="catename" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">是否帮助</label>
+                            <div class="col-sm-6">
+                                <label>
+                                    <input  <?php if($categorys['type'] == 1): ?>checked="checked"<?php endif; ?> name="type" class="checkbox-slider colored-blue" type="checkbox">
+                                    <span class="text"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
-
-                    <div style="text-align:center; line-height:300%; font-size:24px;">
-                        <p style="font-size:24px;color:red;">添加商品</p>
-                        ①点击左侧 商品模块”<br/>
-                        ②点击左侧 商品管理”<br/>
-                        ③点击 “+ Add” 进行商品添加操作
-                    </div>
-
-
-                </div>
-
-
-
-
+            </div>
+        </div>
+    </div>
+</div>
 
                 </div>
                 <!-- /Page Body -->
             </div>
             <!-- /Page Content -->
-		</div>
-	</div>
+        </div>
+    </div>
 
-	    <!--Basic Scripts-->
+        <!--Basic Scripts-->
     <script src="http://www.shop.com/Application/Admin/Public/style/jquery_002.js"></script>
     <script src="http://www.shop.com/Application/Admin/Public/style/bootstrap.js"></script>
     <script src="http://www.shop.com/Application/Admin/Public/style/jquery.js"></script>

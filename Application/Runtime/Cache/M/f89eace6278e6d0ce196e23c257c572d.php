@@ -135,14 +135,16 @@ body,html{
 </div>
 
 
-<?php if($_SESSION['user']!= ''): ?><div class="membercenterBox fr">
-    <img class="member_icon" src="/Public/grzx_files/personal_centericon.png">
-    <div class="memberInfo">
-    <p class="member_rank">普通会员</p>
-    <span class="member_Money">源多享币 : 0</span>
-    </div>
-    <img class="member_next" src="/Public/grzx_files/iconwhite_left.png">
-    </div><?php endif; ?>
+<!--<?php if($_SESSION['user']!= ''): ?>-->
+    <!--<div class="membercenterBox fr">-->
+    <!--<img class="member_icon" src="/Public/grzx_files/personal_centericon.png">-->
+    <!--<div class="memberInfo">-->
+    <!--<p class="member_rank">普通会员</p>-->
+    <!--<span class="member_Money">源多享币 : 0</span>-->
+    <!--</div>-->
+    <!--<img class="member_next" src="/Public/grzx_files/iconwhite_left.png">-->
+    <!--</div>-->
+<!--<?php endif; ?>-->
 
 
 
@@ -180,9 +182,9 @@ body,html{
 
     <ul class="main-list cl">
     <li onclick="location='/index.php/M/Index/olst'" class="allorder"><a><i class="icon icon1"></i><strong>全部订单</strong></a></li>
-    <li class="ddsl"><a><i class="icon gifts"></i><strong>源多享送礼</strong></a></li>
-    <li class="myyouhui"><a><i class="icon icon-youhui"></i><strong>优惠券</strong></a></li>
-    <li class="mycoin none" style="display: list-item;"><a><i class="icon icon-mycoin"></i><strong>商城首页</strong></a></li>
+    <li class="ddsl"><a><i class="icon gifts"></i><strong>退换货</strong></a></li>
+    <li class="myyouhui"><a><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
+    <!--<li class="mycoin none" style="display: list-item;"><a><i class="icon icon-mycoin"></i><strong>商城首页</strong></a></li>-->
     <li class="dizhiguanli"><a><i class="icon icon2"></i><strong>地址管理</strong></a></li>
     <li><a href=""><i class="icon icon4"></i><strong>常见问题</strong></a></li>
     </ul>

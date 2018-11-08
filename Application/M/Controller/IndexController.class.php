@@ -135,7 +135,7 @@ class IndexController extends CommonController {
             $cate3=D('cate')->field('id')->where(array('pid'=>$value['id']))->select();
             //dump($cate3);//die;
             foreach ($cate3 as $kk => $vv) {
-                $good=D('goods')->limit('4')->where(array('cate_id'=>$vv['id']))->select();
+                $good=D('goods')->where(array('cate_id'=>$vv['id']))->select();
 
                 if(!empty($good)){
 

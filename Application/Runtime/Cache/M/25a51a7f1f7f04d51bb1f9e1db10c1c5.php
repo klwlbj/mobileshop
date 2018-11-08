@@ -941,7 +941,7 @@ swiper11 = new Swiper ('.category-navss', {
         <div class="more-wrap">
             <i class="bt-bg"></i>
             <ul class="nav-ul2">
-                <li class="zx1"><a href="tel:4008808488" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap新首页&#39;, &#39;右侧-药师电话-按钮&#39;, &#39;0&#39;, 0]);">药师电话</a></li>
+                <li class="zx1"><a href="tel:4008808488" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap新首页&#39;, &#39;右侧-电话-按钮&#39;, &#39;0&#39;, 0]);">电话</a></li>
                 <li class="zx3"><a href="tel:02086350171" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap新首页&#39;, &#39;右侧-售后电话-按钮&#39;, &#39;0&#39;, 0]);">售后电话</a></li>
                 <li class="zx2"><a href="javascript:void(0)">在线咨询</a></li>
             </ul>
@@ -988,22 +988,23 @@ if(pd_3==true){
 <!--部件结束:m_bottom_IndexAd-->
 
 </section>
-<footer class="index-footer-wrap">
-    <div class="footer-size1 clearfix">
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-批发招商-文字链&#39;, &#39;0&#39;, 0]);" class="pifa_shop">批发商洽<span></span></a>
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-用药问答-文字链&#39;, &#39;0&#39;, 0]);">用药问答</a>
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-药品库-文字链&#39;, &#39;0&#39;, 0]);">药品库</a>
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-健康资讯-文字链&#39;, &#39;0&#39;, 0]);">健康资讯</a>
-    </div>
-    <div id="IsLogin" class="footer-size1 clearfix">
-    	<a href="<?php echo U('Index/login');?>">登录</a>
-    	<a href="<?php echo U('Index/reg');?>">注册</a>
-    	<a href="<?php echo U('Index/grzx');?>">个人中心</a>
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-关于源多享-文字链&#39;, &#39;0&#39;, 0]);">关于源多享</a>
-    </div>
-    <div class="footer-size2"><span>正品保证</span><span>隐私配送</span><span>专业药师</span><span>货到付款</span></div>
-    <div class="footer-size3">copyright&nbsp;&nbsp;©2010-2016 源多享网上药店 版权所有</div>
-</footer>
+<div style="height: 10%;"></div>
+<!--<footer class="index-footer-wrap">-->
+    <!--<div class="footer-size1 clearfix">-->
+    	<!--<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-批发招商-文字链&#39;, &#39;0&#39;, 0]);" class="pifa_shop">批发商洽<span></span></a>-->
+    	<!--<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-用药问答-文字链&#39;, &#39;0&#39;, 0]);">用药问答</a>-->
+    	<!--<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-药品库-文字链&#39;, &#39;0&#39;, 0]);">药品库</a>-->
+    	<!--<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-健康资讯-文字链&#39;, &#39;0&#39;, 0]);">健康资讯</a>-->
+    <!--</div>-->
+    <!--<div id="IsLogin" class="footer-size1 clearfix">-->
+    	<!--<a href="<?php echo U('Index/login');?>">登录</a>-->
+    	<!--<a href="<?php echo U('Index/reg');?>">注册</a>-->
+    	<!--<a href="<?php echo U('Index/grzx');?>">个人中心</a>-->
+    	<!--<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-关于源多享-文字链&#39;, &#39;0&#39;, 0]);">关于源多享</a>-->
+    <!--</div>-->
+    <!--<div class="footer-size2"><span>正品保证</span><span>隐私配送</span><span>专业药师</span><span>货到付款</span></div>-->
+    <!--<div class="footer-size3">copyright&nbsp;&nbsp;©2010-2016 源多享网上药店 版权所有</div>-->
+<!--</footer>-->
 
 
 
