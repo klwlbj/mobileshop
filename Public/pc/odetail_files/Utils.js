@@ -1,4 +1,4 @@
-﻿//存cookie||读cookie
+//存cookie||读cookie
 function GetOrSetCookies(name, value, options) {
     if (typeof value != 'undefined') { // name and value given, set cookie
         options = options || {};

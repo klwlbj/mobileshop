@@ -2,7 +2,7 @@
 <!-- saved from url=(0025)http://m.360kad.com/Order -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>订单列表 - 康爱多掌上药店</title>
+    <title>订单列表 - 驼铃商贸</title>
     <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
@@ -448,8 +448,8 @@
             </a>
         </div>
 
-        <ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业药师</li><li><span class="radius45">付</span>货到付款</li></ul>
-        <p class="copyrg">copyright ©2010-2016 康爱多网上药店 版权所有</p>
+        <ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业产品</li><li><span class="radius45">付</span>货到付款</li></ul>
+        <p class="copyrg">copyright ©2010-2016 驼铃商贸网上商店 版权所有</p>
     </footer>
     <style type="text/css">
         /*底部*/

@@ -1,4 +1,4 @@
-﻿require.config({
+require.config({
     baseUrl: urlConfig.res + '/vp/m/RequireJS/module',
     paths: {
         domReady: '../../../RequireJSLib/domReady',

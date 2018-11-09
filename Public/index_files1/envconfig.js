@@ -1,4 +1,4 @@
-﻿//网站配置
+//网站配置
 window.hostConfig = {
     host: window.location.href.match(/(\w+)/g)[1],
     hostCheck: /^(tst\w+)|(dev\w+)/.test(window.location.href.match(/(\w+)/g)[1])

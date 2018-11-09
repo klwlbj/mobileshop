@@ -1,4 +1,4 @@
-﻿var TemplateConfig = { LeftTemplate: "", CenterTemplate: "", MiniChatWin: "" };
+var TemplateConfig = { LeftTemplate: "", CenterTemplate: "", MiniChatWin: "" };
 var HtmlLeftStr = "", HtmlCenterStr = "", HtmlCWinStr = "";
 
 function InitHtmlTeplateConfig() {

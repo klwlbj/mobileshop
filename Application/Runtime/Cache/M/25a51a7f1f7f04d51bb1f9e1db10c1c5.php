@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0035)http://m.360kad.com/?source+pcindex -->
-<html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="/Public/index_files1/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files1/envconfig.js"></script>
+<html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript" async="" src="/Public/index_files1/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files1/envconfig.js"></script>
 <script language="javascript" type="text/javascript" async="async" src="/Public/index_files1/ctr_v2.js"></script>
 <!--布局:M_Index_v2017-->
 <title>驼铃商贸</title>
@@ -21,6 +21,7 @@
 </head>
 <body class="m_t" style="margin-top: 0rem;">
 <?php $cd=1;?>
+<script src="../../../../Public/car_files/m_shopCart.js"></script>
 <div id="menu" class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
@@ -54,9 +55,9 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: auto;
+        /*height: 11%;*/
         color: #474747;
-        padding-top: 10px;
+        padding-top: 2%;
         border-top: 1px solid #eee;
         background-color: #fff;
     }
@@ -69,12 +70,12 @@
 
     .menu_name {
         height: 30px;
-        width: 100%;
+        width: 90px;
         line-height: 30px;
     }
 
     img.menu_img {
-        height: 3%;
+        height: 33px;
         width: auto;
     }
 

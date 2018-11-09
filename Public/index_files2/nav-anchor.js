@@ -1,4 +1,4 @@
-﻿define(['jquery'], function ($) {
+define(['jquery'], function ($) {
 
     /**
      * 初始化锚点导航---自动滚动

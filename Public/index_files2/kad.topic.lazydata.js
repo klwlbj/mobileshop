@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 @author:guandy
 @version v1.1.0
 @基于jqeruy,用于可视化商品数据懒加载,CONFIG.screenNum 首次加载1.5屏的商品数据

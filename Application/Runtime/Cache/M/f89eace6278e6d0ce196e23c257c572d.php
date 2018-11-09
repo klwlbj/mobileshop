@@ -34,7 +34,8 @@ body,html{
     </head>
     <body style="">
     <?php $cd=4;?>
-    <div id="menu" class="menu">
+    <script src="../../../../Public/car_files/m_shopCart.js"></script>
+<div id="menu" class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
         <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
@@ -67,9 +68,9 @@ body,html{
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: auto;
+        /*height: 11%;*/
         color: #474747;
-        padding-top: 10px;
+        padding-top: 2%;
         border-top: 1px solid #eee;
         background-color: #fff;
     }
@@ -82,12 +83,12 @@ body,html{
 
     .menu_name {
         height: 30px;
-        width: 100%;
+        width: 90px;
         line-height: 30px;
     }
 
     img.menu_img {
-        height: 3%;
+        height: 33px;
         width: auto;
     }
 

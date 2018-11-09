@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 /*Common*/
 
@@ -627,7 +627,7 @@ input::-webkit-inner-spin-button {
 /*订单结算*/
 
 .order-balance {
-    top:82%;
+    top:79%;
     width: 100%;
     height: 1.2rem;
     background: #fff;

@@ -1,4 +1,4 @@
-﻿var jsSrc = null;
+var jsSrc = null;
 var GetArgs = (function () {
     var sc = document.getElementsByTagName("script");
     for (var i = 0; i < sc.length; i++) {

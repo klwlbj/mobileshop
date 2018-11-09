@@ -1,4 +1,4 @@
-﻿/*详情页脚本*/
+/*详情页脚本*/
 $(function() {
     /*
      图片延时加载，由于zepto无法计算display=none的元素，故none的图片无效

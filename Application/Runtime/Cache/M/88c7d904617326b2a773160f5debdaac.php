@@ -60,6 +60,7 @@
 </head>
 <body>
 <?php $cd=2;?>
+<script src="../../../../Public/car_files/m_shopCart.js"></script>
 <div id="menu" class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
@@ -93,9 +94,9 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: auto;
+        /*height: 11%;*/
         color: #474747;
-        padding-top: 10px;
+        padding-top: 2%;
         border-top: 1px solid #eee;
         background-color: #fff;
     }
@@ -113,7 +114,7 @@
     }
 
     img.menu_img {
-        height: 3%;
+        height: 33px;
         width: auto;
     }
 

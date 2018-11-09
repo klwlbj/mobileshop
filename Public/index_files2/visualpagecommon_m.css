@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /********** 初始化 **********/
 /*去除默认边距*/
 html,body,header,section,footer,p,article,nav,aside,dialog,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,textarea {margin: 0; padding: 0;}

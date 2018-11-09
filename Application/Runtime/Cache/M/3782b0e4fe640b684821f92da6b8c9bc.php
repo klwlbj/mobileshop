@@ -354,7 +354,7 @@
 
         <!--非处方药--><?php if(is_null($cars))echo'<div style="margin: auto; text-align: center">购物车快餓瘪了T.T</div><div style="margin: auto; text-align: center"><a
             href="/index.php/M/Index/index">快给我挑点东西吧</a><div><div style="width: 20%; border-radius: 8px;padding:2%; margin: auto; text-align: center;border-color:#ff6400;border: 1px solid #ff6400;"><a
-            href="/index.php/M/Index/index">去逛逛</a><div>'; else echo'<div class="conter-title clearfix"><p class="title-select cur"></p><p class="title-size">源多享</p></div><div class="shopCart-conter">'?>
+            href="/index.php/M/Index/index">去逛逛</a><div>'; else echo'<div class="conter-title clearfix"><p class="title-select cur"></p><p class="title-size">驼铃商贸</p></div><div class="shopCart-conter">'?>
 
                                     <!--主商品-->
 
@@ -429,6 +429,7 @@
 
 
 <?php $cd=3?>
+<script src="../../../../Public/car_files/m_shopCart.js"></script>
 <div id="menu" class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
@@ -462,9 +463,9 @@
         position: fixed;
         bottom: 0;
         width: 100%;
-        height: auto;
+        /*height: 11%;*/
         color: #474747;
-        padding-top: 10px;
+        padding-top: 2%;
         border-top: 1px solid #eee;
         background-color: #fff;
     }
@@ -477,12 +478,12 @@
 
     .menu_name {
         height: 30px;
-        width: 100%;
+        width: 90px;
         line-height: 30px;
     }
 
     img.menu_img {
-        height: 3%;
+        height: 33px;
         width: auto;
     }
 
@@ -1291,7 +1292,7 @@
                                 $(".order-balance").hide();
                                 $(".shopCart-header").hide();
                             }
-                            $(".conter-title.clearfix").remove();//源多享网上药店 新特药房云景店
+                            $(".conter-title.clearfix").remove();//驼铃商贸网上药店 新特药房云景店
                             $(".shopCart-conter").remove();//商品内容
                             $(".shopCart-order-discount").remove();//订单优惠
                             //$(".order-balance.display-box").remove();//全选去结算

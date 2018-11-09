@@ -1,4 +1,4 @@
-﻿document.write("<script type=\"text/javascript\" src=\"" + LKconfig.WebURL + "/swfobject.js\"></script>");
+document.write("<script type=\"text/javascript\" src=\"" + LKconfig.WebURL + "/swfobject.js\"></script>");
 document.write("<script type=\"text/javascript\" src=\"" + LKconfig.WebURL + "/web_socket.js\"></script>");
 var LKId = LKconfig.WebSiteId;
 if (LKconfig.PSiteId != undefined && LKconfig.PSiteId != null && LKconfig.PSiteId != "") {
