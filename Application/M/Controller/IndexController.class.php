@@ -188,6 +188,17 @@ class IndexController extends CommonController {
                     //数组合并
                     $arr = array();
                     foreach($good as $k=>$v){
+                        foreach ($good as $k1=>$v1){
+                            if(session('user.vip')=='2'){
+                                $v['shop_price']=$v['vip2_price'];
+                            }
+                            if(session('user.vip')=='3'){
+                                $v['shop_price']=$v['vip3_price'];
+                            }
+                            if(session('user.vip')=='4'){
+                                $v['shop_price']=$v['vip4_price'];
+                            }
+                        }
                        $arr1= array_merge($arr,$v);
                        $g_res[]=$arr1;
                     }
