@@ -55,7 +55,7 @@
 
                         <div class="order-details-content">
                             <div class="details-title clearfix">
-                                <p class="details-title-size">源多享</p>
+                                <p class="details-title-size">驼铃商贸</p>
                                 <p class="details-title-price">
                                     合计<span>￥<?php echo ($hj); ?></span>
                                 </p>
