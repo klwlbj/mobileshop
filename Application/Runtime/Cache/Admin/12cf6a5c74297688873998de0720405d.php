@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
-    <title>商城-源多享</title>
+    <title>商城-驼铃商贸</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -351,9 +351,9 @@
                                     <td align="left"><a target="_brank" href="#"><?php echo ($vo["catename"]); ?></a></td>
                                     <td align="left"><a target="_brank" href="#"><?php echo ($vo["brand_name"]); ?></a></td>
                                     <td align="center">
-                                        <a href="/index.php/Admin/Goods/product/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-truck"></i> 库存
-                                        </a>
+                                        <!--<a href="/index.php/Admin/Goods/product/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">-->
+                                            <!--<i class="fa fa-truck"></i> 库存-->
+                                        <!--</a>-->
                                         <a href="/index.php/Admin/Goods/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
                                             <i class="fa fa-edit"></i> 编辑
                                         </a>

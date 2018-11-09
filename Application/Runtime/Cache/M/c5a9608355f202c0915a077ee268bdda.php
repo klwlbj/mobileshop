@@ -389,7 +389,7 @@
 <?php if(is_array($oder_list)): $i = 0; $__LIST__ = $oder_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
                 <div class="list_img">
                     <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                        <img alt="" src="<?php echo ($vo["data"]); ?>">
+                        <img alt="" src=<?php echo ($vo["data"]); ?>">
                     </a>
                 </div>
                 <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">

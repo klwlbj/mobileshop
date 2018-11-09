@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
-    <title>商城-源多享</title>
+    <title>商城-驼铃商贸</title>
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -309,7 +309,7 @@
                 <div class="page-body">
 
 				<div style="text-align:center; line-height:500%; font-size:24px;">
-                    广州源多享 后台
+                    广州驼铃商贸 后台
                 </div>
 
 

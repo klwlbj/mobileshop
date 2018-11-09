@@ -108,14 +108,14 @@ class IndexController extends CommonController {
             $lm[$key]['cid']=$vx['id'];
         $this->assign('cate1',$cate1);
         $this->assign('lm',$lm);
-        $this->assign('g_res1',$this->gres(14));/*八个分类的商品*/
-        $this->assign('g_res2',$this->gres(15));
-        $this->assign('g_res3',$this->gres(16));
-        $this->assign('g_res4',$this->gres(17));
-        $this->assign('g_res5',$this->gres(18));
-        $this->assign('g_res6',$this->gres(19));
-        $this->assign('g_res7',$this->gres(20));
-        $this->assign('g_res8',$this->gres(21));
+        $this->assign('g_res1',array_slice($this->gres(14),0,4));/*八个分类的商品*/
+        $this->assign('g_res2',array_slice($this->gres(15),0,4));
+        $this->assign('g_res3',array_slice($this->gres(16),0,4));
+        $this->assign('g_res4',array_slice($this->gres(17),0,4));
+        $this->assign('g_res5',array_slice($this->gres(18),0,4));
+        $this->assign('g_res6',array_slice($this->gres(19),0,4));
+        $this->assign('g_res7',array_slice($this->gres(20),0,4));
+        $this->assign('g_res8',array_slice($this->gres(21),0,4));
         // dump($lm);
 
 
@@ -277,7 +277,7 @@ class IndexController extends CommonController {
 
             $dj=D('dingdan')->add($data);
             if($dj){
-                $this->success('登记成功！', U('Index/index'));
+                $this->redirect('Index/index');
             }else{
                 $this->error('登记失败！');
             }
@@ -315,7 +315,7 @@ class IndexController extends CommonController {
                    $da['nick'] = $data['nick'];
                    session("user",$da);
 
-                   $this->success('注册成功！', U('Index/grzx'));
+                   $this->redirect('Index/grzx');
                 }else{
                    $this->error('注册失败！');
                 }
@@ -349,7 +349,7 @@ class IndexController extends CommonController {
 //                   dump($da);die;
                    session("user",$da);
 
-                   $this->success('登录成功！', U('Index/grzx'));
+                   $this->redirect('Index/grzx');
                 }else{
                    $this->error('登录失败！账号或者密码错误！');
                 }
@@ -368,7 +368,7 @@ class IndexController extends CommonController {
 
     public function logout(){
        session("user",null);
-       $this->success('退出成功！', U('Index/index'));
+       $this->redirect('Index/index');
     }
 
 
@@ -383,7 +383,7 @@ class IndexController extends CommonController {
 
         $user=session("user");
         if(empty($user)){
-            $this->error('请先登录账号！', U('Index/login'));exit();
+            $this->redirect('Index/login');exit();
         }
 
 
@@ -435,7 +435,7 @@ class IndexController extends CommonController {
 
         $user=session("user");
         if(empty($user)){
-            $this->error('请先登录账号！', U('Index/login'));exit();
+            $this->redirect('Index/login');exit();
         }
 
         $post=I("post.");
@@ -471,9 +471,9 @@ class IndexController extends CommonController {
                 //把订单数据写进缓存
                 $dd=S('dds',$data1);
 
-                $this->success('订单提交成功！', U('Index/olst'));
+                $this->redirect('Index/olst');
             }else{
-                $this->error('订单提交失败！', U('Index/car'));
+                $this->redirect('Index/car');
             }
 
             // $this->display();
@@ -540,7 +540,7 @@ class IndexController extends CommonController {
     public function olst(){
        $user=session("user");
        if(empty($user)){
-           $this->error('请先登录账号！', U('Index/login'));exit();
+           $this->redirect('Index/login');exit();
        }
 
        $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
@@ -571,7 +571,7 @@ class IndexController extends CommonController {
 
        $user=session("user");
        if(empty($user)){
-           $this->error('请先登录账号！', U('Index/login'));exit();
+           $this->redirect('Index/login');exit();
        }
 
        $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();

@@ -554,3 +554,28 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
 
+[ 2018-11-08T17:56:52+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0317s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sp_brand` [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Goods.id AS id,Goods.goods_name AS goods_name,Goods.sm_thumb AS sm_thumb,Goods.market_price AS market_price,Goods.shop_price AS shop_price,Goods.vip2_price AS vip2_price,Goods.vip3_price AS vip3_price,Goods.vip4_price AS vip4_price,Goods.onsale AS onsale,Goods.cate_id AS cate_id,Goods.brand_id AS brand_id,Cate.catename AS catename,Brand.brand_name AS brand_name FROM sp_goods Goods  JOIN sp_cate Cate ON goods.cate_id=Cate.id LEFT JOIN sp_brand Brand ON goods.brand_id=brand.id ORDER BY Goods.id desc LIMIT 0,8   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+

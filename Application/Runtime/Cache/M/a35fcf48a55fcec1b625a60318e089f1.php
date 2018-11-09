@@ -3,11 +3,11 @@
 <html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="/Public/index_files1/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files1/envconfig.js"></script>
 <script language="javascript" type="text/javascript" async="async" src="/Public/index_files1/ctr_v2.js"></script>
 <!--布局:M_Index_v2017-->
-<title>【源多享掌上药店】-手机网上药店,药品网购商城,购买药品就上排名前列的源多享掌上药店</title>
+<title>【驼铃商贸掌上药店】-手机网上药店,药品网购商城,购买药品就上排名前列的驼铃商贸掌上药店</title>
 <meta name="sogou_site_verification" content="6HLgSAIlJI">
 <meta name="baidu-site-verification" content="qjNBPA2erj">
-<meta name="Keywords" content="源多享掌上药店,手机买药,掌上药店,药品网,国家药监局认证,手机购药,买药,手机购买,方便快捷,WAP药品商城,手机购买药品">
-<meta name="Description" content="手机买药去哪个网站？掌上药店哪个好？手机买药品最好的网站【源多享掌上药店】经国家药监局批准的排名前列的药房网,可选同仁堂等品牌产品的网上药店!">
+<meta name="Keywords" content="驼铃商贸掌上药店,手机买药,掌上药店,药品网,国家药监局认证,手机购药,买药,手机购买,方便快捷,WAP药品商城,手机购买药品">
+<meta name="Description" content="手机买药去哪个网站？掌上药店哪个好？手机买药品最好的网站【驼铃商贸掌上药店】经国家药监局批准的排名前列的药房网,可选同仁堂等品牌产品的网上药店!">
 <meta name="Robots" content="All">
 <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 <meta content="yes" name="apple-mobile-web-app-capable">
@@ -911,10 +911,10 @@ if(pd_3==true){
     	<a href="<?php echo U('Index/login');?>">登录</a>
     	<a href="<?php echo U('Index/reg');?>">注册</a>
     	<a href="<?php echo U('Index/grzx');?>">个人中心</a>
-    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-关于源多享-文字链&#39;, &#39;0&#39;, 0]);">关于源多享</a>
+    	<a href="" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-关于驼铃商贸-文字链&#39;, &#39;0&#39;, 0]);">关于驼铃商贸</a>
     </div>
     <div class="footer-size2"><span>正品保证</span><span>隐私配送</span><span>专业药师</span><span>货到付款</span></div>
-    <div class="footer-size3">copyright&nbsp;&nbsp;©2010-2016 源多享网上药店 版权所有</div>
+    <div class="footer-size3">copyright&nbsp;&nbsp;©2010-2016 驼铃商贸网上药店 版权所有</div>
 </footer>
 
 

@@ -2,7 +2,7 @@
 <!-- saved from url=(0061)http://m.360kad.com/spzt/nksc_m.shtml?kzone=souye_nanke_lunbo -->
 <html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" charset="utf-8" src="/Public/index_files2/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files2/envconfig.js"></script>
 <script language="javascript" type="text/javascript" async="async" src="/Public/index_files2/ctr_v2.js"></script>
-<!--布局:nksc_m_layout_18--><title>男性用药大全_补肾调理_阳痿早泄_脱发白发_前列腺炎_泌尿系统_少精弱精_尖锐湿疣_计生用品-源多享网上药店</title><meta name="Description" content="男性健康用药，源多享男科医药馆为您提供阳痿早泄，尖锐湿疣，前列腺疾病，脱发少发，滋阴补肾，壮阳等男科疾病用药"><meta name="Keywords" content="男性健康管理,补肾调理,阳痿早泄,脱发白发,前列腺炎,泌尿系统,少精弱精"><!--部件开始:vp_m_common_res,分组:通用部件-->
+<!--布局:nksc_m_layout_18--><title>驼铃商贸</title><meta name="Description" content="驼铃商贸"><meta name="Keywords" content="驼铃商贸"><!--部件开始:vp_m_common_res,分组:通用部件-->
 <meta name="Robots" content="All">
 <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 <script src="/Public/index_files2/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
@@ -559,15 +559,17 @@ color: #fff;
     <img src="/Public/index_files1/<?php echo ($_GET['aid']); ?>.jpg" alt="" class="img-responsive">
 </div>
 
-<div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">
+<!--<div class="category-nav category-navss swiper-container clerfix swiper-container-horizontal swiper-container-android">-->
 
-<?php if(is_array($cate1)): $k = 0; $__LIST__ = $cate1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?><div style="width:32%;float:left;margin:1% 0 1% 1%;">
-<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">
-<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">
-</a>
-</div><?php endforeach; endif; else: echo "" ;endif; ?>
+<!--<?php if(is_array($cate1)): $k = 0; $__LIST__ = $cate1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($k % 2 );++$k;?>-->
+<!--<div style="width:32%;float:left;margin:1% 0 1% 1%;">-->
+<!--<a href="/index.php/M/Index/index2/id/<?php echo ($vv["id"]); ?>">-->
+<!--<img src="/Public/index_files1/<?php echo ($vv["id"]); ?>.jpg" alt="" class="img-responsive">-->
+<!--</a>-->
+<!--</div>-->
+<!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
 
-</div>
+<!--</div>-->
 
 
 <div class="k-module clearfix" style="background-color:#FFFFFF;margin-top:30px;">
@@ -605,35 +607,37 @@ color: #fff;
 
 
 
-<div class="k-module clearfix" style="background-color:#FFFFFF;margin-top:30px;">
-<section class="vp_m_imgtext07 flex flex-pack-center flex-align-center">
-    <span class="title-line"></span>
-    <h2 class="title">猜你喜欢</h2>
-    <span class="title-line"></span>
-</section>
-</div>
+<!--<div class="k-module clearfix" style="background-color:#FFFFFF;margin-top:30px;">-->
+<!--<section class="vp_m_imgtext07 flex flex-pack-center flex-align-center">-->
+    <!--<span class="title-line"></span>-->
+    <!--<h2 class="title">猜你喜欢</h2>-->
+    <!--<span class="title-line"></span>-->
+<!--</section>-->
+<!--</div>-->
 
-<div class="k-module clearfix"><!--部件开始:vp_m_wareskulist10,分组:通用部件-->
-<div class="vp_m_wareskulist10">
-<ul class="clearfix">
+<!--<div class="k-module clearfix">&lt;!&ndash;部件开始:vp_m_wareskulist10,分组:通用部件&ndash;&gt;-->
+<!--<div class="vp_m_wareskulist10">-->
+<!--<ul class="clearfix">-->
 
-<?php if(is_array($cnxh)): $i = 0; $__LIST__ = $cnxh;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($i % 2 );++$i;?><li class="fl" onclick="window.location.href='/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>'">
-<div class="list-label">
-    <span><em class="zhekou"><?php echo (round($vv['shop_price']/$vv['market_price']*10 )); ?></em>折</span>
-</div>
-<div class="list-imgs">
-     <a>
-       <img src="/<?php echo ($vv["original"]); ?>" class="block">
-    </a>
-</div>
-<p class="list-name"><?php echo ($vv["goods_name"]); ?></p>
-<div class="list-center">
-<p class="list-price"><span class="new-price"><span class="RMB">￥</span><span><?php echo (round($vv["shop_price"])); ?></span><font class="minprice">起</font></span><span class="older-price">￥<?php echo (round($vv["market_price"])); ?></span></p>
-<div class="list-btn">
-<a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>"><span>查看详情</span></a>
-</div>
-</div>
-</li><?php endforeach; endif; else: echo "" ;endif; ?>
+<!--<?php if(is_array($cnxh)): $i = 0; $__LIST__ = $cnxh;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($i % 2 );++$i;?>-->
+<!--<li class="fl" onclick="window.location.href='/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>'">-->
+<!--<div class="list-label">-->
+    <!--<span><em class="zhekou"><?php echo (round($vv['shop_price']/$vv['market_price']*10 )); ?></em>折</span>-->
+<!--</div>-->
+<!--<div class="list-imgs">-->
+     <!--<a>-->
+       <!--<img src="/<?php echo ($vv["original"]); ?>" class="block">-->
+    <!--</a>-->
+<!--</div>-->
+<!--<p class="list-name"><?php echo ($vv["goods_name"]); ?></p>-->
+<!--<div class="list-center">-->
+<!--<p class="list-price"><span class="new-price"><span class="RMB">￥</span><span><?php echo (round($vv["shop_price"])); ?></span><font class="minprice">起</font></span><span class="older-price">￥<?php echo (round($vv["market_price"])); ?></span></p>-->
+<!--<div class="list-btn">-->
+<!--<a href="/index.php/M/Index/detail/id/<?php echo ($vv["id"]); ?>"><span>查看详情</span></a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
 
 
 </ul>

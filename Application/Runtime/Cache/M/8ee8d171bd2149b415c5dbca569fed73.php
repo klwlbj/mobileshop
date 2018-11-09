@@ -6,8 +6,8 @@
 
     <title><?php echo ($goods["goods_name"]); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <meta name="Description" content="源多享为您提供万艾可 枸橼酸西地那非片的价格,万艾可 枸橼酸西地那非片的说明书.规格.功效.注意事项.功能主治.生产厂家等资讯，如果您对万艾可 枸橼酸西地那非片有任何疑问，也可电话咨询">
-    <meta name="Keywords" content="万艾可 枸橼酸西地那非片价格,万艾可 枸橼酸西地那非片说明书,万艾可价格,万艾可说明书">
+    <meta name="Description" content="驼铃商贸">
+    <meta name="Keywords" content="驼铃商贸">
     <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -102,7 +102,7 @@ color: #222222;
 
 <div class="new_title_top" style="margin-top: 50px;">
 <ul class="list_ul">
-	<li class="list_name"><a href=""><span style="color:#FF0000;">据药监局规定,请凭处方笺进行处方药的需求登记。</span></a></li>
+	<li class="list_name"><a href=""><span style="color:#FF0000;"></span></a></li>
 </ul>
 </div>
 <script type="text/javascript">
@@ -395,7 +395,7 @@ display:block;
     <section id="Top3" class="details-specification" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
         <div class="specification-product-content">
                 <div class="specification-product-warning">
-                    温馨提示：请仔细阅读说明书并在医师指导下使用。依据《药品经营质量管理规范》，除药品质量原因外，药品一经售出，不得退换。
+                    商品支持七日无理由退换货
                 </div>
 
                 <?php if($goods['s_pic'] != ''): ?><img src="/<?php echo ($goods["s_pic"]); ?>" /><?php endif; ?>
@@ -403,8 +403,8 @@ display:block;
         </div>
 
         <div class="specification-product-phone">
-            <p>若有订购需求或副作用疑问</p>
-            <p>请拨我们客服热线<i>4008808488</i></p>
+            <p>若有订购需求</p>
+            <p>请拨我们客服热线<i>123456</i></p>
         </div>
     </section>
 <!--部件结束:product_m_introduce_inner3.0-->
@@ -429,7 +429,7 @@ display:block;
 
 </a>
 <a id="addCart" class="box-flex addCart" href="/index.php/M/Index/car/id/<?php echo ($_GET['id']); ?>" style="width: 26%; display: block;">加入购物车</a>
-<a id="buyNow" class="box-flex buyNow" href="/index.php/M/Index/car/id/<?php echo ($_GET['id']); ?>" style="width: 26%; display: block;">立即购买</a>
+<!--<a id="buyNow" class="box-flex buyNow" href="/index.php/M/Index/car/id/<?php echo ($_GET['id']); ?>" style="width: 26%; display: block;">立即购买</a>-->
 <!-- <a id="buyRx2" class="box-flex buyrx2" href="/index.php/M/Index/dj/sid/<?php echo ($_GET['id']); ?>" style="display: block;">门店登记</a> -->
 </section>
 

@@ -4,8 +4,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
-<meta name="keywords" content="源多享">
-<meta name="description" content="源多享">
+<meta name="keywords" content="驼铃商贸">
+<meta name="description" content="驼铃商贸">
 <meta name="format-detection" content="telephone=no, email=no">
 <title>个人中心</title>
 <script>!function(n,e){function t(){var n=e.documentElement,t=e.documentElement.clientWidth;t>750&&(t=750),n.style.fontSize=t/750*100+"px"}var i="orientationchange"in window?"orientationchange":"resize";n.addEventListener(i,t,!1),n.addEventListener("load",t,!1),e.addEventListener("DOMContentLoaded",t,!1)}(window,document);</script>
@@ -120,6 +120,10 @@ body,html{
 <div class="userInfoBox fl">
 
 <?php if($_SESSION['user']!= ''): ?><p class="usertel"><?php echo ($_SESSION['user']['phone']); ?></p>
+
+    <span><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/logout');?>">注销</a></span>
+
+
     <!--<p class="userother">-->
         <!--<span id="userName">未绑定</span>-->
         <!--<span class="unbundling none" style="display: none;">解绑微信</span>-->
@@ -129,6 +133,7 @@ body,html{
     <p class="nologin" style="">
     <span id="reg-btn"><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/reg');?>">注册</a></span> /
     <span><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/login');?>">登录</a></span>
+
     </p><?php endif; ?>
 
 
@@ -140,7 +145,7 @@ body,html{
     <!--<img class="member_icon" src="/Public/grzx_files/personal_centericon.png">-->
     <!--<div class="memberInfo">-->
     <!--<p class="member_rank">普通会员</p>-->
-    <!--<span class="member_Money">源多享币 : 0</span>-->
+    <!--<span class="member_Money">驼铃商贸币 : 0</span>-->
     <!--</div>-->
     <!--<img class="member_next" src="/Public/grzx_files/iconwhite_left.png">-->
     <!--</div>-->
@@ -192,18 +197,20 @@ body,html{
     <!-- <h1 class="tele-btn"><a href="tel:95028">客服电话：95028</a></h1> -->
     </div>
 
-    <footer class="my-footer hasuser">
-    <ul class="footer-nav cl">
-    <li class="tohome"><a href="<?php echo U('Index/index');?>">首页</a></li>
-    <li class="toAPP"><a href="<?php echo U('Index/grzx');?>">个人中心</a></li>
+    <!--<footer class="my-footer hasuser">-->
+    <!--<ul class="footer-nav cl">-->
+    <!--<li class="tohome"><a href="<?php echo U('Index/index');?>">首页</a></li>-->
+    <!--<li class="toAPP"><a href="<?php echo U('Index/grzx');?>">个人中心</a></li>-->
 
 
-<?php if($_SESSION['user']!= ''): ?><li class="hasUserli fr none" style="display: list-item;"><a class="toquit" href="<?php echo U('Index/logout');?>">退出</a></li>
-<?php else: ?>
-  <li class="hasUserli fr none" style="display: list-item;"><a class="toquit" href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
+<!--<?php if($_SESSION['user']!= ''): ?>-->
+  <!--<li class="hasUserli fr none" style="display: list-item;"><a class="toquit" href="<?php echo U('Index/logout');?>">退出</a></li>-->
+<!--<?php else: ?>-->
+  <!--<li class="hasUserli fr none" style="display: list-item;"><a class="toquit" href="<?php echo U('Index/login');?>">登录</a></li>-->
+<!--<?php endif; ?>-->
 
 
-    </ul>
-    </footer>
+    <!--</ul>-->
+    <!--</footer>-->
     </body>
     </html>
