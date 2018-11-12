@@ -1,0 +1,12 @@
+[ 2018-11-12T09:25:58+08:00 ] 127.0.0.1 /index.php/Public/car_files/m_shopCart.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-12T09:25:58+08:00 ] 127.0.0.1 /index.php/Public/car_files/m_shopCart.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+ERR: 无法加载模块:Public
+

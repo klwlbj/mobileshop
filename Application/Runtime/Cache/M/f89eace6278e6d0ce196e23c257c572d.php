@@ -11,8 +11,11 @@
 <script>!function(n,e){function t(){var n=e.documentElement,t=e.documentElement.clientWidth;t>750&&(t=750),n.style.fontSize=t/750*100+"px"}var i="orientationchange"in window?"orientationchange":"resize";n.addEventListener(i,t,!1),n.addEventListener("load",t,!1),e.addEventListener("DOMContentLoaded",t,!1)}(window,document);</script>
 <link rel="stylesheet" type="text/css" href="/Public/grzx_files/base.css">
 <link href="/Public/grzx_files/my-dingdang.css" rel="stylesheet">
-
+    <link href="/Public/car_files/swiper.min.css" rel="stylesheet" type="text/css">
+    <script src="/Public/car_files/swiper.min.js" type="text/javascript"></script>
+    <link href="/Public/car_files/vkad.reset.css" rel="stylesheet" type="text/css">
 <style>
+
 body,html{
 	background: #EFEFF4;
 }
@@ -30,83 +33,11 @@ body,html{
 	width:14px;height:14px;margin-left: 4px;position: relative;top: 2px;
 }
 </style>
-    <script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
+
+
     </head>
-    <body style="">
-    <?php $cd=4;?>
-    <script src="../../../../Public/car_files/m_shopCart.js"></script>
-<div id="menu" class="menu">
-    <div id="one" class="subMenu text-center " data-src="">
-        <a href="/index.php/M/Index/index">
-        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
-        <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
-        </a>
-    </div>
-    <div id="two" class="subMenu text-center">
-        <a href="/index.php/M/Index/cates/id/14">
-        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
-        <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
-        </a>
-    </div>
-    <div id="three" class="subMenu text-center" data-src="personal.html">
-        <a href="/index.php/M/Index/car">
-        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
-        <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
-    </div>
-    <div id="four" class="subMenu text-center" data-src="personal.html">
-        <a href="/index.php/M/Index/grzx">
-        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
-        <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
-        </a>
-    </div>
+    <body >
 
-</div> <!--底部菜单-->
-<style>
-    .menu {
-        z-index:9999;
-        display: block;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        /*height: 11%;*/
-        color: #474747;
-        padding-top: 2%;
-        border-top: 1px solid #eee;
-        background-color: #fff;
-    }
-
-    .subMenu {
-        width: 25%;
-        float: left;
-        cursor: pointer;
-    }
-
-    .menu_name {
-        height: 30px;
-        width: 90px;
-        line-height: 30px;
-    }
-
-    img.menu_img {
-        height: 33px;
-        width: auto;
-    }
-
-    .menu img {
-        margin: auto;
-        vertical-align: middle;
-        border: 0;
-    }
-
-    .active {
-    color: #01abff;
-    }
-
-    .text-center {
-        text-align: center
-    }
-
-</style>
 
     <header>
 
@@ -184,20 +115,95 @@ body,html{
     </li>
     </ul>
     </nav>
+
     <div class="my-main">
 
     <ul class="main-list cl">
     <li onclick="location='/index.php/M/Index/olst'" class="allorder"><a><i class="icon icon1"></i><strong>全部订单</strong></a></li>
     <li class="ddsl"><a><i class="icon gifts"></i><strong>退换货</strong></a></li>
-    <li class="myyouhui"><a><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
+    <li class="myyouhui"><a onclick="location='/index.php/M/Index/vip'"><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
     <!--<li class="mycoin none" style="display: list-item;"><a><i class="icon icon-mycoin"></i><strong>商城首页</strong></a></li>-->
-    <li class="dizhiguanli"><a><i class="icon icon2"></i><strong>地址管理</strong></a></li>
+    <li class="dizhiguanli"><a onclick="location='/index.php/M/Index/address'"><i class="icon icon2"></i><strong>地址管理</strong></a></li>
     <li><a href=""><i class="icon icon4"></i><strong>常见问题</strong></a></li>
     </ul>
 
     <!-- <h1 class="tele-btn"><a href="tel:95028">客服电话：95028</a></h1> -->
     </div>
+    <?php $cd=4;?>
+    <!--<script src="../../../../Public/car_files/m_shopCart.js"></script>-->
+<div  class="menu">
+    <div id="one" class="subMenu text-center " data-src="">
+        <a href="/index.php/M/Index/index">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" >
+        <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
+        </a>
+    </div>
+    <div id="two" class="subMenu text-center">
+        <a href="/index.php/M/Index/cates/id/14">
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" >
+        <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
+        </a>
+    </div>
+    <div id="three" class="subMenu text-center" data-src="personal.html">
+        <a href="/index.php/M/Index/car">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" >
+        <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
+    </div>
+    <div id="four" class="subMenu text-center" >
+        <a href="/index.php/M/Index/grzx">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" >
+        <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
+        </a>
+    </div>
 
+</div> <!--底部菜单-->
+<style>
+    .menu {
+        z-index:9999;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /*height: 11%;*/
+        color: #474747;
+        padding-top: 2%;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
+    .subMenu {
+        width: 25%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .menu_name {
+        height: 30px;
+        width: 90px;
+        line-height: 30px;
+        margin: auto;
+    }
+
+    img.menu_img {
+        height: 33px;
+        width: auto;
+    }
+
+    .menu img {
+        margin: auto;
+        vertical-align: middle;
+        border: 0;
+    }
+
+    .active {
+    color: #01abff;
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+</style>
     <!--<footer class="my-footer hasuser">-->
     <!--<ul class="footer-nav cl">-->
     <!--<li class="tohome"><a href="<?php echo U('Index/index');?>">首页</a></li>-->
@@ -213,5 +219,6 @@ body,html{
 
     <!--</ul>-->
     <!--</footer>-->
+
     </body>
     </html>

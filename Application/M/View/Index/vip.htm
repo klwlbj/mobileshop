@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <!-- saved from url=(0025)http://m.360kad.com/Order -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -342,10 +342,10 @@
     <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
     <span class="header_t">
         <i class="c_inav_i">
-            我的订单
+            我的vip等级
         </i>
     </span>
-    <section class="header_r"><a href="/index.php/M/Index/index"></a></section>
+    <section class="header_r"><a href="__CONTROLLER__/index"></a></section>
     <div class="header_ul_box">
         <div class="arrow"></div>
         <ul class="header_ul">
@@ -386,31 +386,7 @@
 
 
 
-<?php if(is_array($oder_list)): $i = 0; $__LIST__ = $oder_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                <div class="list_img">
-                    <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                        <img alt="" src="/.<?php echo ($vo["data"]); ?>">
-                    </a>
-                </div>
-                <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                    <p>
-                        订单ID：<span><?php echo ($vo["sn"]); ?></span>
-                    </p>
-
-                    <p class="order_p1">
-                        下单时间：<span><?php echo (date('Y-m-d H:i:s',$vo["time"])); ?></span>
-                    </p>
-                    <p class="order_p1">
-                        订单金额：<span>￥<?php echo ($vo["hj"]); ?>（含运费）</span>
-                    </p>
-                </a>
-                <!-- <p class="order_p2">未付款</p> -->
-
-                <div class="order_button">
-                     <a href ="javascript:volid(0);" class="order_button_r">货到付款</a>
-                     <a href ="javascript:volid(0);" class="order_button_l" style="color:black">取消订单</a>
-                </div>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+<p style="text-align: center">你好，你当前等级为<?php echo session('user.vip');?>,继续加油</p>
 
 
 
@@ -422,7 +398,7 @@
         <section class="shop-cart-not" style="display:none;">
             <div class="cart-empry-bg"></div>
             <p class="cart-empry-cart">暂无订单信息</p>
-            <a class="cart-empry-goshopping" href="/index.php/M/Index/index">去逛逛</a>
+            <a class="cart-empry-goshopping" href="__CONTROLLER__/index">去逛逛</a>
         </section>
 
 
@@ -439,8 +415,8 @@
 <footer>
         <p class="blank2"></p>
         <section class="padd11 clearfix">
-            <p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>
-            <a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
+            <p class="userloginf" id="userlogin2"><span class="user_name"><a href="{:U('Index/grzx')}">欢迎， <span class="user_box">{$Think.session.user.nick}</span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="{:U('Index/logout')}">退出</a> </span></p>
+            <a href="{:U('Index/index')}" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
         </section>
         <div class="app_down">
             <a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">

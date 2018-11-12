@@ -213,7 +213,9 @@ class IndexController extends CommonController {
         $this->display();
     }
 
-
+    public function vip(){
+        $this->display();
+    }
 
     public function index2(){
 
@@ -323,7 +325,9 @@ class IndexController extends CommonController {
 
                    $da =array();
                    $da['phone'] = $data['phone'];
+                   $da['id'] = $data['id'];
                    $da['nick'] = $data['nick'];
+                    $da['vip'] = $data['vip'];
                    session("user",$da);
 
                    $this->redirect('Index/grzx');
@@ -355,6 +359,7 @@ class IndexController extends CommonController {
                 if($data['phone'] == $find_one['phone'] && $data['password'] == $find_one['password']){
 
                    $da['phone'] = $find_one['phone'];
+                    $da['id'] = $find_one['id'];
                    $da['nick'] = $find_one['nick'];
                    $da['vip'] = $find_one['vip'];
 //                   dump($da);die;
@@ -430,11 +435,12 @@ class IndexController extends CommonController {
             $this->assign('hj',$hj);
         }
 
-
+        $res=D('address')->where(array('user_id'=>session('user.id')))->select();
+        $this->assign('address',$res);
         //查询该账号以前下过订单的地址
-        $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
-        $xinxi=D("dingdans")->where(array('userid'=>$one['id']))->order("id desc")->find();
-        $this->assign('xinxi',$xinxi);
+//        $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
+//        $xinxi=D("dingdans")->where(array('userid'=>$one['id']))->order("id desc")->find();
+//        $this->assign('xinxi',$xinxi);
 
         // dump($xinxi);
 
@@ -467,8 +473,13 @@ class IndexController extends CommonController {
 
             $data1['ip'] = $ip;
             $data1['ipdz'] = mb_substr($html,$t1,$t2-$t1);
-
-
+            $map['id']=array('eq',I('post.address'));
+            $map['user_id']=array('eq',session('user.id'));
+           dump($map);die;
+            $res=M('address')->where($map)->find();
+            $data1['address']=$res['address'];
+            $data1['truename']=$res['username'];
+            $data1['phone']=$res['phone'];
             $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
             $data1['userid'] = $one['id'];
             $data1['nick'] = $one['nick'];
@@ -543,8 +554,98 @@ class IndexController extends CommonController {
        $this->assign('cars',$cars);
        $this->display();
     }
+    public function upadd(){
+        if(IS_POST){
+            $id=I('post.id');
+            //dump($id);die;
+            $data = I('post.');
+            $set=M('address')->where('id='.$id)->save($data);
+            if($set){
+                $this->redirect('Index/address');
+            }
+            else{
+                $this->redirect('Index/address', '',3, '更新失败...');
+            }
+        }
+        $map['id']=array('eq',I('get.id'));
+            $map['user_id']=array('eq',session('user.id'));
+//            dump($map);die;
+            $res=M('address')->where($map)->find();
+            //dump($res);die;
+            $this->assign('vo',$res);
+            $this->display();
+
+    }
+    public function set(){
+        if(IS_GET){
+            $map['id']=array('eq',I('get.id'));
+            $map['user_id']=array('eq',session('user.id'));
+//            dump($map);die;
+            $res=M('address')->where($map)->select();
+//            dump($res);die;
+            if($res){
+                $id=I('get.id');
+                $data['set'] = '0';
+                M('address')->where('id!='.$id)->save($data);
+                $data['set'] = '1';
+                $set=M('address')->where('id='.$id)->save($data);
+                if($set){
+                    $this->redirect('Index/address');
+                }
+                else{
+                    $this->redirect('Index/address', '',3, '<h1>设置失败...</h1>');
+                }
+            }
+            else{
+                $this->redirect('Index/address','',3, '<h1>设置失败...</h1>');
+            }
+        }
+    }
+    public  function  deladd(){
+        if(IS_GET){
+            $map['id']=array('eq',I('get.id'));
+            $map['user_id']=array('eq',session('user.id'));
+//            dump($map);die;
+            $res=M('address')->where($map)->select();
+//            dump($res);die;
+        if($res){
+            $del=M('address')->delete(I('get.id'));
+            if($del){
+            $this->redirect('Index/address', '',3, '<h1>删除成功...</h1>');
+                }
+                else{
+                $this->redirect('Index/address', '',3, '删除失败...');
+            }
+        }
+        else{
+            $this->redirect('Index/address','',3, '删除失败...');
+        }
+        }
+    }
+    public function address(){
+        $res=D('address')->where(array('user_id'=>session('user.id')))->select();
+        $this->assign('address',$res);
+        $this->display();
+    }
+    public function addaddress(){
+       // echo session('user.id');die;
+        if(IS_POST){
+            $data1=I('post.');
+            $data1['user_id']=session('user.id');
+            // dump($data1);
+            $dingdans=M("address")->add($data1);
+            if($dingdans){
+
+                //add 地址成功
 
 
+                $this->redirect('Index/address');
+            }else{
+                $this->redirect('Index/address');
+            }
+        }
+        $this->display();
+    }
 
 
     //订单列表

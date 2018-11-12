@@ -59,7 +59,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/theme/mobile/image/buy/m_goback.png) no-repeat .35rem center;
+    background: url(/Public/m_goback.png) no-repeat .35rem center;
     background-size: .23rem .44rem;
 }
 .title-center{

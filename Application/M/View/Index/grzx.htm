@@ -11,8 +11,11 @@
 <script>!function(n,e){function t(){var n=e.documentElement,t=e.documentElement.clientWidth;t>750&&(t=750),n.style.fontSize=t/750*100+"px"}var i="orientationchange"in window?"orientationchange":"resize";n.addEventListener(i,t,!1),n.addEventListener("load",t,!1),e.addEventListener("DOMContentLoaded",t,!1)}(window,document);</script>
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/grzx_files/base.css">
 <link href="__PUBLIC__/grzx_files/my-dingdang.css" rel="stylesheet">
-
+    <link href="__PUBLIC__/car_files/swiper.min.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/car_files/swiper.min.js" type="text/javascript"></script>
+    <link href="__PUBLIC__/car_files/vkad.reset.css" rel="stylesheet" type="text/css">
 <style>
+
 body,html{
 	background: #EFEFF4;
 }
@@ -30,11 +33,11 @@ body,html{
 	width:14px;height:14px;margin-left: 4px;position: relative;top: 2px;
 }
 </style>
-    <script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
+
+
     </head>
-    <body style="">
-    <?php $cd=4;?>
-    <include file="./Application/M/View/Common/foot.htm" />
+    <body >
+
 
     <header>
 
@@ -114,20 +117,22 @@ body,html{
     </li>
     </ul>
     </nav>
+
     <div class="my-main">
 
     <ul class="main-list cl">
     <li onclick="location='__CONTROLLER__/olst'" class="allorder"><a><i class="icon icon1"></i><strong>全部订单</strong></a></li>
     <li class="ddsl"><a><i class="icon gifts"></i><strong>退换货</strong></a></li>
-    <li class="myyouhui"><a><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
+    <li class="myyouhui"><a onclick="location='__CONTROLLER__/vip'"><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
     <!--<li class="mycoin none" style="display: list-item;"><a><i class="icon icon-mycoin"></i><strong>商城首页</strong></a></li>-->
-    <li class="dizhiguanli"><a><i class="icon icon2"></i><strong>地址管理</strong></a></li>
+    <li class="dizhiguanli"><a onclick="location='__CONTROLLER__/address'"><i class="icon icon2"></i><strong>地址管理</strong></a></li>
     <li><a href=""><i class="icon icon4"></i><strong>常见问题</strong></a></li>
     </ul>
 
     <!-- <h1 class="tele-btn"><a href="tel:95028">客服电话：95028</a></h1> -->
     </div>
-
+    <?php $cd=4;?>
+    <include file="./Application/M/View/Common/foot.htm" />
     <!--<footer class="my-footer hasuser">-->
     <!--<ul class="footer-nav cl">-->
     <!--<li class="tohome"><a href="{:U('Index/index')}">首页</a></li>-->
@@ -143,5 +148,6 @@ body,html{
 
     <!--</ul>-->
     <!--</footer>-->
+
     </body>
     </html>

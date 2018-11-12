@@ -83,23 +83,27 @@
     </div>
 </div>
 </volist>
+                            <style>
+                                .address{
+                                    max-width: 10%;
+                                    display: inline;
+                                    appearance:radio;
+                                    -moz-appearance:radio; /* Firefox */
+                                    -webkit-appearance:radio; /* Safari 和 Chrome */
+                                }
+                            </style>
 </div>
 
-            <div class="order-details-remarks display-box" style="margin-bottom: 0rem;">
+            <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">手机号：</p>
-                <p class="remarks-right box-flex"><input type="text" name="phone" id="phone" value="{$xinxi.phone}" placeholder="输入11位手机号码" maxlength="50" onblur="OrderRemark()"></p>
+                <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
+                <volist name="address" id="vo" >
+
+                        <label><input class="address" name="address" type="radio" value="{$vo.id}" select="selected"/>地址：{$vo.province}{$vo.city}{$vo.district}{$vo.address}<br>联系人：{$vo.username}&nbsp手机号：{$vo.phone}</label><br>
+
+                </volist>
             </div>
-            <div class="order-details-remarks display-box" style="margin-bottom: 0rem;">
-                <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">姓名：</p>
-                <p class="remarks-right box-flex"><input type="text" name="truename" id="truename" value="{$xinxi.truename}" placeholder="输入姓名" maxlength="50" onblur="OrderRemark()"></p>
-            </div>
-            <div class="order-details-remarks display-box" style="">
-                <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">地址：</p>
-                <p class="remarks-right box-flex"><input type="text" name="address" id="address" value="{$xinxi.address}" placeholder="输入详细地址" maxlength="50" onblur="OrderRemark()"></p>
-            </div>
+
 
             <div class="order-details-remarks display-box">
                 <p class="remarks-left box-flex">订单备注：</p>

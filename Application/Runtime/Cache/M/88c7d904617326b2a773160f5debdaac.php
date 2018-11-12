@@ -60,28 +60,28 @@
 </head>
 <body>
 <?php $cd=2;?>
-<script src="../../../../Public/car_files/m_shopCart.js"></script>
-<div id="menu" class="menu">
+<!--<script src="../../../../Public/car_files/m_shopCart.js"></script>-->
+<div  class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
-        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
         </a>
     </div>
     <div id="two" class="subMenu text-center">
         <a href="/index.php/M/Index/cates/id/14">
-        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
         </a>
     </div>
     <div id="three" class="subMenu text-center" data-src="personal.html">
         <a href="/index.php/M/Index/car">
-        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
     </div>
-    <div id="four" class="subMenu text-center" data-src="personal.html">
+    <div id="four" class="subMenu text-center" >
         <a href="/index.php/M/Index/grzx">
-        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
         </a>
     </div>
@@ -109,8 +109,9 @@
 
     .menu_name {
         height: 30px;
-        width: 100%;
+        width: 90px;
         line-height: 30px;
+        margin: auto;
     }
 
     img.menu_img {

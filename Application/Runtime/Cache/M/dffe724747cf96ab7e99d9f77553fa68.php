@@ -81,23 +81,23 @@
         </div>
     </div>
 </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <style>
+                                .address{
+                                    max-width: 10%;
+                                    display: inline;
+                                    appearance:radio;
+                                    -moz-appearance:radio; /* Firefox */
+                                    -webkit-appearance:radio; /* Safari 和 Chrome */
+                                }
+                            </style>
 </div>
 
-            <div class="order-details-remarks display-box" style="margin-bottom: 0rem;">
+            <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">手机号：</p>
-                <p class="remarks-right box-flex"><input type="text" name="phone" id="phone" value="<?php echo ($xinxi["phone"]); ?>" placeholder="输入11位手机号码" maxlength="50" onblur="OrderRemark()"></p>
+                <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
+                <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label><input class="address" name="address" type="radio" value="<?php echo ($vo["id"]); ?>" select="selected"/>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?><br>联系人：<?php echo ($vo["username"]); ?>&nbsp手机号：<?php echo ($vo["phone"]); ?></label><br><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
-            <div class="order-details-remarks display-box" style="margin-bottom: 0rem;">
-                <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">姓名：</p>
-                <p class="remarks-right box-flex"><input type="text" name="truename" id="truename" value="<?php echo ($xinxi["truename"]); ?>" placeholder="输入姓名" maxlength="50" onblur="OrderRemark()"></p>
-            </div>
-            <div class="order-details-remarks display-box" style="">
-                <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
-                <p class="remarks-left box-flex">地址：</p>
-                <p class="remarks-right box-flex"><input type="text" name="address" id="address" value="<?php echo ($xinxi["address"]); ?>" placeholder="输入详细地址" maxlength="50" onblur="OrderRemark()"></p>
-            </div>
+
 
             <div class="order-details-remarks display-box">
                 <p class="remarks-left box-flex">订单备注：</p>

@@ -331,7 +331,8 @@
             });
         </script>
 
-<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script></head>
+<script type="text/javascript">
+    navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script></head>
 <body>
     <!--/*头部部分*/-->
     <a name="top"></a>
@@ -342,76 +343,75 @@
     <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
     <span class="header_t">
         <i class="c_inav_i">
-            我的订单
+            我的地址
         </i>
     </span>
     <section class="header_r"><a href="/index.php/M/Index/index"></a></section>
-    <div class="header_ul_box">
-        <div class="arrow"></div>
-        <ul class="header_ul">
-            <li>
-                <a href="http://m.360kad.com/Order?type=1">
-                    待付款<span>(2)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=2">
-                    待发货<span>(0)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=3">
-                    待收货<span>(0)</span>
-                </a>
-            </li>
+    <!--<div class="header_ul_box">-->
+        <!--<div class="arrow"></div>-->
+        <!--<ul class="header_ul">-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=1">-->
+                    <!--待付款<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=2">-->
+                    <!--待发货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=3">-->
+                    <!--待收货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
 
-            <li>
-                <a href="http://m.360kad.com/Order?type=5">
-                    一月内订单<span>(2)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=6">
-                    一月前订单<span>(0)</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=5">-->
+                    <!--一月内订单<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=6">-->
+                    <!--一月前订单<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
 </header>
 <p class="blank2"></p>
 <!--header--end-->
 <!--/*内容部分*/-->
-<section class="Body">
+    <style>
+        .add{
+            color: #0ba300;
+            margin-top: 5%;
+            margin-left:7%;
+        }
+        .button{
+            display: inline;
+            width: 20%;
+            background-color: red;
+            text-align: center;
+            font-size:20px;
+            border:1px solid red;
+            border-radius: 10px;
+        }
+    </style>
+    <section class="Body">
+    <button  class="add" onclick="location='/index.php/M/Index/addaddress'">新增收货地址</button>
         <ul class="order_ul">
 
 
-
-<?php if(is_array($oder_list)): $i = 0; $__LIST__ = $oder_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                <div class="list_img">
-                    <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                        <img alt="" src="/.<?php echo ($vo["data"]); ?>">
-                    </a>
-                </div>
-                <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                    <p>
-                        订单ID：<span><?php echo ($vo["sn"]); ?></span>
-                    </p>
-
-                    <p class="order_p1">
-                        下单时间：<span><?php echo (date('Y-m-d H:i:s',$vo["time"])); ?></span>
-                    </p>
-                    <p class="order_p1">
-                        订单金额：<span>￥<?php echo ($vo["hj"]); ?>（含运费）</span>
-                    </p>
-                </a>
-                <!-- <p class="order_p2">未付款</p> -->
-
-                <div class="order_button">
-                     <a href ="javascript:volid(0);" class="order_button_r">货到付款</a>
-                     <a href ="javascript:volid(0);" class="order_button_l" style="color:black">取消订单</a>
-                </div>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
-
+            <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div style="width: 85%; border: 1px solid #0a6aa1;border-radius: 16px; margin: auto; padding: 5%;">
+    <p style="color: #011eb5"><?php if(($vo["set"] == 1) ): ?>默认地址：<?php endif; ?></p>
+    <div>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?></div>
+    <span>联系人：<?php echo ($vo["username"]); ?></span>
+    <span>手机号：<?php echo ($vo["phone"]); ?></span><br>
+    <input class="button"  type="button" value="删除" onclick="location='/index.php/M/Index/deladd/id/<?php echo ($vo["id"]); ?>'">
+    <input class="button"  type="button" style="background-color: #0ba300;"value="修改" onclick="location='/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>'">
+    <input  class="button" style="background-color: #0b97b5;float: right;" type="button" value="默认" onclick="location='/index.php/M/Index/set/id/<?php echo ($vo["id"]); ?>'">
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
 

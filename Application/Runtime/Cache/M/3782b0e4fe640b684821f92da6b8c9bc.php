@@ -1,6 +1,8 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0030)http://m.360kad.com/Cart/Index -->
-<html style="font-size: 78.5333px; zoom: 1;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html style="font-size: 78.5333px; zoom: 1;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -392,8 +394,8 @@
 
                 <div class="order-balance display-box">
                     <div class="order-all-price box-flex">
-                        <p id="allSelect" class="Allselect"></p>
-                        <p class="Allselect-size">全选</p>
+                        <!--<p id="allSelect" class="Allselect"></p>-->
+                        <!--<p class="Allselect-size">全选</p>-->
                         <input id="giftcode" type="hidden">
                         <input id="giftqty" type="hidden">
                     <!--     <div class="all-price-cont">
@@ -405,7 +407,7 @@
                     </div> -->
                         </div>
                         <!-- <a href="javascript:;" id="" class="order-btn box-flex">去结算</a> -->
-                        <input class="order-btn box-flex" type="submit" value="去结算">
+                        <input class="order-btn box-flex" <?php if($cars!=null) echo'type="submit"';else echo 'type="button"';?> value="去结算">
 
 
                         <input type="hidden" name="hidIsgotoOrder" id="hidIsgotoOrder" value="1">
@@ -429,28 +431,28 @@
 
 
 <?php $cd=3?>
-<script src="../../../../Public/car_files/m_shopCart.js"></script>
-<div id="menu" class="menu">
+<!--<script src="../../../../Public/car_files/m_shopCart.js"></script>-->
+<div  class="menu">
     <div id="one" class="subMenu text-center " data-src="">
         <a href="/index.php/M/Index/index">
-        <img src="/Public/index_files1/首页icon.png" class="menu_img" data-imgname="1">
+        <img src="/Public/index_files1/首页icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==1) echo 'active'?>">首页</div>
         </a>
     </div>
     <div id="two" class="subMenu text-center">
         <a href="/index.php/M/Index/cates/id/14">
-        <img src="/Public/index_files1/类别icon.png" class="menu_img" data-imgname="2">
+        <img src="/Public/index_files1/类别icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==2) echo 'active'?>">类别</div>
         </a>
     </div>
     <div id="three" class="subMenu text-center" data-src="personal.html">
         <a href="/index.php/M/Index/car">
-        <img src="/Public/index_files1/购物车icon.png" class="menu_img" data-imgname="3">
+        <img src="/Public/index_files1/购物车icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==3) echo 'active'?>" >购物车</div></a>
     </div>
-    <div id="four" class="subMenu text-center" data-src="personal.html">
+    <div id="four" class="subMenu text-center" >
         <a href="/index.php/M/Index/grzx">
-        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" data-imgname="4">
+        <img src="/Public/index_files1/个人中心icon.png" class="menu_img" >
         <div class="menu_name <?php if($cd==4) echo 'active'?>">个人中心</div>
         </a>
     </div>
@@ -480,6 +482,7 @@
         height: 30px;
         width: 90px;
         line-height: 30px;
+        margin: auto;
     }
 
     img.menu_img {

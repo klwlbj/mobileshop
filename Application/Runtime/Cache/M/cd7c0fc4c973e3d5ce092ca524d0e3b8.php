@@ -342,7 +342,7 @@
     <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
     <span class="header_t">
         <i class="c_inav_i">
-            我的订单
+            我的vip等级
         </i>
     </span>
     <section class="header_r"><a href="/index.php/M/Index/index"></a></section>
@@ -386,31 +386,7 @@
 
 
 
-<?php if(is_array($oder_list)): $i = 0; $__LIST__ = $oder_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-                <div class="list_img">
-                    <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                        <img alt="" src="/.<?php echo ($vo["data"]); ?>">
-                    </a>
-                </div>
-                <a href="/index.php/M/Index/odetail/id/<?php echo ($vo["id"]); ?>">
-                    <p>
-                        订单ID：<span><?php echo ($vo["sn"]); ?></span>
-                    </p>
-
-                    <p class="order_p1">
-                        下单时间：<span><?php echo (date('Y-m-d H:i:s',$vo["time"])); ?></span>
-                    </p>
-                    <p class="order_p1">
-                        订单金额：<span>￥<?php echo ($vo["hj"]); ?>（含运费）</span>
-                    </p>
-                </a>
-                <!-- <p class="order_p2">未付款</p> -->
-
-                <div class="order_button">
-                     <a href ="javascript:volid(0);" class="order_button_r">货到付款</a>
-                     <a href ="javascript:volid(0);" class="order_button_l" style="color:black">取消订单</a>
-                </div>
-                </li><?php endforeach; endif; else: echo "" ;endif; ?>
+<p style="text-align: center">你好，你当前等级为<?php echo session('user.vip');?>,继续加油</p>
 
 
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0030)http://m.360kad.com/Cart/Index -->
-<html style="font-size: 78.5333px; zoom: 1;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html style="font-size: 78.5333px; zoom: 1;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -394,8 +396,8 @@
 
                 <div class="order-balance display-box">
                     <div class="order-all-price box-flex">
-                        <p id="allSelect" class="Allselect"></p>
-                        <p class="Allselect-size">全选</p>
+                        <!--<p id="allSelect" class="Allselect"></p>-->
+                        <!--<p class="Allselect-size">全选</p>-->
                         <input id="giftcode" type="hidden">
                         <input id="giftqty" type="hidden">
                     <!--     <div class="all-price-cont">
@@ -407,7 +409,7 @@
                     </div> -->
                         </div>
                         <!-- <a href="javascript:;" id="" class="order-btn box-flex">去结算</a> -->
-                        <input class="order-btn box-flex" type="submit" value="去结算">
+                        <input class="order-btn box-flex" <?php if($cars!=null) echo'type="submit"';else echo 'type="button"';?> value="去结算">
 
 
                         <input type="hidden" name="hidIsgotoOrder" id="hidIsgotoOrder" value="1">
