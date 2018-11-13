@@ -1,6 +1,8 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0038)http://m.360kad.com/Order/GetOrderInfo -->
-<html style="font-size: 247.867px; zoom: 1;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html style="font-size: 247.867px; zoom: 1;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -91,11 +93,23 @@
                                 }
                             </style>
 </div>
+<style>
+    .add{
+        display: block;
+        width:auto;
+        margin:auto;
+        margin-top: 5%;
+        height:10%;
+        border:none;
+        border-radius: 6px;
 
+    }
+</style>
             <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
                 <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
-                <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label><input class="address" name="address" type="radio" value="<?php echo ($vo["id"]); ?>" select="selected"/>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?><br>联系人：<?php echo ($vo["username"]); ?>&nbsp手机号：<?php echo ($vo["phone"]); ?></label><br><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if((count($address) == 0)): ?><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button><?php endif; ?>
+                <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label><input class="address" name="address" type="radio" value="<?php echo ($vo["id"]); ?>" <?php if(count($address)==1)echo'checked'; if($vo['set']==1)echo'checked';?>/>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?><br>联系人：<?php echo ($vo["username"]); ?>&nbsp手机号：<?php echo ($vo["phone"]); ?></label><br><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
 
 
@@ -133,7 +147,7 @@
             </div>
             <div class="order-details-nav display-box">
                 <div class="order-nav-left box-flex">总计：<span id="sumprice">¥<?php echo ($hj); ?></span></div>
-                <div class="order-nav-right box-flex" onclick="return checkFrom();" id="orderSubmit">提交订单</div>
+                <div class="order-nav-right box-flex " <?php if(count($address)>0)echo'onclick="return checkFrom();"'; else echo'onclick="return address();"';?> id="orderSubmit">提交订单</div>
             </div>
        <!-- 弹出层背景-->
         <div class="PopupBackground" id="PopupBackground"></div>
@@ -209,9 +223,13 @@
             document.getElementById("Popup1").style.display = 'none';
             document.getElementById("PopupBackground").style.display = 'none';
         }
-
-
-
+        // $("button").click(function(){
+        //     $("p").slideToggle();
+        // });
+        function address(){
+            showdiv1('请创建新地址！', 0);
+            $('.order-nav-right.box-flex').removeClass('end');
+        }
         function checkFrom() {
             $('.order-nav-right.box-flex').addClass('end');
             _gaq.push(['_trackEvent', '确认订单页面', '提交订单-按钮', '0', 0]);
@@ -226,26 +244,26 @@
             }
 
 
-            if($('#phone').val().length != 11)
+            if($("label.address").checked==true ||$(".address").val==null)
             {
-                showdiv1('手机号不正确！', 0);
+                showdiv1('请选择地址！', 0);
                 $('.order-nav-right.box-flex').removeClass('end');
                 return false;
             }
+            //
+            // if($('#truename').val().length < 2 || $('#truename').val().length >10)
+            // {
+            //     showdiv1('姓名不正确！', 0);
+            //     $('.order-nav-right.box-flex').removeClass('end');
+            //     return false;
+            // }
 
-            if($('#truename').val().length < 2 || $('#truename').val().length >10)
-            {
-                showdiv1('姓名不正确！', 0);
-                $('.order-nav-right.box-flex').removeClass('end');
-                return false;
-            }
-
-            if($('#address').val().length < 10 || $('#address').val().length >80)
-            {
-                showdiv1('请输入详细地址！', 0);
-                $('.order-nav-right.box-flex').removeClass('end');
-                return false;
-            }
+            // if($('#address').val().length < 10 || $('#address').val().length >80)
+            // {
+            //     showdiv1('请输入详细地址！', 0);
+            //     $('.order-nav-right.box-flex').removeClass('end');
+            //     return false;
+            // }
 
 
 

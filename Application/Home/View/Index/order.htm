@@ -51,7 +51,7 @@
 
 <div class="order-group" data-merchantcode="1">
   <div class="group-title">
-    <p class="seller">寻医问药</p>
+    <p class="seller">驼铃商贸</p>
     <p class="unit-price">单价（元）</p>
 
     <p class="quantity">数量</p>

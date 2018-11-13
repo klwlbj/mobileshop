@@ -3,7 +3,10 @@
 <html lang="zh-cn" style="font-size: 100px;">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
 <meta name="keywords" content="驼铃商贸">
 <meta name="description" content="驼铃商贸">
 <meta name="format-detection" content="telephone=no, email=no">
@@ -124,7 +127,7 @@ body,html{
     <li class="myyouhui"><a onclick="location='/index.php/M/Index/vip'"><i class="icon icon-youhui"></i><strong>会员等级</strong></a></li>
     <!--<li class="mycoin none" style="display: list-item;"><a><i class="icon icon-mycoin"></i><strong>商城首页</strong></a></li>-->
     <li class="dizhiguanli"><a onclick="location='/index.php/M/Index/address'"><i class="icon icon2"></i><strong>地址管理</strong></a></li>
-    <li><a href=""><i class="icon icon4"></i><strong>常见问题</strong></a></li>
+    <li><a onclick="location='/index.php/M/Index/problems'"><i class="icon icon4"></i><strong>常见问题</strong></a></li>
     </ul>
 
     <!-- <h1 class="tele-btn"><a href="tel:95028">客服电话：95028</a></h1> -->

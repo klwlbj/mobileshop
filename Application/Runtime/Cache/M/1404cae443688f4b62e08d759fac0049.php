@@ -347,7 +347,7 @@
     <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
     <span class="header_t">
         <i class="c_inav_i">
-            <P>添加地址信息</P>
+            <P>修改地址信息</P>
         </i>
     </span>
     <section class="header_r"><a href="/index.php/M/Index/index"></a></section>

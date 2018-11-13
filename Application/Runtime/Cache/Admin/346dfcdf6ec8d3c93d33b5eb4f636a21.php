@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
 	    <meta charset="utf-8">
-    <title>寻医问药</title>
+    <title>驼铃商贸</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -215,15 +215,10 @@
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
-                            <li>
-                                <a href="/admin/user/index.html">
-                                    <span class="menu-text">会员管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+
                             <li>
                                 <a href="/index.php/Admin/MemberLevel/lst">
-                                    <span class="menu-text">会员等级</span>
+                                    <span class="menu-text">会员管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
@@ -392,20 +387,22 @@
                                         <div class="col-sm-6">
                                             <select name="cate_id">
                                                 <option value="">请选择</option>
-                                                <?php if(is_array($cateres)): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php if($vo['pid'] != 0): ?>|<?php endif; echo str_repeat('-', $vo['level']*8); echo ($vo["catename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                <?php if(is_array($cateres)): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option <?php if($vo['level']!=2)echo'disabled="disabled"'?> value="<?php echo ($vo["id"]); ?>"><?php if($vo['pid'] != 0): ?>|<?php endif; echo str_repeat('-', $vo['level']*8); echo ($vo["catename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </select>
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">所属品牌</label>
-                                        <div class="col-sm-6">
-                                            <select name="brand_id">
-                                            <option>请选择</option>
-                                            <?php if(is_array($brandres)): $i = 0; $__LIST__ = $brandres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["brand_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </select>
-                                        </div>
-                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label no-padding-right" for="username">所属品牌</label>-->
+                                        <!--<div class="col-sm-6">-->
+                                            <!--<select name="brand_id">-->
+                                            <!--<option>请选择</option>-->
+                                            <!--<?php if(is_array($brandres)): $i = 0; $__LIST__ = $brandres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>-->
+                                                <!--<option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["brand_name"]); ?></option>-->
+                                            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                            <!--</select>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="username">市场价格</label>
                                         <div class="col-sm-6">
@@ -441,17 +438,22 @@
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
-                            <!--         <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="username">商品重量</label>
-                                <div class="col-sm-6">
-                                    <input type="text" required="" name="goods_weight" placeholder="" style="width:80%; float:left; margin-right:10px;" class="form-control" >
-                                    <select name="weight_unit">
-                                        <option value="g">克</option>
-                                        <option value="kg">千克</option>
-                                    </select>
-                                </div>
-                                <p class="help-block col-sm-4 red">* 必填</p>
-                            </div> -->
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">商品重量</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="goods_weight" value="<?php echo ($goods["goods_weight"]); ?>" placeholder="" style="width:80%; float:left; margin-right:10px;" class="form-control" >
+                                            <select name="weight_unit">
+                                                <option <?php if($goods['weight_unit'] == '盒'): ?>selected="selected"<?php endif; ?> value="盒">盒</option>
+                                                <option <?php if($goods['weight_unit'] == '箱'): ?>selected="selected<?php endif; ?> value="箱">箱</option>
+                                                <option <?php if($goods['weight_unit'] == '袋'): ?>selected="selected<?php endif; ?> value="袋">袋</option>
+                                                <option <?php if($goods['weight_unit'] == '瓶'): ?>selected="selected<?php endif; ?> value="瓶">瓶</option>
+                                                <option <?php if($goods['weight_unit'] == '支'): ?>selected="selected<?php endif; ?> value="支">支</option>
+                                                <option <?php if($goods['weight_unit'] == '罐'): ?>selected="selected<?php endif; ?> value="罐">罐</option>
+                                                <option <?php if($goods['weight_unit'] == '打'): ?>selected="selected<?php endif; ?> value="打">打</option>
+                                            </select>
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="username">是否上架</label>
                                        <div class="col-sm-6">

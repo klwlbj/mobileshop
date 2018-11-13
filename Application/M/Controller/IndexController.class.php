@@ -214,6 +214,9 @@ class IndexController extends CommonController {
     }
 
     public function vip(){
+        if(empty(session("user"))){
+            $this->redirect('Index/login');exit();
+        }
         $this->display();
     }
 
@@ -459,6 +462,7 @@ class IndexController extends CommonController {
 
         if(IS_POST){
             $data1=$post;
+//            dump($data1);die;
             $data1['data']=json_encode(S('dd'));
             $data1['time']=time();
             $data1['sn']=time().rand(100,999);
@@ -473,18 +477,18 @@ class IndexController extends CommonController {
 
             $data1['ip'] = $ip;
             $data1['ipdz'] = mb_substr($html,$t1,$t2-$t1);
-            $map['id']=array('eq',I('post.address'));
+            $map['id']=array('eq',$data1['address']);
             $map['user_id']=array('eq',session('user.id'));
-           dump($map);die;
+           //dump($map);die;
             $res=M('address')->where($map)->find();
-            $data1['address']=$res['address'];
+            $data1['address']=$res['province'].$res['city'].$res['district'].$res['address'];
             $data1['truename']=$res['username'];
             $data1['phone']=$res['phone'];
             $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
             $data1['userid'] = $one['id'];
             $data1['nick'] = $one['nick'];
 
-            // dump($data1);
+//             dump($data1);die;
             $dingdans=M("dingdans")->add($data1);
             if($dingdans){
 
@@ -500,6 +504,7 @@ class IndexController extends CommonController {
 
             // $this->display();
         }
+
     }
 
 
@@ -555,6 +560,9 @@ class IndexController extends CommonController {
        $this->display();
     }
     public function upadd(){
+        if(empty(session("user"))){
+            $this->redirect('Index/login');exit();
+        }
         if(IS_POST){
             $id=I('post.id');
             //dump($id);die;
@@ -577,6 +585,9 @@ class IndexController extends CommonController {
 
     }
     public function set(){
+        if(empty(session("user"))){
+            $this->redirect('Index/login');exit();
+        }
         if(IS_GET){
             $map['id']=array('eq',I('get.id'));
             $map['user_id']=array('eq',session('user.id'));
@@ -623,11 +634,20 @@ class IndexController extends CommonController {
         }
     }
     public function address(){
+        if(empty(session("user"))){
+            $this->redirect('Index/login');exit();
+        }
         $res=D('address')->where(array('user_id'=>session('user.id')))->select();
         $this->assign('address',$res);
         $this->display();
     }
+    public  function problems(){
+        $this->display();
+    }
     public function addaddress(){
+        if(empty(session("user"))){
+            $this->redirect('Index/login');exit();
+        }
        // echo session('user.id');die;
         if(IS_POST){
             $data1=I('post.');

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0025)http://m.360kad.com/Order -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -7,27 +7,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <script src="/Public/js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/Public/js/popups.js"></script>
-    <script type="text/javascript">
-        setSize();
-        addEventListener('resize',setSize);
-        function setSize() {
-            document.documentElement.style.fontSize = document.documentElement.clientWidth/750*100+'px';
-        }
-    </script>
-    <script type="text/javascript">
-        $(function () {
-            $('#del').click(function () {
-                jqalert({
-                    title:'提示',
-                    content:'自定义弹窗内容，居左对齐显示，告知需要确认的信息等',
-                    yestext:'知道了',
-                    notext:'取消'
-                })
-            })
-        });
-    </script>
+
     <style type="text/css">
         /*全局样式*/
         body { padding: 0; margin: 0; color: #808080; background: #fff; min-width: 320px; font: 14px/150% "微软雅黑", Verdana, Arial, Helvetica, sans-serif; }
@@ -334,10 +314,24 @@
     </style>
 
 
+        <script>
+            //列表分类切换显示
+            jQuery(document).ready(function () {
+                $("#header .header_t").click(function () {
+                    $(".header_ul_box").toggle();
+                });
+                $(".header_ul_box a").click(function () {
+                    $(".header_ul_box").toggle();
+                });
+                var order_ul = $('.order_ul').html();
+                if (order_ul && order_ul.trim() == '') {
+                    $('.errCar').show();
+                }
+                orderDelete();
+            });
+        </script>
 
-
-<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
-</head>
+<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script></head>
 <body>
     <!--/*头部部分*/-->
     <a name="top"></a>
@@ -348,13 +342,40 @@
     <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
     <span class="header_t">
         <i class="c_inav_i">
-            我的订单
+            常见问题
         </i>
     </span>
-    <section class="header_r"><a href="__CONTROLLER__/index"></a></section>
+    <section class="header_r"><a href="/index.php/M/Index/index"></a></section>
     <div class="header_ul_box">
         <div class="arrow"></div>
+        <!--<ul class="header_ul">-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=1">-->
+                    <!--待付款<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=2">-->
+                    <!--待发货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=3">-->
+                    <!--待收货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
 
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=5">-->
+                    <!--一月内订单<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=6">-->
+                    <!--一月前订单<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
     </div>
 </header>
 <p class="blank2"></p>
@@ -365,34 +386,10 @@
 
 
 
-<volist name="oder_list" id="vo">
-            <li>
-                <div class="list_img">
-                    <a href="__CONTROLLER__/odetail/id/{$vo.id}">
-                        <img alt="" src="/.__ROOT__{$vo.data}">
-                    </a>
-                </div>
-                <a href="__CONTROLLER__/odetail/id/{$vo.id}">
-                    <p>
-                        订单ID：<span>{$vo.sn}</span>
-                    </p>
 
-                    <p class="order_p1">
-                        下单时间：<span>{$vo.time|date='Y-m-d H:i:s',###}</span>
-                    </p>
-                    <p class="order_p1">
-                        订单金额：<span>￥{$vo.hj}（含运费）</span>
-                    </p>
-                </a>
-                <!-- <p class="order_p2">未付款</p> -->
+    <img style="width: 100%;" src="/Public/UC截图20181113100239.png" alt="">
 
-                <div class="order_button">
-                     <a href ="" class="order_button_r">货到付款</a>
-                     <a href ="#"  class="order_button_l del" style="color:black" >取消订单</a>
-                </div>
-                </li>
-</volist>
-            <li id="del">confirm</li>
+
 
 
 
@@ -403,7 +400,7 @@
         <section class="shop-cart-not" style="display:none;">
             <div class="cart-empry-bg"></div>
             <p class="cart-empry-cart">暂无订单信息</p>
-            <a class="cart-empry-goshopping" href="__CONTROLLER__/index">去逛逛</a>
+            <a class="cart-empry-goshopping" href="/index.php/M/Index/index">去逛逛</a>
         </section>
 
 
@@ -420,8 +417,8 @@
 <footer>
         <p class="blank2"></p>
         <section class="padd11 clearfix">
-            <p class="userloginf" id="userlogin2"><span class="user_name"><a href="{:U('Index/grzx')}">欢迎， <span class="user_box">{$Think.session.user.nick}</span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="{:U('Index/logout')}">退出</a> </span></p>
-            <a href="{:U('Index/index')}" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
+            <p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>
+            <a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
         </section>
         <div class="app_down">
             <a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">
@@ -466,6 +463,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

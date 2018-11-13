@@ -146,7 +146,7 @@
 	</ul>
 <div class="left">
 	<div>
-		<div></div>
+
 		<?php if(is_array($g_res1)): $i = 0; $__LIST__ = $g_res1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vm): $mod = ($i % 2 );++$i;?><div class="picdiv">
 			<a href="/index.php/M/Index/detail/id/<?php echo ($vm["id"]); ?>">
 			<img src="/<?php echo ($vm["original"]); ?>" class="imgpic" alt="pic">
@@ -154,7 +154,7 @@
 			</a>
 		</div><?php endforeach; endif; else: echo "" ;endif; ?>
 
-		<div style="height:10%;"
+		<div style="height:6em;"></div>
 
 	</div>
 </div>

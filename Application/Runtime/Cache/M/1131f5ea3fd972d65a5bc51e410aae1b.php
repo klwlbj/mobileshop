@@ -2,7 +2,7 @@
 <!-- saved from url=(0061)https://m.ddky.com/dingdanxiangqing.html?orderid=416424720267 -->
 <html lang="zh-cn" style="font-size: 81.3333px;">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no"><meta name="keywords" content="驼铃商贸"><meta name="description" content="驼铃商贸"><meta name="format-detection" content="telephone=no, email=no"><title>订单详情</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no"><meta name="keywords" content="源多享"><meta name="description" content="源多享"><meta name="format-detection" content="telephone=no, email=no"><title>订单详情</title>
 
 <link rel="stylesheet" href="/Public/odetail_files/base.css">
 <link href="/Public/odetail_files/dingdanxiangqing.css" rel="stylesheet">

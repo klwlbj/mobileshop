@@ -35,6 +35,7 @@ class IndexController extends CommonController {
         foreach ($dingdan as $key => &$value) {
             $good=$goods->find($value['sid']);
             $value['goods_name']=$good['goods_name'];
+            $value['sid']=$good['id'];
         }
 
         $this->assign('dingdan',$dingdan);

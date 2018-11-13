@@ -384,33 +384,47 @@
 <!--/*内容部分*/-->
     <style>
         .add{
-            color: #0ba300;
-            margin-top: 5%;
-            margin-left:7%;
+            font-family:"Microsoft YaHei",Georgia,Serif;
+            color: rgb(132, 95, 63);;
+            display: block;
+            position: fixed;
+            bottom: 1em;
+            width: 80%;
+            left: 8%;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            border: 1px solid rgb(132, 95, 63);
+            padding: 3% 2%;
+            border-radius: 5px;
         }
         .button{
+            font-family:"Microsoft YaHei",Georgia,Serif;
             display: inline;
             width: 20%;
-            background-color: red;
+            color: rgb(132, 95, 63);
+            background-color: whitesmoke;
+            /*background-color: #ff7fa1;*/
             text-align: center;
-            font-size:20px;
-            border:1px solid red;
+            font-size:16px;
+            border:1px solid rgb(132, 95, 63);
+            box-shadow: 2px 2px 4px #888888;
             border-radius: 10px;
         }
     </style>
     <section class="Body">
-    <button  class="add" onclick="location='/index.php/M/Index/addaddress'">新增收货地址</button>
+    <div  class="add" onclick="location='/index.php/M/Index/addaddress'"><p style="text-align: center"> +添加地址</p></div>
         <ul class="order_ul">
 
 
-            <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div style="width: 85%; border: 1px solid #0a6aa1;border-radius: 16px; margin: auto; padding: 5%;">
+            <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div style="width: 85%; border-bottom: 1px solid #2b2b2b; margin: auto; padding: 5%;margin-top: 1em">
     <p style="color: #011eb5"><?php if(($vo["set"] == 1) ): ?>默认地址：<?php endif; ?></p>
     <div>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?></div>
     <span>联系人：<?php echo ($vo["username"]); ?></span>
     <span>手机号：<?php echo ($vo["phone"]); ?></span><br>
     <input class="button"  type="button" value="删除" onclick="location='/index.php/M/Index/deladd/id/<?php echo ($vo["id"]); ?>'">
-    <input class="button"  type="button" style="background-color: #0ba300;"value="修改" onclick="location='/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>'">
-    <input  class="button" style="background-color: #0b97b5;float: right;" type="button" value="默认" onclick="location='/index.php/M/Index/set/id/<?php echo ($vo["id"]); ?>'">
+    <input class="button"  type="button" style="/*background-color: #0ba300;*/"value="修改" onclick="location='/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>'">
+    <input  class="button" style="/*background-color: #0b97b5;*/float: right;" type="button" value="默认" onclick="location='/index.php/M/Index/set/id/<?php echo ($vo["id"]); ?>'">
 </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
@@ -436,21 +450,21 @@
     <div class="topimg"><div class="topimg_inn"><a href="http://m.360kad.com/Order#" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-返回顶部-图片&#39;, &#39;0&#39;, 0]);"><img src="./olst_files/backtop91.png"></a></div></div>
     <!--footer-->
     <!--部件开始:M_User_Footer,分组:页脚部件-->
-<footer>
-        <p class="blank2"></p>
-        <section class="padd11 clearfix">
-            <p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>
-            <a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
-        </section>
-        <div class="app_down">
-            <a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">
-                <p class="foorPHon"><span>123456</span></p>
-            </a>
-        </div>
+<!--<footer>-->
+        <!--<p class="blank2"></p>-->
+        <!--<section class="padd11 clearfix">-->
+            <!--<p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>-->
+            <!--<a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>-->
+        <!--</section>-->
+        <!--<div class="app_down">-->
+            <!--<a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">-->
+                <!--<p class="foorPHon"><span>123456</span></p>-->
+            <!--</a>-->
+        <!--</div>-->
 
-        <ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业产品</li><li><span class="radius45">付</span>货到付款</li></ul>
-        <p class="copyrg">copyright ©2010-2018 驼铃商贸网上商店 版权所有</p>
-    </footer>
+        <!--<ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业产品</li><li><span class="radius45">付</span>货到付款</li></ul>-->
+        <!--<p class="copyrg">copyright ©2010-2018 驼铃商贸网上商店 版权所有</p>-->
+    <!--</footer>-->
     <style type="text/css">
         /*底部*/
         footer { min-width: 320px; width: 100%; padding: 0; margin: 0 auto; height: auto; text-align: center; }
