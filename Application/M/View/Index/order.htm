@@ -110,10 +110,11 @@
             <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
                 <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
-                <if condition="(count($address) eq 0)"><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button></if>
+                <if condition="(count($address) eq 0)"><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button></if><?php $aa=0;?>
+
                 <volist name="address" id="vo" >
 
-                        <label><input class="address" name="address" type="radio" value="{$vo.id}" <?php if(count($address)==1)echo'checked';?><?php if($vo['set']==1)echo'checked';?>/>地址：{$vo.province}{$vo.city}{$vo.district}{$vo.address}<br>联系人：{$vo.username}&nbsp手机号：{$vo.phone}</label><br>
+                        <label><input class="address" name="address" type="radio" value="{$vo.id}" <?php $aa++; if($vo['set']==1){echo'checked';$aa--;}?> <?php if(count($address)==$aa)echo'checked';?>/>地址：{$vo.province}{$vo.city}{$vo.district}{$vo.address}<br>联系人：{$vo.username}&nbsp手机号：{$vo.phone}</label><br>
 
                 </volist>
             </div>

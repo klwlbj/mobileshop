@@ -78,43 +78,25 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">设置推荐</label>
-                            <div class="col-sm-6">
-                                <div class="checkbox">
-                                    <volist name="recposres" id="recpos">
-                                        <label style="margin-right:15px;">
-                                            <input type="checkbox" name="recid[]" value="{$recpos.id}"  class="colored-success">
-                                            <span class="text">{$recpos.recname}</span>
-                                        </label>
-                                    </volist>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label for="username" class="col-sm-2 control-label no-padding-right">设置推荐</label>-->
+                            <!--<div class="col-sm-6">-->
+                                <!--<div class="checkbox">-->
+                                    <!--<volist name="recposres" id="recpos">-->
+                                        <!--<label style="margin-right:15px;">-->
+                                            <!--<input type="checkbox" name="recid[]" value="{$recpos.id}"  class="colored-success">-->
+                                            <!--<span class="text">{$recpos.recname}</span>-->
+                                        <!--</label>-->
+                                    <!--</volist>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
                         <style type="text/css">
                         div.col-sm-6 ul {padding: 0px; margin: 0px;}
                         div.col-sm-6 ul li{list-style: none; margin: 10px 0;}
                         div.col-sm-6 ul li select{margin-left:10px; width: 120px;}
                         </style>
-                        <div class="form-group">
-                            <label for="username" class="col-sm-2 control-label no-padding-right">筛选属性</label>
-                            <div class="col-sm-6">
-                                <ul>
-                                    <li>
-                                        <a style="padding" href="javascript:void(0);" onclick="addli(this)">[+]</a>
-                                        <select name="type_id[]">
-                                            <option value="">选择类型</option>
-                                            <volist name="typeRes" id="type">
-                                            <option value="{$type.id}">{$type.type_name}</option>
-                                            </volist>
-                                        </select>
-                                        <select name="attr_id[]">
-                                            <option value="">选择属性</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">

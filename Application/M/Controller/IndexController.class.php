@@ -567,8 +567,16 @@ class IndexController extends CommonController {
             $id=I('post.id');
             //dump($id);die;
             $data = I('post.');
+//            dump($data);die;
+            if($data['set']==1){
+                $data1['set'] = '0';
+                M('address')->where('id!='.$id)->save($data1);
+            }
+            else{
+                $data['set']=0;
+            }
             $set=M('address')->where('id='.$id)->save($data);
-            if($set){
+            if($set!==false){
                 $this->redirect('Index/address');
             }
             else{
@@ -585,9 +593,7 @@ class IndexController extends CommonController {
 
     }
     public function set(){
-        if(empty(session("user"))){
-            $this->redirect('Index/login');exit();
-        }
+
         if(IS_GET){
             $map['id']=array('eq',I('get.id'));
             $map['user_id']=array('eq',session('user.id'));
@@ -622,14 +628,14 @@ class IndexController extends CommonController {
         if($res){
             $del=M('address')->delete(I('get.id'));
             if($del){
-            $this->redirect('Index/address', '',3, '<h1>删除成功...</h1>');
+            $this->redirect('Index/address', '',1, '<h1>删除成功...</h1>');
                 }
                 else{
-                $this->redirect('Index/address', '',3, '删除失败...');
+                $this->redirect('Index/address', '',3, '<h1>删除失败...</h1>');
             }
         }
         else{
-            $this->redirect('Index/address','',3, '删除失败...');
+            $this->redirect('Index/address','',3, '<h1>删除失败...</h1>');
         }
         }
     }
@@ -653,6 +659,14 @@ class IndexController extends CommonController {
             $data1=I('post.');
             $data1['user_id']=session('user.id');
             // dump($data1);
+            if($data1['set']==1){
+                $data['set'] = '0';
+                M('address')->save($data);
+            }
+            else{
+                $data1['set']=0;
+            }
+
             $dingdans=M("address")->add($data1);
             if($dingdans){
 

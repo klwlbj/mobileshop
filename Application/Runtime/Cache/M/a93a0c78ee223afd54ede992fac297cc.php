@@ -2,7 +2,7 @@
 <!-- saved from url=(0061)http://m.360kad.com/spzt/nksc_m.shtml?kzone=souye_nanke_lunbo -->
 <html lang="UTF-8" style="font-size: 247.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" charset="utf-8" src="/Public/index_files2/ga.js"></script><script language="javascript" type="text/javascript" src="/Public/index_files2/envconfig.js"></script>
 <script language="javascript" type="text/javascript" async="async" src="/Public/index_files2/ctr_v2.js"></script>
-<!--布局:nksc_m_layout_18--><title>男性用药大全_补肾调理_阳痿早泄_脱发白发_前列腺炎_泌尿系统_少精弱精_尖锐湿疣_计生用品-驼铃商贸网上药店</title><meta name="Description" content="男性健康用药，源多享男科医药馆为您提供阳痿早泄，尖锐湿疣，前列腺疾病，脱发少发，滋阴补肾，壮阳等男科疾病用药"><meta name="Keywords" content="男性健康管理,补肾调理,阳痿早泄,脱发白发,前列腺炎,泌尿系统,少精弱精"><!--部件开始:vp_m_common_res,分组:通用部件-->
+<!--布局:nksc_m_layout_18--><title>男性用药大全_补肾调理_阳痿早泄_脱发白发_前列腺炎_泌尿系统_少精弱精_尖锐湿疣_计生用品-驼铃商贸网上药店</title><meta name="Description" content="男性健康用药，驼铃商贸男科医药馆为您提供阳痿早泄，尖锐湿疣，前列腺疾病，脱发少发，滋阴补肾，壮阳等男科疾病用药"><meta name="Keywords" content="男性健康管理,补肾调理,阳痿早泄,脱发白发,前列腺炎,泌尿系统,少精弱精"><!--部件开始:vp_m_common_res,分组:通用部件-->
 <meta name="Robots" content="All">
 <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
 <script src="/Public/index_files2/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>

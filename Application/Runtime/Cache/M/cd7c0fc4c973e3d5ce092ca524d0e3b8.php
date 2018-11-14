@@ -348,34 +348,34 @@
     <section class="header_r"><a href="/index.php/M/Index/index"></a></section>
     <div class="header_ul_box">
         <div class="arrow"></div>
-        <ul class="header_ul">
-            <li>
-                <a href="http://m.360kad.com/Order?type=1">
-                    待付款<span>(2)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=2">
-                    待发货<span>(0)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=3">
-                    待收货<span>(0)</span>
-                </a>
-            </li>
+        <!--<ul class="header_ul">-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=1">-->
+                    <!--待付款<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=2">-->
+                    <!--待发货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=3">-->
+                    <!--待收货<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
 
-            <li>
-                <a href="http://m.360kad.com/Order?type=5">
-                    一月内订单<span>(2)</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://m.360kad.com/Order?type=6">
-                    一月前订单<span>(0)</span>
-                </a>
-            </li>
-        </ul>
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=5">-->
+                    <!--一月内订单<span>(2)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="http://m.360kad.com/Order?type=6">-->
+                    <!--一月前订单<span>(0)</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
     </div>
 </header>
 <p class="blank2"></p>
@@ -386,7 +386,8 @@
 
 
 
-<p style="text-align: center">你好，你当前等级为<?php echo session('user.vip');?>,继续加油</p>
+<p style="text-align: center">你好，你当前等级为<?php switch (session('user.vip')) { case 1: echo'普通'; break; case 2: echo'白金'; break; case 3: echo'黄金'; break; default: echo'钻石'; }?>会员,继续加油</p>
+            <img style="width: 100%;" src="/Public/vip/<?php echo session('user.vip');?>.jpg" alt="">
 
 
 

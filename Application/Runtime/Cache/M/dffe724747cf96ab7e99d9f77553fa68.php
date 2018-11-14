@@ -108,8 +108,9 @@
             <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
                 <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
-                <?php if((count($address) == 0)): ?><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button><?php endif; ?>
-                <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label><input class="address" name="address" type="radio" value="<?php echo ($vo["id"]); ?>" <?php if(count($address)==1)echo'checked'; if($vo['set']==1)echo'checked';?>/>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?><br>联系人：<?php echo ($vo["username"]); ?>&nbsp手机号：<?php echo ($vo["phone"]); ?></label><br><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if((count($address) == 0)): ?><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button><?php endif; $aa=0;?>
+
+                <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><label><input class="address" name="address" type="radio" value="<?php echo ($vo["id"]); ?>" <?php $aa++; if($vo['set']==1){echo'checked';$aa--;}?> <?php if(count($address)==$aa)echo'checked';?>/>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?><br>联系人：<?php echo ($vo["username"]); ?>&nbsp手机号：<?php echo ($vo["phone"]); ?></label><br><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
 
 

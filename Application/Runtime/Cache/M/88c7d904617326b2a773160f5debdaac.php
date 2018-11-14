@@ -8,7 +8,8 @@
     <title>类别</title>
 	<link href="/Public/index_files1/swiper.min.css" rel="stylesheet" type="text/css">
 	<link href="/Public/index_files1/m_index2.css" rel="stylesheet" type="text/css">
-	<script src="/Public/index_files1/jquery-1.10.1.min.js" type="text/javascript"></script><script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
+	<script src="/Public/index_files1/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
 	<script src="/Public/index_files1/swiper3.07.min.js" type="text/javascript"></script>
 	<script src="/Public/index_files1/m_index2.js" type="text/javascript"></script>
 	<style>

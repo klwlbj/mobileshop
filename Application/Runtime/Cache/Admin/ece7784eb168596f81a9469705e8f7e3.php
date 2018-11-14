@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
         <meta charset="utf-8">
-    <title>商城-源多享</title>
+    <title>商城-驼铃商贸</title>
 
     <meta name="description" content="Dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,42 +124,42 @@
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Brand/lst">
-                                    <span class="menu-text">品牌管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Brand/lst">-->
+                                    <!--<span class="menu-text">品牌管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                             <li>
                                 <a href="/index.php/Admin/Goods/lst">
                                     <span class="menu-text">商品管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Type/lst">
-                                    <span class="menu-text">商品类型</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Type/lst">-->
+                                    <!--<span class="menu-text">商品类型</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-hand-o-right"></i>
-                            <span class="menu-text">导航设置</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Nav/lst">
-                                    <span class="menu-text">导航管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-hand-o-right"></i>-->
+                            <!--<span class="menu-text">导航设置</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Nav/lst">-->
+                                    <!--<span class="menu-text">导航管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">

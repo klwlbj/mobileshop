@@ -128,42 +128,42 @@
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Brand/lst">
-                                    <span class="menu-text">品牌管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Brand/lst">-->
+                                    <!--<span class="menu-text">品牌管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                             <li>
                                 <a href="/index.php/Admin/Goods/lst">
                                     <span class="menu-text">商品管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Type/lst">
-                                    <span class="menu-text">商品类型</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Type/lst">-->
+                                    <!--<span class="menu-text">商品类型</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-hand-o-right"></i>
-                            <span class="menu-text">导航设置</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Nav/lst">
-                                    <span class="menu-text">导航管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-hand-o-right"></i>-->
+                            <!--<span class="menu-text">导航设置</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Nav/lst">-->
+                                    <!--<span class="menu-text">导航管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -226,21 +226,21 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-thumbs-up"></i>
-                            <span class="menu-text">推荐位</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Recpos/lst">
-                                    <span class="menu-text">推荐位列表</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa fa-thumbs-up"></i>-->
+                            <!--<span class="menu-text">推荐位</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Recpos/lst">-->
+                                    <!--<span class="menu-text">推荐位列表</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -262,25 +262,25 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-gear"></i>
-                            <span class="menu-text">系统管理</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Config/config">
-                                    <span class="menu-text">站点配置</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                                <a href="/index.php/Admin/Config/lst">
-                                    <span class="menu-text">配置列表</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa fa-gear"></i>-->
+                            <!--<span class="menu-text">系统管理</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Config/config">-->
+                                    <!--<span class="menu-text">站点配置</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                                <!--<a href="/index.php/Admin/Config/lst">-->
+                                    <!--<span class="menu-text">配置列表</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
 
 

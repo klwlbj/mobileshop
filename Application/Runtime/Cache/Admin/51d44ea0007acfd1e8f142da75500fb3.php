@@ -55,12 +55,12 @@
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="/x/index.php/Admin/Admin/logout">
+                                    <a href="/index.php/Admin/Admin/logout">
                                             退出登录
                                         </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="/x/index.php/Admin/Admin/edit/id/<?php echo (session('uid')); ?>">
+                                    <a href="/index.php/Admin/Admin/edit/id/<?php echo (session('uid')); ?>">
                                             修改密码
                                         </a>
                                 </li>
@@ -103,7 +103,7 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/admin/lst">
+                                <a href="/index.php/Admin/admin/lst">
                                     <span class="menu-text">管理员列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -119,47 +119,47 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Cate/lst">
+                                <a href="/index.php/Admin/Cate/lst">
                                     <span class="menu-text">分类管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Brand/lst">-->
+                                    <!--<span class="menu-text">品牌管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                             <li>
-                                <a href="/x/index.php/Admin/Brand/lst">
-                                    <span class="menu-text">品牌管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/x/index.php/Admin/Goods/lst">
+                                <a href="/index.php/Admin/Goods/lst">
                                     <span class="menu-text">商品管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/x/index.php/Admin/Type/lst">
-                                    <span class="menu-text">商品类型</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Type/lst">-->
+                                    <!--<span class="menu-text">商品类型</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-hand-o-right"></i>
-                            <span class="menu-text">导航设置</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/x/index.php/Admin/Nav/lst">
-                                    <span class="menu-text">导航管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-hand-o-right"></i>-->
+                            <!--<span class="menu-text">导航设置</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Nav/lst">-->
+                                    <!--<span class="menu-text">导航管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -169,13 +169,13 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Category/lst">
+                                <a href="/index.php/Admin/Category/lst">
                                     <span class="menu-text">栏目管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Article/lst">
+                                <a href="/index.php/Admin/Article/lst">
                                     <span class="menu-text">文章管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -191,13 +191,13 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Adpos/lst">
+                                <a href="/index.php/Admin/Adpos/lst">
                                     <span class="menu-text">广告位管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="/x/index.php/Admin/Ad/lst">
+                                <a href="/index.php/Admin/Ad/lst">
                                     <span class="menu-text">广告管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -212,36 +212,31 @@
                             <i class="menu-expand"></i>
                         </a>
                         <ul class="submenu">
+
                             <li>
-                                <a href="/admin/user/index.html">
+                                <a href="/index.php/Admin/MemberLevel/lst">
                                     <span class="menu-text">会员管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/x/index.php/Admin/MemberLevel/lst">
-                                    <span class="menu-text">会员等级</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-thumbs-up"></i>
-                            <span class="menu-text">推荐位</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/x/index.php/Admin/Recpos/lst">
-                                    <span class="menu-text">推荐位列表</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa fa-thumbs-up"></i>-->
+                            <!--<span class="menu-text">推荐位</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Recpos/lst">-->
+                                    <!--<span class="menu-text">推荐位列表</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -251,11 +246,11 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/index/dds">
+                                <a href="/index.php/Admin/index/dds">
                                     <span class="menu-text">订单列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/x/index.php/Admin/index/dd">
+                                <a href="/index.php/Admin/index/dd">
                                     <span class="menu-text">订单需求</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -271,11 +266,11 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="/x/index.php/Admin/Config/config">
+                                <a href="/index.php/Admin/Config/config">
                                     <span class="menu-text">站点配置</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/x/index.php/Admin/Config/lst">
+                                <a href="/index.php/Admin/Config/lst">
                                     <span class="menu-text">配置列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
@@ -286,7 +281,7 @@
 
 
                     <li>
-                        <a href="/x/index.php/Admin/index/ip" class="menu-dropdown">
+                        <a href="/index.php/Admin/index/ip" class="menu-dropdown">
                             <i class="menu-icon fa fa-gear"></i>
                             <span class="menu-text">访客统计</span>
                             <i class="menu-expand"></i>
@@ -307,10 +302,10 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                                         <li>
-                        <a href="/x/index.php/Admin/Index/index">系统</a>
+                        <a href="/index.php/Admin/Index/index">系统</a>
                     </li>
                                         <li>
-                        <a href="/x/index.php/Admin/Config/lst">配置列表</a>
+                        <a href="/index.php/Admin/Config/lst">配置列表</a>
                     </li>
                                         <li class="active">站点配置</li>
                                         </ul>

@@ -407,7 +407,7 @@
             /*background-color: #ff7fa1;*/
             text-align: center;
             font-size:16px;
-            border:1px solid rgb(132, 95, 63);
+            border:0.1px solid rgb(132, 95, 63);
             box-shadow: 2px 2px 4px #888888;
             border-radius: 10px;
         }
@@ -417,14 +417,18 @@
         <ul class="order_ul">
 
 
-            <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div style="width: 85%; border-bottom: 1px solid #2b2b2b; margin: auto; padding: 5%;margin-top: 1em">
-    <p style="color: #011eb5"><?php if(($vo["set"] == 1) ): ?>默认地址：<?php endif; ?></p>
-    <div>地址：<?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?></div>
-    <span>联系人：<?php echo ($vo["username"]); ?></span>
-    <span>手机号：<?php echo ($vo["phone"]); ?></span><br>
-    <input class="button"  type="button" value="删除" onclick="location='/index.php/M/Index/deladd/id/<?php echo ($vo["id"]); ?>'">
-    <input class="button"  type="button" style="/*background-color: #0ba300;*/"value="修改" onclick="location='/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>'">
-    <input  class="button" style="/*background-color: #0b97b5;*/float: right;" type="button" value="默认" onclick="location='/index.php/M/Index/set/id/<?php echo ($vo["id"]); ?>'">
+            <?php if(is_array($address)): $i = 0; $__LIST__ = $address;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div style="width: 85%; display: block;border-bottom: 1px solid #e5e5e5; margin: auto; padding: 5%;margin-top: 1em">
+    <div style="width: 90%;display: inline-block">
+        <div >
+    <span style="color: #333333;"><?php echo ($vo["username"]); ?></span>
+    <span style="float: right;color: #333333;"><?php echo ($vo["phone"]); ?></span></div>
+    <?php if(($vo["set"] == 1) ): ?><p style="color: rgb(182, 9, 9);border: 1px solid rgb(182, 9, 9);display: inline;"> 默认</p><?php endif; ?><div style="float: right;width: 80%; color: #666666;"><?php echo ($vo["province"]); echo ($vo["city"]); echo ($vo["district"]); echo ($vo["address"]); ?></div>
+    <br>
+    </div>
+    <div style="float: right; bottom: 10%;"><a href="/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>"><img src="/Public/edit.png" height="15" alt=""></a></div>
+    <!--<input class="button"  type="button" value="删除" onclick="location='/index.php/M/Index/deladd/id/<?php echo ($vo["id"]); ?>'">-->
+    <!--<input class="button"  type="button" style="/*background-color: #0ba300;*/"value="修改" onclick="location='/index.php/M/Index/upadd/id/<?php echo ($vo["id"]); ?>'">-->
+    <!--<input  class="button" style="/*background-color: #0b97b5;*/float: right;" type="button" value="默认" onclick="location='/index.php/M/Index/set/id/<?php echo ($vo["id"]); ?>'">-->
 </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 

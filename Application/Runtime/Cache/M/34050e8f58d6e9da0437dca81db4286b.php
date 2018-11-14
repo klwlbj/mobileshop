@@ -39,7 +39,7 @@
         </div>
 
 
-        <div id="isSelected" class="reg-sm-wrap clearfix"><i id="ty" class=""></i><span><a href="/index.php/M/Index/zcxy">同意源多享网上药店注册协议</a></span></div>
+        <div id="isSelected" class="reg-sm-wrap clearfix"><i id="ty" class=""></i><span><a href="/index.php/M/Index/zcxy">同意驼铃商贸网上药店注册协议</a></span></div>
 
 
         <input id="registration" class="btn btn-blue background-gray" disabled="disabled" type="submit" value="注册">

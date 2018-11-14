@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0021)http://www.baxsun.cn/ -->
 <html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>源多享</title>
+	<title>驼铃商贸</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
 	<meta name="csrf-param" content="_csrf">
 	<title>
-		源多享
+		驼铃商贸
 	</title>
 <link href="/x/Public/pc/index_files/common.css" rel="stylesheet">
 <link href="/x/Public/pc/index_files/reset.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 		<div class="toper-meun">
 
 <div class="toper-left">
-<span>欢迎光临源多享！</span>
+<span>欢迎光临驼铃商贸！</span>
 
 <?php if($_SESSION['user']== ''): ?><span><a href="/x/index.php/Home/Index/login">登录</a></span>
 <span class="color-red"><a href="/x/index.php/Home/Index/reg">注册</a></span>

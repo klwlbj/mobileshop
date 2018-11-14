@@ -31,7 +31,7 @@
 		<div class="toper-meun">
 
 <div class="toper-left">
-<span>欢迎光临源多享！</span>
+<span>欢迎光临驼铃商贸！</span>
 
 <?php if($_SESSION['user']== ''): ?><span><a href="/x/index.php/Home/Index/login">登录</a></span>
 <span class="color-red"><a href="/x/index.php/Home/Index/reg">注册</a></span>

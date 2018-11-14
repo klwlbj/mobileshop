@@ -386,7 +386,10 @@
             <label class="sr-only" for="district9">手机号码</label>
                 手机号码：<input type="tel"  class="form-control"  name="phone" required="required"></input>
         </div>
-            <input style="display: block; width: 25%;margin: auto;" type="submit" value="提交">
+            <div class="form-group">
+                <p><input type="checkbox" name="set" value="1" /> 默认地址</p>
+            </div>
+            <input style="color: #845f3f; border: 1px solid #845f3f;background-color:white; border-radius:6px; display: block; width: 92%;margin: auto; line-height:2.8" type="submit" value="提交">
         </div>
     </form>
     <p>
@@ -409,21 +412,21 @@
 <div class="topimg"><div class="topimg_inn"><a href="http://m.360kad.com/Order#" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-返回顶部-图片&#39;, &#39;0&#39;, 0]);"><img src="./olst_files/backtop91.png"></a></div></div>
 <!--footer-->
 <!--部件开始:M_User_Footer,分组:页脚部件-->
-<footer>
-    <p class="blank2"></p>
-    <section class="padd11 clearfix">
-        <p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>
-        <a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>
-    </section>
-    <div class="app_down">
-        <a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">
-            <p class="foorPHon"><span>123456</span></p>
-        </a>
-    </div>
+<!--<footer>-->
+    <!--<p class="blank2"></p>-->
+    <!--<section class="padd11 clearfix">-->
+        <!--<p class="userloginf" id="userlogin2"><span class="user_name"><a href="<?php echo U('Index/grzx');?>">欢迎， <span class="user_box"><?php echo ($_SESSION['user']['nick']); ?></span></a><a style=" margin-left:8px;color:#FF5500; display:inline-block;" href="<?php echo U('Index/logout');?>">退出</a> </span></p>-->
+        <!--<a href="<?php echo U('Index/index');?>" class="backtp" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-首页-文字链&#39;, &#39;0&#39;, 0]);">首页</a>-->
+    <!--</section>-->
+    <!--<div class="app_down">-->
+        <!--<a href="tel:123456" onclick="ctrActionsend(&#39;home_400_wap&#39;);_gaq.push([&#39;_trackEvent&#39;, &#39;wap公共底部&#39;, &#39;底部-客服400电话-按钮&#39;, &#39;0&#39;, 0]);" alt="客服400电话" rel="nofollow">-->
+            <!--<p class="foorPHon"><span>123456</span></p>-->
+        <!--</a>-->
+    <!--</div>-->
 
-    <ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业产品</li><li><span class="radius45">付</span>货到付款</li></ul>
-    <p class="copyrg">copyright ©2010-2018 驼铃商贸网上商店 版权所有</p>
-</footer>
+    <!--<ul class="footmess clearfix"><li><span class="radius45">正</span>正品保障</li><li><span class="radius45">隐</span>隐私配送</li><li><span class="radius45">专</span>专业产品</li><li><span class="radius45">付</span>货到付款</li></ul>-->
+    <!--<p class="copyrg">copyright ©2010-2018 驼铃商贸网上商店 版权所有</p>-->
+<!--</footer>-->
 <style type="text/css">
     /*底部*/
     footer { min-width: 320px; width: 100%; padding: 0; margin: 0 auto; height: auto; text-align: center; }
