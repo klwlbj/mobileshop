@@ -86,11 +86,11 @@
                                         <!--商品属性-->
                                     <!--</a>-->
                                 <!--</li>-->
-                                <li class="">
-                                    <a href="#profile14" data-toggle="tab">
-                                        商品更多图片
-                                    </a>
-                                </li>
+                                <!--<li class="">-->
+                                    <!--<a href="#profile14" data-toggle="tab">-->
+                                        <!--商品更多图片-->
+                                    <!--</a>-->
+                                <!--</li>-->
                             </ul>
                             <div class="tab-content tabs-flat">
                                 <div class="tab-pane active" id="home11">
@@ -113,16 +113,16 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">说明书图片</label>
-                                        <div class="col-sm-6">
-                                            <input type="file"  name="s_pic" style="display:inline;">
-                                            <if condition="$goods['s_pic'] eq ''">暂无缩略图
-                                            <else />
-                                            <img src="/{$goods.s_pic}" height="60">
-                                            </if>
-                                        </div>
-                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label no-padding-right" for="username">说明书图片</label>-->
+                                        <!--<div class="col-sm-6">-->
+                                            <!--<input type="file"  name="s_pic" style="display:inline;">-->
+                                            <!--<if condition="$goods['s_pic'] eq ''">暂无缩略图-->
+                                            <!--<else />-->
+                                            <!--<img src="/{$goods.s_pic}" height="60">-->
+                                            <!--</if>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
 
 
 
@@ -153,6 +153,13 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="username">市场价格</label>
                                         <div class="col-sm-6">
                                             <input type="text" required="" name="market_price" value="{$goods.market_price} " placeholder=""  class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">成本价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="cost" value="{$goods.cost} " placeholder=""  class="form-control" >
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
@@ -332,7 +339,7 @@
                                             <ul style="padding:0;">
                                                 <volist name="picres" id="vo">
                                                     <li picid="{$vo.id}" style="list-style:none; float:left;  margin:0 8px;">
-                                                    <img height="50" src="__ROOT__{$vo.sm_thumb}"><br />
+                                                    <img height="50" src="/__ROOT__{$vo.sm_thumb}"><br />
                                                     <a href="#" onclick="delpic(this);"><i class="fa fa-times sky circular"></i>删</a>
                                                     </li>
                                                 </volist>

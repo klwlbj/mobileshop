@@ -151,6 +151,7 @@ setInterval('autoScroll(".new_title_top")', 3500)
             <span class="skill-size" id="skillPrice"><span>￥</span><?php echo ($goods["shop_price"]); ?></span>
             <span class="skill-size" id="salePrice">￥<?php echo ($goods["market_price"]); ?></span>
             <span class="skill-size" id="savePrice">立省<?php echo ($goods["yh"]); ?>元</span>
+            <span class="skill-size" id=""><?php echo ($goods["goods_weight"]); echo ($goods["weight_unit"]); ?></span>
 </div>
 <p class="inventory_status" id="inventory_status"></p>
 

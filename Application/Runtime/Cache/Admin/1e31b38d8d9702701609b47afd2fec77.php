@@ -182,27 +182,27 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-dashboard "></i>
-                            <span class="menu-text">广告模块</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Adpos/lst">
-                                    <span class="menu-text">广告位管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/index.php/Admin/Ad/lst">
-                                    <span class="menu-text">广告管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-dashboard "></i>-->
+                            <!--<span class="menu-text">广告模块</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Adpos/lst">-->
+                                    <!--<span class="menu-text">广告位管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Ad/lst">-->
+                                    <!--<span class="menu-text">广告管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -249,10 +249,10 @@
                                     <span class="menu-text">订单列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/index.php/Admin/index/dd">
-                                    <span class="menu-text">订单需求</span>
-                                    <i class="menu-expand"></i>
-                                </a>
+                                <!--<a href="/index.php/Admin/index/dd">-->
+                                    <!--<span class="menu-text">订单需求</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
                             </li>
                         </ul>
                     </li>
@@ -323,7 +323,7 @@
                             <tr>
                                 <th class="text-center" width="10%">ID</th>
                                 <th align="left">栏目名称</th>
-                                <th class="text-center" width="30%">操作</th>
+                                <th class="text-center" width="20%">操作</th>
                             </tr>
                         </thead>
                         <tbody>

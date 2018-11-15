@@ -187,27 +187,27 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-dashboard "></i>
-                            <span class="menu-text">广告模块</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Adpos/lst">
-                                    <span class="menu-text">广告位管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/index.php/Admin/Ad/lst">
-                                    <span class="menu-text">广告管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-dashboard "></i>-->
+                            <!--<span class="menu-text">广告模块</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Adpos/lst">-->
+                                    <!--<span class="menu-text">广告位管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Ad/lst">-->
+                                    <!--<span class="menu-text">广告管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -254,10 +254,10 @@
                                     <span class="menu-text">订单列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/index.php/Admin/index/dd">
-                                    <span class="menu-text">订单需求</span>
-                                    <i class="menu-expand"></i>
-                                </a>
+                                <!--<a href="/index.php/Admin/index/dd">-->
+                                    <!--<span class="menu-text">订单需求</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
                             </li>
                         </ul>
                     </li>
@@ -352,11 +352,11 @@
                                         <!--商品属性-->
                                     <!--</a>-->
                                 <!--</li>-->
-                                <li class="">
-                                    <a href="#profile14" data-toggle="tab">
-                                        商品更多图片
-                                    </a>
-                                </li>
+                                <!--<li class="">-->
+                                    <!--<a href="#profile14" data-toggle="tab">-->
+                                        <!--商品更多图片-->
+                                    <!--</a>-->
+                                <!--</li>-->
                             </ul>
                             <div class="tab-content tabs-flat">
                                 <div class="tab-pane active" id="home11">
@@ -378,15 +378,16 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="username">说明书图片</label>
-                                        <div class="col-sm-6">
-                                            <input type="file"  name="s_pic" style="display:inline;">
-                                            <?php if($goods['s_pic'] == ''): ?>暂无缩略图
-                                            <?php else: ?>
-                                            <img src="/<?php echo ($goods["s_pic"]); ?>" height="60"><?php endif; ?>
-                                        </div>
-                                    </div>
+                                    <!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label no-padding-right" for="username">说明书图片</label>-->
+                                        <!--<div class="col-sm-6">-->
+                                            <!--<input type="file"  name="s_pic" style="display:inline;">-->
+                                            <!--<?php if($goods['s_pic'] == ''): ?>暂无缩略图-->
+                                            <!--<?php else: ?>-->
+                                            <!--<img src="/<?php echo ($goods["s_pic"]); ?>" height="60">-->
+                                            <!--<?php endif; ?>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
 
 
 
@@ -415,6 +416,13 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="username">市场价格</label>
                                         <div class="col-sm-6">
                                             <input type="text" required="" name="market_price" value="<?php echo ($goods["market_price"]); ?> " placeholder=""  class="form-control" >
+                                        </div>
+                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="username">成本价格</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" required="" name="cost" value="<?php echo ($goods["cost"]); ?> " placeholder=""  class="form-control" >
                                         </div>
                                         <p class="help-block col-sm-4 red">* 必填</p>
                                     </div>
@@ -568,7 +576,7 @@
                                         <div class="col-sm-6">
                                             <ul style="padding:0;">
                                                 <?php if(is_array($picres)): $i = 0; $__LIST__ = $picres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li picid="<?php echo ($vo["id"]); ?>" style="list-style:none; float:left;  margin:0 8px;">
-                                                    <img height="50" src="<?php echo ($vo["sm_thumb"]); ?>"><br />
+                                                    <img height="50" src="/<?php echo ($vo["sm_thumb"]); ?>"><br />
                                                     <a href="#" onclick="delpic(this);"><i class="fa fa-times sky circular"></i>删</a>
                                                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </ul>

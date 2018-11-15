@@ -123,42 +123,42 @@
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Brand/lst">
-                                    <span class="menu-text">品牌管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Brand/lst">-->
+                                    <!--<span class="menu-text">品牌管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                             <li>
                                 <a href="/index.php/Admin/Goods/lst">
                                     <span class="menu-text">商品管理</span>
                                     <i class="menu-expand"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/index.php/Admin/Type/lst">
-                                    <span class="menu-text">商品类型</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Type/lst">-->
+                                    <!--<span class="menu-text">商品类型</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-hand-o-right"></i>
-                            <span class="menu-text">导航设置</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Nav/lst">
-                                    <span class="menu-text">导航管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-hand-o-right"></i>-->
+                            <!--<span class="menu-text">导航设置</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Nav/lst">-->
+                                    <!--<span class="menu-text">导航管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -182,27 +182,27 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa  fa-dashboard "></i>
-                            <span class="menu-text">广告模块</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Adpos/lst">
-                                    <span class="menu-text">广告位管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/index.php/Admin/Ad/lst">
-                                    <span class="menu-text">广告管理</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa  fa-dashboard "></i>-->
+                            <!--<span class="menu-text">广告模块</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Adpos/lst">-->
+                                    <!--<span class="menu-text">广告位管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Ad/lst">-->
+                                    <!--<span class="menu-text">广告管理</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -221,21 +221,21 @@
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-thumbs-up"></i>
-                            <span class="menu-text">推荐位</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Recpos/lst">
-                                    <span class="menu-text">推荐位列表</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa fa-thumbs-up"></i>-->
+                            <!--<span class="menu-text">推荐位</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Recpos/lst">-->
+                                    <!--<span class="menu-text">推荐位列表</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
                     <li>
                         <a href="#" class="menu-dropdown">
@@ -249,33 +249,33 @@
                                     <span class="menu-text">订单列表</span>
                                     <i class="menu-expand"></i>
                                 </a>
-                                <a href="/index.php/Admin/index/dd">
-                                    <span class="menu-text">订单需求</span>
-                                    <i class="menu-expand"></i>
-                                </a>
+                                <!--<a href="/index.php/Admin/index/dd">-->
+                                    <!--<span class="menu-text">订单需求</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
                             </li>
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="#" class="menu-dropdown">
-                            <i class="menu-icon fa fa-gear"></i>
-                            <span class="menu-text">系统管理</span>
-                            <i class="menu-expand"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="/index.php/Admin/Config/config">
-                                    <span class="menu-text">站点配置</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                                <a href="/index.php/Admin/Config/lst">
-                                    <span class="menu-text">配置列表</span>
-                                    <i class="menu-expand"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!--<li>-->
+                        <!--<a href="#" class="menu-dropdown">-->
+                            <!--<i class="menu-icon fa fa-gear"></i>-->
+                            <!--<span class="menu-text">系统管理</span>-->
+                            <!--<i class="menu-expand"></i>-->
+                        <!--</a>-->
+                        <!--<ul class="submenu">-->
+                            <!--<li>-->
+                                <!--<a href="/index.php/Admin/Config/config">-->
+                                    <!--<span class="menu-text">站点配置</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                                <!--<a href="/index.php/Admin/Config/lst">-->
+                                    <!--<span class="menu-text">配置列表</span>-->
+                                    <!--<i class="menu-expand"></i>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
 
 
 
@@ -320,24 +320,42 @@
                     <table class="table table-bordered table-hover" style="text-align: center;">
                         <thead class="">
                             <tr>
-                                <th class="text-center" width="10%">ID</th>
-                                <th align="left">商品id</th>
-                                <th align="left">商品名称</th>
-                                <th class="text-center">姓名</th>
-                                <th class="text-center">手机号</th>
-                                <th class="text-center">地址</th>
-                                <th class="text-center">留言备注</th>
+                                <th class="text-center" width="3%">ID</th>
+                                <th align="left" width="8%">订单号</th>
+                                <th align="left" width="10%">商品名称</th>
+                                <th class="text-center" width="5%">商品总价</th>
+                                <th class="text-center" width="12%">下单时间</th>
+                                <th class="text-center" width="8%">姓名</th>
+                                <th class="text-center" width="7%">手机号</th>
+                                <th class="text-center" width="10%">地址</th>
+                                <th class="text-center" width="10%">留言备注</th>
+                                <th class="text-center"width="13%">订单查看</th>
+
+
                             </tr>
                         </thead>
                         <tbody>
                             <?php if(is_array($dingdan)): $k = 0; $__LIST__ = $dingdan;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
                                     <td align="center"><?php echo ($vo["id"]); ?></td>
-                                    <td align="left"><?php echo ($vo["sid"]); ?></td>
+                                    <td align="left"><?php echo ($vo["sn"]); ?></td>
                                     <td align="left"><?php echo ($vo["goods_name"]); ?></td>
+                                    <td align="right"><?php echo ($vo['data'][1]); ?></td>
+                                    <td align="left"><?php echo (date('Y-m-d H:i:s',$vo["time"])); ?></td>
                                     <td align="left"><?php echo ($vo["truename"]); ?></td>
-                                    <td align="left"><?php echo ($vo["phone"]); ?></td>
+                                    <td align="center"><?php echo ($vo["phone"]); ?></td>
                                     <td align="left"><?php echo ($vo["address"]); ?></td>
                                     <td align="left"><?php echo ($vo["msg"]); ?></td>
+                                    <td align="center">
+                                        <!--<a href="/index.php/Admin/Index/product/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">-->
+                                        <!--<i class="fa fa-truck"></i> 库存-->
+                                        <!--</a>-->
+                                        <a href="/index.php/Admin/Index/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
+                                            <i class="fa fa-edit"></i> 编辑及查看
+                                        </a>
+                                        <a href="#" onClick="warning('确实要删除吗', '/index.php/Admin/Index/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
+                                            <i class="fa fa-trash-o"></i> 删除
+                                        </a>
+                                    </td>
                                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>
                     </table>

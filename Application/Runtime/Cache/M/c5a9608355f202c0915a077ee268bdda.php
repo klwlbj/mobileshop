@@ -390,7 +390,7 @@
                      <a href ="#"  class="order_button_l del" style="color:black" >取消订单</a>
                 </div>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
-            <li id="del">confirm</li>
+            <!--<li id="del">confirm</li>-->
 
 
 

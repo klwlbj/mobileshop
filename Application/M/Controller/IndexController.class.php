@@ -306,9 +306,16 @@ class IndexController extends CommonController {
         }
 
     }
+    public function verify(){
+
+        ob_clean();
+        $Verify = new \Think\Verify();
+        $Verify->length=4;
+        $Verify->entry();
+    }
 
 
-    //注册
+//注册
     public function reg(){
 
         // dump(I("post."));
@@ -320,17 +327,23 @@ class IndexController extends CommonController {
             $data['ctime']=time();
 
             $find_one=$user->where(array('phone'=>$data['phone']))->find();
+            if(empty($data['phone'])||empty($data['nick'])||empty($data['password'])||strlen($data['password'])<6){
+                $this->error('输入信息有误');
+            }
             if($find_one){
-                $this->error('注册失败！该昵称已存在！');
+                $this->error('注册失败！该手机已存在！');
             }else{
                 $res=$user->add($data);
+                $find_one=$user->where(array('phone'=>$data['phone']))->find();
                 if($res){
 
                    $da =array();
                    $da['phone'] = $data['phone'];
-                   $da['id'] = $data['id'];
+                   $da['id'] = $find_one['id'];
+                   $da['vip']=1;
                    $da['nick'] = $data['nick'];
-                    $da['vip'] = $data['vip'];
+
+
                    session("user",$da);
 
                    $this->redirect('Index/grzx');
