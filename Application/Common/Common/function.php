@@ -29,6 +29,14 @@ $mail->Password=C('MAIL_PASSWORD');
 return($mail->Send());
 }
 
+/**
+ * 验证码检查
+ */
+function verify($code, $id = ""){
+    $verify = new \Think\Verify();
+    return $verify->check($code, $id);
+}
+
 //运费计算接口
 function yfjs($tweight,$peisong,$province,$city,$county){
 	if($peisong=='顺丰'){

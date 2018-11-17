@@ -350,11 +350,11 @@
                                         <!--商品属性-->
                                     <!--</a>-->
                                 <!--</li>-->
-                                <li class="">
-                                    <a href="#profile14" data-toggle="tab">
-                                        商品更多图片
-                                    </a>
-                                </li>
+                                <!--<li class="">-->
+                                    <!--<a href="#profile14" data-toggle="tab">-->
+                                        <!--商品更多图片-->
+                                    <!--</a>-->
+                                <!--</li>-->
                             </ul>
                             <div class="tab-content tabs-flat">
                                 <div class="tab-pane active" id="home11">
@@ -371,6 +371,7 @@
                                         <div class="col-sm-6">
                                             <input type="file"  name="original">
                                         </div>
+                                        <p class="help-block col-sm-4 red">* 必填，请上传400*400的图片</p>
                                     </div>
 
                                     <!--<div class="form-group">-->

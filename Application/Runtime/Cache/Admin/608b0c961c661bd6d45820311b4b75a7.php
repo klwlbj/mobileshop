@@ -371,11 +371,12 @@
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="username">商品缩略图</label>
                                         <div class="col-sm-6">
-                                            <input type="file"  name="original" style="display:inline;">
+                                            <input type="file"  name="original" accept="image/png, image/jpeg"  style="display:inline;">
                                             <?php if($goods['original'] == ''): ?>暂无缩略图
                                             <?php else: ?>
                                             <img src="/<?php echo ($goods["original"]); ?>" height="60"><?php endif; ?>
                                         </div>
+                                        <p class="help-block col-sm-4 red">* 必填，请上传400*400的图片</p>
                                     </div>
 
                                     <!--<div class="form-group">-->

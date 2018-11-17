@@ -165,7 +165,7 @@ flex-pack-justify：子元素两端对齐
     overflow: hidden;
     z-index: 1;
     width: 100%;
-    height: 6rem;
+    height: 7rem;
 }
 
 .nestOutsideSwiper__tab__itemNone {

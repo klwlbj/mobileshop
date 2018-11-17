@@ -4,6 +4,14 @@ use Think\Controller;
 class CommonController extends Controller {
 
     public $config;
+    /**
+     * 验证码检查
+     */
+     public function verify($code, $id = ""){
+        $verify = new \Think\Verify();
+        return $verify->check($code, $id);
+    }
+
     public function _initialize(){
        //底部帮助信息
         $this->gethelp();

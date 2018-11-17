@@ -57,7 +57,7 @@ body,html{
 <?php if($_SESSION['user']!= ''): ?><p class="usertel"><?php echo ($_SESSION['user']['phone']); ?></p>
 
     <span><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/logout');?>">注销</a></span>
-
+    &nbsp;<span><a style="color: #FFF;" class="toquit" href="<?php echo U('Index/uppw');?>">更改密码</a></span>
 
     <!--<p class="userother">-->
         <!--<span id="userName">未绑定</span>-->

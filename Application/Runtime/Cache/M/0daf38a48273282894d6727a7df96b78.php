@@ -11,6 +11,7 @@
     <link href="/Public/reg_files/mkad.common.css" rel="stylesheet" type="text/css">
     <link href="/Public/reg_files/Registration.css" rel="stylesheet" type="text/css">
     <script src="/Public/reg_files/conversion.js" type="text/javascript"></script>
+    <script src="/Public/js/jquery.min.js" type="text/javascript"></script>
     <style>
         .background-gray { background-color: #b5b5b5; }
     </style>
@@ -34,6 +35,15 @@
             <p class="reg-right pass-word box-flex1 input"><input  name="password" id="password" value="" type="password" maxlength="20" placeholder="请输入密码"></p>
             <!-- <p id="isShowpwd" class="reg-eye"></p> -->
         </div>
+        <div  class="reg-input-wrap relative display-box"style="width: 65%; display: inline-flex;" >
+
+            <p class="reg-left box-flex1"style="width: 50%;">验证码 ：</p>
+            <p class="reg-right pass-word box-flex1 input"><input class="cbSpecialCharacter" type="text" name="verify" id="" value="" maxlength="20" placeholder="验证码"></p>
+
+            <!-- <p id="isShowpwd" class="reg-eye"></p> -->
+
+        </div>
+        <div style="display: inline; width:32%;float: right;" id="captcha-container"><img  class="left15" height="40" alt="验证码" src="<?php echo U('M/Index/verify',array());?>" title="点击刷新"></div>
 
         <input class="submit_btn" type="submit" value="登录">
     </section>
@@ -44,11 +54,25 @@
         <a class="register" href="/index.php/M/Index/reg">
             立即注册&gt;&gt;
         </a>
-        <a class="forgetpwd" href="">
-            忘记密码？
-        </a>
+        <!--<a class="forgetpwd" href="">-->
+            <!--忘记密码？-->
+        <!--</a>-->
     </div>
 
+    <script>
+        // 验证码生成  
+        var captcha_img = $('#captcha-container').find('img')
+        var verifyimg = captcha_img.attr("src");
+        captcha_img.attr('title', '点击刷新');
+        captcha_img.click(function(){
+            if( verifyimg.indexOf('?')>0){
+                $(this).attr("src", verifyimg+'&random='+Math.random());
+            }else{
+                $(this).attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+            }
+        });
+
+    </script>
 <style>
 
 .space {

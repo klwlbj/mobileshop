@@ -32,28 +32,28 @@
     <section class="m-registration-wrap">
         <div class="reg-input-wrap display-box">
             <p class="reg-left box-flex1">手机号码 ：</p>
-            <p class="reg-right box-flex1 input"><input class="phone" type="number" name="phone" id="phone" value="" placeholder="请输入手机号码" oninput="checkTextLength(this, 11)" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g)" onblur="IfRegistered();"></p>
+            <p class="reg-right box-flex1 input"><input class="phone inpeeut" type="number" name="phone" id="phone" value="" placeholder="请输入手机号码" oninput="checkTextLength(this, 11)" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g)" onblur="IfRegistered();"></p>
         </div>
         <div class="reg-input-wrap relative display-box">
             <p class="reg-left box-flex1">昵<i class="textIndent1"></i> 称 ：</p>
-            <p class="reg-right box-flex1 input"><input type="" name="nick" id="nick" value="" maxlength="20" placeholder="请设置6位数以上字母,数字"></p>
+            <p class="reg-right box-flex1 input"><input class="inpeeut" type="" name="nick" id="nick" value="" maxlength="20" placeholder="请设置6位数以上字母,数字"></p>
         </div>
         <div class="reg-input-wrap relative display-box">
             <p class="reg-left box-flex1">密<i class="textIndent1"></i> 码 ：</p>
-            <p class="reg-right pass-word box-flex1 input"><input class="cbSpecialCharacter" type="password" name="password" id="password" value="" maxlength="20" placeholder="请设置6位数以上密码"></p>
+            <p class="reg-right pass-word box-flex1 input"><input class="cbSpecialCharacter inpeeut" type="password" name="password" id="password" value="" maxlength="20" placeholder="请设置6位数以上密码"></p>
             <!-- <p id="isShowpwd" class="reg-eye"></p> -->
         </div>
 
 
-        <div  class="reg-input-wrap relative display-box"style="width: 50%; display: inline-block;" >
+        <div  class="reg-input-wrap relative display-box"style="width: 65%; display: inline-flex;" >
 
             <p class="reg-left box-flex1"style="width: 50%;">验证码 ：</p>
-            <p class="reg-right pass-word box-flex1 input"><input class="cbSpecialCharacter" type="text" name="verify" id="" value="" maxlength="20" placeholder="验证码"></p>
+            <p class="reg-right pass-word box-flex1 input"><input class="cbSpecialCharacter inpeeut" type="text" name="verify" id="" value="" maxlength="20" placeholder="验证码"></p>
 
             <!-- <p id="isShowpwd" class="reg-eye"></p> -->
 
         </div>
-        <div style="display: inline; width:20%;" id="captcha-container"><img width="40%" class="left15" height="50" alt="验证码" src="{:U('M/Index/verify',array())}" title="点击刷新"></div>
+        <div style="display: inline; width:32%;float: right;" id="captcha-container"><img  class="left15" height="40" alt="验证码" src="{:U('M/Index/verify',array())}" title="点击刷新"></div>
 
 
 
@@ -63,13 +63,19 @@
         <!--<div id="isSelected" class="reg-sm-wrap clearfix"><i id="ty" class=""></i><span><a href="#">同意注册协议</a></span></div>-->
 
 
-        <input id="registration" class="btn btn-blue background-gray"  type="submit" value="注册">
+        <input id="registration" class="btn btn-blue  tijiaoe"  type="submit" value="注册">
 
 
     </section>
 
     </form>
     <div style="text-align: center;margin-top: 5%;font-size: 18px">密码请输入六位及以上数字及英文</div>
+    <script type="text/javascript">
+        $(function(){
+            /*验证特定class中input的值是否为空，如果为空则提示不能为空*/
+            $('.tijiaoe').cbNull('inpeeut','tijiaoe');
+        })
+    </script>
     <script>
         // 验证码生成  
         var captcha_img = $('#captcha-container').find('img')

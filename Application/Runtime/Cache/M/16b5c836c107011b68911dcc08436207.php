@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
-    <title>注册页</title>
+    <title>更改密码及其它信息</title>
     <link href="/Public/reg_files/mkad.reset.css" rel="stylesheet" type="text/css">
     <link href="/Public/reg_files/mkad.common.css" rel="stylesheet" type="text/css">
     <link href="/Public/reg_files/Registration.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
 <body>
     <header id="header">
         <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>
-        <span class="header_t">用户注册</span>
+        <span class="header_t">用户信息修改</span>
         <section class="header_r"><a href="<?php echo U('Index/index');?>"></a></section>
     </header>
     <script>
@@ -32,11 +32,11 @@
     <section class="m-registration-wrap">
         <div class="reg-input-wrap display-box">
             <p class="reg-left box-flex1">手机号码 ：</p>
-            <p class="reg-right box-flex1 input"><input class="phone inpeeut" type="number" name="phone" id="phone" value="" placeholder="请输入手机号码" oninput="checkTextLength(this, 11)" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g)" onblur="IfRegistered();"></p>
+            <p class="reg-right box-flex1 input"><input class="phone inpeeut" type="number" name="phone" id="phone" value="<?php echo ($uppw["phone"]); ?>" placeholder="请输入手机号码" oninput="checkTextLength(this, 11)" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g)" onblur="IfRegistered();"></p>
         </div>
         <div class="reg-input-wrap relative display-box">
             <p class="reg-left box-flex1">昵<i class="textIndent1"></i> 称 ：</p>
-            <p class="reg-right box-flex1 input"><input class="inpeeut" type="" name="nick" id="nick" value="" maxlength="20" placeholder="请设置6位数以上字母,数字"></p>
+            <p class="reg-right box-flex1 input"><input class="inpeeut" type="" name="nick" id="nick" value="<?php echo ($uppw["nick"]); ?>" maxlength="20" placeholder="请设置6位数以上字母,数字"></p>
         </div>
         <div class="reg-input-wrap relative display-box">
             <p class="reg-left box-flex1">密<i class="textIndent1"></i> 码 ：</p>
@@ -60,10 +60,10 @@
 
 
 
-        <!--<div id="isSelected" class="reg-sm-wrap clearfix"><i id="ty" class=""></i><span><a href="#">同意注册协议</a></span></div>-->
 
 
-        <input id="registration" class="btn btn-blue  tijiaoe"  type="submit" value="注册">
+
+        <input id="registration" class="btn btn-blue  tijiaoe"  type="submit" value="更改">
 
 
     </section>

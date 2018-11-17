@@ -311,7 +311,9 @@ class IndexController extends CommonController {
         ob_clean();
         $Verify = new \Think\Verify();
         $Verify->length=4;
+        $Verify->codeSet = '0123456789';
         $Verify->entry();
+
     }
 
 
@@ -320,6 +322,11 @@ class IndexController extends CommonController {
 
         // dump(I("post."));
         if(IS_POST){
+
+            $verify = I('param.verify','');
+            if(!verify($verify)){
+                $this->error("亲，验证码输错了哦！",$this->site_url,1);
+            }
             $user=M('User');
             $data=I("post.");
 
@@ -362,10 +369,58 @@ class IndexController extends CommonController {
     public function zcxy(){
         $this->display();
     }
+//    更新密码
+    public function uppw(){
+        if(IS_POST){
 
+            $verify = I('param.verify','');
+            if(!verify($verify)){
+                $this->error("亲，验证码输错了哦！",$this->site_url,1);
+            }
+            $user=M('User');
+            $data=I("post.");
+            $data['ip']=get_client_ip();
+            $data['ctime']=time();
+            if(empty($data['phone'])||empty($data['nick'])||empty($data['password'])||strlen($data['password'])<6){
+                $this->error('输入信息有误');
+            }if($data['phone']!=session('user.phone')){
+            $find_one=$user->where(array('phone'=>$data['phone']))->find();//验证除了以前手机号以外的手机在数据库里是否重复
+            }else{
+                $find_one=false;
+            }
+            if($find_one){
+                $this->error('注册失败！该手机已存在！');
+            }else{
+                $res=$user->where(array('id'=>session('user.id')))->save($data);
+                $find_one=$user->where(array('phone'=>$data['phone']))->find();
+                if($res!==false){
+                    $da =array();
+                    $da['phone'] = $data['phone'];
+                    $da['id'] = $find_one['id'];
+                    $da['vip']=$find_one['vip'];
+                    $da['nick'] = $data['nick'];
+                    //手机和id vip 呢称都写入session
+                    session("user",$da);
+                    $this->redirect('Index/grzx');
+                }else{
+                    $this->error('更改失败！');
+                }
+            }
+
+        }
+        $find_one=M('user')->field('phone,nick')->where(array('id'=>session('user.id')))->find();
+//        dump($find_one);die;
+        $this->assign(uppw,$find_one);
+        $this->display();
+
+    }
     public function login(){
 
         if(IS_POST){
+            $verify = I('param.verify','');
+            if(!verify($verify)){
+                $this->error("亲，验证码输错了哦！",$this->site_url,1);
+            }
             $user=M('User');
             $data=I("post.");
 
