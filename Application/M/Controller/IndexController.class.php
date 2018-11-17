@@ -757,9 +757,9 @@ class IndexController extends CommonController {
            $this->redirect('Index/login');exit();
        }
 
-       $one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
-       $where['userid'] = $one['id'];
-       $where['nick'] = $one['nick'];
+       //$one=D("User")->where(array('phone'=>$user['phone'],'nick'=>$user['nick']))->find();
+       $where['userid'] = $user['id'];
+
 
        $dds=M("dingdans");
        $oder_list=$dds->where($where)->order("id desc")->select();

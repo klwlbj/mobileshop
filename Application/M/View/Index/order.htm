@@ -100,17 +100,18 @@
         display: block;
         width:auto;
         margin:auto;
-        margin-top: 5%;
+        /*margin-top: 5%;*/
         height:10%;
         border:none;
-        border-radius: 6px;
+        border-radius: 2px;
+        background: #efefef;
 
     }
 </style>
             <div class="order-details-remarks display-box" style="margin-bottom: 0rem; height: auto;">
                 <i style="color: #f60;font-family: serif;margin-right: 3px;">*</i>
                 <p style="display: inline;" class="remarks-left box-flex">地址选择：</p><br>
-                <if condition="(count($address) eq 0)"><button class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</button></if><?php $aa=0;?>
+                <if condition="(count($address) eq 0)"><a class="add" onclick="location='/index.php/M/Index/addaddress'">点击 新增收货地址</a></if><?php $aa=0;?>
 
                 <volist name="address" id="vo" >
 
