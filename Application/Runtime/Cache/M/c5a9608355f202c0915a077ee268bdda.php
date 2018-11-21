@@ -386,8 +386,12 @@
                 <!-- <p class="order_p2">未付款</p> -->
 
                 <div class="order_button">
-                     <a href ="" class="order_button_r">货到付款</a>
-                     <a href ="#"  class="order_button_l del" style="color:black" >取消订单</a>
+                    <?php if(empty($vo['express'])): if($vo["status"] != 1): ?><a href ="javascript:;" class="order_button_r">待发货</a><?php else: ?><a href ="/index.php/M/Index/cash/id/<?php echo ($vo["id"]); ?>" class="order_button_r">货到付款</a><?php endif; ?>
+                    <?php else: ?> <a href ="/index.php/M/Index/express/id/<?php echo ($vo["id"]); ?>" class="order_button_r">查看物流</a><?php endif; ?>
+                    <?php if($vo["status"] == 1 ): ?><a
+                    href ="/index.php/M/Index/deldd/id/<?php echo ($vo["id"]); ?>" class="order_button_l del" style="color:black" >取消订单</a>
+                        <?php elseif($vo["cancel"] == 1): ?> <a href ="javascript:;" class="order_button_l del" style="color:black" ><?php if($vo['express'] > 0 ): ?>无法取消<?php else: ?>正在取消订单<?php endif; ?></a>
+                <?php else: ?><a href ="/index.php/M/Index/orderdel/id/<?php echo ($vo["id"]); ?>" class="order_button_l del" style="color:black" >取消订单</a><?php endif; ?>
                 </div>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
             <!--<li id="del">confirm</li>-->

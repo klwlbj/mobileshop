@@ -64,26 +64,49 @@
                             </div>
 
 <volist name="res" id="vo">
-<div class="details-content-wrap" onclick="window.location.href='__CONTROLLER__/detail/id/{$vo.id}'">
+
+    <if condition="$vo.count eq 0">
+<div style="display: none;" class="details-content-wrap" onclick="window.location.href='__CONTROLLER__/detail/id/'">
     <div class="details-content-prod">
         <div class="prod-wrap display-box">
             <p class="prod-pic box-flex">
-                <img src="{$vo.max_thumb}">
+                <img src="">
             </p>
             <div class="prod-cont box-flex">
-                <p class="prod-name">{$vo.goods_name}</p>
+                <p class="prod-name"></p>
                 <p class="prod-price">
-                    <span class="sale-price">
+                    <span class="sale-price" >
                         价格：<i>
-                            ¥{$vo.shop_price}
+                            ¥
                         </i>
                     </span>
-                    <span class="price-num">x{$vo.count}</span>
+                    <span class="price-num"  ></span>
                 </p>
             </div>
         </div>
     </div>
 </div>
+        <else />
+    <div  class="details-content-wrap" onclick="window.location.href='__CONTROLLER__/detail/id/{$vo.id}'">
+        <div class="details-content-prod">
+            <div class="prod-wrap display-box">
+                <p class="prod-pic box-flex">
+                    <img src="{$vo.max_thumb}">
+                </p>
+                <div class="prod-cont box-flex">
+                    <p class="prod-name">{$vo.goods_name}</p>
+                    <p class="prod-price">
+                    <span class="sale-price" >
+                        价格：<i>
+                            ¥{$vo.shop_price}
+                        </i>
+                    </span>
+                        <span class="price-num"  >x{$vo.count}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div></if>
 </volist>
                             <style>
                                 .address{

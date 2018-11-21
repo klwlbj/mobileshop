@@ -91,7 +91,13 @@ background-size: 11px 19px;
 </ul>
 
 <ul class="address-msg mt-10">
-<li>支付方式：<span class="fr">货到付款</span></li>
+<li>支付方式：<span class="fr">
+    <switch name="oder_list.status" >
+<case value="1">未支付</case>
+<case value="2">货到付款</case>
+<case value="3">在线支付</case>
+</switch>
+    </span></li>
 <li>下单时间：<span class="fr">{$oder_list.time|date='Y-m-d H:i:s',###}</span></li>
 <li class="remark">备注:{$oder_list.msg}</li>
 <li class="msg-box"><p>收  货  人：{$oder_list.truename}</p><p>联系电话：{$oder_list.phone}</p><p>收货地址：{$oder_list.address}</p></li>

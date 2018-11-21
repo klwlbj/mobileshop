@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html><head>
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>商城-驼铃商贸</title>
 
     <meta name="description" content="Dashboard">
@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="http://www.shop.com/Application/Admin/Public/style/bootstrap.min.css" rel="stylesheet">
+    <link href="http://www.shop.com/Application/Admin/Public/style/bootstrap.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/font-awesome.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/weather-icons.css" rel="stylesheet">
 
@@ -17,11 +17,15 @@
     <link href="http://www.shop.com/Application/Admin/Public/style/demo.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/typicons.css" rel="stylesheet">
     <link href="http://www.shop.com/Application/Admin/Public/style/animate.css" rel="stylesheet">
-
+    <!-- 引入ueditor -->
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/ueditor.config.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/ueditor.all.min.js"></script>
+    <script src="http://www.shop.com/Application/Admin/Public/ueditor/lang/zh-cn/zh-cn.js
+"></script>
 </head>
 <body>
-    <!-- 头部 -->
-    <div class="navbar">
+<!-- 头部 -->
+<div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
             <!-- Navbar Barnd -->
@@ -78,12 +82,13 @@
         </div>
     </div>
 </div>
-    <!-- /头部 -->
 
-    <div class="main-container container-fluid">
-        <div class="page-container">
-            <!-- Page Sidebar -->
-            <div class="page-sidebar" id="sidebar">
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <div class="page-container">
+        <!-- Page Sidebar -->
+        <div class="page-sidebar" id="sidebar">
                 <!-- Page Sidebar Header-->
                 <div class="sidebar-header-wrapper">
                     <input class="searchinput" type="text">
@@ -294,122 +299,223 @@
                 </ul>
                 <!-- /Sidebar Menu -->
             </div>
-            <!-- /Page Sidebar -->
-            <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Breadcrumb -->
-                <div class="page-breadcrumbs">
-                    <ul class="breadcrumb">
-                                        <li>
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
                         <a href="/index.php/Admin/Index/index">系统</a>
                     </li>
-                                        <li class="active">订单列表</li>
-                                        </ul>
-                </div>
-                <!-- /Page Breadcrumb -->
+                    <li>
+                        <a href="/index.php/Admin/Index/lst">订单列表</a>
+                    </li>
+                    <li class="active">修改物流</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
 
-                <!-- Page Body -->
-                <div class="page-body">
+            <!-- Page Body -->
+            <div class="page-body">
+
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-header bordered-bottom bordered-blue">
+                                <span class="widget-caption">修改或添加物流号</span>
+                            </div>
+                            <div class="widget-body">
+                                <div id="horizontal-form">
+                                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data" >
+                                        <input type="hidden" name="id" value="<?php echo ($goods["id"]); ?>">
+                                        <!-- 111111111111111111111111111111111 -->
+                                        <div class="tabbable">
+                                            <ul id="myTab11" class="nav nav-tabs tabs-flat">
+                                                <li class="active">
+                                                    <a href="#home11" data-toggle="tab">
+                                                        物流信息
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                            <div class="tab-content tabs-flat">
+                                                <div class="tab-pane active" id="home11">
+
+                                                    <style>
+                                                        li{
+                                                            list-style-type: none;
+                                                        }
+                                                    </style>
 
 
-<div class="row">
-    <div class="col-lg-12 col-sm-12 col-xs-12">
-        <div class="widget">
-            <div class="widget-body">
-                <div class="flip-scroll">
-                    <table class="table table-bordered table-hover" style="text-align: center;">
-                        <thead class="">
-                            <tr>
-                                <th class="text-center" width="3%">ID</th>
-                                <th align="left" width="8%">订单号</th>
-                                <th align="left" width="10%">商品名称</th>
-                                <th class="text-center" width="5%">商品总价</th>
-                                <th class="text-center" width="12%">下单时间</th>
-                                <th class="text-center" width="8%">姓名</th>
-                                <th class="text-center" width="7%">手机号</th>
-                                <th class="text-center" width="10%">地址</th>
-                                <th class="text-center" width="10%">留言备注</th>
-                                <th class="text-center" width="10%">物流信息</th>
-                                <th class="text-center" width="10%">订单状态</th>
-                                <th class="text-center"width="13%">订单查看</th>
+
+                                                    <div class="orders-box">
 
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($dingdan)): $k = 0; $__LIST__ = $dingdan;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
-                                    <td align="center"><?php echo ($vo["id"]); ?></td>
-                                    <td align="left"><?php echo ($vo["sn"]); ?></td>
-                                    <td align="left"><?php echo ($vo["goods_name"]); ?></td>
-                                    <td align="right"><?php echo ($vo['data'][1]); ?></td>
-                                    <td align="left"><?php echo (date('Y-m-d H:i:s',$vo["time"])); ?></td>
-                                    <td align="left"><?php echo ($vo["truename"]); ?></td>
-                                    <td align="center"><?php echo ($vo["phone"]); ?></td>
-                                    <td align="left"><?php echo ($vo["address"]); ?></td>
-                                    <td align="left"><?php echo ($vo["msg"]); ?></td>
-                                    <td align="left">
-                                    <?php if($vo["express"] > 0 and $vo["status"] != 1): ?>已发货，物流单号：<?php echo ($vo["express"]); ?>
-                                        <a href="http://www.kuaidi.com/" target="_blank" class="btn btn-primary btn-sm shiny">
-                                        <i class="fa fa-edit"></i>查快递
-                                        </a>
-                                        <a href="/index.php/Admin/Index/editexp/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-edit"></i>修改物流号
-                                        </a>
+                                                        <div class="orders-msg">
 
-                                        <?php elseif($vo['express'] <= 0 and $vo["status"] != 1): ?>
-                                        <a href="/index.php/Admin/Index/editexp/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-edit"></i>去发货
-                                        </a>
-                                            <?php else: ?> 暂未付款<?php endif; ?>
-                                    </td>
-                                    <td align="left">
-                                    <?php switch($vo["status"]): case "1": ?>未支付<?php break;?>
-                                        <?php case "2": ?>货到付款<?php break;?>
-                                        <?php case "3": ?>在线支付<?php break; endswitch;?>
-                                        <br>
-                                        <?php if($vo["cancel"] == 1): ?><p style="color: red">用户申请取消中</p><?php endif; ?>
-                                </td>
-                                    <td align="center">
-                                        <!--<a href="/index.php/Admin/Index/product/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">-->
-                                        <!--<i class="fa fa-truck"></i> 库存-->
-                                        <!--</a>-->
-                                        <a href="/index.php/Admin/Index/edit/id/<?php echo ($vo["id"]); ?>" class="btn btn-primary btn-sm shiny">
-                                            <i class="fa fa-edit"></i> 编辑及查看
-                                        </a>
-                                        <a href="#" onClick="warning('确实要删除吗', '/index.php/Admin/Index/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
-                                            <i class="fa fa-trash-o"></i> 删除
-                                        </a>
-                                    </td>
-                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <div style="height:40px;">
-                    <ul class="pagination" style="float:right; margin:10px 0 0 0; ">
-                    <?php echo ($page); ?>
-                    </ul>
+                                                            <ul class="oreders-list">
+
+                                                                <li class="first"><h1 style="font-size: 14px;">订单编号：<?php echo ($oder_list['sn']); ?></h1></li>
+
+
+
+
+                                                            </ul>
+
+                                                            <ul class="rate-list">
+                                                                <li class="rate-msg">
+                                                                    <p>商品总额：<span>¥<?php echo ($oder_list['data'][1]); ?></span></p>
+                                                                </li>
+                                                            </ul>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label no-padding-right" for="username">物流号</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" required="" name="express" value="<?php echo ($oder_list["express"]); ?>" placeholder="" class="form-control" >
+                                                        </div>
+                                                        <p class="help-block col-sm-4 red">* 必填</p>
+                                                    </div>
+                                                    <input type="hidden" required="" name="id" value="<?php echo ($oder_list["id"]); ?>" placeholder="" class="form-control" >
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <input type="submit" value="提交物流信息" style="width:150px;" class="btn btn-darkorange btn-block">
+                                        <!-- 111111111111111111111111111111111 -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                                    </div>
+
             </div>
+            <!-- /Page Body -->
         </div>
+        <!-- /Page Content -->
     </div>
 </div>
 
-                </div>
-                <!-- /Page Body -->
-            </div>
-            <!-- /Page Content -->
-        </div>
-    </div>
+<!--Basic Scripts-->
+<script src="http://www.shop.com/Application/Admin/Public/style/jquery_002.js"></script>
+<script src="http://www.shop.com/Application/Admin/Public/style/bootstrap.js"></script>
+<script src="http://www.shop.com/Application/Admin/Public/style/jquery.js"></script>
+<!--Beyond Scripts-->
+<script src="http://www.shop.com/Application/Admin/Public/style/beyond.js"></script>
+<script type="text/javascript">
 
-        <!--Basic Scripts-->
-    <script src="http://www.shop.com/Application/Admin/Public/style/jquery_002.js"></script>
-    <script src="http://www.shop.com/Application/Admin/Public/style/bootstrap.js"></script>
-    <script src="http://www.shop.com/Application/Admin/Public/style/jquery.js"></script>
-    <!--Beyond Scripts-->
-    <script src="http://www.shop.com/Application/Admin/Public/style/beyond.js"></script>
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('goods_desc',{initialFrameWidth:1200,initialFrameHeight:500,});
+    var str='<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="username"><a onclick="delImg(this);" href="javascript:;">[-]</a></label><div class="col-sm-6"><input type="file" name="goods_pics[]"></div></div>';
+    $("#addImg").click(function(){
+        $("#profile14").append(str);
+    });
 
+    function delImg(o){
+        $(o).parent().parent().remove();
+    }
+
+    function attrad(o){
+        var div=$(o).parent().parent();
+        if($(o).html() == '[+]'){
+            var newdiv=div.clone();
+            var sel=newdiv.find("select");
+            var oldname=sel.attr('name');
+            var newname=oldname.replace('old_','');
+            sel.attr('name',newname);
+            newdiv.find(":text").attr('name','goods_price[]');
+            newdiv.find('a').html('[-]');
+            div.after(newdiv);
+        }else{
+            if(confirm('确定要删除该商品属性吗？')){
+                var gaid=div.attr('gaid');
+                $.ajax({
+                    type:"GET",
+                    url:"/index.php/Admin/Index/ajaxdelga/gaid/"+gaid,
+                    success:function(data){
+                        div.remove();
+                    }
+                });
+            }
+        }
+    }
+    //处理删除商品图片
+    function delpic(o){
+        if(confirm('确定要删除该图片吗？')){
+            var li=$(o).parent();
+            var picid=li.attr('picid');
+            $.ajax({
+                type:"GET",
+                url:"/index.php/Admin/Index/ajaxdelpic/picid/"+picid,
+                success:function(data){
+                    li.remove();
+                }
+            });
+        }
+    }
+    $("select[name=type_id]").change(function(){
+
+        var typeid=$(this).val();
+        $.ajax({
+            type:"GET",
+            url:"/index.php/Admin/Index/ajaxgetattr/typeid/"+typeid,
+            dataType:"json",
+            // success : function(data){
+
+            //     var html="";
+            //     $(data).each(function(k,v){
+            //         html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input type='text' class='form-control' /></div></div>";
+            //     });
+
+            //     $("#attr").html(html);
+            // }
+            success : function(data){
+
+                var html="";
+                $(data).each(function(k,v){
+                    // html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input type='text' class='form-control' /></div></div>";
+                    if(v.attr_type == '1'){
+                        var attrs=v.attr_values.split(",");
+                        html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'><a href='javascript:;' onclick='attrad(this);'>[+]</a>"+v.attr_name+"</label><div class='col-sm-6'>";
+                        html+="<select name='goods_attr["+v.id+"][]'><option>请选择</option>";
+                        for(var i=0; i<attrs.length; i++){
+                            html+="<option>"+attrs[i]+"</option>";
+                        }
+                        html+="</select> <span>￥<input type='text' name='goods_price[]' style='padding:6px 12px; width:70px;' value='0' /> 元</span>";
+                        html+="</div></div>";
+                    }else{
+                        if(v.attr_values != ''){
+                            var attrs=v.attr_values.split(",");
+                            html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'>";
+                            html+="<select name='goods_attr["+v.id+"]'><option>请选择</option>";
+                            for(var i=0; i<attrs.length; i++){
+                                html+="<option>"+attrs[i]+"</option>";
+                            }
+                            html+="</select><input type='hidden' name='goods_price[]' value='0' />";
+                            html+="</div></div>";
+                        }else{
+                            html+="<div class='form-group'><label class='col-sm-2 control-label no-padding-right'>"+v.attr_name+"</label><div class='col-sm-6'><input name='goods_attr["+v.id+"]' type='text' class='form-control' /><input type='hidden' name='goods_price[]' value='0' /></div></div>";
+                        }
+                    }
+                });
+
+                $("#attr").html(html);
+            }
+        });
+    });
+
+</script>
 
 
 </body></html>

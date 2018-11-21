@@ -63,6 +63,8 @@
                                 <th class="text-center" width="7%">手机号</th>
                                 <th class="text-center" width="10%">地址</th>
                                 <th class="text-center" width="10%">留言备注</th>
+                                <th class="text-center" width="10%">物流信息</th>
+                                <th class="text-center" width="10%">订单状态</th>
                                 <th class="text-center"width="13%">订单查看</th>
 
 
@@ -80,6 +82,32 @@
                                     <td align="center">{$vo.phone}</td>
                                     <td align="left">{$vo.address}</td>
                                     <td align="left">{$vo.msg}</td>
+                                    <td align="left">
+                                    <if condition="$vo.express gt 0 and $vo.status neq 1">
+                                        已发货，物流单号：{$vo.express}
+                                        <a href="http://www.kuaidi.com/" target="_blank" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i>查快递
+                                        </a>
+                                        <a href="__CONTROLLER__/editexp/id/{$vo.id}" class="btn btn-primary btn-sm shiny">
+                                            <i class="fa fa-edit"></i>修改物流号
+                                        </a>
+
+                                        <elseif condition="$vo['express'] elt 0 and $vo.status neq 1" />
+                                        <a href="__CONTROLLER__/editexp/id/{$vo.id}" class="btn btn-primary btn-sm shiny">
+                                            <i class="fa fa-edit"></i>去发货
+                                        </a>
+                                            <else /> 暂未付款
+                                    </if>
+                                    </td>
+                                    <td align="left">
+                                    <switch name="vo.status" >
+                                        <case value="1">未支付</case>
+                                        <case value="2">货到付款</case>
+                                        <case value="3">在线支付</case>
+                                    </switch>
+                                        <br>
+                                        <if condition="$vo.cancel eq 1"><p style="color: red">用户申请取消中</p></if>
+                                </td>
                                     <td align="center">
                                         <!--<a href="__CONTROLLER__/product/id/{$vo.id}" class="btn btn-primary btn-sm shiny">-->
                                         <!--<i class="fa fa-truck"></i> 库存-->

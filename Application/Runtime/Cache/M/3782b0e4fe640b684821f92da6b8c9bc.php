@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<!-- saved from url=(0030)http://m.360kad.com/Cart/Index -->
+
 <html style="font-size: 78.5333px; zoom: 1;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -351,12 +351,13 @@
                 <div class="shopCart-header">
                     <span onclick="history.go(-1);" class="header-left"></span>
                     <span class="header-size">购物车</span>
-                    <span id="editBtn" class="header-right">编辑</span>
+                    <!--<span id="editBtn1" class="header-right">删除</span>-->
                 </div>
 
-        <!--非处方药--><?php if(is_null($cars))echo'<div style="margin: auto; text-align: center">购物车快餓瘪了T.T</div><div style="margin: auto; text-align: center"><a
+        <!--非处方药--><?php if(empty($cars))echo'<div style="margin: auto; text-align: center">购物车快餓瘪了T.T</div><div style="margin: auto; text-align: center"><a
             href="/index.php/M/Index/index">快给我挑点东西吧</a><div><div style="width: 20%; border-radius: 8px;padding:2%; margin: auto; text-align: center;border-color:#ff6400;border: 1px solid #ff6400;"><a
-            href="/index.php/M/Index/index">去逛逛</a><div>'; else echo'<div class="conter-title clearfix"><p class="title-select cur"></p><p class="title-size">驼铃商贸</p></div><div class="shopCart-conter">'?>
+            href="/index.php/M/Index/index">去逛逛</a><div>'; else echo'<div class="conter-title clearfix">
+        <p class="title-select cur"></p><p class="title-size">驼铃商贸</p></div><div class="shopCart-conter">'?>
 
                                     <!--主商品-->
 
@@ -372,8 +373,10 @@
             <p class="cont-name"><a href="/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>"><span><?php echo ($vo["goods_name"]); ?></span></a></p>
             <div class="cont-bottom">
                 <div class="cont-price">¥<?php echo ($vo["shop_price"]); ?></div>
+                <span style="display:inline-block;margin-top: 1em;margin-left: 0.5em;"><a href="/index.php/M/Index/delcar/id/<?php echo ($vo["id"]); ?>">删除</a></span>
                 <div class="treatment-input">
-                    <a href="javascript:;" class="num-reduce cur"></a>
+                    <a href="javascript:;" class="num-reduce"></a>
+                    <a href="javascript:;" class="num-reduce" style="display: none;"></a>
                     <input class="num-input" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g)" type="number" name="number<?php echo ($k); ?>" value="1">
                     <a href="javascript:;" class="num-add"></a>
                 </div>
@@ -507,13 +510,13 @@
 </style>
 
 
+
     <div class="layer-wrap" id="zzlayer"></div>
 
     <!--弹出层背景-->
     <div class="PopupBackground" id="PopupBackground" style="display: none;"></div>
     <div style="display:none" class="Popup1" id="Popup3">
-        <p class="remove" id="confirmMsg">从购物车中移除该商品？</p>
-        <div class="btn"><a href="javascript:;;" class="cancel confirmPop_cancel">不，按错了</a><a href="javascript:;;" class="ok confirmPop_right">是的</a></div>
+
     </div>
 
     <!--CSS3 loading-->
@@ -701,12 +704,14 @@
             {
                 if ($(this).hasClass('cur')) {
                     // loadTagShow(2);
+                    $(this).parents(".prod-wrap").find(".num-input").attr("value","0");
                     updateCartSelectState($(this).attr("id"), false);
                     $(this).removeClass('cur');
                     $('#allSelect').removeClass('cur');
                     $(this).parents(".shopCart-conter").prev().find(".title-select").removeClass('cur');
                 } else {
                     $(this).addClass('cur');
+                    $(this).parents(".prod-wrap").find(".num-input").attr("value","1");
                     var thisSelectSize =  $(this).parents(".conter-prod-warp").siblings(".conter-prod-warp").size();
                     var thisSelectedSize = $(this).parents(".conter-prod-warp").siblings(".conter-prod-warp").find(".prod-select.box-flex.cur").size();
                     thisSelectSize == thisSelectedSize ? $(this).parents(".shopCart-conter").prev().find(".title-select").addClass('cur') : '';
@@ -912,16 +917,16 @@
             })
 
             //选择换购或者赠品 展示选择的数量
-            $("body").children().on("click",".swiper-slide",function(){
-                var selectNum= $(this).parents(".swiper-wrapper").find(".slide-select.box-flex.cur").size();
-                if ($(this).parents(".zp-cont-wrap").find(".how-many").size()>0) {
-                    $(this).parents(".zp-cont-wrap").find(".how-many").text(selectNum);
-                }
-                if ($(this).parents(".hg-cont-wrap").find(".how-many").size()>0) {
-                    $(this).parents(".hg-cont-wrap").find(".how-many").text(selectNum);
-                }
-
-            });
+            // $("body").children().on("click",".swiper-slide",function(){
+            //     var selectNum= $(this).parents(".swiper-wrapper").find(".slide-select.box-flex.cur").size();
+            //     if ($(this).parents(".zp-cont-wrap").find(".how-many").size()>0) {
+            //         $(this).parents(".zp-cont-wrap").find(".how-many").text(selectNum);
+            //     }
+            //     if ($(this).parents(".hg-cont-wrap").find(".how-many").size()>0) {
+            //         $(this).parents(".hg-cont-wrap").find(".how-many").text(selectNum);
+            //     }
+            //
+            // });
 
             $("body").children().on('click', '.remove-cont', function (e) {
                 var _this = $(e.target);
@@ -955,6 +960,7 @@
             $("body").children().on('click', '.title-select', function () {
                 if ($(this).hasClass('cur')) {
                     $(this).removeClass('cur');
+                    $(".num-input").attr("value","0");
                     $('#allSelect').removeClass('cur');
                     $(this).parent().next().find(".conter-prod-warp").find(".prod-select").removeClass('cur');
                     var cartIds = [], select = $(".prod-select"), len = $(select).length;
@@ -971,6 +977,7 @@
 
                 } else {
                     $(this).addClass('cur');
+                    $(".num-input").attr("value","1");
                     $(this).parent('.conter-title').next().find(".prod-select").addClass('cur');
                     $('.title-select').size() == $('.title-select.cur').size() ? $('#allSelect').addClass('cur') : '';
                     var cartIds = [], select = $(".prod-select.cur"), len = $(select).length;
@@ -1049,8 +1056,10 @@
                     if (num < 999) {
                         num++;
                         _this.siblings('.num-reduce').removeClass('cur');
-                        _this.siblings('.num-input').val(num);
-                        if (num > 1) {
+                        $(this).parent().parent().parent().parent().find(".prod-select").addClass('cur');
+                        _this.siblings('.num-input').attr("value",num);
+
+                        if (num >= 0) {
                             _this.siblings('.num-reduce').removeClass('cur');
                         } else {
                             _this.siblings('.num-reduce').addClass('cur');
@@ -1068,12 +1077,12 @@
                 //减
                 if (_this.hasClass("num-reduce")) {
                     var num = _this.siblings('.num-input').val();
-                    if (num > 1) {
-                        if (num == 2) {
+                    if (num >= 0) {
+                        if (num == 1) {
                             _this.addClass('cur');
                         }
                         num--;
-                        _this.siblings('.num-input').val(num);
+                        _this.siblings('.num-input').attr("value",num);;
                         // loadTagShow(3);
                         setBuyPackageNumber(_this, "reduction");
                         return;
@@ -1113,7 +1122,7 @@
             });
 
             config.btnEdit.on("click", function () {
-                if ($('#editBtn').text() == '编辑') {
+                if ($('#editBtn').text() == '删除') {
                     $('#allSelect').removeClass('cur');
                     $('.title-select').removeClass('cur');
                     $('.prod-select').removeClass('cur');
@@ -1328,7 +1337,7 @@
                     showSelectGroup();
                     reBindInput();
                     $('.num-input').each(function () {
-                        $(this).val() == 1 ? $(this).prev('.num-reduce').addClass('cur') : $(this).prev('.num-reduce').removeClass('cur');
+                        $(this).val() == 0 ? $(this).prev('.num-reduce').addClass('cur') : $(this).prev('.num-reduce').removeClass('cur');
                         $(this).val() >= 999 ? $(this).next('.num-add').addClass('cur') : $(this).next('.num-add').removeClass('cur');
                     });
 
@@ -1533,6 +1542,7 @@
 
 
     </script>
+
     <script src="/Public/car_files/m_shopCart.js" type="text/javascript"></script>
 
 

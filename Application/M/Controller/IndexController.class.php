@@ -369,6 +369,7 @@ class IndexController extends CommonController {
     public function zcxy(){
         $this->display();
     }
+
 //    更新密码
     public function uppw(){
         if(IS_POST){
@@ -463,6 +464,20 @@ class IndexController extends CommonController {
     public function grzx(){
         $this->display();
     }
+    public function orderdel(){
+        $id=I('get.id');
+        $data=array('cancel'=>1);
+        $where=array('id'=>$id);
+        $res=M('dingdans')->where($where)->save($data);
+        if($res){
+            $this->redirect('Index/olst');
+        }
+        else{
+            $this->redirect('Index/olst','',1, '<h1>取消失败...</h1>');
+        }
+
+    }
+
 
 
     //下单
@@ -477,7 +492,18 @@ class IndexController extends CommonController {
         $post=I("post.");
         if(IS_POST){
             $goods=M("goods");
-            $cate=array($post['id1'],$post['id2'],$post['id3'],$post['id4'],$post['id5'],$post['id6']);
+            if(!empty($post['number11']))$this->redirect('购物车太满了，不能超过十件');
+//            if($post['number1']==0){$post['id1']='1000';}
+//            if($post['number3']==0){$post['id3']='1000';}
+//            if($post['number4']==0){$post['id4']='1000';}
+//            if($post['number5']==0){$post['id5']='1000';}
+//            if($post['number6']==0){$post['id6']='1000';}
+//            if($post['number7']==0){$post['id7']='1000';}
+//            if($post['number8']==0){$post['id8']='1000';}
+//            if($post['number9']==0){$post['id9']='1000';}
+//            if($post['number10']==0){$post['id10']='1000';}
+            //dump($post);die;
+            $cate=array($post['id1'],$post['id2'],$post['id3'],$post['id4'],$post['id5'],$post['id6'],$post['id7'],$post['id8'],$post['id9'],$post['id10']);
             // $cate = ['78','79'];//$cate为一个数组
             $where['id'] = array('in',$cate);//cid在这个数组中，
             $res=$goods->where($where)->select();
@@ -517,8 +543,80 @@ class IndexController extends CommonController {
 
         $this->display();
     }
+    public function cash(){
+        $id=I('get.id');
+        $where=array(id=>$id);
+        $data['status'] = '2';
+        $res=M('dingdans')->where($where)->save($data);
+        if($res){
+            $this->redirect('Index/olst');
+        }
+        else{
+            $this->redirect('Index/olst','',2, '<h1>已支付，无法货到付款...</h1>');
+        }
+    }
+    public function express(){
+        $id=I('get.id');
+        $where=array(id=>$id);
+        $res=M('dingdans')->field('express')->where($where)->find();
+        $exp=$res['express'];
+        //$exp=75109886990981;
+        //阿里云物流免费测试接口
+        $host = "https://wuliu.market.alicloudapi.com";//api访问链接
+        $path = "/kdi";//API访问后缀
+        $method = "GET";
+        $appcode = "80194415611a41b8940720ee75512dac";//替换成自己的阿里云appcode
+        $headers = array();
+        array_push($headers, "Authorization:APPCODE " . $appcode);
+        $querys = "no=$exp";  //参数写在这里
+        $bodys = "";
+        $url = $host . $path . "?" . $querys;//url拼接
 
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($curl, CURLOPT_FAILONERROR, false);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_HEADER, false);
+        //curl_setopt($curl, CURLOPT_HEADER, true); 如不输出json, 请打开这行代码，打印调试头部状态码。
+        //状态码: 200 正常；400 URL无效；401 appCode错误； 403 次数用完； 500 API网管错误
+        if (1 == strpos("$".$host, "https://"))
+        {
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        }
+        $result=json_decode(curl_exec($curl), true);
+        if($result['status']=='0'){   //status为0表示查询成功
+            $res=$result['result'];
+            $time=$result['result']['list'];
+            $this->assign('info',$res);
+            $this->assign('time',$time);
+            $this->display();
+        }
+        else{
+            $res=[
+                'expName'=>'暂时查询不到该物流信息',
+                'deliverystatus'=>'5',
+                'number'=>$exp,
+            ];
+            $this->assign('info',$res);
+            $this->display();
+        }
 
+    }
+    public function deldd(){
+        $id=I('get.id');
+        $where=array(id=>$id,status=>1);
+        $res=M('dingdans')->where($where)->delete();
+        if($res){
+            $this->redirect('Index/olst');
+        }
+        else{
+            $this->redirect('Index/olst','',1, '<h1>删除失败...</h1>');
+        }
+
+    }
     public function dd(){
 
         $user=session("user");
@@ -531,7 +629,26 @@ class IndexController extends CommonController {
         if(IS_POST){
             $data1=$post;
 //            dump($data1);die;
-            $data1['data']=json_encode(S('dd'));
+            $res=S('dd');
+            $ss=$res['0'];
+            $arr=array();
+            $k=0;
+            foreach ($ss as &$v){
+                $k+=$v['count'];
+                if($v['count']==0)unset($v);
+                else $arr[]=$v;
+
+            }//dump($arr);die;
+            if($k==0){
+                $this->redirect('Index/car','',1, '<h1>提交失败...</h1>');
+            }
+
+            $res['0']= $arr;
+            //dump($res);die;
+            $data1['data']=json_encode($res);
+
+
+            //dump($res['0']);die;
             $data1['time']=time();
             $data1['sn']=time().rand(100,999);
 
@@ -585,7 +702,7 @@ class IndexController extends CommonController {
 
         // session("car1",null);exit();
         // dump(I("post."));
-
+        //dump(session('car1'));die;
         $id=I("get.id");
 
         if($id){
@@ -748,6 +865,26 @@ class IndexController extends CommonController {
         }
         $this->display();
     }
+    public function delcar(){
+        $id=I('get.id');
+        $car=session('car1');
+        //dump($car);die;
+        foreach ($car as $k=>$v){
+            if($car[$k]['id']==$id){
+                unset($car[$k]);$ok=1;
+            }
+        }
+        session("car1",$car);
+        if ($ok) {
+            $this->redirect('Index/car');
+        }
+            else{
+                $this->redirect('Index/car','',3, '<h1>删除失败...</h1>');
+            }
+        }
+
+        //dump($car);die;
+
 
 
     //订单列表

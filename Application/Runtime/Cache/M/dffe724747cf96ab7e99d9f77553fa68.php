@@ -63,26 +63,47 @@
                                 </p>
                             </div>
 
-<?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="details-content-wrap" onclick="window.location.href='/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>'">
+<?php if(is_array($res)): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo["count"] == 0): ?><div style="display: none;" class="details-content-wrap" onclick="window.location.href='/index.php/M/Index/detail/id/'">
     <div class="details-content-prod">
         <div class="prod-wrap display-box">
             <p class="prod-pic box-flex">
-                <img src="<?php echo ($vo["max_thumb"]); ?>">
+                <img src="">
             </p>
             <div class="prod-cont box-flex">
-                <p class="prod-name"><?php echo ($vo["goods_name"]); ?></p>
+                <p class="prod-name"></p>
                 <p class="prod-price">
-                    <span class="sale-price">
+                    <span class="sale-price" >
                         价格：<i>
-                            ¥<?php echo ($vo["shop_price"]); ?>
+                            ¥
                         </i>
                     </span>
-                    <span class="price-num">x<?php echo ($vo["count"]); ?></span>
+                    <span class="price-num"  ></span>
                 </p>
             </div>
         </div>
     </div>
-</div><?php endforeach; endif; else: echo "" ;endif; ?>
+</div>
+        <?php else: ?>
+    <div  class="details-content-wrap" onclick="window.location.href='/index.php/M/Index/detail/id/<?php echo ($vo["id"]); ?>'">
+        <div class="details-content-prod">
+            <div class="prod-wrap display-box">
+                <p class="prod-pic box-flex">
+                    <img src="<?php echo ($vo["max_thumb"]); ?>">
+                </p>
+                <div class="prod-cont box-flex">
+                    <p class="prod-name"><?php echo ($vo["goods_name"]); ?></p>
+                    <p class="prod-price">
+                    <span class="sale-price" >
+                        价格：<i>
+                            ¥<?php echo ($vo["shop_price"]); ?>
+                        </i>
+                    </span>
+                        <span class="price-num"  >x<?php echo ($vo["count"]); ?></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                             <style>
                                 .address{
                                     max-width: 10%;

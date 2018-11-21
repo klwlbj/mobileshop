@@ -15,7 +15,9 @@
     <style>
         .background-gray { background-color: #b5b5b5; }
     </style>
-<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script></head>
+<script type="text/javascript">navigator.__defineGetter__('userAgent', function () { return 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn;  MI2 Build/JRO03L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 XiaoMi/MiuiBrowser/1.0'; });</script>
+    <link rel="stylesheet" href="../../../../Public/detail_files/nestSwiper.css">
+</head>
 <body>
     <header id="header">
         <section class="header_logo"><a href="javascript:history.go(-1)">返回</a></section>

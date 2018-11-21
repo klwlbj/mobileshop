@@ -89,7 +89,11 @@ background-size: 11px 19px;
 </ul>
 
 <ul class="address-msg mt-10">
-<li>支付方式：<span class="fr">货到付款</span></li>
+<li>支付方式：<span class="fr">
+    <?php switch($oder_list["status"]): case "1": ?>未支付<?php break;?>
+<?php case "2": ?>货到付款<?php break;?>
+<?php case "3": ?>在线支付<?php break; endswitch;?>
+    </span></li>
 <li>下单时间：<span class="fr"><?php echo (date('Y-m-d H:i:s',$oder_list["time"])); ?></span></li>
 <li class="remark">备注:<?php echo ($oder_list["msg"]); ?></li>
 <li class="msg-box"><p>收  货  人：<?php echo ($oder_list["truename"]); ?></p><p>联系电话：<?php echo ($oder_list["phone"]); ?></p><p>收货地址：<?php echo ($oder_list["address"]); ?></p></li>

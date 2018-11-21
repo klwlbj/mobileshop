@@ -387,8 +387,13 @@
                 <!-- <p class="order_p2">未付款</p> -->
 
                 <div class="order_button">
-                     <a href ="" class="order_button_r">货到付款</a>
-                     <a href ="#"  class="order_button_l del" style="color:black" >取消订单</a>
+                    <if condition="empty($vo['express'])"><if condition="$vo.status neq 1"><a href ="javascript:;" class="order_button_r">待发货</a><else /><a href ="__CONTROLLER__/cash/id/{$vo.id}" class="order_button_r">货到付款</a></if>
+                    <else /> <a href ="__CONTROLLER__/express/id/{$vo.id}" class="order_button_r">查看物流</a>
+                    </if>
+                    <if condition="$vo.status eq 1 "><a
+                    href ="__CONTROLLER__/deldd/id/{$vo.id}" class="order_button_l del" style="color:black" >取消订单</a>
+                        <elseif condition="$vo.cancel eq 1"/> <a href ="javascript:;" class="order_button_l del" style="color:black" ><if condition="$vo['express'] gt 0 ">无法取消<else />正在取消订单</if></a>
+                <else /><a href ="__CONTROLLER__/orderdel/id/{$vo.id}" class="order_button_l del" style="color:black" >取消订单</a></if>
                 </div>
                 </li>
 </volist>

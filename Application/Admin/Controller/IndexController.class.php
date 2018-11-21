@@ -68,6 +68,34 @@ class IndexController extends CommonController {
         $this->assign('oder_list',$oder_list);
         $this->display();
     }
+    public function editexp(){
+        if(IS_POST){
+            $data=I('post.');
+            $id=I('post.id');
+            $oder_list=M("dingdans")->find($id);
+            $oder_list['data'] = json_decode($oder_list['data']);
+//            dump($oder_list['data']);die;
+            $oder_list['data'][1]=$data['money'];
+            //dump($oder_list['data'][1]);die;
+            $data['data']=json_encode($oder_list['data']);
+            //dump($data);die;
+            $update=M("dingdans")->save($data);
+            //dump($update);die;
+            if($update!==false){
+                $this->redirect('Index/dds','',1, '<h1>更新成功...</h1>');
+            }
+            else{
+                $this->redirect('Index/dds','',1, '<h1>更新失败...</h1>');
+            }
+        }
+        $dds=M("dingdans");
+        $oder_list=$dds->find(I("get.id"));
+        $oder_list['data'] = json_decode($oder_list['data']);
+        // dump($oder_list);
+
+        $this->assign('oder_list',$oder_list);
+        $this->display();
+    }
     public function dds(){
 
         $dingdan=D('dingdans')->order('time desc')->select();
