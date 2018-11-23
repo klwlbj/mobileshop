@@ -736,6 +736,7 @@ class IndexController extends CommonController {
 
 
        $cars=session("car1");
+        //dump($cars);die;
 
        //根据字段id对数组$cars进行降序排列 【否则order方法中 in(ids) 会从小到大排序】
        $px = array_column($cars,'id');

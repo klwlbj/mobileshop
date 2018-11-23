@@ -147,11 +147,11 @@
 
 	</ul>
 <div class="search" >
-	<form action="" method="post">
-		<input type="text" name="search" style="border: 1px solid rgb(132, 95, 63);display: block;width: 80%; float:left;margin-top: 5px;margin-bottom: 5px;height: 0.7rem; font-size: 20px;border-radius: 8px;">
-		<!--<input type="submit" value="" style="width: 10%;border:none; background:url(/Public/search.png) no-repeat">--><img style="width: 10%;display: inline;margin-top: 9px;" src="/Public/search.png" alt="">
+	<!--<form action="" method="post">-->
+		<!--<input type="text" name="search" style="border: 1px solid rgb(132, 95, 63);display: block;width: 80%; float:left;margin-top: 5px;margin-bottom: 5px;height: 0.7rem; font-size: 20px;border-radius: 8px;">-->
+		<!--&lt;!&ndash;<input type="submit" value="" style="width: 10%;border:none; background:url(/Public/search.png) no-repeat">&ndash;&gt;<img style="width: 10%;display: inline;margin-top: 9px;" src="/Public/search.png" alt="">-->
 
-	</form>
+	<!--</form>-->
 </div>
 <div class="left">
 	<div>

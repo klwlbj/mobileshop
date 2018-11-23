@@ -113,7 +113,7 @@ body,html{
     <a>
     <i class="icon icon-pingjia">
     <span class="num comm-num none"></span>
-    </i> 待评价
+    </i> 已完成
     </a>
     </li>
     </ul>

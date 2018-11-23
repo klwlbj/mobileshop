@@ -13,4 +13,10 @@ return array(
 	 ),
 	'DATA_CRYPT_TYPE'=>'Des',
 	'DES_KEY'=>'4654654164586',
+    'SESSION_OPTIONS'         =>  array(
+        'name'                =>  'car1',                    //设置session名
+        'expire'              =>  99999,                      //SESSION过期时间，单位秒
+        'use_trans_sid'       =>  1,                               //跨页传递
+        'use_only_cookies'    =>  0,                               //是否只开启基于cookies的session的会话方式
+    ),
 );

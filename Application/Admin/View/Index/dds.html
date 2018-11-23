@@ -118,6 +118,16 @@
                                         <a href="#" onClick="warning('确实要删除吗', '__CONTROLLER__/del/id/{$vo.id}')" class="btn btn-danger btn-sm shiny">
                                             <i class="fa fa-trash-o"></i> 删除
                                         </a>
+                                        <if condition="$vo.cancel eq 1">
+                                        <a href="__CONTROLLER__/cancel/id/{$vo.id}" class="btn btn-info btn-sm shiny">
+                                            <i class="fa fa-edit"></i> 同意取消
+                                        </a>
+                                    </if>
+                                        <if condition="$vo.express neq 0">
+                                            <a href="__CONTROLLER__/success/id/{$vo.id}" class="btn btn-success btn-sm shiny">
+                                                <i class="fa fa-edit"></i> 已完成
+                                            </a>
+                                        </if>
                                     </td>
                                 </tr>
                             </volist>

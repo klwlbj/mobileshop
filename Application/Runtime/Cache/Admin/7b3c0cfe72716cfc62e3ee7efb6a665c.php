@@ -379,6 +379,12 @@
                                         <a href="#" onClick="warning('确实要删除吗', '/index.php/Admin/Index/del/id/<?php echo ($vo["id"]); ?>')" class="btn btn-danger btn-sm shiny">
                                             <i class="fa fa-trash-o"></i> 删除
                                         </a>
+                                        <?php if($vo["cancel"] == 1): ?><a href="/index.php/Admin/Index/cancel/id/<?php echo ($vo["id"]); ?>" class="btn btn-info btn-sm shiny">
+                                            <i class="fa fa-edit"></i> 同意取消
+                                        </a><?php endif; ?>
+                                        <?php if($vo["express"] != 0): ?><a href="/index.php/Admin/Index/cancel/id/<?php echo ($vo["id"]); ?>" class="btn btn-success btn-sm shiny">
+                                                <i class="fa fa-edit"></i> 已完成
+                                            </a><?php endif; ?>
                                     </td>
                                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                         </tbody>

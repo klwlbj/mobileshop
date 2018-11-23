@@ -634,6 +634,7 @@
                 if ($(this).hasClass('cur')) {
                     // loadTagShow(2);
                     $(this).parents(".prod-wrap").find(".num-input").attr("value","0");
+                    $(this).parents(".prod-wrap").find(".num-reduce").addClass('cur');
                     updateCartSelectState($(this).attr("id"), false);
                     $(this).removeClass('cur');
                     $('#allSelect').removeClass('cur');

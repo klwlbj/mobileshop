@@ -96,6 +96,33 @@ class IndexController extends CommonController {
         $this->assign('oder_list',$oder_list);
         $this->display();
     }
+    public function cancel(){
+        $id=I('get.id');
+        $data=array('cancel'=>2);
+        $where=array('id'=>$id);
+        $res=M('dingdans')->where($where)->save($data);
+        if($res){
+            $this->redirect('Index/dds');
+        }
+        else{
+            $this->redirect('Index/dds','',1, '<h1>提交失败...</h1>');
+        }
+
+    }
+    public function success(){
+        $id=I('get.id');
+        $data=array('success'=>1);
+        $where=array('id'=>$id);
+        $res=M('dingdans')->where($where)->save($data);
+        if($res){
+            $this->redirect('Index/dds');
+        }
+        else{
+            $this->redirect('Index/dds','',1, '<h1>提交失败...</h1>');
+        }
+
+    }
+
     public function dds(){
 
         $dingdan=D('dingdans')->order('time desc')->select();

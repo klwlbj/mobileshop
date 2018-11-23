@@ -1,0 +1,779 @@
+[ 2018-11-23T10:48:46+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2018-11-23T10:48:59+08:00 ] 127.0.0.1 /index.php/Admin/Cate/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\1e31b38d8d9702701609b47afd2fec77.php 第 346 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-11-23T10:49:03+08:00 ] 127.0.0.1 /index.php/Admin/Category/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `sp_category` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `sp_category` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\395c0ba78bddab9d6617dcec0f2fd9a9.php 第 352 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-11-23T10:49:06+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0155s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 388 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-11-23T10:49:54+08:00 ] 127.0.0.1 /index.php/Admin/Index/editexp/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `sp_dingdans` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: goods D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\896a27f1be5ba214b22df406d3177f96.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-11-23T11:12:54+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_user` ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+NOTIC: [8] Undefined index: points_min D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 340 行.
+NOTIC: [8] Undefined index: points_max D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 341 行.
+NOTIC: [8] Undefined index: rate D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\664aa4264dc1193ec1068c21baa85f3d.php 第 342 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-11-23T11:22:51+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/edit/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sp_user` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-11-23T14:01:28+08:00 ] 127.0.0.1 /index.php/Admin/MemberLevel/edit/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `sp_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sp_user` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2018-11-23T14:01:50+08:00 ] 127.0.0.1 /index.php/Admin/admin/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_admin` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `sp_admin` ORDER BY id desc LIMIT 0,3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-11-23T14:01:53+08:00 ] 127.0.0.1 /index.php/Admin/admin/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_admin` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_admin` ORDER BY id desc LIMIT 0,3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-11-23T14:01:58+08:00 ] 127.0.0.1 /index.php/Admin/admin/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sp_admin` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `sp_admin` ORDER BY id desc LIMIT 0,3   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003089s ]
+
+[ 2018-11-23T15:44:46+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0357s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0166s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 388 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2018-11-23T15:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Admin/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-11-23T15:52:09+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-11-23T15:52:09+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2018-11-23T15:54:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Use of undefined constant regex - assumed 'regex' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_admin` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `sp_admin` WHERE ( username='ydx' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2018-11-23T15:54:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-11-23T15:54:32+08:00 ] 127.0.0.1 /index.php/Admin/Cate/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `sp_cate` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `sp_cate` ORDER BY id desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\1e31b38d8d9702701609b47afd2fec77.php 第 346 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-11-23T15:54:39+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 388 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-11-23T15:56:45+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0118s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 391 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-11-23T15:57:19+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0116s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 391 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002655s ]
+
+[ 2018-11-23T15:58:37+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0106s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 391 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2018-11-23T16:03:25+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-11-23T16:03:35+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0188s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001572s ]
+
+[ 2018-11-23T16:04:02+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0098s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-11-23T16:04:18+08:00 ] 127.0.0.1 /index.php/Admin/index/dds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `sp_dingdans` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `sp_dingdans` ORDER BY time desc  [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant unique - assumed 'unique' D:\phpStudy\PHPTutorial\WWW\x\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `sp_goods` [ RunTime:0.0175s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: sid D:\phpStudy\PHPTutorial\WWW\x\Application\Admin\Controller\IndexController.class.php 第 107 行.
+SQL: SELECT * FROM `sp_goods` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\PHPTutorial\WWW\x\Application\Runtime\Cache\Admin\7b3c0cfe72716cfc62e3ee7efb6a665c.php 第 394 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
